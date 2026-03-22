@@ -1,0 +1,52 @@
+site_name: Daily arXiv
+site_url: https://zhaoyang97.github.io/daily-arxiv-tool/
+site_description: 每日 arXiv AI/LLM/NLP/CV 论文精选笔记
+repo_url: https://github.com/zhaoyang97/daily-arxiv-tool
+docs_dir: notes
+theme:
+  name: material
+  language: zh
+  palette:
+  - scheme: default
+    primary: deep purple
+    accent: amber
+    toggle:
+      icon: material/brightness-7
+      name: 切换到暗色模式
+  - scheme: slate
+    primary: deep purple
+    accent: amber
+    toggle:
+      icon: material/brightness-4
+      name: 切换到亮色模式
+  features:
+  - navigation.instant
+  - navigation.indexes
+  - navigation.top
+  - search.highlight
+  - search.suggest
+  - content.code.copy
+nav:
+- Home: index.md
+plugins:
+- search
+markdown_extensions:
+- tables
+- toc:
+    permalink: true
+- admonition
+- pymdownx.details
+- pymdownx.superfences
+- pymdownx.arithmatex:
+    generic: true
+extra_css:
+- stylesheets/extra.css
+extra_javascript:
+- javascripts/mathjax.js
+- https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+copyright: 🤖 本站笔记由 AI 辅助生成，内容仅供学术参考，如有错误欢迎指正
+extra:
+  generator: false
+  social:
+  - icon: fontawesome/brands/github
+    link: https://github.com/zhaoyang97/daily-arxiv-tool
