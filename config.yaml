@@ -180,10 +180,10 @@ filter:
 network:
   # HTTP/HTTPS 代理（留空 = 直连，无需代理）
   # 示例: "http://127.0.0.1:7890" 或 "socks5://127.0.0.1:1080"
-  proxy: ""
+  proxy: "http://127.0.0.1:7890"
 
   # 是否验证 SSL 证书（使用某些代理时需设为 false）
-  ssl_verify: true
+  ssl_verify: false
 
   # arXiv API 请求间隔（秒）— arXiv 要求 crawl-delay ≥ 3 秒
   request_interval: 3.5
