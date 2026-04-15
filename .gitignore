@@ -7,3 +7,4 @@ logs/
 paper_cache/
 .venv/
 *.egg-info/
+.DS_Store
