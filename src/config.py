@@ -98,7 +98,8 @@ class Config:
 def load_config(config_path: Optional[str] = None, project_root: Optional[Path] = None) -> Config:
     """加载配置文件。优先级: 参数指定 > 环境变量 > 当前目录 config.yaml > 默认值。"""
     if project_root is None:
-        project_root = Path.cwd()
+        # src/ 下运行时，自动回退到项目根目录
+        project_root = Path(__file__).resolve().parent.parent
 
     if config_path is None:
         config_path = os.environ.get("DARXIV_CONFIG")

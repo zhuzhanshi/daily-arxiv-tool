@@ -93,11 +93,11 @@ Skills 已经在 `.github/skills/` 下，clone 后即可用，无需额外复制
 
 | Skill | 触发词 | 功能 |
 |-------|--------|------|
-| **daily-arxiv** | "刷 daily"、"抓论文" | 获取 arXiv 论文 → 筛选评分 → 生成速览页面 |
+| **fetch-papers** | "刷 daily"、"抓论文" | 获取 arXiv 论文 → 筛选评分 → 生成速览页面 |
 | **write-note** | "读论文"、"写解读" | 获取论文全文 → 写 100+ 行结构化论文解读 |
-| **generate-idea** | "想 idea"、"brainstorm" | 分析论文 → 生成可行的研究想法 |
-| **daily-arxiv-publish** | "发布"、"更新站点" | 重建导航 → 构建站点 → 准备 git 提交 |
-| **batch-write-notes** | "批量写解读" | 一口气写完当天所有 A 档论文解读 |
+| **write-note-batch** | "批量写解读" | 一口气写完当天所有 A 档论文解读 |
+| **gen-idea** | "想 idea"、"brainstorm" | 分析论文 → 生成可行的研究想法 |
+| **publish-site** | "发布"、"更新站点" | 重建导航 → 构建站点 → 准备 git 提交 |
 
 > Skills 本质上是 **prompt 工程** —— 告诉 AI「遇到这类请求时，应该依次执行哪些步骤、调用哪些脚本、按什么模板输出」。你不需要理解实现细节，只需在聊天框说话。
 
@@ -227,6 +227,7 @@ daily-arxiv-tool/
 ├── mkdocs.yml              # 站点配置
 ├── requirements.txt        # Python 依赖
 ├── CLAUDE.md               # Claude Code 项目指令
+├── AGENTS.md               # AI 代理项目指令（跨编辑器通用）
 ├── src/                    # Python 脚本
 │   ├── fetch.py            #   arXiv API 获取
 │   ├── classify.py         #   28 领域分类规则
@@ -238,11 +239,11 @@ daily-arxiv-tool/
 │   └── cli.py              #   CLI 入口
 ├── .github/
 │   ├── skills/             # ⭐ AI Skills（聊天交互界面）
-│   │   ├── daily-arxiv/         获取+筛选+生成页面
+│   │   ├── fetch-papers/        获取+筛选+生成页面
 │   │   ├── write-note/          读论文写解读笔记
-│   │   ├── generate-idea/       从论文生成研究idea
-│   │   ├── batch-write-notes/   批量写论文解读
-│   │   └── daily-arxiv-publish/ 发布到 GitHub Pages
+│   │   ├── write-note-batch/    批量写论文解读
+│   │   ├── gen-idea/            从论文生成研究idea
+│   │   └── publish-site/        发布到 GitHub Pages
 │   └── workflows/          # GitHub Actions (daily + deploy)
 ├── notes/                  # 论文解读（自动生成）
 ├── logs/                   # JSON 数据（自动生成）
