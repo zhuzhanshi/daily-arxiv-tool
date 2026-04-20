@@ -1,0 +1,95 @@
+# 📅 2026-04-17 研究看板
+
+> A档候选 **10** 篇
+
+---
+
+### [FineCog-Nav: Integrating Fine-grained Cognitive Modules for Zero-shot Multimodal UAV Navigation](https://arxiv.org/abs/2604.16298)
+
+🧭 Agent系统 | 待精读
+| 分数 | 48 | arXiv | `2604.16298` |
+
+UAV vision-language navigation (VLN) requires an agent to navigate complex 3D environments from an egocentric perspective while following ambiguous multi-step instructions over long horizons.
+
+---
+
+### [MOMENTA: Mixture-of-Experts Over Multimodal Embeddings with Neural Temporal Aggregation for Misinformation Detection](https://arxiv.org/abs/2604.16172)
+
+🖼️ 计算机视觉 | 待精读
+| 分数 | 47 | arXiv | `2604.16172` |
+
+The widespread dissemination of multimodal content on social media has made misinformation detection increasingly challenging, as misleading narratives often arise not only from textual or visual c...
+
+---
+
+### [A Two-Stage, Object-Centric Deep Learning Framework for Robust Exam Cheating Detection](https://arxiv.org/abs/2604.16234)
+
+🖼️ 计算机视觉 | 待精读
+| 分数 | 45 | arXiv | `2604.16234` |
+
+Academic integrity continues to face the persistent challenge of examination cheating.
+
+---
+
+### [HyCal: A Training-Free Prototype Calibration Method for Cross-Discipline Few-Shot Class-Incremental Learning](https://arxiv.org/abs/2604.15678)
+
+♾️ 持续学习 | 待精读
+| 分数 | 45 | arXiv | `2604.15678` |
+
+Pretrained Vision-Language Models (VLMs) like CLIP show promise in continual learning, but existing Few-Shot Class-Incremental Learning (FSCIL) methods assume homogeneous domains and balanced data ...
+
+---
+
+### [Discover and Prove: An Open-source Agentic Framework for Hard Mode Automated Theorem Proving in Lean 4](https://arxiv.org/abs/2604.15839)
+
+🧭 Agent系统 | 待精读
+| 分数 | 44 | arXiv | `2604.15839` |
+
+Most ATP benchmarks embed the final answer within the formal statement -- a convention we call "Easy Mode" -- a design that simplifies the task relative to what human competitors face and may lead ...
+
+---
+
+### [GTA-2: Benchmarking General Tool Agents from Atomic Tool-Use to Open-Ended Workflows](https://arxiv.org/abs/2604.15715)
+
+🧭 Agent系统 | 待精读
+| 分数 | 44 | arXiv | `2604.15715` |
+
+The development of general-purpose agents requires a shift from executing simple instructions to completing complex, real-world productivity workflows.
+
+---
+
+### [SSMamba: A Self-Supervised Hybrid State Space Model for Pathological Image Classification](https://arxiv.org/abs/2604.15711)
+
+🖼️ 计算机视觉 | 待精读
+| 分数 | 44 | arXiv | `2604.15711` |
+
+Pathological diagnosis is highly reliant on image analysis, where Regions of Interest (ROIs) serve as the primary basis for diagnostic evidence, while whole-slide image (WSI)-level tasks primarily ...
+
+---
+
+### [Robust Multispectral Semantic Segmentation under Missing or Full Modalities via Structured Latent Projection](https://arxiv.org/abs/2604.15856)
+
+🖼️ 计算机视觉 | 待精读
+| 分数 | 43 | arXiv | `2604.15856` |
+
+Multimodal remote sensing data provide complementary information for semantic segmentation, but in real-world deployments, some modalities may be unavailable due to sensor failures, acquisition iss...
+
+---
+
+### [Towards Realistic Open-Vocabulary Remote Sensing Segmentation: Benchmark and Baseline](https://arxiv.org/abs/2604.15652)
+
+🖼️ 计算机视觉 | 待精读
+| 分数 | 43 | arXiv | `2604.15652` |
+
+Open-vocabulary remote sensing image segmentation (OVRSIS) remains underexplored due to fragmented datasets, limited training diversity, and the lack of evaluation benchmarks that reflect realistic...
+
+---
+
+### [Neurosymbolic Repo-level Code Localization](https://arxiv.org/abs/2604.16021)
+
+🧭 Agent系统 | 待精读
+| 分数 | 42 | arXiv | `2604.16021` |
+
+Code localization is a cornerstone of autonomous software engineering.
+
+---
