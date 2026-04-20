@@ -6,4 +6,6 @@
 
 从左侧导航栏选择日期，查看当天的论文笔记。
 
+> Site bootstrap updated: 2026-04-20 20:45 Asia/Shanghai
+
 ---
