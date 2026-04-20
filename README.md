@@ -2,7 +2,7 @@
 
 自动追踪 arXiv 每日新论文，定制你的研究雷达。
 
-**Demo**: [zhaoyang97.github.io/daily-arxiv](https://zhaoyang97.github.io/daily-arxiv/)
+**Demo**: [zhuzhanshi.github.io/daily-arxiv-tool](https://zhuzhanshi.github.io/daily-arxiv-tool/)
 
 **每日精选一览**
 
@@ -63,7 +63,7 @@
 ### 1. 安装
 
 ```bash
-git clone https://github.com/zhaoyang97/daily-arxiv-tool
+git clone https://github.com/zhuzhanshi/daily-arxiv-tool
 cd daily-arxiv-tool
 pip install -r requirements.txt
 ```
