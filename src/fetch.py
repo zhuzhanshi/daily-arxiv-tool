@@ -76,6 +76,35 @@ def _deduplicate(papers: list[dict]) -> list[dict]:
     return unique
 
 
+def _resolve_target_date(
+    target_date: str,
+    available_dates: list[str],
+    max_lookback_days: int = 4,
+) -> str | None:
+    """将本地目标日期映射到最近一个非空的 arXiv 发布日。
+
+    arXiv 的发布时间与本地“今天/昨天”并不总是一一对应，周末尤其容易出现空日。
+    这里优先取 <= target_date 的最近非空 published 日期，并限制最多回看若干天。
+    """
+    if not available_dates:
+        return None
+
+    target_dt = datetime.strptime(target_date, "%Y-%m-%d")
+    candidates = []
+    for d in available_dates:
+        published_dt = datetime.strptime(d, "%Y-%m-%d")
+        if published_dt <= target_dt:
+            delta_days = (target_dt - published_dt).days
+            if delta_days <= max_lookback_days:
+                candidates.append((published_dt, d))
+
+    if not candidates:
+        return None
+
+    candidates.sort()
+    return candidates[-1][1]
+
+
 def fetch_by_date_range(cfg: Config, from_date: str, to_date: str) -> list[dict]:
     """用 submittedDate 范围查询获取论文。"""
     opener = make_opener(cfg)
@@ -140,8 +169,8 @@ def fetch_daily(cfg: Config, dates: list[str]) -> dict[str, list[dict]]:
     print(f"📅 获取 {from_date} ~ {to_date} 的 arXiv 论文")
     print(f"📂 类别: {', '.join(cfg.categories)}")
 
-    # 日期范围扩展 1 天
-    from_dt = datetime.strptime(from_date, "%Y-%m-%d") - timedelta(days=1)
+    # 日期范围扩展。向前多看几天，避免周末或发布时间偏移导致目标日期为空。
+    from_dt = datetime.strptime(from_date, "%Y-%m-%d") - timedelta(days=4)
     to_dt = datetime.strptime(to_date, "%Y-%m-%d") + timedelta(days=1)
 
     papers = fetch_by_date_range(cfg, from_dt.strftime("%Y-%m-%d"), to_dt.strftime("%Y-%m-%d"))
@@ -153,19 +182,30 @@ def fetch_daily(cfg: Config, dates: list[str]) -> dict[str, list[dict]]:
     for p in papers:
         by_date.setdefault(p["published"], []).append(p)
 
+    available_dates = sorted(by_date.keys())
+
     # 保存目标日期
     logs_dir = cfg.logs_path
     logs_dir.mkdir(parents=True, exist_ok=True)
 
     result = {}
     for d in dates:
-        date_papers = by_date.get(d, [])
+        mapped_date = _resolve_target_date(d, available_dates)
+        if mapped_date and mapped_date != d:
+            print(f"  ↪ {d} 无新发布，回退到最近非空发布日期 {mapped_date}")
+
+        date_papers = by_date.get(mapped_date or d, [])
+        normalized_papers = []
         for p in date_papers:
+            p = {**p}
             p["summary"] = _extract_summary(p["abstract"])
+            p["target_date"] = d
+            p["source_published_date"] = mapped_date or d
+            normalized_papers.append(p)
         out_path = logs_dir / f"daily_{d}.json"
         with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(date_papers, f, indent=2, ensure_ascii=False)
-        print(f"  💾 {d}: {len(date_papers)} 篇 → {out_path}")
-        result[d] = date_papers
+            json.dump(normalized_papers, f, indent=2, ensure_ascii=False)
+        print(f"  💾 {d}: {len(normalized_papers)} 篇 → {out_path}")
+        result[d] = normalized_papers
 
     return result

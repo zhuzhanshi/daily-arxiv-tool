@@ -110,20 +110,29 @@ domains:
       - "domain-incremental"
 
   agent_systems:
-    name: "Agent系统"
+    name: "医学影像Agent"
     emoji: "🧭"
     priority: 4
     keywords:
-      - "agent"
-      - "tool use"
-      - "tool calling"
-      - "planning"
-      - "web agent"
-      - "gui agent"
       - "medical agent"
-      - "autonomous agent"
-      - "agentic"
-      - "multi-agent"
+      - "medical imaging agent"
+      - "radiology agent"
+      - "ophthalmic agent"
+      - "clinical agent"
+      - "diagnostic agent"
+      - "report generation agent"
+      - "medical tool use"
+      - "medical tool calling"
+      - "clinical planning"
+      - "medical planning"
+      - "radiology workflow"
+      - "clinical workflow agent"
+      - "medical multimodal agent"
+      - "pacs agent"
+      - "screening agent"
+      - "triage agent"
+      - "fundus agent"
+      - "oct agent"
 
   computer_vision_core:
     name: "计算机视觉"
@@ -173,7 +182,7 @@ filter:
     - ophthalmic_methods   # 眼科AI方法任务
     - medical_imaging      # 医学影像
     - continual_learning   # 持续学习
-    - agent_systems        # Agent系统
+    - agent_systems        # 医学影像Agent
     - computer_vision_core # 计算机视觉
     - segmentation         # 图像分割
     - object_detection     # 目标检测
