@@ -1,6 +1,6 @@
-site_name: Daily arXiv
+site_name: Zhanshi Research Board
 site_url: https://zhuzhanshi.github.io/daily-arxiv-tool/
-site_description: 每日 arXiv AI/LLM/NLP/CV 论文精选笔记
+site_description: 医学影像、眼科AI、Agent、CV、持续学习
 repo_url: https://github.com/zhuzhanshi/daily-arxiv-tool
 docs_dir: notes
 theme:
@@ -8,14 +8,14 @@ theme:
   language: zh
   palette:
   - scheme: default
-    primary: deep purple
-    accent: amber
+    primary: teal
+    accent: lime
     toggle:
       icon: material/brightness-7
       name: 切换到暗色模式
   - scheme: slate
-    primary: deep purple
-    accent: amber
+    primary: teal
+    accent: lime
     toggle:
       icon: material/brightness-4
       name: 切换到亮色模式
@@ -23,6 +23,7 @@ theme:
   - navigation.instant
   - navigation.indexes
   - navigation.top
+  - navigation.sections
   - search.highlight
   - search.suggest
   - content.code.copy
