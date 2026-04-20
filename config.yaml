@@ -211,7 +211,7 @@ output:
   site_name: "Daily arXiv"
 
   # 站点 URL（用于 mkdocs 部署）
-  site_url: "https://yourusername.github.io/daily-arxiv/"
+  site_url: "https://zhuzhanshi.github.io/daily-arxiv-tool/"
 
   # GitHub 仓库地址（可选，显示在页面右上角）
-  repo_url: ""
+  repo_url: "https://github.com/zhuzhanshi/daily-arxiv-tool"
