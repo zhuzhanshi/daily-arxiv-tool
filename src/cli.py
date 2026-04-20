@@ -49,7 +49,7 @@ def init():
         # fallback: 生成最小配置
         dest.write_text(
             "# Daily arXiv 配置\n"
-            "# 完整配置参考: https://github.com/zhaoyang97/daily-arxiv-tool\n\n"
+            "# 完整配置参考: https://github.com/zhuzhanshi/daily-arxiv-tool\n\n"
             "categories:\n"
             "  - cs.CV   # Computer Vision\n"
             "  - cs.CL   # NLP/LLM\n"
