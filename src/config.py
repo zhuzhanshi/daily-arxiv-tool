@@ -20,6 +20,7 @@ class NetworkConfig:
 @dataclass
 class FilterConfig:
     focus_domains: list[str] = field(default_factory=list)
+    domain_weights: dict[str, int] = field(default_factory=dict)
     top_a: int = 20
     top_b: int = 40
     teams: list[str] = field(default_factory=lambda: [
@@ -140,6 +141,8 @@ def load_config(config_path: Optional[str] = None, project_root: Optional[Path] 
         flt = raw["filter"]
         if "focus_domains" in flt:
             cfg.filter.focus_domains = flt["focus_domains"]
+        if "domain_weights" in flt:
+            cfg.filter.domain_weights = flt["domain_weights"]
         if "top_a" in flt:
             cfg.filter.top_a = flt["top_a"]
         if "top_b" in flt:

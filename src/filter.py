@@ -17,6 +17,11 @@ def score_paper(paper: dict, domain: str, cfg: Config) -> float:
 
     # 1. 领域权重 (0-15)
     domain_weights = {
+        "medical_imaging": 15,
+        "ophthalmic_ai": 16,
+        "continual_learning": 15,
+        "computer_vision_core": 14,
+        "agent_systems": 15,
         "multimodal_vlm": 15, "llm_reasoning": 15, "llm_agent": 14,
         "llm_efficiency": 13, "llm_alignment": 13, "llm_nlp": 12,
         "image_generation": 13, "video_understanding": 13, "3d_vision": 12,
@@ -24,6 +29,8 @@ def score_paper(paper: dict, domain: str, cfg: Config) -> float:
         "nlp_understanding": 11, "nlp_generation": 11,
         "robotics": 13, "ai_safety": 12,
     }
+    if cfg.filter.domain_weights:
+        domain_weights.update(cfg.filter.domain_weights)
     score += domain_weights.get(domain, 10)
 
     # 2. 团队加分 (0-15)

@@ -19,7 +19,7 @@ def _slugify(title: str) -> str:
 
 
 def gen_daily_page(date: str, papers: list[dict], cfg: Config) -> str:
-    """生成某天的 daily page markdown（卡片式，匹配笔记链接）。"""
+    """生成某天的 daily page markdown。"""
     for p in papers:
         if "domain" not in p:
             p["domain"] = classify_paper(p["title"], p["abstract"], cfg)
@@ -49,8 +49,8 @@ def gen_daily_page(date: str, papers: list[dict], cfg: Config) -> str:
             except Exception:
                 pass
 
-    # 只展示有笔记的论文
-    noted_papers = []
+    # 匹配已有笔记；如果没有笔记，也展示到 daily 页面里。
+    display_papers = []
     for p in papers:
         arxiv_id = p["arxiv_id"]
         note_link = note_by_arxiv.get(arxiv_id)
@@ -60,25 +60,35 @@ def gen_daily_page(date: str, papers: list[dict], cfg: Config) -> str:
                 if stem in title_slug or title_slug[:20] in stem:
                     note_link = fname
                     break
-        if note_link:
-            noted_papers.append((p, note_link))
+        display_papers.append((p, note_link))
 
     lines = []
-    lines.append(f"# 📅 {date} 精选笔记\n")
-    lines.append(f"> 共 **{len(noted_papers)}** 篇\n")
+    lines.append(f"# 📅 {date} 研究看板\n")
+    lines.append(f"> A档候选 **{len(display_papers)}** 篇\n")
     lines.append("---\n")
 
-    for p, note_link in noted_papers:
+    for p, note_link in display_papers:
         title = p["title"]
         domain = p["domain"]
         emoji = get_domain_emoji(domain, cfg)
         name = get_domain_name(domain, cfg)
+        score = p.get("score")
 
-        # 摘要：从笔记中提取中文一句话总结
-        summary = note_summary.get(note_link, p.get("abstract", "")[:200])
+        # 优先展示笔记中的中文总结，否则回退到摘要片段
+        summary = note_summary.get(note_link, p.get("summary") or p.get("abstract", "")[:220])
+        if len(summary) > 220:
+            summary = summary[:217] + "..."
 
-        lines.append(f"### [{title}]({note_link})\n")
-        lines.append(f"{emoji} {name}\n")
+        if note_link:
+            lines.append(f"### [{title}]({note_link})\n")
+            lines.append(f"{emoji} {name} | 已有笔记")
+        else:
+            lines.append(f"### [{title}](https://arxiv.org/abs/{p['arxiv_id']})\n")
+            lines.append(f"{emoji} {name} | 待精读")
+
+        if score is not None:
+            lines.append(f"| 分数 | {score:.0f} | arXiv | `{p['arxiv_id']}` |\n")
+
         lines.append(f"{summary}\n")
         lines.append("---\n")
 
@@ -87,14 +97,21 @@ def gen_daily_page(date: str, papers: list[dict], cfg: Config) -> str:
 
 def gen_main_index(cfg: Config) -> str:
     """生成首页。"""
-    site_name = cfg.output.site_name
     cats = " ".join(f"`{c}`" for c in cfg.categories)
 
     lines = []
-    lines.append(f"# 📰 {site_name}\n")
-    lines.append("每日精选 arXiv 上 AI / LLM / NLP / CV 领域最值得关注的论文，附深度阅读笔记。\n")
+    lines.append(f"# {cfg.output.site_name}\n")
+    lines.append("这里不是通用论文首页，而是我的研究看板。\n")
+    lines.append("## 当前关注\n")
+    lines.append("- 医学影像\n- 眼科 AI\n- Agent 系统\n- 计算机视觉\n- 持续学习\n")
+    lines.append("## 我希望每天回答的问题\n")
+    lines.append("1. 今天出现了哪些和我研究主线直接相关的论文？\n")
+    lines.append("2. 哪几篇值得进入精读，而不是只看摘要？\n")
+    lines.append("3. 哪些方法、数据设定或实验结论值得纳入后续项目？\n")
+    lines.append("4. 哪些工作只是在热点里重复堆料，应该快速跳过？\n")
+    lines.append("## 当前追踪类别\n")
     lines.append(f"**追踪类别**: {cats}\n")
-    lines.append("从左侧导航栏选择日期，查看当天的论文笔记。\n")
+    lines.append("从左侧导航栏进入每日页面，先看 A 档候选，再决定哪些进入全文精读。\n")
     lines.append("---\n")
 
     return "\n".join(lines)

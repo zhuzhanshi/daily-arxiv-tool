@@ -1,5 +1,5 @@
 # ============================================================================
-# Daily arXiv Tool — 配置文件
+# Zhanshi Research Daily — 配置文件
 # ============================================================================
 # 复制此文件为 config.yaml 并按需修改。所有配置项都有默认值，最小配置只需改 categories。
 # cp config.example.yaml config.yaml
@@ -9,15 +9,16 @@
 # 追踪的 arXiv 类别
 # --------------------------------------------------------------------------
 # arXiv 类别列表: https://arxiv.org/category_taxonomy
-# 常见 AI 相关类别:
+# 当前默认配置偏向医学影像、眼科 AI、Agent、CV、持续学习：
 categories:
-  - cs.CV   # Computer Vision — 计算机视觉（图像识别、目标检测、图像生成等）
+  - cs.CV   # Computer Vision — 计算机视觉
   - cs.CL   # Computation and Language — 计算语言学（NLP、LLM、文本生成等）
   - cs.AI   # Artificial Intelligence — 人工智能（通用 AI、搜索、知识表示等）
   - cs.LG   # Machine Learning — 机器学习（深度学习、优化、理论等）
   - cs.MM   # Multimedia — 多媒体（跨模态、图文检索等）
   - cs.IR   # Information Retrieval — 信息检索（搜索引擎、RAG、推荐等）
-  - cs.RO   # Robotics — 机器人学（运动规划、具身智能等）
+  - eess.IV # Image and Video Processing — 图像视频处理
+  # - cs.RO   # 如果重新加强具身方向可开启
   # 更多类别示例（取消注释即可启用）:
   # - cs.CR   # Cryptography and Security — 密码学与安全
   # - cs.DB   # Databases — 数据库
@@ -31,8 +32,114 @@ categories:
 # --------------------------------------------------------------------------
 # 领域分类规则
 # --------------------------------------------------------------------------
-# 系统内置 28 个 AI 子领域分类规则（涵盖 CV/NLP/LLM/多模态等），开箱即用。
-# 如果你研究 AI，大概率不需要改这部分。
+# 除内置领域外，这里额外定义你自己的研究标签。
+domains:
+  ophthalmic_clinical:
+    name: "眼科AI-临床任务"
+    emoji: "👁️"
+    priority: 1
+    keywords:
+      - "retina"
+      - "retinal"
+      - "fundus"
+      - "oct"
+      - "octa"
+      - "optic disc"
+      - "optic cup"
+      - "glaucoma"
+      - "diabetic retinopathy"
+      - "macular"
+      - "ophthalm"
+      - "eye disease"
+      - "ocular"
+      - "uveitis"
+      - "fundus photograph"
+      - "myopia"
+      - "cataract"
+      - "age-related macular degeneration"
+      - "dme"
+      - "disease screening"
+      - "disease grading"
+      - "disease diagnosis"
+      - "clinical diagnosis"
+      - "clinical screening"
+      - "prognosis"
+      - "referral"
+      - "triage"
+      - "biomarker"
+
+  ophthalmic_methods:
+    name: "眼科AI-方法任务"
+    emoji: "🧪"
+    priority: 2
+    keywords:
+      - "fundus segmentation"
+      - "retinal vessel"
+      - "optic disc segmentation"
+      - "optic cup segmentation"
+      - "lesion segmentation"
+      - "atrophy segmentation"
+      - "oct segmentation"
+      - "layer segmentation"
+      - "eye report generation"
+      - "ophthalmic report"
+      - "medical report generation"
+      - "retinal registration"
+      - "fundus registration"
+      - "lesion detection"
+      - "optic disc detection"
+      - "retinal landmark"
+      - "disease report generation"
+      - "cross-device ophthalmic"
+      - "ophthalmic foundation model"
+
+  continual_learning:
+    name: "持续学习"
+    emoji: "♾️"
+    priority: 3
+    keywords:
+      - "continual learning"
+      - "continual adaptation"
+      - "lifelong learning"
+      - "class-incremental"
+      - "incremental learning"
+      - "incremental segmentation"
+      - "catastrophic forgetting"
+      - "rehearsal-free"
+      - "task-incremental"
+      - "domain-incremental"
+
+  agent_systems:
+    name: "Agent系统"
+    emoji: "🧭"
+    priority: 4
+    keywords:
+      - "agent"
+      - "tool use"
+      - "tool calling"
+      - "planning"
+      - "web agent"
+      - "gui agent"
+      - "medical agent"
+      - "autonomous agent"
+      - "agentic"
+      - "multi-agent"
+
+  computer_vision_core:
+    name: "计算机视觉"
+    emoji: "🖼️"
+    priority: 5
+    keywords:
+      - "computer vision"
+      - "visual representation"
+      - "vision transformer"
+      - "object detection"
+      - "segmentation"
+      - "image classification"
+      - "dense prediction"
+      - "medical segmentation"
+      - "few-shot segmentation"
+      - "open-vocabulary vision"
 #
 # 如果你想自定义（比如研究其他学科），可以覆盖或新增领域:
 # domains:
@@ -60,28 +167,37 @@ categories:
 # --------------------------------------------------------------------------
 filter:
   # 关注的领域（留空 = 保留所有领域）
-  # 只有这些领域的论文才会进入评分筛选，其余丢弃
+  # 这版默认更强调医学影像、眼科AI、Agent、CV、持续学习。
   focus_domains:
+    - ophthalmic_clinical  # 眼科AI临床任务
+    - ophthalmic_methods   # 眼科AI方法任务
+    - medical_imaging      # 医学影像
+    - continual_learning   # 持续学习
+    - agent_systems        # Agent系统
+    - computer_vision_core # 计算机视觉
+    - segmentation         # 图像分割
+    - object_detection     # 目标检测
     - multimodal_vlm       # 多模态/VLM
-    - llm_reasoning        # LLM 推理
     - llm_agent            # LLM Agent
-    - llm_efficiency       # LLM 效率
-    - llm_alignment        # LLM 对齐/RLHF
-    - llm_nlp              # LLM/NLP 通用
-    - image_generation     # 图像生成/扩散模型
-    - video_understanding  # 视频理解/生成
-    - 3d_vision            # 3D 视觉
-    - model_compression    # 模型压缩/量化/蒸馏
-    - self_supervised      # 自监督学习
-    - nlp_understanding    # NLP 理解（NER/QA/分类）
-    - nlp_generation       # NLP 生成（摘要/翻译/对话）
-    - robotics             # 机器人/具身智能
-    - ai_safety            # AI 安全
+
+  # 领域权重（0-20 左右）。数字越大，越容易进入 A 档。
+  domain_weights:
+    ophthalmic_clinical: 19
+    ophthalmic_methods: 16
+    medical_imaging: 17
+    continual_learning: 16
+    agent_systems: 16
+    computer_vision_core: 15
+    segmentation: 15
+    object_detection: 14
+    multimodal_vlm: 13
+    llm_agent: 13
 
   # A 档数量（深度笔记：读全文，写 100+ 行笔记）
-  top_a: 20
-  # B 档数量（轻量笔记：只读摘要，写 50 行方法概要）
-  top_b: 40
+  # 默认缩小到可持续精读的规模。
+  top_a: 10
+  # B 档数量（轻量笔记：只读摘要，写方法概要）
+  top_b: 24
 
   # --------------------------------------------------------------------------
   # 团队/机构加分
@@ -120,6 +236,21 @@ filter:
     - "kaist"
     - "seoul national"
     - "tokyo"
+    # 医疗 / 视觉 / 眼科相关团队
+    - "stanford medicine"
+    - "mass general"
+    - "mayo"
+    - "johns hopkins"
+    - "ucl"
+    - "monash"
+    - "sydney"
+    - "fudan"
+    - "sjtu"
+    - "zhejiang"
+    - "sun yat-sen"
+    - "wills eye"
+    - "moorfields"
+    - "nih"
 
   # --------------------------------------------------------------------------
   # 高价值关键词
@@ -141,22 +272,53 @@ filter:
     - "scaling law"
     - "emergent"
     - "chain-of-thought"
-    - "in-context"
-    - "instruction tuning"
-    - "rlhf"
-    - "direct preference"
-    - "world model"
-    - "test-time"
-    - "inference-time"
-    - "long context"
-    - "mixture of expert"
-    - "moe"
+    - "tool use"
+    - "agentic"
+    - "planning"
+    # 医学影像 / 眼科AI / 持续学习信号
+    - "medical image"
+    - "medical imaging"
+    - "clinical"
+    - "fundus"
+    - "retina"
+    - "retinal"
+    - "oct"
+    - "octa"
+    - "ophthalm"
+    - "glaucoma"
+    - "diabetic retinopathy"
+    - "myopia"
+    - "cataract"
+    - "dme"
+    - "screening"
+    - "grading"
+    - "diagnosis"
+    - "triage"
+    - "clinical workflow"
+    - "referral"
+    - "prognosis"
+    - "report generation"
+    - "lesion"
+    - "multi-center"
+    - "external validation"
+    - "prospective"
+    - "cross-device"
+    - "domain generalization"
+    - "domain adaptation"
+    - "continual learning"
+    - "lifelong learning"
+    - "catastrophic forgetting"
+    - "incremental learning"
+    - "class-incremental"
+    # CV 通用高价值信号
     - "multimodal"
     - "vision-language"
-    - "video generation"
-    - "diffusion"
-    - "flow matching"
-    - "autoregressive"
+    - "segmentation"
+    - "detection"
+    - "representation learning"
+    - "foundation model"
+    - "generalization"
+    - "robustness"
     - "benchmark"
     - "evaluation"
     # 实用性信号
@@ -173,6 +335,10 @@ filter:
     - "workshop"
     - "dataset only"
     - "annotation tool"
+    - "leaderboard"
+    - "competition"
+    - "survey"
+    - "review"
 
 # --------------------------------------------------------------------------
 # 网络配置
@@ -208,7 +374,7 @@ output:
   cache_dir: "paper_cache"
 
   # 站点名称（显示在 mkdocs 页面标题）
-  site_name: "Daily arXiv"
+  site_name: "Zhanshi Research Board"
 
   # 站点 URL（用于 mkdocs 部署）
   site_url: "https://zhuzhanshi.github.io/daily-arxiv-tool/"
