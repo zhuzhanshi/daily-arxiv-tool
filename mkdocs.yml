@@ -1,7 +1,7 @@
 site_name: Daily arXiv
-site_url: https://zhaoyang97.github.io/daily-arxiv-tool/
+site_url: https://zhuzhanshi.github.io/daily-arxiv-tool/
 site_description: 每日 arXiv AI/LLM/NLP/CV 论文精选笔记
-repo_url: https://github.com/zhaoyang97/daily-arxiv-tool
+repo_url: https://github.com/zhuzhanshi/daily-arxiv-tool
 docs_dir: notes
 theme:
   name: material
@@ -49,4 +49,4 @@ extra:
   generator: false
   social:
   - icon: fontawesome/brands/github
-    link: https://github.com/zhaoyang97/daily-arxiv-tool
+    link: https://github.com/zhuzhanshi/daily-arxiv-tool
