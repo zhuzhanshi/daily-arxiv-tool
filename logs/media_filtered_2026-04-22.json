@@ -3,7 +3,7 @@
     {
       "title": "Advancing radiograph representation learning via cascading graph alignment for vision-language clinical concepts",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Xilin Dang",
         "Kang Li",
@@ -14,6 +14,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104064",
       "doi": "10.1016/j.media.2026.104064",
       "published": "2026-07-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104064",
       "domain": "medical_imaging",
       "score": 26.0
@@ -21,7 +23,7 @@
     {
       "title": "PASS-Tr: PAtch-wise swin slice attention to leverage generalization of 2D large vision model to universal lesion detection",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Han Li",
         "Jingsong Liu",
@@ -34,6 +36,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104036",
       "doi": "10.1016/j.media.2026.104036",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104036",
       "domain": "ophthalmic_methods",
       "score": 25.0
@@ -41,7 +45,7 @@
     {
       "title": "DDS-UDA: Dual-domain synergy for unsupervised domain adaptation in joint segmentation of optic disc and optic cup",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Yusong Xiao",
         "Yuxuan Wu",
@@ -54,6 +58,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104056",
       "doi": "10.1016/j.media.2026.104056",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104056",
       "domain": "ophthalmic_clinical",
       "score": 25.0
@@ -61,7 +67,7 @@
     {
       "title": "MG-3D: Multi-grained knowledge-enhanced vision-language pre-training for 3D medical image analysis",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Xuefeng Ni",
         "Linshan Wu",
@@ -74,6 +80,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104027",
       "doi": "10.1016/j.media.2026.104027",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104027",
       "domain": "medical_imaging",
       "score": 23.0
@@ -81,7 +89,7 @@
     {
       "title": "Clinical priors-inspired privileged knowledge distillation for reliable pancreatic lesion classification",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Qiaoyu Han",
         "Gang Yang",
@@ -94,6 +102,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104041",
       "doi": "10.1016/j.media.2026.104041",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104041",
       "domain": "medical_imaging",
       "score": 23.0
@@ -101,7 +111,7 @@
     {
       "title": "Read like a radiologist: Efficient vision-language model for 3D medical imaging interpretation",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Changsun Lee",
         "Sangjoon Park",
@@ -114,6 +124,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104077",
       "doi": "10.1016/j.media.2026.104077",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104077",
       "domain": "medical_imaging",
       "score": 23.0
@@ -121,7 +133,7 @@
     {
       "title": "OphMatcher: Uncertainty-aware self-training on ophthalmic surgical videos for anatomy-constrained matching and intraoprative navigation",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Puxun Tu",
         "Ce Zheng",
@@ -134,6 +146,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104057",
       "doi": "10.1016/j.media.2026.104057",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104057",
       "domain": "ophthalmic_clinical",
       "score": 22.0
@@ -141,7 +155,7 @@
     {
       "title": "Eliminating domain-related confounding factors in cross-domain one-shot medical image segmentation via causal inference",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Mingyang Hou",
         "Zhiyong Huang",
@@ -154,6 +168,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104037",
       "doi": "10.1016/j.media.2026.104037",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104037",
       "domain": "computer_vision_core",
       "score": 21.0
@@ -161,7 +177,7 @@
     {
       "title": "Incorporating modality-specific intensity prior as text prompt for multimodal myocardial pathology segmentation",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Donggen Fang",
         "Yuliang Gu",
@@ -174,6 +190,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104072",
       "doi": "10.1016/j.media.2026.104072",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104072",
       "domain": "computer_vision_core",
       "score": 21.0
@@ -181,7 +199,7 @@
     {
       "title": "OOD-SEG: Exploiting out-of-distribution detection techniques for learning image segmentation from sparse multi-class positive-only annotations",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Junwen Wang",
         "Zhonghao Wang",
@@ -194,6 +212,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104046",
       "doi": "10.1016/j.media.2026.104046",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104046",
       "domain": "computer_vision_core",
       "score": 21.0
@@ -203,7 +223,7 @@
     {
       "title": "Multimodal medical endoscopic image analysis via progressive disentangle-aware contrastive learning",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Junhao Wu",
         "Yun Li",
@@ -216,6 +236,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104012",
       "doi": "10.1016/j.media.2026.104012",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104012",
       "domain": "medical_imaging",
       "score": 20.0
@@ -223,7 +245,7 @@
     {
       "title": "PCa-Mamba: Spatiotemporal state space models for prostate cancer detection in multi-parametric MRI",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Kai Zhao",
         "Alex Ling Yu Hung",
@@ -236,6 +258,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104033",
       "doi": "10.1016/j.media.2026.104033",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104033",
       "domain": "medical_imaging",
       "score": 20.0
@@ -243,7 +267,7 @@
     {
       "title": "Towards generalizable pathology reports via a multimodal LLM with the multicenter in-context learning",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Yi Li",
         "Zhihao Lin",
@@ -256,6 +280,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104060",
       "doi": "10.1016/j.media.2026.104060",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104060",
       "domain": "medical_imaging",
       "score": 20.0
@@ -263,7 +289,7 @@
     {
       "title": "Beyond benchmarks of IUGC: Rethinking requirements of deep learning method for intrapartum ultrasound biometry from fetal ultrasound videos",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Jieyun Bai",
         "Zihao Zhou",
@@ -276,6 +302,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104043",
       "doi": "10.1016/j.media.2026.104043",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104043",
       "domain": "medical_imaging",
       "score": 20.0
@@ -283,7 +311,7 @@
     {
       "title": "Artificial intelligence in microscopic hair imaging for scalp disorders: From image acquisition to clinical decisions",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Chenquan Gong",
         "Yiping Su",
@@ -295,6 +323,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104017",
       "doi": "10.1016/j.media.2026.104017",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104017",
       "domain": "medical_imaging",
       "score": 20.0
@@ -302,7 +332,7 @@
     {
       "title": "Foundational model-based geometric consistency monocular depth estimation framework for colonoscopy",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Yeqi Liu",
         "Deping Yu",
@@ -315,6 +345,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104068",
       "doi": "10.1016/j.media.2026.104068",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104068",
       "domain": "ophthalmic_clinical",
       "score": 19.0
@@ -322,7 +354,7 @@
     {
       "title": "SEQUAL: Self-refining and effective querying active learning with pseudo label divergence score for carotid intima-media segmentation in ultrasound",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Yucheng Tang",
         "Yipeng Hu",
@@ -335,6 +367,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104048",
       "doi": "10.1016/j.media.2026.104048",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104048",
       "domain": "computer_vision_core",
       "score": 18.0
@@ -342,7 +376,7 @@
     {
       "title": "Explicable intensity-aware 3D cerebrovascular segmentation with planar representation",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Cheng Chen",
         "Yunqing Chen",
@@ -355,6 +389,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104032",
       "doi": "10.1016/j.media.2026.104032",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104032",
       "domain": "computer_vision_core",
       "score": 18.0
@@ -362,7 +398,7 @@
     {
       "title": "AMA-SAM: Adversarial multi-Domain alignment of segment anything model for high-Fidelity histology nuclei segmentation",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Jiahe Qian",
         "Yaoyu Fang",
@@ -374,6 +410,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104011",
       "doi": "10.1016/j.media.2026.104011",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104011",
       "domain": "computer_vision_core",
       "score": 18.0
@@ -381,7 +419,7 @@
     {
       "title": "GCN combined with snake convolution for enhanced topological perception in thrombotic hepatic portal vein segmentation",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Lijuan Ma",
         "Weiguang Wang",
@@ -394,6 +432,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104050",
       "doi": "10.1016/j.media.2026.104050",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104050",
       "domain": "computer_vision_core",
       "score": 18.0
@@ -401,7 +441,7 @@
     {
       "title": "MOTDNet: Multi organ task decoupling network for cell segmentation",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Jinlin Yang",
         "Xintao Pang",
@@ -413,6 +453,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104045",
       "doi": "10.1016/j.media.2026.104045",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104045",
       "domain": "computer_vision_core",
       "score": 18.0
@@ -420,7 +462,7 @@
     {
       "title": "Geo-Mamba: Geometry-informed state-space learning of functional brain organization",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Yuwei Cao",
         "Tingting Dan",
@@ -432,6 +474,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104081",
       "doi": "10.1016/j.media.2026.104081",
       "published": "2026-07-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104081",
       "domain": "medical_imaging",
       "score": 17.0
@@ -439,7 +483,7 @@
     {
       "title": "SPACT: A clustering-driven multi-modal framework for survival prediction using genomic and histopathology data",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Fatma Ezgi Öğülmüş",
         "Shahaddin Gafarov",
@@ -452,6 +496,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104078",
       "doi": "10.1016/j.media.2026.104078",
       "published": "2026-07-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104078",
       "domain": "medical_imaging",
       "score": 17.0
@@ -459,7 +505,7 @@
     {
       "title": "Prediction of post-stroke brain swelling using biomechanical modelling and deep neural networks",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Xi Chen",
         "Wahbi El-Bouri",
@@ -471,6 +517,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104067",
       "doi": "10.1016/j.media.2026.104067",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104067",
       "domain": "medical_imaging",
       "score": 17.0
@@ -478,7 +526,7 @@
     {
       "title": "Translating MRI to PET through conditional diffusion models with enhanced pathology awareness",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Yitong Li",
         "Igor Yakushev",
@@ -490,14 +538,16 @@
       "url": "https://doi.org/10.1016/j.media.2026.104035",
       "doi": "10.1016/j.media.2026.104035",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104035",
       "domain": "medical_imaging",
       "score": 17.0
     },
     {
-      "title": "ViFIT-assisted histopathology: From H&amp;E style standardization to virtual fiber image transformation",
+      "title": "ViFIT-assisted histopathology: From H&E style standardization to virtual fiber image transformation",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Shu Wang",
         "Xiao Zhang",
@@ -510,6 +560,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104051",
       "doi": "10.1016/j.media.2026.104051",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104051",
       "domain": "medical_imaging",
       "score": 17.0
@@ -517,7 +569,7 @@
     {
       "title": "PRIME: Phase reversed interleaved multi-Echo acquisition enables highly accelerated distortion-corrected diffusion MRI",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Yohan Jun",
         "Qiang Liu",
@@ -530,6 +582,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104058",
       "doi": "10.1016/j.media.2026.104058",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104058",
       "domain": "medical_imaging",
       "score": 17.0
@@ -537,7 +591,7 @@
     {
       "title": "Efficient self-supervised Barlow Twins from limited tissue slide cohorts for colonic pathology diagnostics",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Cassandre Notton",
         "Vasudev Sharma",
@@ -550,14 +604,37 @@
       "url": "https://doi.org/10.1016/j.media.2026.104004",
       "doi": "10.1016/j.media.2026.104004",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104004",
+      "domain": "medical_imaging",
+      "score": 17.0
+    },
+    {
+      "title": "SparseXMIL: Leveraging sparse convolutions for context-aware and memory-efficient classification of whole slide images in digital pathology",
+      "abstract": "",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
+      "authors": [
+        "Loïc Le Bescond",
+        "Marvin Lerousseau",
+        "Fabrice André",
+        "Hugues Talbot"
+      ],
+      "journal": "Medical Image Analysis",
+      "source": "media",
+      "url": "https://doi.org/10.1016/j.media.2026.104047",
+      "doi": "10.1016/j.media.2026.104047",
+      "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
+      "arxiv_id": "10.1016/j.media.2026.104047",
       "domain": "medical_imaging",
       "score": 17.0
     },
     {
       "title": "FADFNet: A fine-tunable and adaptive decomposition-fusion network for cross-dataset low-dose CT and low-dose PET image reconstruction",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Fangji Qian",
         "Weitao Wang",
@@ -570,53 +647,16 @@
       "url": "https://doi.org/10.1016/j.media.2026.104016",
       "doi": "10.1016/j.media.2026.104016",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104016",
-      "domain": "medical_imaging",
-      "score": 17.0
-    },
-    {
-      "title": "SparseXMIL: Leveraging sparse convolutions for context-aware and memory-efficient classification of whole slide images in digital pathology",
-      "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
-      "authors": [
-        "Loïc Le Bescond",
-        "Marvin Lerousseau",
-        "Fabrice André",
-        "Hugues Talbot"
-      ],
-      "journal": "Medical Image Analysis",
-      "source": "media",
-      "url": "https://doi.org/10.1016/j.media.2026.104047",
-      "doi": "10.1016/j.media.2026.104047",
-      "published": "2026-06-01",
-      "arxiv_id": "10.1016/j.media.2026.104047",
-      "domain": "medical_imaging",
-      "score": 17.0
-    },
-    {
-      "title": "Ultrasound Localization Microscopy Learned from power doppler by uncertainty frequency density estimation and semantic consistency awareness",
-      "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
-      "authors": [
-        "Qinghua Lin",
-        "Xuan Ren",
-        "Boqian Zhou",
-        "Junyi Wang",
-        "Xin Liu"
-      ],
-      "journal": "Medical Image Analysis",
-      "source": "media",
-      "url": "https://doi.org/10.1016/j.media.2026.104055",
-      "doi": "10.1016/j.media.2026.104055",
-      "published": "2026-06-01",
-      "arxiv_id": "10.1016/j.media.2026.104055",
       "domain": "medical_imaging",
       "score": 17.0
     },
     {
       "title": "Predicting neoadjuvant therapy response in breast cancer from preoperative biopsy via spatial–semantic–differential learning and interpretable clinicopathological-guided fusion",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Wen-Tai Hou",
         "Zi-Fei Pu",
@@ -629,14 +669,38 @@
       "url": "https://doi.org/10.1016/j.media.2026.104069",
       "doi": "10.1016/j.media.2026.104069",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104069",
+      "domain": "medical_imaging",
+      "score": 17.0
+    },
+    {
+      "title": "Ultrasound Localization Microscopy Learned from power doppler by uncertainty frequency density estimation and semantic consistency awareness",
+      "abstract": "",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
+      "authors": [
+        "Qinghua Lin",
+        "Xuan Ren",
+        "Boqian Zhou",
+        "Junyi Wang",
+        "Xin Liu"
+      ],
+      "journal": "Medical Image Analysis",
+      "source": "media",
+      "url": "https://doi.org/10.1016/j.media.2026.104055",
+      "doi": "10.1016/j.media.2026.104055",
+      "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
+      "arxiv_id": "10.1016/j.media.2026.104055",
       "domain": "medical_imaging",
       "score": 17.0
     },
     {
       "title": "Establishing a relationship between iron-based blood measures and structural brain changes using neural networks in UK Biobank",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Joshua Sammet",
         "Kholod Alhasani",
@@ -649,6 +713,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104034",
       "doi": "10.1016/j.media.2026.104034",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104034",
       "domain": "medical_imaging",
       "score": 17.0
@@ -656,7 +722,7 @@
     {
       "title": "VCC-DSA: A novel vascular consistency constrained DSA imaging model for motion artifact suppression",
       "abstract": "",
-      "summary": "Medical Image Analysis recent article.",
+      "summary": "Medical Image Analysis Articles in Press fallback candidate from Crossref.",
       "authors": [
         "Rongjun Ge",
         "Weilong Mao",
@@ -669,6 +735,8 @@
       "url": "https://doi.org/10.1016/j.media.2026.104070",
       "doi": "10.1016/j.media.2026.104070",
       "published": "2026-06-01",
+      "release_stage": "Articles in Press candidate",
+      "source_status": "crossref_fallback",
       "arxiv_id": "10.1016/j.media.2026.104070",
       "domain": "medical_imaging",
       "score": 17.0

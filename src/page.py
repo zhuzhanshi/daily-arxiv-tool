@@ -100,7 +100,9 @@ def gen_daily_page(
 
         if score is not None:
             identifier = p.get("doi") or p.get("arxiv_id", "")
-            rendered.append(f"| 分数 | {score:.0f} | 来源 | {source_label} | ID | `{identifier}` |\n")
+            stage = p.get("release_stage", "")
+            source_bits = f"{source_label} · {stage}" if stage else source_label
+            rendered.append(f"| 分数 | {score:.0f} | 来源 | {source_bits} | ID | `{identifier}` |\n")
 
         rendered.append(f"{summary}\n")
         rendered.append("---\n")

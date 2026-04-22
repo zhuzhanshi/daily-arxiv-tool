@@ -1,10 +1,9 @@
-"""Fetch journal article lists for MedIA and TMI."""
+"""Fetch journal article lists for MedIA Articles in Press and TMI Early Access."""
 
 import json
 import re
 from datetime import datetime
 from html import unescape
-from pathlib import Path
 from urllib.parse import urlencode, urljoin
 from urllib.request import Request
 
@@ -14,7 +13,12 @@ from filter import score_paper
 from network import make_opener
 
 MEDIA_URL = "https://www.sciencedirect.com/journal/medical-image-analysis/articles-in-press"
-TMI_URL = "https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=4359023"
+TMI_URL = (
+    "https://ieeexplore.ieee.org/search/searchresult.jsp?"
+    "newsearch=true&queryText=%22Publication%20Title%22:"
+    "%22IEEE%20Transactions%20on%20Medical%20Imaging%22"
+    "&refinements=ContentType:Early%20Access%20Articles&sortType=newest"
+)
 CROSSREF_ISSN = {
     "media": "1361-8415",
     "tmi": "0278-0062",
@@ -40,14 +44,6 @@ def _clean_html(text: str) -> str:
 def _extract_media_articles(html: str) -> list[dict]:
     """Parse ScienceDirect Articles in Press HTML."""
     articles = []
-    pattern = re.compile(
-        r"https://doi\.org/(?P<doi>10\.1016/j\.media\.\d+\.\d+).*?"
-        r"###\s*\[[^\]]+\]\((?P<href>[^)]+)\)|"
-        r"https://doi\.org/(?P<doi2>10\.1016/j\.media\.\d+\.\d+).*?"
-        r"###\s*(?P<title2>.+?)\n",
-        re.S,
-    )
-
     # More robust line-oriented parser for the text-like HTML returned by ScienceDirect.
     lines = html.splitlines()
     pending_doi = ""
@@ -87,6 +83,8 @@ def _extract_media_articles(html: str) -> list[dict]:
             "authors": [a.strip() for a in authors.split(",") if a.strip()][:5],
             "journal": "Medical Image Analysis",
             "source": "media",
+            "release_stage": "Articles in Press",
+            "source_status": "source_page",
             "url": urljoin("https://www.sciencedirect.com", link) if link else f"https://doi.org/{pending_doi}",
             "doi": pending_doi,
             "published": _parse_available_date(available),
@@ -97,7 +95,7 @@ def _extract_media_articles(html: str) -> list[dict]:
 
 
 def _extract_tmi_articles(html: str) -> list[dict]:
-    """Best-effort parser for IEEE TOC pages."""
+    """Best-effort parser for IEEE Early Access search pages."""
     articles = []
     for match in re.finditer(
         r'<a[^>]+href="(?P<href>/document/\d+[^"]*)"[^>]*>(?P<title>.*?)</a>',
@@ -114,6 +112,8 @@ def _extract_tmi_articles(html: str) -> list[dict]:
             "authors": [],
             "journal": "IEEE Transactions on Medical Imaging",
             "source": "tmi",
+            "release_stage": "Early Access",
+            "source_status": "source_page",
             "url": urljoin("https://ieeexplore.ieee.org", match.group("href")),
             "doi": "",
             "published": datetime.now().strftime("%Y-%m-%d"),
@@ -131,6 +131,8 @@ def _extract_tmi_articles(html: str) -> list[dict]:
                     "authors": [],
                     "journal": "IEEE Transactions on Medical Imaging",
                     "source": "tmi",
+                    "release_stage": "Early Access",
+                    "source_status": "source_page",
                     "url": TMI_URL,
                     "doi": "",
                     "published": datetime.now().strftime("%Y-%m-%d"),
@@ -140,8 +142,20 @@ def _extract_tmi_articles(html: str) -> list[dict]:
 
 
 def _fetch_crossref_articles(cfg: Config, source: str, limit: int = 50) -> list[dict]:
-    """Fetch recent journal articles from Crossref as a stable fallback."""
-    issn = CROSSREF_ISSN[source]
+    """Fetch source-appropriate Crossref fallback records."""
+    if source == "tmi":
+        return _fetch_tmi_early_access_crossref(cfg, limit)
+    return _fetch_media_in_press_crossref(cfg, limit)
+
+
+def _fetch_media_in_press_crossref(cfg: Config, limit: int = 50) -> list[dict]:
+    """Fallback for MedIA when ScienceDirect blocks Articles in Press HTML.
+
+    Crossref does not expose ScienceDirect's Articles in Press flag directly.
+    Future-dated MedIA records are the closest stable fallback because they are
+    online records assigned to upcoming volumes before normal issue browsing.
+    """
+    issn = CROSSREF_ISSN["media"]
     query = urlencode({
         "filter": "type:journal-article",
         "sort": "published",
@@ -152,31 +166,87 @@ def _fetch_crossref_articles(cfg: Config, source: str, limit: int = 50) -> list[
     data = json.loads(_request_html(cfg, url))
     articles = []
 
-    journal = "Medical Image Analysis" if source == "media" else "IEEE Transactions on Medical Imaging"
     for item in data.get("message", {}).get("items", []):
-        title = " ".join(item.get("title") or []).strip()
-        if not title:
+        article = _crossref_item_to_article(item, "media", "Medical Image Analysis")
+        if not article:
             continue
-        authors = []
-        for author in item.get("author", [])[:5]:
-            name = " ".join(part for part in [author.get("given", ""), author.get("family", "")] if part)
-            if name:
-                authors.append(name)
-        published = _crossref_date(item)
-        doi = item.get("DOI", "")
-        articles.append({
-            "title": title,
-            "abstract": _clean_html(item.get("abstract", "")),
-            "summary": f"{journal} recent article.",
-            "authors": authors,
-            "journal": journal,
-            "source": source,
-            "url": item.get("URL") or (f"https://doi.org/{doi}" if doi else ""),
-            "doi": doi,
-            "published": published,
-        })
+        article["release_stage"] = "Articles in Press candidate"
+        article["source_status"] = "crossref_fallback"
+        article["summary"] = "Medical Image Analysis Articles in Press fallback candidate from Crossref."
+        articles.append(article)
 
     return _dedupe_by_key(articles, "doi")
+
+
+def _fetch_tmi_early_access_crossref(cfg: Config, limit: int = 50) -> list[dict]:
+    """Fetch TMI Early Access records from Crossref.
+
+    IEEE Early Access records are deposited without volume/issue assignment and
+    usually carry page "1-1". Formal issue records have volume, issue, and real
+    page ranges, so they are intentionally excluded.
+    """
+    issn = CROSSREF_ISSN["tmi"]
+    articles = []
+    cursor = "*"
+    for _ in range(8):
+        query = urlencode({
+            "filter": "type:journal-article,from-pub-date:2025-01-01",
+            "sort": "published",
+            "order": "desc",
+            "rows": "100",
+            "cursor": cursor,
+        })
+        url = f"https://api.crossref.org/journals/{issn}/works?{query}"
+        data = json.loads(_request_html(cfg, url))
+        message = data.get("message", {})
+        for item in message.get("items", []):
+            if not _is_tmi_early_access(item):
+                continue
+            article = _crossref_item_to_article(item, "tmi", "IEEE Transactions on Medical Imaging")
+            if not article:
+                continue
+            article["release_stage"] = "Early Access"
+            article["source_status"] = "crossref_early_access"
+            article["summary"] = "IEEE Transactions on Medical Imaging Early Access article."
+            articles.append(article)
+            if len(_dedupe_by_key(articles, "doi")) >= limit:
+                return _dedupe_by_key(articles, "doi")[:limit]
+        next_cursor = message.get("next-cursor")
+        if not next_cursor or next_cursor == cursor:
+            break
+        cursor = next_cursor
+
+    return _dedupe_by_key(articles, "doi")[:limit]
+
+
+def _is_tmi_early_access(item: dict) -> bool:
+    title = " ".join(item.get("title") or []).strip().lower()
+    if not title or title == "table of contents":
+        return False
+    return not item.get("volume") and not item.get("issue")
+
+
+def _crossref_item_to_article(item: dict, source: str, journal: str) -> dict | None:
+    title = " ".join(item.get("title") or []).strip()
+    if not title or title.lower() == "table of contents":
+        return None
+    authors = []
+    for author in item.get("author", [])[:5]:
+        name = " ".join(part for part in [author.get("given", ""), author.get("family", "")] if part)
+        if name:
+            authors.append(name)
+    doi = item.get("DOI", "")
+    return {
+        "title": _clean_html(title),
+        "abstract": _clean_html(item.get("abstract", "")),
+        "summary": f"{journal} article.",
+        "authors": authors,
+        "journal": journal,
+        "source": source,
+        "url": item.get("URL") or (f"https://doi.org/{doi}" if doi else ""),
+        "doi": doi,
+        "published": _crossref_date(item),
+    }
 
 
 def _crossref_date(item: dict) -> str:
