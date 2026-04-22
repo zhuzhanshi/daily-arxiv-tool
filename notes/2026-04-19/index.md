@@ -1,15 +1,6 @@
-# 📅 2026-04-17 研究看板
+# 📅 2026-04-19 研究看板
 
 > A档候选 **10** 篇
-
----
-
-### [FineCog-Nav: Integrating Fine-grained Cognitive Modules for Zero-shot Multimodal UAV Navigation](https://arxiv.org/abs/2604.16298)
-
-🧭 医学影像Agent | 待精读
-| 分数 | 48 | arXiv | `2604.16298` |
-
-UAV vision-language navigation (VLN) requires an agent to navigate complex 3D environments from an egocentric perspective while following ambiguous multi-step instructions over long horizons.
 
 ---
 
@@ -40,24 +31,6 @@ Pretrained Vision-Language Models (VLMs) like CLIP show promise in continual lea
 
 ---
 
-### [Discover and Prove: An Open-source Agentic Framework for Hard Mode Automated Theorem Proving in Lean 4](https://arxiv.org/abs/2604.15839)
-
-🧭 医学影像Agent | 待精读
-| 分数 | 44 | arXiv | `2604.15839` |
-
-Most ATP benchmarks embed the final answer within the formal statement -- a convention we call "Easy Mode" -- a design that simplifies the task relative to what human competitors face and may lead ...
-
----
-
-### [GTA-2: Benchmarking General Tool Agents from Atomic Tool-Use to Open-Ended Workflows](https://arxiv.org/abs/2604.15715)
-
-🧭 医学影像Agent | 待精读
-| 分数 | 44 | arXiv | `2604.15715` |
-
-The development of general-purpose agents requires a shift from executing simple instructions to completing complex, real-world productivity workflows.
-
----
-
 ### [SSMamba: A Self-Supervised Hybrid State Space Model for Pathological Image Classification](https://arxiv.org/abs/2604.15711)
 
 🖼️ 计算机视觉 | 待精读
@@ -85,11 +58,38 @@ Open-vocabulary remote sensing image segmentation (OVRSIS) remains underexplored
 
 ---
 
-### [Neurosymbolic Repo-level Code Localization](https://arxiv.org/abs/2604.16021)
+### [Do Vision-Language Models Truly Perform Vision Reasoning? A Rigorous Study of the Modality Gap](https://arxiv.org/abs/2604.16256)
 
-🧭 医学影像Agent | 待精读
-| 分数 | 42 | arXiv | `2604.16021` |
+🧩 多模态/VLM | 待精读
+| 分数 | 41 | arXiv | `2604.16256` |
 
-Code localization is a cornerstone of autonomous software engineering.
+Reasoning in vision-language models (VLMs) has recently attracted significant attention due to its broad applicability across diverse downstream tasks.
+
+---
+
+### [GTA-2: Benchmarking General Tool Agents from Atomic Tool-Use to Open-Ended Workflows](https://arxiv.org/abs/2604.15715)
+
+🧩 多模态/VLM | 待精读
+| 分数 | 41 | arXiv | `2604.15715` |
+
+The development of general-purpose agents requires a shift from executing simple instructions to completing complex, real-world productivity workflows.
+
+---
+
+### [Dual-Modal Lung Cancer AI: Interpretable Radiology and Microscopy with Clinical Risk Integration](https://arxiv.org/abs/2604.16104)
+
+🏥 医学影像 | 待精读
+| 分数 | 40 | arXiv | `2604.16104` |
+
+Lung cancer remains one of the leading causes of cancer-related mortality worldwide.
+
+---
+
+### [Beyond a Single Frame: Multi-Frame Spatially Grounded Reasoning Across Volumetric MRI](https://arxiv.org/abs/2604.15808)
+
+🏥 医学影像 | 待精读
+| 分数 | 40 | arXiv | `2604.15808` |
+
+Spatial reasoning and visual grounding are core capabilities for vision-language models (VLMs), yet most medical VLMs produce predictions without transparent reasoning or spatial evidence.
 
 ---

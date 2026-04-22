@@ -1,0 +1,12 @@
+{
+  "tier_a": [],
+  "tier_b": [],
+  "stats": {
+    "total": 0,
+    "in_focus": 0,
+    "tier_a_count": 0,
+    "tier_b_count": 0,
+    "tier_a_min_score": 0,
+    "tier_b_min_score": 0
+  }
+}

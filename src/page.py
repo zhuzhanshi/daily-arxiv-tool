@@ -98,10 +98,20 @@ def gen_daily_page(date: str, papers: list[dict], cfg: Config) -> str:
 def gen_main_index(cfg: Config) -> str:
     """生成首页。"""
     cats = " ".join(f"`{c}`" for c in cfg.categories)
+    date_dirs = []
+    if cfg.docs_path.exists():
+        date_dirs = sorted(
+            [p.name for p in cfg.docs_path.iterdir() if p.is_dir() and re.match(r"\d{4}-\d{2}-\d{2}", p.name)],
+            reverse=True,
+        )
 
     lines = []
     lines.append(f"# {cfg.output.site_name}\n")
     lines.append("这里不是通用论文首页，而是我的研究看板。\n")
+    if date_dirs:
+        lines.append("## 最新更新\n")
+        for date in date_dirs[:7]:
+            lines.append(f"- [{date} 研究看板]({date}/index.md)\n")
     lines.append("## 当前关注\n")
     lines.append("- 医学影像\n- 眼科 AI\n- Agent 系统\n- 计算机视觉\n- 持续学习\n")
     lines.append("## 我希望每天回答的问题\n")

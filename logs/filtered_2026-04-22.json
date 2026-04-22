@@ -1,0 +1,792 @@
+{
+  "tier_a": [
+    {
+      "title": "Region-Grounded Report Generation for 3D Medical Imaging: A Fine-Grained Dataset and Graph-Enhanced Framework",
+      "arxiv_id": "2604.18145",
+      "abstract": "Automated medical report generation for 3D PET/CT imaging is fundamentally challenged by the high-dimensional nature of volumetric data and a critical scarcity of annotated datasets, particularly for low-resource languages. Current black-box methods map whole volumes to reports, ignoring the clinical workflow of analyzing localized Regions of Interest (RoIs) to derive diagnostic conclusions. In this paper, we bridge this gap by introducing VietPET-RoI, the first large-scale 3D PET/CT dataset with fine-grained RoI annotation for a low-resource language, comprising 600 PET/CT samples and 1,960 manually annotated RoIs, paired with corresponding clinical reports. Furthermore, to demonstrate the utility of this dataset, we propose HiRRA, a novel framework that mimics the professional radiologist diagnostic workflow by employing graph-based relational modules to capture dependencies between RoI attributes. This approach shifts from global pattern matching toward localized clinical findings. Additionally, we introduce new clinical evaluation metrics, namely RoI Coverage and RoI Quality Index, that measure both RoI localization accuracy and attribute description fidelity using LLM-based extraction. Extensive evaluation demonstrates that our framework achieves SOTA performance, surpassing existing models by 19.7% in BLEU and 4.7% in ROUGE-L, while achieving a remarkable 45.8% improvement in clinical metrics, indicating enhanced clinical reliability and reduced hallucination. Our code and dataset are available on GitHub.",
+      "authors": [
+        "Cong Huy Nguyen",
+        "Son Dinh Nguyen",
+        "Guanlin Li",
+        "Tuan Dung Nguyen",
+        "Aditya Narayan Sankaran"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-04-20",
+      "comment": "16 pages; Accepted to appear in ACL 2026",
+      "summary": "Automated medical report generation for 3D PET/CT imaging is fundamentally challenged by the high-dimensional nature of volumetric data and a critical scarcity of annotated datasets, particularly f...",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "ophthalmic_methods",
+      "score": 51.0
+    },
+    {
+      "title": "Can LLM-Generated Text Empower Surgical Vision-Language Pre-training?",
+      "arxiv_id": "2604.18134",
+      "abstract": "Recent advancements in self-supervised learning have led to powerful surgical vision encoders capable of spatiotemporal understanding. However, extending these visual foundations to multi-modal reasoning tasks is severely bottlenecked by the prohibitive cost of expert textual annotations. To overcome this scalability limitation, we introduce \\textbf{LIME}, a large-scale multi-modal dataset derived from open-access surgical videos using human-free, Large Language Model (LLM)-generated narratives. While LIME offers immense scalability, unverified generated texts may contain errors, including hallucinations, that could potentially lead to catastrophically degraded pre-trained medical priors in standard contrastive pipelines. To mitigate this, we propose \\textbf{SurgLIME}, a parameter-efficient Vision-Language Pre-training (VLP) framework designed to learn reliable cross-modal alignments using noisy narratives. SurgLIME preserves foundational medical priors using a LoRA-adapted dual-encoder architecture and introduces an automated confidence estimation mechanism that dynamically down-weights uncertain text during contrastive alignment. Evaluations on the AutoLaparo and Cholec80 benchmarks show that SurgLIME achieves competitive zero-shot cross-modal alignment while preserving the robust linear probing performance of the visual foundation model. Dataset, code, and models are publicly available at \\href{https://github.com/visurg-ai/SurgLIME}{https://github.com/visurg-ai/SurgLIME}.",
+      "authors": [
+        "Chengan Che",
+        "Chao Wang",
+        "Jiayuan Huang",
+        "Xinyue Chen",
+        "Luis C. Garcia-Peraza-Herrera"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-20",
+      "comment": "Accepted at CVPRW 2026 (AI4RWC Oral presentationn)",
+      "summary": "Recent advancements in self-supervised learning have led to powerful surgical vision encoders capable of spatiotemporal understanding.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "medical_imaging",
+      "score": 48.0
+    },
+    {
+      "title": "A multimodal and temporal foundation model for virtual patient representations at healthcare system scale",
+      "arxiv_id": "2604.18570",
+      "abstract": "Modern medicine generates vast multimodal data across siloed systems, yet no existing model integrates the full breadth and temporal depth of the clinical record into a unified patient representation. We introduce Apollo, a multimodal temporal foundation model trained and evaluated on over three decades of longitudinal hospital records from a major US hospital system, composed of 25 billion records from 7.2 million patients, representing 28 distinct medical modalities and 12 major medical specialties. Apollo learns a unified representation space integrating over 100 thousand unique medical events in our clinical vocabulary as well as images and clinical text. This \"atlas of medical concepts\" forms a computational substrate for modeling entire patient care journeys comprised of sequences of structured and unstructured events, which are compressed by Apollo into virtual patient representations. To assess the potential of these whole-patient representations, we created 322 prognosis and retrieval tasks from a held-out test set of 1.4 million patients. We demonstrate the generalized clinical forecasting potential of Apollo embeddings, including predicting new disease onset risk up to five years in advance (95 tasks), disease progression (78 tasks), treatment response (59 tasks), risk of treatment-related adverse events (17 tasks), and hospital operations endpoints (12 tasks). Using feature attribution techniques, we show that model predictions align with clinically-interpretable multimodal biomarkers. We evaluate semantic similarity search on 61 retrieval tasks, and moreover demonstrate the potential of Apollo as a multimodal medical search engine using text and image queries. Together, these modeling capabilities establish the foundation for computable medicine, where the full context of patient care becomes accessible to computational reasoning.",
+      "authors": [
+        "Andrew Zhang",
+        "Tong Ding",
+        "Sophia J. Wagner",
+        "Caiwei Tian",
+        "Ming Y. Lu"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-04-20",
+      "comment": "",
+      "summary": "Modern medicine generates vast multimodal data across siloed systems, yet no existing model integrates the full breadth and temporal depth of the clinical record into a unified patient representation.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "ophthalmic_clinical",
+      "score": 47.0
+    },
+    {
+      "title": "Toward Zero-Egress Psychiatric AI: On-Device LLM Deployment for Privacy-Preserving Mental Health Decision Support",
+      "arxiv_id": "2604.18302",
+      "abstract": "Privacy represents one of the most critical yet underaddressed barriers to AI adoption in mental healthcare -- particularly in high-sensitivity operational environments such as military, correctional, and remote healthcare settings, where the risk of patient data exposure can deter help-seeking behavior entirely. Existing AI-enabled psychiatric decision support systems predominantly rely on cloud-based inference pipelines, requiring sensitive patient data to leave the device and traverse external servers, creating unacceptable privacy and security risks in these contexts. In this paper, we propose a zero-egress, on-device AI platform for privacy-preserving psychiatric decision support, deployed as a cross-platform mobile application. The proposed system extends our prior work on fine-tuned LLM consortiums for psychiatric diagnosis standardization by fundamentally re-architecting the inference pipeline for fully local execution -- ensuring that no patient data is transmitted to, processed by, or stored on any external server at any stage. The platform integrates a consortium of three lightweight, fine-tuned, and quantized open-source LLMs -- Gemma, Phi-3.5-mini, and Qwen2 -- selected for their compact architectures and proven efficiency on resource-constrained mobile hardware. An on-device orchestration layer coordinates ensemble inference and consensus-based diagnostic reasoning, producing DSM-5-aligned assessments for conditions. The platform is designed to assist clinicians with differential diagnosis and evidence-linked symptom mapping, as well as to support patient-facing self-screening with appropriate clinical safeguards. Initial evaluation demonstrates that the proposed zero-egress deployment achieves diagnostic accuracy comparable to its server-side predecessor while sustaining real-time inference latency on commodity mobile hardware.",
+      "authors": [
+        "Eranga Bandara",
+        "Asanga Gunaratna",
+        "Ross Gore",
+        "Anita H. Clayton",
+        "Christopher K. Rhea"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-04-20",
+      "comment": "",
+      "summary": "Privacy represents one of the most critical yet underaddressed barriers to AI adoption in mental healthcare -- particularly in high-sensitivity operational environments such as military, correction...",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "medical_imaging",
+      "score": 45.0
+    },
+    {
+      "title": "Medical Image Understanding Improves Survival Prediction via Visual Instruction Tuning",
+      "arxiv_id": "2604.18250",
+      "abstract": "Accurate prognostication and risk estimation are essential for guiding clinical decision-making and optimizing patient management. While radiologist-assessed features from CT scans provide valuable indicators of disease severity and outcomes, interpreting such images requires expert knowledge, and translating rich visual information into textual summaries inevitably leads to information loss. In this work, we propose a vision-language framework for 3D CT image understanding that leverages large-scale open-sourced CT images paired with radiology reports through visual instruction tuning. This pre-training enables the model to learn clinically meaningful visual-textual representations, which can then be adapted to downstream survival prediction tasks. By incorporating a survival prediction head on top of the pre-trained model, our approach improves survival prediction from CT images and clinical data while generating clinically meaningful language responses to predefined questions. Experimental results demonstrate that our method outperforms baseline methods in survival prediction, particularly, when clinical data alone is less predictive. The code will be released upon acceptance.",
+      "authors": [
+        "Xixi Liu",
+        "Jorge Lazo",
+        "Andreas Hallqvist",
+        "Mikael Johansson",
+        "Åse Johnsson"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-20",
+      "comment": "Submitted to MICCAI 2026",
+      "summary": "Accurate prognostication and risk estimation are essential for guiding clinical decision-making and optimizing patient management.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "medical_imaging",
+      "score": 45.0
+    },
+    {
+      "title": "MedProbeBench: Systematic Benchmarking at Deep Evidence Integration for Expert-level Medical Guideline",
+      "arxiv_id": "2604.18418",
+      "abstract": "Recent advances in deep research systems enable large language models to retrieve, synthesize, and reason over large-scale external knowledge. In medicine, developing clinical guidelines critically depends on such deep evidence integration. However, existing benchmarks fail to evaluate this capability in realistic workflows requiring multi-step evidence integration and expert-level judgment. To address this gap, we introduce MedProbeBench, the first benchmark leveraging high-quality clinical guidelines as expert-level references. Medical guidelines, with their rigorous standards in neutrality and verifiability, represent the pinnacle of medical expertise and pose substantial challenges for deep research agents. For evaluation, we propose MedProbe-Eval, a comprehensive evaluation framework featuring: (1) Holistic Rubrics with 1,200+ task-adaptive rubric criteria for comprehensive quality assessment, and (2) Fine-grained Evidence Verification for rigorous validation of evidence precision, grounded in 5,130+ atomic claims. Evaluation of 17 LLMs and deep research agents reveals critical gaps in evidence integration and guideline generation, underscoring the substantial distance between current capabilities and expert-level clinical guideline development. Project: https://github.com/uni-medical/MedProbeBench",
+      "authors": [
+        "Jiyao Liu",
+        "Jianghan Shen",
+        "Sida Song",
+        "Tianbin Li",
+        "Xiaojia Liu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-20",
+      "comment": "",
+      "summary": "Recent advances in deep research systems enable large language models to retrieve, synthesize, and reason over large-scale external knowledge.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "medical_imaging",
+      "score": 42.0
+    },
+    {
+      "title": "WebCompass: Towards Multimodal Web Coding Evaluation for Code Language Models",
+      "arxiv_id": "2604.18224",
+      "abstract": "Large language models are rapidly evolving into interactive coding agents capable of end-to-end web coding, yet existing benchmarks evaluate only narrow slices of this capability, typically text-conditioned generation with static-correctness metrics, leaving visual fidelity, interaction quality, and codebase-level reasoning largely unmeasured. We introduce WebCompass, a multimodal benchmark that provides unified lifecycle evaluation of web engineering capability. Recognizing that real-world web coding is an iterative cycle of generation, editing, and repair, WebCompass spans three input modalities (text, image, video) and three task types (generation, editing, repair), yielding seven task categories that mirror professional workflows. Through a multi-stage, human-in-the-loop pipeline, we curate instances covering 15 generation domains, 16 editing operation types, and 11 repair defect types, each annotated at Easy/Medium/Hard levels. For evaluation, we adopt a checklist-guided LLM-as-a-Judge protocol for editing and repair, and propose a novel Agent-as-a-Judge paradigm for generation that autonomously executes generated websites in a real browser, explores interactive behaviors via the Model Context Protocol (MCP), and iteratively synthesizes targeted test cases, closely approximating human acceptance testing. We evaluate representative closed-source and open-source models and observe that: (1) closed-source models remain substantially stronger and more balanced; (2) editing and repair exhibit distinct difficulty profiles, with repair preserving interactivity better but remaining execution-challenging; (3) aesthetics is the most persistent bottleneck, especially for open-source models; and (4) framework choice materially affects outcomes, with Vue consistently challenging while React and Vanilla/HTML perform more strongly depending on task type.",
+      "authors": [
+        "Xinping Lei",
+        "Xinyu Che",
+        "Junqi Xiong",
+        "Chenchen Zhang",
+        "Yukai Huang"
+      ],
+      "primary_category": "cs.SE",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "published": "2026-04-20",
+      "comment": "",
+      "summary": "Large language models are rapidly evolving into interactive coding agents capable of end-to-end web coding, yet existing benchmarks evaluate only narrow slices of this capability, typically text-co...",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "multimodal_vlm",
+      "score": 41.0
+    },
+    {
+      "title": "AnchorSeg: Language Grounded Query Banks for Reasoning Segmentation",
+      "arxiv_id": "2604.18562",
+      "abstract": "Reasoning segmentation requires models to ground complex, implicit textual queries into precise pixel-level masks. Existing approaches rely on a single segmentation token $\\texttt{<SEG>}$, whose hidden state implicitly encodes both semantic reasoning and spatial localization, limiting the model's ability to explicitly disentangle what to segment from where to segment. We introduce AnchorSeg, which reformulates reasoning segmentation as a structured conditional generation process over image tokens, conditioned on language grounded query banks. Instead of compressing all semantic reasoning and spatial localization into a single embedding, AnchorSeg constructs an ordered sequence of query banks: latent reasoning tokens that capture intermediate semantic states, and a segmentation anchor token that provides explicit spatial grounding. We model spatial conditioning as a factorized distribution over image tokens, where the anchor query determines localization signals while contextual queries provide semantic modulation. To bridge token-level predictions and pixel-level supervision, we propose Token--Mask Cycle Consistency (TMCC), a bidirectional training objective that enforces alignment across resolutions. By explicitly decoupling spatial grounding from semantic reasoning through structured language grounded query banks, AnchorSeg achieves state-of-the-art results on ReasonSeg test set (67.7\\% gIoU and 68.1\\% cIoU). All code and models are publicly available at https://github.com/rui-qian/AnchorSeg.",
+      "authors": [
+        "Rui Qian",
+        "Chuanhang Deng",
+        "Qiang Huang",
+        "Jian Xiong",
+        "Mingxuan Li"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-20",
+      "comment": "This work has been accepted to ACL 2026, please refer to https://github.com/rui-qian/AnchorSeg",
+      "summary": "Reasoning segmentation requires models to ground complex, implicit textual queries into precise pixel-level masks.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "computer_vision_core",
+      "score": 40.0
+    },
+    {
+      "title": "LLM Safety From Within: Detecting Harmful Content with Internal Representations",
+      "arxiv_id": "2604.18519",
+      "abstract": "Guard models are widely used to detect harmful content in user prompts and LLM responses. However, state-of-the-art guard models rely solely on terminal-layer representations and overlook the rich safety-relevant features distributed across internal layers. We present SIREN, a lightweight guard model that harnesses these internal features. By identifying safety neurons via linear probing and combining them through an adaptive layer-weighted strategy, SIREN builds a harmfulness detector from LLM internals without modifying the underlying model. Our comprehensive evaluation shows that SIREN substantially outperforms state-of-the-art open-source guard models across multiple benchmarks while using 250 times fewer trainable parameters. Moreover, SIREN exhibits superior generalization to unseen benchmarks, naturally enables real-time streaming detection, and significantly improves inference efficiency compared to generative guard models. Overall, our results highlight LLM internal states as a promising foundation for practical, high-performance harmfulness detection.",
+      "authors": [
+        "Difan Jiao",
+        "Yilun Liu",
+        "Ye Yuan",
+        "Zhenwei Tang",
+        "Linfeng Du"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-04-20",
+      "comment": "17 pages,10 figures,6 tables",
+      "summary": "Guard models are widely used to detect harmful content in user prompts and LLM responses.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "object_detection",
+      "score": 40.0
+    },
+    {
+      "title": "Is SAM3 ready for pathology segmentation?",
+      "arxiv_id": "2604.18225",
+      "abstract": "Is Segment Anything Model 3 (SAM3) capable in segmenting Any Pathology Images? Digital pathology segmentation spans tissue-level and nuclei-level scales, where traditional methods often suffer from high annotation costs and poor generalization. SAM3 introduces Promptable Concept Segmentation, offering a potential automated interface via text prompts. With this work, we propose a systematic evaluation protocol to explore the capability space of SAM3 in a structured manner. Specifically, we evaluate SAM3 under different supervision settings including zero-shot, few-shot, and supervised with varying prompting strategies. Our extensive evaluation on pathological datasets including NuInsSeg, PanNuke and GlaS, reveals that: 1.text-only prompts poorly activate nuclear concepts. 2.performance is highly sensitive to visual prompt types and budgets. 3.few-shot learning offers gains, but SAM3 lacks robustness against visual prompt noise. and 4.a significant gap persists between prompt-based usage and task-trained adapter-based reference. Our study delineates SAM3's boundaries in pathology image segmentation and provides practical guidance on the necessity of pathology domain adaptation.",
+      "authors": [
+        "Qiuyu Kong",
+        "Shakiba Sharifi",
+        "Zanxi Ruan",
+        "Yiming Wang",
+        "Marco Cristani"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-04-20",
+      "comment": "",
+      "summary": "Is Segment Anything Model 3 (SAM3) capable in segmenting Any Pathology Images? Digital pathology segmentation spans tissue-level and nuclei-level scales, where traditional methods often suffer from...",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "computer_vision_core",
+      "score": 38.0
+    }
+  ],
+  "tier_b": [
+    {
+      "title": "Parkinson's Disease Detection via Self-Supervised Dual-Channel Cross-Attention on Bilateral Wrist-Worn IMU Signals",
+      "arxiv_id": "2604.18372",
+      "abstract": "Parkinson's disease (PD) is a chronic neurodegenerative disease. It shows multiple motor symptoms such as tremor, bradykinesia, postural instability, freezing of gait (FoG). PD is currently diagnosed clinically through physical exam by health-care professionals, which can be time consuming and highly subjective. Wearable IMU sensors has become a promising gateway for passive monitoring of PD patients. We propose a self-supervised cross-attention encoder that processes bilateral wrist-worn IMU signals from a public dataset called PADS, consisting of three groups, PD (Parkinson Disease), HC (Healthy Control) and DD (Differential Diagnosis) of a total of 469 subjects. We have achieved a mean accuracy of 93.12% for HC vs. PD classification and 87.04% for PD vs. DD classification. The results emphasize the clinical challenge of distinguishing Parkinson's from other neurodegenerative diseases. Self-supervised representation learning using contrastive infoNCE loss gained an accuracy of 93.56% for HC vs. PD and 92.50% for PD vs. DD using only 20% of labelled data. This demonstrates the effectiveness of our method in transfer learning for clinical use with minimal labels. The real-time applicability was tested by deploying the optimized model with a mean inference time of 48.32 ms per window on a Raspberry Pi CPU.",
+      "authors": [
+        "Meheru Zannat"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-04-20",
+      "comment": "15 pages, 6 figures",
+      "summary": "Parkinson's disease (PD) is a chronic neurodegenerative disease.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "medical_imaging",
+      "score": 37.0
+    },
+    {
+      "title": "DSA-CycleGAN: A Domain Shift Aware CycleGAN for Robust Multi-Stain Glomeruli Segmentation",
+      "arxiv_id": "2604.18368",
+      "abstract": "A key challenge in segmentation in digital histopathology is inter- and intra-stain variations as it reduces model performance. Labelling each stain is expensive and time-consuming so methods using stain transfer via CycleGAN, have been developed for training multi-stain segmentation models using labels from a single stain. Nevertheless, CycleGAN tends to introduce noise during translation because of the one-to-many nature of some stain pairs, which conflicts with its cycle consistency loss. To address this, we propose the Domain Shift Aware CycleGAN, which reduces the presence of such noise. Furthermore, we evaluate several advances from the field of machine learning aimed at resolving similar problems and compare their effectiveness against DSA-CycleGAN in the context of multi-stain glomeruli segmentation. Experiments demonstrate that DSA-CycleGAN not only improves segmentation performance in glomeruli segmentation but also outperforms other methods in reducing noise. This is particularly evident when translating between biologically distinct stains. The code is publicly available at https://github.com/zeeshannisar/DSA-CycleGAN.",
+      "authors": [
+        "Zeeshan Nisar",
+        "Friedrich Feuerhake",
+        "Thomas Lampert"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-20",
+      "comment": "",
+      "summary": "A key challenge in segmentation in digital histopathology is inter- and intra-stain variations as it reduces model performance.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "computer_vision_core",
+      "score": 37.0
+    },
+    {
+      "title": "Domain-Specialized Object Detection via Model-Level Mixtures of Experts",
+      "arxiv_id": "2604.18256",
+      "abstract": "Mixture-of-Experts (MoE) models provide a structured approach to combining specialized neural networks and offer greater interpretability than conventional ensembles. While MoEs have been successfully applied to image classification and semantic segmentation, their use in object detection remains limited due to challenges in merging dense and structured predictions. In this work, we investigate model-level mixtures of object detectors and analyze their suitability for improving performance and interpretability in object detection. We propose an MoE architecture that combines YOLO-based detectors trained on semantically disjoint data subsets, with a learned gating network that dynamically weights expert contributions. We study different strategies for fusing detection outputs and for training the gating mechanism, including balancing losses to prevent expert collapse. Experiments on the BDD100K dataset demonstrate that the proposed MoE consistently outperforms standard ensemble approaches and provides insights into expert specialization across domains, highlighting model-level MoEs as a viable alternative to traditional ensembling for object detection. Our code is available at https://github.com/KASTEL-MobilityLab/mixtures-of-experts/.",
+      "authors": [
+        "Svetlana Pavlitska",
+        "Malte Stüven",
+        "Beyza Keskin",
+        "J. Marius Zöllner"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "published": "2026-04-20",
+      "comment": "Accepted for publication at IJCNN 2026",
+      "summary": "Mixture-of-Experts (MoE) models provide a structured approach to combining specialized neural networks and offer greater interpretability than conventional ensembles.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "computer_vision_core",
+      "score": 37.0
+    },
+    {
+      "title": "Style-Based Neural Architectures for Real-Time Weather Classification",
+      "arxiv_id": "2604.18251",
+      "abstract": "In this paper, we present three neural network architectures designed for real-time classification of weather conditions (sunny, rain, snow, fog) from images. These models, inspired by recent advances in style transfer, aim to capture the stylistic elements present in images. One model, called \"Multi-PatchGAN\", is based on PatchGANs used in well-known architectures such as Pix2Pix and CycleGAN, but here adapted with multiple patch sizes for detection tasks. The second model, \"Truncated ResNet50\", is a simplified version of ResNet50 retaining only its first nine layers. This truncation, determined by an evolutionary algorithm, facilitates the extraction of high-frequency features essential for capturing subtle stylistic details. Finally, we propose \"Truncated ResNet50 with Gram Matrix and Attention\", which computes Gram matrices for each layer during training and automatically weights them via an attention mechanism, thus optimizing the extraction of the most relevant stylistic expressions for classification. These last two models outperform the state of the art and demonstrate remarkable generalization capability on several public databases. Although developed for weather detection, these architectures are also suitable for other appearance-based classification tasks, such as animal species recognition, texture classification, disease detection in medical imaging, or industrial defect identification.",
+      "authors": [
+        "Hamed Ouattara",
+        "Pascal Houssam Salmane",
+        "Pierre Duthon",
+        "Frédéric Bernardin",
+        "Omar Ait Aider"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "stat.AP"
+      ],
+      "published": "2026-04-20",
+      "comment": "9 pages, 21 figures",
+      "summary": "In this paper, we present three neural network architectures designed for real-time classification of weather conditions (sunny, rain, snow, fog) from images.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "medical_imaging",
+      "score": 37.0
+    },
+    {
+      "title": "Attention-ResUNet for Automated Fetal Head Segmentation",
+      "arxiv_id": "2604.18148",
+      "abstract": "Automated fetal head segmentation in ultrasound images is critical for accurate biometric measurements in prenatal care. While existing deep learning approaches have achieved a reasonable performance, they struggle with issues like low contrast, noise, and complex anatomical boundaries which are inherent to ultrasound imaging. This paper presents Attention-ResUNet. It is a novel architecture that synergistically combines residual learning with multi-scale attention mechanisms in order to achieve enhanced fetal head segmentation. Our approach integrates attention gates at four decoder levels to focus selectively on anatomically relevant regions while suppressing the background noise, and complemented by residual connections which facilitates gradient flow and feature reuse. Extensive evaluation on the HC18 Challenge dataset where n = 200 demonstrates that Attention ResUNet achieves a superior performance with a mean Dice score of 99.30 +/- 0.14% against similar architectures. It significantly outperforms five baseline architectures including ResUNet (99.26%), Attention U-Net (98.79%), Swin U-Net (98.60%), Standard U-Net (98.58%), and U-Net++ (97.46%). Through statistical analysis we confirm highly significant improvements (p < 0.001) with effect sizes that range from 0.230 to 13.159 (Cohen's d). Using Saliency map analysis, we reveal that our architecture produces highly concentrated, anatomically consistent activation patterns, which demonstrate an enhanced interpretability which is crucial for clinical deployment. The proposed method establishes a new state of the art performance for automated fetal head segmentation whilst maintaining computational efficiency with 14.7M parameters and a 45 GFLOPs inference cost. Code repository: https://github.com/Ammar-ss",
+      "authors": [
+        "Ammar Bhilwarawala",
+        "Mainak Bandyopadhyay"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "published": "2026-04-20",
+      "comment": "Accepted and Presented at ANTIC 2025, IIITM Gwalior (5th International Conference on Advanced Network Technologies and Intelligent Computing) on 23rd December 2025. Presented with the best paper award in Image Processing Track",
+      "summary": "Automated fetal head segmentation in ultrasound images is critical for accurate biometric measurements in prenatal care.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "computer_vision_core",
+      "score": 37.0
+    },
+    {
+      "title": "LeGo-Code: Can Modular Curriculum Learning Advance Complex Code Generation? Insights from Text-to-SQL",
+      "arxiv_id": "2604.18254",
+      "abstract": "Recently, code-oriented large language models (LLMs) have demonstrated strong capabilities in translating natural language into executable code. Text-to-SQL is a significant application of this ability, enabling non-technical users to interact with relational databases using natural language. However, state-of-the-art models continue to struggle with highly complex logic, particularly deeply nested statements involving multiple joins and conditions, as well as with real-world database schemas that are noisy or poorly structured. In this paper, we investigate whether curriculum learning can improve the performance of code-based LLMs on Text-to-SQL tasks. Employing benchmarks including Spider and BIRD, we fine-tune models under different curriculum strategies. Our experiments show that naive curriculum, simply ordering training samples by complexity in a single epoch, fails to surpass standard fine-tuning due to catastrophic forgetting. To overcome this, we propose a Modular Adapter Composition (MAC) strategy. By sequentially training tier-specific adapters on incremental complexity levels (Easy to Extra-Hard), we create a scaffolded learning environment that improves performance on complex queries. Our approach not only produces measurable performance gains on the Spider and BIRD benchmarks but also provides a flexible, \"Lego-like\" architecture, allowing models to be composed and deployed based on specific schema difficulty requirements. These findings demonstrate that structured, modular learning is a superior alternative to monolithic fine-tuning for mastering the syntax and logic of complex code generation.",
+      "authors": [
+        "Salmane Chafik",
+        "Saad Ezzini",
+        "Ismail Berrada"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.DB",
+        "cs.SE"
+      ],
+      "published": "2026-04-20",
+      "comment": "7 pages, 3 figures, 4 tables",
+      "summary": "Recently, code-oriented large language models (LLMs) have demonstrated strong capabilities in translating natural language into executable code.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "continual_learning",
+      "score": 36.0
+    },
+    {
+      "title": "Train Separately, Merge Together: Modular Post-Training with Mixture-of-Experts",
+      "arxiv_id": "2604.18473",
+      "abstract": "Extending a fully post-trained language model with new domain capabilities is fundamentally limited by monolithic training paradigms: retraining from scratch is expensive and scales poorly, while continued training often degrades existing capabilities. We present BAR (Branch-Adapt-Route), which trains independent domain experts, each through its own mid-training, supervised finetuning, and reinforcement learning pipeline, and composes them via a Mixture-of-Experts architecture with lightweight router training. Unlike retraining approaches that mix all domains and require full reprocessing for any update (with cost scaling quadratically), BAR enables updating individual experts independently with linear cost scaling and no degradation to existing domains. At the 7B scale, with experts for math, code, tool use, and safety, BAR achieves an overall score of 49.1 (averaged across 7 evaluation categories), matching or exceeding re-training baselines (47.8 without mid-training, 50.5 with). We further show that modular training provides a structural advantage: by isolating each domain, it avoids the catastrophic forgetting that occurs when late-stage RL degrades capabilities from earlier training stages, while significantly reducing the cost and complexity of updating or adding a domain. Together, these results suggest that decoupled, expert-based training is a scalable alternative to monolithic retraining for extending language models.",
+      "authors": [
+        "Jacob Morrison",
+        "Sanjay Adhikesaven",
+        "Akshita Bhagia",
+        "Matei Zaharia",
+        "Noah A. Smith"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-04-20",
+      "comment": "9 content pages, 23 pages overall, 3 figures",
+      "summary": "Extending a fully post-trained language model with new domain capabilities is fundamentally limited by monolithic training paradigms: retraining from scratch is expensive and scales poorly, while c...",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "continual_learning",
+      "score": 35.0
+    },
+    {
+      "title": "ComPASS: Towards Personalized Agentic Social Support via Tool-Augmented Companionship",
+      "arxiv_id": "2604.18356",
+      "abstract": "Developing compassionate interactive systems requires agents to not only understand user emotions but also provide diverse, substantive support. While recent works explore empathetic dialogue generation, they remain limited in response form and content, struggling to satisfy diverse needs across users and contexts. To address this, we explore empowering agents with external tools to execute diverse actions. Grounded in the psychological concept of \"social support\", this paradigm delivers substantive, human-like companionship. Specifically, we first design a dozen user-centric tools simulating various multimedia applications, which can cover different types of social support behaviors in human-agent interaction scenarios. We then construct ComPASS-Bench, the first personalized social support benchmark for LLM-based agents, via multi-step automated synthesis and manual refinement. Based on ComPASS-Bench, we further synthesize tool use records to fine-tune the Qwen3-8B model, yielding a task-specific ComPASS-Qwen. Comprehensive evaluations across two settings reveal that while the evaluated LLMs can generate valid tool-calling requests with high success rates, significant gaps remain in final response quality. Moreover, tool-augmented responses achieve better overall performance than directly producing conversational empathy. Notably, our trained ComPASS-Qwen demonstrates substantial improvements over its base model, achieving comparable performance to several large-scale models. Our code and data are available at https://github.com/hzp3517/ComPASS.",
+      "authors": [
+        "Zhaopei Huang",
+        "Yanfeng Jia",
+        "Jiayi Zhao",
+        "Xinjie Zhang",
+        "Wenxuan Wang"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-04-20",
+      "comment": "",
+      "summary": "Developing compassionate interactive systems requires agents to not only understand user emotions but also provide diverse, substantive support.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "llm_agent",
+      "score": 35.0
+    },
+    {
+      "title": "EVE: Verifiable Self-Evolution of MLLMs via Executable Visual Transformations",
+      "arxiv_id": "2604.18320",
+      "abstract": "Self-evolution of multimodal large language models (MLLMs) remains a critical challenge: pseudo-label-based methods suffer from progressive quality degradation as model predictions drift, while template-based methods are confined to a static set of transformations that cannot adapt in difficulty or diversity. We contend that robust, continuous self-improvement requires not only deterministic external feedback independent of the model's internal certainty, but also a mechanism to perpetually diversify the training distribution. To this end, we introduce EVE (Executable Visual transformation-based self-Evolution), a novel framework that entirely bypasses pseudo-labels by harnessing executable visual transformations continuously enriched in both variety and complexity. EVE adopts a Challenger-Solver dual-policy architecture. The Challenger maintains and progressively expands a queue of visual transformation code examples, from which it synthesizes novel Python scripts to perform dynamic visual transformations. Executing these scripts yields VQA problems with absolute, execution-verified ground-truth answers, eliminating any reliance on model-generated supervision. A multi-dimensional reward system integrating semantic diversity and dynamic difficulty calibration steers the Challenger to enrich its code example queue while posing progressively more challenging tasks, preventing mode collapse and fostering reciprocal co-evolution between the two policies. Extensive experiments demonstrate that EVE consistently surpasses existing self-evolution methods, establishing a robust and scalable paradigm for verifiable MLLM self-evolution. The code is available at https://github.com/0001Henry/EVE .",
+      "authors": [
+        "Yongrui Heng",
+        "Chaoya Jiang",
+        "Han Yang",
+        "Shikun Zhang",
+        "Wei Ye"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-04-20",
+      "comment": "",
+      "summary": "Self-evolution of multimodal large language models (MLLMs) remains a critical challenge: pseudo-label-based methods suffer from progressive quality degradation as model predictions drift, while tem...",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "multimodal_vlm",
+      "score": 35.0
+    },
+    {
+      "title": "T-REN: Learning Text-Aligned Region Tokens Improves Dense Vision-Language Alignment and Scalability",
+      "arxiv_id": "2604.18573",
+      "abstract": "Despite recent progress, vision-language encoders struggle with two core limitations: (1) weak alignment between language and dense vision features, which hurts tasks like open-vocabulary semantic segmentation; and (2) high token counts for fine-grained visual representations, which limits scalability to long videos. This work addresses both limitations. We propose T-REN (Text-aligned Region Encoder Network), an efficient encoder that maps visual data to a compact set of text-aligned region-level representations (or region tokens). T-REN achieves this through a lightweight network added on top of a frozen vision backbone, trained to pool patch-level representations within each semantic region into region tokens and align them with region-level text annotations. With only 3.7% additional parameters compared to the vision-language backbone, this design yields substantially stronger dense cross-modal understanding while reducing the token count by orders of magnitude. Specifically, T-REN delivers +5.9 mIoU on ADE20K open-vocabulary segmentation, +18.4% recall on COCO object-level text-image retrieval, +15.6% recall on Ego4D video object localization, and +17.6% mIoU on VSPW video scene parsing, all while reducing token counts by more than 24x for images and 187x for videos compared to the patch-based vision-language backbone. The code and model are available at https://github.com/savya08/T-REN.",
+      "authors": [
+        "Savya Khosla",
+        "Sethuraman T",
+        "Aryan Chadha",
+        "Alex Schwing",
+        "Derek Hoiem"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-20",
+      "comment": "",
+      "summary": "Despite recent progress, vision-language encoders struggle with two core limitations: (1) weak alignment between language and dense vision features, which hurts tasks like open-vocabulary semantic ...",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "computer_vision_core",
+      "score": 34.0
+    },
+    {
+      "title": "IDOBE: Infectious Disease Outbreak forecasting Benchmark Ecosystem",
+      "arxiv_id": "2604.18521",
+      "abstract": "Epidemic forecasting has become an integral part of real-time infectious disease outbreak response. While collaborative ensembles composed of statistical and machine learning models have become the norm for real-time forecasting, standardized benchmark datasets for evaluating such methods are lacking. Further, there is limited understanding on performance of these methods for novel outbreaks with limited historical data. In this paper, we propose IDOBE, a curated collection of epidemiological time series focused on outbreak forecasting. IDOBE compiles from multiple data repositories spanning over a century of surveillance and across U.S. states and global locations. We perform derivative-based segmentation to generate over 10,000 outbreaks covering multiple outcomes such as cases and hospitalizations for 13 diseases. We consider a variety of information-theoretic and distributional measures to quantify the epidemiological diversity of the dataset. Finally, we perform multi-horizon short-term forecasting (1- to 4-week-ahead) through the progression of the outbreak using 11 baseline models and report on their performance. In addition to standard metrics such as NMSE and MAPE for point forecasts, we include probabilistic scoring rules such as Normalized Weighted Interval Score (NWIS) to quantify the performance. We find that MLP-based methods have the most robust performance, with statistical methods having a slight edge during the pre-peak phase. IDOBE dataset along with baselines are released publicly on https://github.com/NSSAC/IDOBE to enable standardized, reproducible benchmarking of outbreak forecasting methods.",
+      "authors": [
+        "Aniruddha Adiga",
+        "Jingyuan Chou",
+        "Anshul Chiranth",
+        "Bryan Lewis",
+        "Ana I. Bento"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.PE"
+      ],
+      "published": "2026-04-20",
+      "comment": "11 pages, 6 figures",
+      "summary": "Epidemic forecasting has become an integral part of real-time infectious disease outbreak response.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "computer_vision_core",
+      "score": 34.0
+    },
+    {
+      "title": "Denoise and Align: Diffusion-Driven Foreground Knowledge Prompting for Open-Vocabulary Temporal Action Detection",
+      "arxiv_id": "2604.18313",
+      "abstract": "Open-Vocabulary Temporal Action Detection (OV-TAD) aims to localize and classify action segments of unseen categories in untrimmed videos, where effective alignment between action semantics and video representations is critical for accurate detection. However, existing methods struggle to mitigate the semantic imbalance between concise, abstract action labels and rich, complex video contents, inevitably introducing semantic noise and misleading cross-modal alignment. To address this challenge, we propose DFAlign, the first framework that leverages diffusion-based denoising to generate foreground knowledge for the guidance of action-video alignment. Following the 'conditioning, denoising and aligning' manner, we first introduce the Semantic-Unify Conditioning (SUC) module, which unifies action-shared and action-specific semantics as conditions for diffusion denoising. Then, the Background-Suppress Denoising (BSD) module generates foreground knowledge by progressively removing background redundancy from videos through denoising process. This foreground knowledge serves as effective intermediate semantic anchor between video and text representations, mitigating the semantic gap and enhancing the discriminability of action-relevant segments. Furthermore, we introduce the Foreground-Prompt Alignment (FPA) module to inject extracted foreground knowledge as prompt tokens into text representations, guiding model's attention towards action-relevant segments and enabling precise cross-modal alignment. Extensive experiments demonstrate that our method achieves state-of-the-art performance on two OV-TAD benchmarks. The code repository is provided as follows: https://anonymous.4open.science/r/Code-2114/.",
+      "authors": [
+        "Sa Zhu",
+        "Wanqian Zhang",
+        "Lin Wang",
+        "Jinchao Zhang",
+        "Cong Wang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-20",
+      "comment": "Accepted by SIGIR 2026",
+      "summary": "Open-Vocabulary Temporal Action Detection (OV-TAD) aims to localize and classify action segments of unseen categories in untrimmed videos, where effective alignment between action semantics and vid...",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "object_detection",
+      "score": 34.0
+    },
+    {
+      "title": "CanonSLR: Canonical-View Guided Multi-View Continuous Sign Language Recognition",
+      "arxiv_id": "2604.18184",
+      "abstract": "Continuous Sign Language Recognition (CSLR) has achieved remarkable progress in recent years; however, most existing methods are developed under single-view settings and thus remain insufficiently robust to viewpoint variations in real-world scenarios. To address this limitation, we propose CanonSLR, a canonical-view guided framework for multi-view CSLR. Specifically, we introduce a frontal-view-anchored teacher-student learning strategy, in which a teacher network trained on frontal-view data provides canonical temporal supervision for a student network trained on all viewpoints. To further reduce cross-view semantic discrepancy, we propose Sequence-Level Soft-Target Distillation, which transfers structured temporal knowledge from the frontal view to non-frontal samples, thereby alleviating gloss boundary ambiguity and category confusion caused by occlusion and projection variation. In addition, we introduce Temporal Motion Relational Enhancement to explicitly model motion-aware temporal relations in high-level visual features, strengthening stable dynamic representations while suppressing viewpoint-sensitive appearance disturbances. To support multi-view CSLR research, we further develop a universal multi-view sign language data construction pipeline that transforms original single-view RGB videos into semantically consistent, temporally coherent, and viewpoint-controllable multi-view sign language videos. Based on this pipeline, we extend PHOENIX-2014T and CSL-Daily into two seven-view benchmarks, namely PT14-MV and CSL-MV, providing a new experimental foundation for multi-view CSLR. Extensive experiments on PT14-MV and CSL-MV demonstrate that CanonSLR consistently outperforms existing approaches under multi-view settings and exhibits stronger robustness, especially on challenging non-frontal views.",
+      "authors": [
+        "Xu Wang",
+        "Shengeng Tang",
+        "Wan Jiang",
+        "Yaxiong Wang",
+        "Lechao Cheng"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-20",
+      "comment": "",
+      "summary": "Continuous Sign Language Recognition (CSLR) has achieved remarkable progress in recent years; however, most existing methods are developed under single-view settings and thus remain insufficiently ...",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "object_detection",
+      "score": 34.0
+    },
+    {
+      "title": "HiGMem: A Hierarchical and LLM-Guided Memory System for Long-Term Conversational Agents",
+      "arxiv_id": "2604.18349",
+      "abstract": "Long-term conversational large language model (LLM) agents require memory systems that can recover relevant evidence from historical interactions without overwhelming the answer stage with irrelevant context. However, existing memory systems, including hierarchical ones, still often rely solely on vector similarity for retrieval. It tends to produce bloated evidence sets: adding many superficially similar dialogue turns yields little additional recall, but lowers retrieval precision, increases answer-stage context cost, and makes retrieved memories harder to inspect and manage. To address this, we propose HiGMem (Hierarchical and LLM-Guided Memory System), a two-level event-turn memory system that allows LLMs to use event summaries as semantic anchors to predict which related turns are worth reading. This allows the model to inspect high-level event summaries first and then focus on a smaller set of potentially useful turns, providing a concise and reliable evidence set through reasoning, while avoiding the retrieval overhead that would be excessively high compared to vector retrieval. On the LoCoMo10 benchmark, HiGMem achieves the best F1 on four of five question categories and improves adversarial F1 from 0.54 to 0.78 over A-Mem, while retrieving an order of magnitude fewer turns. Code is publicly available at https://github.com/ZeroLoss-Lab/HiGMem.",
+      "authors": [
+        "Shuqi Cao",
+        "Jingyi He",
+        "Fei Tan"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-04-20",
+      "comment": "Accepted to Findings of the Association for Computational Linguistics: ACL 2026. Camera-ready version. 10 pages, 2 figures. Code: https://github.com/ZeroLoss-Lab/HiGMem",
+      "summary": "Long-term conversational large language model (LLM) agents require memory systems that can recover relevant evidence from historical interactions without overwhelming the answer stage with irreleva...",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "object_detection",
+      "score": 33.0
+    },
+    {
+      "title": "Beyond Pattern Matching: Seven Cross-Domain Techniques for Prompt Injection Detection",
+      "arxiv_id": "2604.18248",
+      "abstract": "Current open-source prompt-injection detectors converge on two architectural choices: regular-expression pattern matching and fine-tuned transformer classifiers. Both share failure modes that recent work has made concrete. Regular expressions miss paraphrased attacks. Fine-tuned classifiers are vulnerable to adaptive adversaries: a 2025 NAACL Findings study reported that eight published indirect-injection defenses were bypassed with greater than fifty percent attack success rates under adaptive attacks. This work proposes seven detection techniques that each port a specific mechanism from a discipline outside large-language-model security: forensic linguistics, materials-science fatigue analysis, deception technology from network security, local-sequence alignment from bioinformatics, mechanism design from economics, spectral signal analysis from epidemiology, and taint tracking from compiler theory. Three of the seven techniques are implemented in the prompt-shield v0.4.1 release (Apache 2.0) and evaluated in a four-configuration ablation across six datasets including deepset/prompt-injections, NotInject, LLMail-Inject, AgentHarm, and AgentDojo. The local-alignment detector lifts F1 on deepset from 0.033 to 0.378 with zero additional false positives. The stylometric detector adds 11.1 percentage points of F1 on an indirect-injection benchmark. The fatigue tracker is validated via a probing-campaign integration test. All code, data, and reproduction scripts are released under Apache 2.0.",
+      "authors": [
+        "Thamilvendhan Munirathinam"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "published": "2026-04-20",
+      "comment": "16 pages, 1 table, 25 references. Code: github.com/mthamil107/prompt-shield",
+      "summary": "Current open-source prompt-injection detectors converge on two architectural choices: regular-expression pattern matching and fine-tuned transformer classifiers.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "object_detection",
+      "score": 33.0
+    },
+    {
+      "title": "Retrieval-Augmented Multimodal Model for Fake News Detection",
+      "arxiv_id": "2604.18112",
+      "abstract": "In recent years, multimodal multidomain fake news detection has garnered increasing attention. Nevertheless, this direction presents two significant challenges: (1) Failure to Capture Cross-Instance Narrative Consistency: existing models usually evaluate each news in isolation, fail to capture cross-instance narrative consistency, and thus struggle to address the spread of cluster based fake news driven by social media; (2) Lack of Domain Specific Knowledge for Reasoning: conventional models, which rely solely on knowledge encoded in their parameters during training, struggle to generalize to new or data-scarce domains (e.g., emerging events or niche topics). To tackle these challenges, we introduce Retrieval-Augmented Multimodal Model for Fake News Detection (RAMM). First, RAMM employs a Multimodal Large Language Model (MLLM) as its backbone to capture cross-modal semantic information from news samples. Second, RAMM incorporates an Abstract Narrative Alignment Module. This component adaptively extracts abstract narrative consistency from diverse instances across distinct domains, aggregates relevant knowledge, and thereby enables the modeling of high-level narrative information. Finally, RAMM introduces a Semantic Representation Alignment Module, which aligns the model's decision-making paradigm with that of humans - specifically, it shifts the model's reasoning process from direct inference on multimodal features to an instance-based analogical reasoning process. Extensive experimental results on three public datasets validate the efficacy of our proposed approach. Our code is available at the following link: https://github.com/li-yiheng/RAMM",
+      "authors": [
+        "Yiheng Li",
+        "Weihai Lu",
+        "Hanyi Yu",
+        "Yue Wang"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.MM"
+      ],
+      "published": "2026-04-20",
+      "comment": "",
+      "summary": "In recent years, multimodal multidomain fake news detection has garnered increasing attention.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "multimodal_vlm",
+      "score": 32.0
+    },
+    {
+      "title": "Test-Time Perturbation Learning with Delayed Feedback for Vision-Language-Action Models",
+      "arxiv_id": "2604.18107",
+      "abstract": "Vision-Language-Action models (VLAs) achieve remarkable performance in sequential decision-making but remain fragile to subtle environmental shifts, such as small changes in object pose. We attribute this brittleness to trajectory overfitting, where VLAs over-attend to the spurious correlation between actions and entities, then reproduce memorized action patterns. We propose Perturbation learning with Delayed Feedback (PDF), a verifier-free test-time adaptation framework that improves decision performance without fine-tuning the base model. PDF mitigates the spurious correlation through uncertainty-based data augmentation and action voting, while an adaptive scheduler allocates augmentation budgets to balance performance and efficiency. To further improve stability, PDF learns a lightweight perturbation module that retrospectively adjusts action logits guided by delayed feedback, correcting overconfidence issue. Experiments on LIBERO (+7.4\\% success rate) and Atari (+10.3 human normalized score) demonstrate consistent gains of PDF in task success over vanilla VLA and VLA with test-time adaptation, establishing a practical path toward reliable test-time adaptation in multimodal decision-making agents. The code is available at \\href{https://github.com/zhoujiahuan1991/CVPR2026-PDF}{https://github.com/zhoujiahuan1991/CVPR2026-PDF}.",
+      "authors": [
+        "Zehua Zang",
+        "Xi Wang",
+        "Fuchun Sun",
+        "Xiao Xu",
+        "Lixiang Lium"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-20",
+      "comment": "12 pages, 7 figures, 5 tables",
+      "summary": "Vision-Language-Action models (VLAs) achieve remarkable performance in sequential decision-making but remain fragile to subtle environmental shifts, such as small changes in object pose.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "multimodal_vlm",
+      "score": 32.0
+    },
+    {
+      "title": "ReCap: Lightweight Referential Grounding for Coherent Story Visualization",
+      "arxiv_id": "2604.18575",
+      "abstract": "Story Visualization aims to generate a sequence of images that faithfully depicts a textual narrative that preserve character identity, spatial configuration, and stylistic coherence as the narratives unfold. Maintaining such cross-frame consistency has traditionally relied on explicit memory banks, architectural expansion, or auxiliary language models, resulting in substantial parameter growth and inference overhead. We introduce ReCap, a lightweight consistency framework that improves character stability and visual fidelity without modifying the base diffusion backbone. ReCap's CORE (COnditional frame REferencing) module treats anaphors, in our case pronouns, as visual anchors, activating only when characters are referred to by a pronoun and conditioning on the preceding frame to propagate visual identity. This selective design avoids unconditional cross-frame conditioning and introduces only 149K additional parameters, a fraction of the cost of memory-bank and LLM-augmented approaches. To further stabilize identity, we incorporate SemDrift (Guided Semantic Drift Correction) applied only during training. When text is vague or referential, the denoiser lacks a visual anchor for identity-defining attributes, causing character appearance to drift across frames, SemDrift corrects this by aligning denoiser representations with pretrained DINOv3 visual embeddings, enforcing semantic identity stability at zero inference cost. ReCap outperforms previous state-of-the-art, StoryGPT-V, on the two main benchmarks for story visualization by 2.63% Character-Accuracy on FlintstonesSV and by 5.65% on PororoSV, establishing a new state-of-the-art character consistency on both benchmarks. Furthermore, we extend story visualization to human-centric narratives derived from real films, demonstrating the capability of ReCap beyond stylized cartoon domains.",
+      "authors": [
+        "Aditya Arora",
+        "Akshita Gupta",
+        "Pau Rodriguez",
+        "Marcus Rohrbach"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-20",
+      "comment": "Diffusion Models, Story Visualization",
+      "summary": "Story Visualization aims to generate a sequence of images that faithfully depicts a textual narrative that preserve character identity, spatial configuration, and stylistic coherence as the narrati...",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "object_detection",
+      "score": 31.0
+    },
+    {
+      "title": "Incremental learning for audio classification with Hebbian Deep Neural Networks",
+      "arxiv_id": "2604.18270",
+      "abstract": "The ability of humans for lifelong learning is an inspiration for deep learning methods and in particular for continual learning. In this work, we apply Hebbian learning, a biologically inspired learning process, to sound classification. We propose a kernel plasticity approach that selectively modulates network kernels during incremental learning, acting on selected kernels to learn new information and on others to retain previous knowledge. Using the ESC-50 dataset, the proposed method achieves 76.3% overall accuracy over five incremental steps, outperforming a baseline without kernel plasticity (68.7%) and demonstrating significantly greater stability across tasks.",
+      "authors": [
+        "Riccardo Casciotti",
+        "Francesco De Santis",
+        "Alberto Antonietti",
+        "Annamaria Mesaros"
+      ],
+      "primary_category": "eess.AS",
+      "categories": [
+        "eess.AS",
+        "cs.LG"
+      ],
+      "published": "2026-04-20",
+      "comment": "ICASSP 2026",
+      "summary": "The ability of humans for lifelong learning is an inspiration for deep learning methods and in particular for continual learning.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "continual_learning",
+      "score": 31.0
+    },
+    {
+      "title": "S2H-DPO: Hardness-Aware Preference Optimization for Vision-Language Models",
+      "arxiv_id": "2604.18512",
+      "abstract": "Vision-Language Models (VLMs) have demonstrated remarkable progress in single-image understanding, yet effective reasoning across multiple images remains challenging. We identify a critical capability gap in existing multi-image alignment approaches: current methods focus primarily on localized reasoning with pre-specified image indices (``Look at Image 3 and...''), bypassing the essential skills of global visual search and autonomous cross-image comparison. To address this limitation, we introduce a Simple-to-Hard (S2H) learning framework that systematically constructs multi-image preference data across three hierarchical reasoning levels requiring an increasing level of capabilities: (1) single-image localized reasoning, (2) multi-image localized comparison, and (3) global visual search. Unlike prior work that relies on model-specific attributes, such as hallucinations or attention heuristics, to generate preference pairs, our approach leverages prompt-driven complexity to create chosen/rejected pairs that are applicable across different models. Through extensive evaluations on LLaVA and Qwen-VL models, we show that our diverse multi-image reasoning data significantly enhances multi-image reasoning performance, yielding significant improvements over baseline methods across benchmarks. Importantly, our approach maintains strong single-image reasoning performance while simultaneously strengthening multi-image understanding capabilities, thus advancing the state of the art for holistic visual preference alignment.",
+      "authors": [
+        "Nitish Shukla",
+        "Surgan Jandial",
+        "Arun Ross"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-20",
+      "comment": "",
+      "summary": "Vision-Language Models (VLMs) have demonstrated remarkable progress in single-image understanding, yet effective reasoning across multiple images remains challenging.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "multimodal_vlm",
+      "score": 30.0
+    },
+    {
+      "title": "Document-as-Image Representations Fall Short for Scientific Retrieval",
+      "arxiv_id": "2604.18508",
+      "abstract": "Many recent document embedding models are trained on document-as-image representations, embedding rendered pages as images rather than the underlying source. Meanwhile, existing benchmarks for scientific document retrieval, such as ArXivQA and ViDoRe, treat documents as images of pages, implicitly favoring such representations. In this work, we argue that this paradigm is not well-suited for text-rich multimodal scientific documents, where critical evidence is distributed across structured sources, including text, tables, and figures. To study this setting, we introduce ArXivDoc, a new benchmark constructed from the underlying LaTeX sources of scientific papers. Unlike PDF or image-based representations, LaTeX provides direct access to structured elements (e.g., sections, tables, figures, equations), enabling controlled query construction grounded in specific evidence types. We systematically compare text-only, image-based, and multimodal representations across both single-vector and multi-vector retrieval models. Our results show that: (1) document-as-image representations are consistently suboptimal, especially as document length increases; (2) text-based representations are most effective, even for figure-based queries, by leveraging captions and surrounding context; and (3) interleaved text+image representations outperform document-as-image approaches without requiring specialized training.",
+      "authors": [
+        "Ghazal Khalighinejad",
+        "Raghuveer Thirukovalluru",
+        "Alexander H. Oh",
+        "Bhuwan Dhingra"
+      ],
+      "primary_category": "cs.IR",
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-04-20",
+      "comment": "",
+      "summary": "Many recent document embedding models are trained on document-as-image representations, embedding rendered pages as images rather than the underlying source.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "multimodal_vlm",
+      "score": 30.0
+    },
+    {
+      "title": "Multilingual Training and Evaluation Resources for Vision-Language Models",
+      "arxiv_id": "2604.18347",
+      "abstract": "Vision Language Models (VLMs) achieved rapid progress in the recent years. However, despite their growth, VLMs development is heavily grounded on English, leading to two main limitations: (i) the lack of multilingual and multimodal datasets for training, and (ii) the scarcity of comprehensive evaluation benchmarks across languages. In this work, we address these gaps by introducing a new comprehensive suite of resources for VLMs training and evaluation spanning five European languages (English, French, German, Italian, and Spanish). We adopt a regeneration-translation paradigm that produces high-quality cross-lingual resources by combining curated synthetic generation and manual annotation. Specifically, we build Multi-PixMo, a training corpus obtained regenerating examples from Pixmo pre-existing datasets with permissively licensed models: PixMo-Cap, PixMo-AskModelAnything, and CoSyn-400k. On the evaluation side, we construct a set of multilingual benchmarks derived translating widely used English datasets (MMbench, ScienceQA, MME, POPE, AI2D). We assess the quality of these resources through qualitative and quantitative human analyses, measuring inter-annotator agreement. Additionally, we perform ablation studies to demonstrate the impact of multilingual data, with respect to English only, in VLMs training. Experiments, comprising 3 different models show that using multilingual, multimodal examples for training VLMs aids is consistently beneficial on non-English benchmarks, with positive transfer to English as well.",
+      "authors": [
+        "Daniela Baiamonte",
+        "Elena Fano",
+        "Matteo Gabburo",
+        "Stefano Simonazzi",
+        "Leonardo Rigutini"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-04-20",
+      "comment": "",
+      "summary": "Vision Language Models (VLMs) achieved rapid progress in the recent years.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "multimodal_vlm",
+      "score": 30.0
+    },
+    {
+      "title": "FreezeEmpath: Efficient Training for Empathetic Spoken Chatbots with Frozen LLMs",
+      "arxiv_id": "2604.18159",
+      "abstract": "Empathy is essential for fostering natural interactions in spoken dialogue systems, as it enables machines to recognize the emotional tone of human speech and deliver empathetic responses. Recent research has made significant progress in developing empathetic spoken chatbots based on large language models (LLMs). However, several challenges still exist when training such models, including reliance on costly empathetic speech instruction data and a lack of emotional expressiveness in the generated speech. Finetuning LLM with cross-modal empathetic instruction data may also lead to catastrophic forgetting and a degradation of its general capability. To address these challenges, we propose FreezeEmpath, an end-to-end empathetic spoken chatbot trained in a simple and efficient manner. The entire training process relies solely on existing speech instruction data and speech emotion recognition (SER) data, while keeping the LLM's parameters frozen. Experiments demonstrate that FreezeEmpath is able to generate emotionally expressive speech and outperforms other empathetic models in empathetic dialogue, SER, and SpokenQA tasks, demonstrating the effectiveness of our training strategy.",
+      "authors": [
+        "Yun Hong",
+        "Yan Zhou",
+        "Yang Feng"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-04-20",
+      "comment": "",
+      "summary": "Empathy is essential for fostering natural interactions in spoken dialogue systems, as it enables machines to recognize the emotional tone of human speech and deliver empathetic responses.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "continual_learning",
+      "score": 30.0
+    },
+    {
+      "title": "mlr3torch: A Deep Learning Framework in R based on mlr3 and torch",
+      "arxiv_id": "2604.18152",
+      "abstract": "Deep learning (DL) has become a cornerstone of modern machine learning (ML) praxis. We introduce the R package mlr3torch, which is an extensible DL framework for the mlr3 ecosystem. It is built upon the torch package, and simplifies the definition, training, and evaluation of neural networks for both tabular data and generic tensors (e.g., images) for classification and regression. The package implements predefined architectures, and torch models can easily be converted to mlr3 learners. It also allows users to define neural networks as graphs. This representation is based on the graph language defined in mlr3pipelines and allows users to define the entire modeling workflow, including preprocessing, data augmentation, and network architecture, in a single graph. Through its integration into the mlr3 ecosystem, the package allows for convenient resampling, benchmarking, preprocessing, and more. We explain the package's design and features and show how to customize and extend it to new problems. Furthermore, we demonstrate the package's capabilities using three use cases, namely hyperparameter tuning, fine-tuning, and defining architectures for multimodal data. Finally, we present some runtime benchmarks.",
+      "authors": [
+        "Sebastian Fischer",
+        "Lukas Burk",
+        "Carson Zhang",
+        "Bernd Bischl",
+        "Martin Binder"
+      ],
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "published": "2026-04-20",
+      "comment": "",
+      "summary": "Deep learning (DL) has become a cornerstone of modern machine learning (ML) praxis.",
+      "target_date": "2026-04-22",
+      "source_published_date": "2026-04-20",
+      "domain": "multimodal_vlm",
+      "score": 30.0
+    }
+  ],
+  "stats": {
+    "total": 200,
+    "in_focus": 53,
+    "tier_a_count": 10,
+    "tier_b_count": 24,
+    "tier_a_min_score": 38.0,
+    "tier_b_min_score": 30.0
+  }
+}
