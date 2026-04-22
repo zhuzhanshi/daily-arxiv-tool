@@ -51,15 +51,6 @@ IEEE Transactions on Medical Imaging Early Access article.
 
 ---
 
-### [Average Calibration Losses for Reliable Uncertainty in Medical Image Segmentation](https://doi.org/10.1109/tmi.2026.3673118)
-
-🖼️ 计算机视觉 | 待精读
-| 分数 | 21 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3673118` |
-
-IEEE Transactions on Medical Imaging Early Access article.
-
----
-
 ### [From contrast-driven segmentation to central lumbar spinal stenosis grading: a comprehensive multi-view spinal MRI image analysis](https://doi.org/10.1109/tmi.2026.3660361)
 
 🖼️ 计算机视觉 | 待精读
@@ -78,39 +69,10 @@ IEEE Transactions on Medical Imaging Early Access article.
 
 ---
 
-### [Laboratory Test-Guided Medical Image Generation for Multi-Modal Disease Prediction](https://doi.org/10.1109/tmi.2026.3660978)
+### [Average Calibration Losses for Reliable Uncertainty in Medical Image Segmentation](https://doi.org/10.1109/tmi.2026.3673118)
 
-🏥 医学影像 | 待精读
-| 分数 | 20 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3660978` |
-
-IEEE Transactions on Medical Imaging Early Access article.
-
----
-
-### [Decouple, Reorganize, and Fuse: A Multimodal Framework for Cancer Survival Prediction](https://doi.org/10.1109/tmi.2026.3668773)
-
-🏥 医学影像 | 待精读
-| 分数 | 20 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3668773` |
-
-IEEE Transactions on Medical Imaging Early Access article.
-
----
-
-## B档：快速浏览 / 备选
-
-### [PGVMS: A Prompt-Guided Unified Framework for Virtual Multiplex IHC Staining with Pathological Semantic Learning](https://doi.org/10.1109/tmi.2026.3663755)
-
-🏥 医学影像 | 待浏览
-| 分数 | 20 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3663755` |
-
-IEEE Transactions on Medical Imaging Early Access article.
-
----
-
-### [Clinical Metadata Guided Limited-Angle CT Image Reconstruction](https://doi.org/10.1109/tmi.2026.3677586)
-
-🏥 医学影像 | 待浏览
-| 分数 | 20 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3677586` |
+🖼️ 计算机视觉 | 待精读
+| 分数 | 21 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3673118` |
 
 IEEE Transactions on Medical Imaging Early Access article.
 
@@ -118,7 +80,7 @@ IEEE Transactions on Medical Imaging Early Access article.
 
 ### [Regression is all you need for medical image translation](https://doi.org/10.1109/tmi.2025.3650412)
 
-🏥 医学影像 | 待浏览
+🏥 医学影像 | 待精读
 | 分数 | 20 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2025.3650412` |
 
 IEEE Transactions on Medical Imaging Early Access article.
@@ -127,8 +89,28 @@ IEEE Transactions on Medical Imaging Early Access article.
 
 ### [Learning Modality-Aware Representations: Adaptive Group-wise Interaction Network for Multimodal MRI Synthesis](https://doi.org/10.1109/tmi.2026.3654249)
 
-🏥 医学影像 | 待浏览
+🏥 医学影像 | 待精读
 | 分数 | 20 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3654249` |
+
+IEEE Transactions on Medical Imaging Early Access article.
+
+---
+
+## B档：快速浏览 / 备选
+
+### [Laboratory Test-Guided Medical Image Generation for Multi-Modal Disease Prediction](https://doi.org/10.1109/tmi.2026.3660978)
+
+🏥 医学影像 | 待浏览
+| 分数 | 20 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3660978` |
+
+IEEE Transactions on Medical Imaging Early Access article.
+
+---
+
+### [PGVMS: A Prompt-Guided Unified Framework for Virtual Multiplex IHC Staining with Pathological Semantic Learning](https://doi.org/10.1109/tmi.2026.3663755)
+
+🏥 医学影像 | 待浏览
+| 分数 | 20 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3663755` |
 
 IEEE Transactions on Medical Imaging Early Access article.
 
@@ -152,55 +134,28 @@ IEEE Transactions on Medical Imaging Early Access article.
 
 ---
 
+### [Decouple, Reorganize, and Fuse: A Multimodal Framework for Cancer Survival Prediction](https://doi.org/10.1109/tmi.2026.3668773)
+
+🏥 医学影像 | 待浏览
+| 分数 | 20 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3668773` |
+
+IEEE Transactions on Medical Imaging Early Access article.
+
+---
+
+### [Clinical Metadata Guided Limited-Angle CT Image Reconstruction](https://doi.org/10.1109/tmi.2026.3677586)
+
+🏥 医学影像 | 待浏览
+| 分数 | 20 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3677586` |
+
+IEEE Transactions on Medical Imaging Early Access article.
+
+---
+
 ### [Self-supervised Monocular Depth and Pose Estimation for Endoscopy with Latent Priors](https://doi.org/10.1109/tmi.2026.3671423)
 
 👁️ 眼科AI-临床任务 | 待浏览
 | 分数 | 19 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3671423` |
-
-IEEE Transactions on Medical Imaging Early Access article.
-
----
-
-### [Text-Image Co-Alignment for Weakly Supervised Polyp Segmentation](https://doi.org/10.1109/tmi.2026.3674592)
-
-🖼️ 计算机视觉 | 待浏览
-| 分数 | 18 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3674592` |
-
-IEEE Transactions on Medical Imaging Early Access article.
-
----
-
-### [SynLiTS: Phase Prompting-Driven Diffusion Synthesis and Context-Aware Fusion for Unaligned Liver Tumor Segmentation](https://doi.org/10.1109/tmi.2026.3663583)
-
-🖼️ 计算机视觉 | 待浏览
-| 分数 | 18 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3663583` |
-
-IEEE Transactions on Medical Imaging Early Access article.
-
----
-
-### [ConfIC-RCA: Statistically Grounded Efficient Estimation of Segmentation Quality](https://doi.org/10.1109/tmi.2026.3679618)
-
-🖼️ 计算机视觉 | 待浏览
-| 分数 | 18 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3679618` |
-
-IEEE Transactions on Medical Imaging Early Access article.
-
----
-
-### [Masked Image Modeling for Generalizable Organelle Segmentation in Volume EM](https://doi.org/10.1109/tmi.2026.3667612)
-
-🖼️ 计算机视觉 | 待浏览
-| 分数 | 18 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3667612` |
-
-IEEE Transactions on Medical Imaging Early Access article.
-
----
-
-### [Cross-Supervision Similarity Network for Medical Image Classification on Imbalanced Small Datasets](https://doi.org/10.1109/tmi.2026.3656364)
-
-🖼️ 计算机视觉 | 待浏览
-| 分数 | 18 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3656364` |
 
 IEEE Transactions on Medical Imaging Early Access article.
 
@@ -215,6 +170,60 @@ IEEE Transactions on Medical Imaging Early Access article.
 
 ---
 
+### [Cross-Supervision Similarity Network for Medical Image Classification on Imbalanced Small Datasets](https://doi.org/10.1109/tmi.2026.3656364)
+
+🖼️ 计算机视觉 | 待浏览
+| 分数 | 18 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3656364` |
+
+IEEE Transactions on Medical Imaging Early Access article.
+
+---
+
+### [SynLiTS: Phase Prompting-Driven Diffusion Synthesis and Context-Aware Fusion for Unaligned Liver Tumor Segmentation](https://doi.org/10.1109/tmi.2026.3663583)
+
+🖼️ 计算机视觉 | 待浏览
+| 分数 | 18 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3663583` |
+
+IEEE Transactions on Medical Imaging Early Access article.
+
+---
+
+### [Masked Image Modeling for Generalizable Organelle Segmentation in Volume EM](https://doi.org/10.1109/tmi.2026.3667612)
+
+🖼️ 计算机视觉 | 待浏览
+| 分数 | 18 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3667612` |
+
+IEEE Transactions on Medical Imaging Early Access article.
+
+---
+
+### [Text-Image Co-Alignment for Weakly Supervised Polyp Segmentation](https://doi.org/10.1109/tmi.2026.3674592)
+
+🖼️ 计算机视觉 | 待浏览
+| 分数 | 18 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3674592` |
+
+IEEE Transactions on Medical Imaging Early Access article.
+
+---
+
+### [ConfIC-RCA: Statistically Grounded Efficient Estimation of Segmentation Quality](https://doi.org/10.1109/tmi.2026.3679618)
+
+🖼️ 计算机视觉 | 待浏览
+| 分数 | 18 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3679618` |
+
+IEEE Transactions on Medical Imaging Early Access article.
+
+---
+
+### [Medical Microwave Imaging Using Physics-Guided Deep Learning Part 2: The Inverse Solver](https://doi.org/10.1109/tmi.2026.3653974)
+
+🏥 医学影像 | 待浏览
+| 分数 | 17 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3653974` |
+
+IEEE Transactions on Medical Imaging Early Access article.
+
+---
+
 ### [Highly Undersampled MRI Reconstruction via a Single Posterior Sampling of Diffusion Models](https://doi.org/10.1109/tmi.2026.3654585)
 
 🏥 医学影像 | 待浏览
@@ -224,10 +233,28 @@ IEEE Transactions on Medical Imaging Early Access article.
 
 ---
 
-### [Leveraging Spatiotemporal Cues for Self-Supervised Stereo Depth Estimation in Endoscopic Videos](https://doi.org/10.1109/tmi.2026.3659145)
+### [Unsupervised Depth-of-Interaction Estimation in Monolithic Crystal PET Detectors with Wasserstein Distance-Based Embedding](https://doi.org/10.1109/tmi.2026.3656884)
 
 🏥 医学影像 | 待浏览
-| 分数 | 17 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3659145` |
+| 分数 | 17 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3656884` |
+
+IEEE Transactions on Medical Imaging Early Access article.
+
+---
+
+### [Implicitly Defined Material Decomposition Estimator and Learned Physics-Informed Neural Proxy for Photon Counting CT](https://doi.org/10.1109/tmi.2026.3657270)
+
+🏥 医学影像 | 待浏览
+| 分数 | 17 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3657270` |
+
+IEEE Transactions on Medical Imaging Early Access article.
+
+---
+
+### [PLM-SynNet: A Pathology Large Model Synergy Network Based on Multi-instance Learning for Whole Slide Imaging Classification](https://doi.org/10.1109/tmi.2026.3657524)
+
+🏥 医学影像 | 待浏览
+| 分数 | 17 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3657524` |
 
 IEEE Transactions on Medical Imaging Early Access article.
 
@@ -242,19 +269,10 @@ IEEE Transactions on Medical Imaging Early Access article.
 
 ---
 
-### [Preoperative Prediction of Esophageal Cancer Survival in CT via Tumor and Lymph Node Context and Geometry Modeling](https://doi.org/10.1109/tmi.2026.3670159)
+### [Leveraging Spatiotemporal Cues for Self-Supervised Stereo Depth Estimation in Endoscopic Videos](https://doi.org/10.1109/tmi.2026.3659145)
 
 🏥 医学影像 | 待浏览
-| 分数 | 17 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3670159` |
-
-IEEE Transactions on Medical Imaging Early Access article.
-
----
-
-### [DHR 2 -Net: A Dual-Hierarchical Relational Reasoning Framework for Surgical Action Triplet Recognition](https://doi.org/10.1109/tmi.2026.3662737)
-
-🏥 医学影像 | 待浏览
-| 分数 | 17 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3662737` |
+| 分数 | 17 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3659145` |
 
 IEEE Transactions on Medical Imaging Early Access article.
 
@@ -278,37 +296,19 @@ IEEE Transactions on Medical Imaging Early Access article.
 
 ---
 
-### [Multi-granularity Adversarial Generation Integrated Consistency Representation for Chest Low-Contrast-Enhanced CT Synthesis](https://doi.org/10.1109/tmi.2026.3677497)
+### [Patient-Specific Background Model Estimation for Effective Brain Stroke Microwave Imaging](https://doi.org/10.1109/tmi.2026.3660568)
 
 🏥 医学影像 | 待浏览
-| 分数 | 17 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3677497` |
+| 分数 | 17 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3660568` |
 
 IEEE Transactions on Medical Imaging Early Access article.
 
 ---
 
-### [Temporal Conditioning for Longitudinal Brain MRI Registration and Aging Analysis](https://doi.org/10.1109/tmi.2026.3674458)
+### [AnatoDiff: Synthesizing Anatomically Truthful Radiographs With Limited Training Images](https://doi.org/10.1109/tmi.2026.3661433)
 
 🏥 医学影像 | 待浏览
-| 分数 | 17 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3674458` |
-
-IEEE Transactions on Medical Imaging Early Access article.
-
----
-
-### [Unsupervised Depth-of-Interaction Estimation in Monolithic Crystal PET Detectors with Wasserstein Distance-Based Embedding](https://doi.org/10.1109/tmi.2026.3656884)
-
-🏥 医学影像 | 待浏览
-| 分数 | 17 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3656884` |
-
-IEEE Transactions on Medical Imaging Early Access article.
-
----
-
-### [Medical Microwave Imaging Using Physics-Guided Deep Learning Part 2: The Inverse Solver](https://doi.org/10.1109/tmi.2026.3653974)
-
-🏥 医学影像 | 待浏览
-| 分数 | 17 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3653974` |
+| 分数 | 17 | 来源 | TMI · Early Access | ID | `10.1109/tmi.2026.3661433` |
 
 IEEE Transactions on Medical Imaging Early Access article.
 

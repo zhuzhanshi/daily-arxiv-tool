@@ -188,24 +188,6 @@
     "source_status": "crossref_early_access"
   },
   {
-    "title": "Ring artifact reduction in photon counting CT using redundant sampling and autocalibration",
-    "abstract": "",
-    "summary": "IEEE Transactions on Medical Imaging Early Access article.",
-    "authors": [
-      "Scott S. Hsieh",
-      "James Day",
-      "Xinchen Deng",
-      "Magdalena Bazalova-Carter"
-    ],
-    "journal": "IEEE Transactions on Medical Imaging",
-    "source": "tmi",
-    "url": "https://doi.org/10.1109/tmi.2026.3658004",
-    "doi": "10.1109/tmi.2026.3658004",
-    "published": "2026-01-01",
-    "release_stage": "Early Access",
-    "source_status": "crossref_early_access"
-  },
-  {
     "title": "Preoperative Prediction of Esophageal Cancer Survival in CT via Tumor and Lymph Node Context and Geometry Modeling",
     "abstract": "",
     "summary": "IEEE Transactions on Medical Imaging Early Access article.",
@@ -220,6 +202,24 @@
     "source": "tmi",
     "url": "https://doi.org/10.1109/tmi.2026.3670159",
     "doi": "10.1109/tmi.2026.3670159",
+    "published": "2026-01-01",
+    "release_stage": "Early Access",
+    "source_status": "crossref_early_access"
+  },
+  {
+    "title": "Ring artifact reduction in photon counting CT using redundant sampling and autocalibration",
+    "abstract": "",
+    "summary": "IEEE Transactions on Medical Imaging Early Access article.",
+    "authors": [
+      "Scott S. Hsieh",
+      "James Day",
+      "Xinchen Deng",
+      "Magdalena Bazalova-Carter"
+    ],
+    "journal": "IEEE Transactions on Medical Imaging",
+    "source": "tmi",
+    "url": "https://doi.org/10.1109/tmi.2026.3658004",
+    "doi": "10.1109/tmi.2026.3658004",
     "published": "2026-01-01",
     "release_stage": "Early Access",
     "source_status": "crossref_early_access"
@@ -261,20 +261,19 @@
     "source_status": "crossref_early_access"
   },
   {
-    "title": "Uncertainty-guided Iterative Contrastive Fusion for Reliable Survival Prediction in Rectal Cancer",
+    "title": "Regression is all you need for medical image translation",
     "abstract": "",
     "summary": "IEEE Transactions on Medical Imaging Early Access article.",
     "authors": [
-      "Qingsen Bao",
-      "Lei Chen",
-      "Ling Dai",
-      "Kaicong Sun",
-      "Yiqun Sun"
+      "Sebastian Rassmann",
+      "David Kügler",
+      "Christian Ewert",
+      "Martin Reuter"
     ],
     "journal": "IEEE Transactions on Medical Imaging",
     "source": "tmi",
-    "url": "https://doi.org/10.1109/tmi.2026.3660270",
-    "doi": "10.1109/tmi.2026.3660270",
+    "url": "https://doi.org/10.1109/tmi.2025.3650412",
+    "doi": "10.1109/tmi.2025.3650412",
     "published": "2026-01-01",
     "release_stage": "Early Access",
     "source_status": "crossref_early_access"
@@ -318,24 +317,6 @@
     "source_status": "crossref_early_access"
   },
   {
-    "title": "Regression is all you need for medical image translation",
-    "abstract": "",
-    "summary": "IEEE Transactions on Medical Imaging Early Access article.",
-    "authors": [
-      "Sebastian Rassmann",
-      "David Kügler",
-      "Christian Ewert",
-      "Martin Reuter"
-    ],
-    "journal": "IEEE Transactions on Medical Imaging",
-    "source": "tmi",
-    "url": "https://doi.org/10.1109/tmi.2025.3650412",
-    "doi": "10.1109/tmi.2025.3650412",
-    "published": "2026-01-01",
-    "release_stage": "Early Access",
-    "source_status": "crossref_early_access"
-  },
-  {
     "title": "Learning Modality-Aware Representations: Adaptive Group-wise Interaction Network for Multimodal MRI Synthesis",
     "abstract": "",
     "summary": "IEEE Transactions on Medical Imaging Early Access article.",
@@ -350,6 +331,23 @@
     "source": "tmi",
     "url": "https://doi.org/10.1109/tmi.2026.3654249",
     "doi": "10.1109/tmi.2026.3654249",
+    "published": "2026-01-01",
+    "release_stage": "Early Access",
+    "source_status": "crossref_early_access"
+  },
+  {
+    "title": "Cogformer: A unified multi-scale brain representation for visual decoding and reconstruction from fMRI",
+    "abstract": "",
+    "summary": "IEEE Transactions on Medical Imaging Early Access article.",
+    "authors": [
+      "Xu Yin",
+      "John Q. Gan",
+      "Haixian Wang"
+    ],
+    "journal": "IEEE Transactions on Medical Imaging",
+    "source": "tmi",
+    "url": "https://doi.org/10.1109/tmi.2026.3667706",
+    "doi": "10.1109/tmi.2026.3667706",
     "published": "2026-01-01",
     "release_stage": "Early Access",
     "source_status": "crossref_early_access"
@@ -374,18 +372,20 @@
     "source_status": "crossref_early_access"
   },
   {
-    "title": "Cogformer: A unified multi-scale brain representation for visual decoding and reconstruction from fMRI",
+    "title": "Uncertainty-guided Iterative Contrastive Fusion for Reliable Survival Prediction in Rectal Cancer",
     "abstract": "",
     "summary": "IEEE Transactions on Medical Imaging Early Access article.",
     "authors": [
-      "Xu Yin",
-      "John Q. Gan",
-      "Haixian Wang"
+      "Qingsen Bao",
+      "Lei Chen",
+      "Ling Dai",
+      "Kaicong Sun",
+      "Yiqun Sun"
     ],
     "journal": "IEEE Transactions on Medical Imaging",
     "source": "tmi",
-    "url": "https://doi.org/10.1109/tmi.2026.3667706",
-    "doi": "10.1109/tmi.2026.3667706",
+    "url": "https://doi.org/10.1109/tmi.2026.3660270",
+    "doi": "10.1109/tmi.2026.3660270",
     "published": "2026-01-01",
     "release_stage": "Early Access",
     "source_status": "crossref_early_access"
@@ -410,6 +410,22 @@
     "source_status": "crossref_early_access"
   },
   {
+    "title": "Unsupervised Depth-of-Interaction Estimation in Monolithic Crystal PET Detectors with Wasserstein Distance-Based Embedding",
+    "abstract": "",
+    "summary": "IEEE Transactions on Medical Imaging Early Access article.",
+    "authors": [
+      "Sangjin Bae",
+      "Jae Sung Lee"
+    ],
+    "journal": "IEEE Transactions on Medical Imaging",
+    "source": "tmi",
+    "url": "https://doi.org/10.1109/tmi.2026.3656884",
+    "doi": "10.1109/tmi.2026.3656884",
+    "published": "2026-01-01",
+    "release_stage": "Early Access",
+    "source_status": "crossref_early_access"
+  },
+  {
     "title": "Neuron Segment Connectivity Prediction with Multimodal Features for Connectomics",
     "abstract": "",
     "summary": "IEEE Transactions on Medical Imaging Early Access article.",
@@ -424,22 +440,6 @@
     "source": "tmi",
     "url": "https://doi.org/10.1109/tmi.2026.3658169",
     "doi": "10.1109/tmi.2026.3658169",
-    "published": "2026-01-01",
-    "release_stage": "Early Access",
-    "source_status": "crossref_early_access"
-  },
-  {
-    "title": "Unsupervised Depth-of-Interaction Estimation in Monolithic Crystal PET Detectors with Wasserstein Distance-Based Embedding",
-    "abstract": "",
-    "summary": "IEEE Transactions on Medical Imaging Early Access article.",
-    "authors": [
-      "Sangjin Bae",
-      "Jae Sung Lee"
-    ],
-    "journal": "IEEE Transactions on Medical Imaging",
-    "source": "tmi",
-    "url": "https://doi.org/10.1109/tmi.2026.3656884",
-    "doi": "10.1109/tmi.2026.3656884",
     "published": "2026-01-01",
     "release_stage": "Early Access",
     "source_status": "crossref_early_access"
@@ -462,25 +462,6 @@
     "source_status": "crossref_early_access"
   },
   {
-    "title": "Discovery of Peripheral Airway Beyond Incomplete CT Annotations for Navigational Bronchoscopy",
-    "abstract": "",
-    "summary": "IEEE Transactions on Medical Imaging Early Access article.",
-    "authors": [
-      "SiYeoul Lee",
-      "Minkyung Seo",
-      "Jiye Kim",
-      "Hyeyun Lee",
-      "EonSeung Seong"
-    ],
-    "journal": "IEEE Transactions on Medical Imaging",
-    "source": "tmi",
-    "url": "https://doi.org/10.1109/tmi.2026.3672178",
-    "doi": "10.1109/tmi.2026.3672178",
-    "published": "2026-01-01",
-    "release_stage": "Early Access",
-    "source_status": "crossref_early_access"
-  },
-  {
     "title": "Unified and Semantically Grounded Domain Adaptation for Medical Image Segmentation",
     "abstract": "",
     "summary": "IEEE Transactions on Medical Imaging Early Access article.",
@@ -495,6 +476,25 @@
     "source": "tmi",
     "url": "https://doi.org/10.1109/tmi.2026.3672802",
     "doi": "10.1109/tmi.2026.3672802",
+    "published": "2026-01-01",
+    "release_stage": "Early Access",
+    "source_status": "crossref_early_access"
+  },
+  {
+    "title": "Discovery of Peripheral Airway Beyond Incomplete CT Annotations for Navigational Bronchoscopy",
+    "abstract": "",
+    "summary": "IEEE Transactions on Medical Imaging Early Access article.",
+    "authors": [
+      "SiYeoul Lee",
+      "Minkyung Seo",
+      "Jiye Kim",
+      "Hyeyun Lee",
+      "EonSeung Seong"
+    ],
+    "journal": "IEEE Transactions on Medical Imaging",
+    "source": "tmi",
+    "url": "https://doi.org/10.1109/tmi.2026.3672178",
+    "doi": "10.1109/tmi.2026.3672178",
     "published": "2026-01-01",
     "release_stage": "Early Access",
     "source_status": "crossref_early_access"
@@ -595,6 +595,25 @@
     "source_status": "crossref_early_access"
   },
   {
+    "title": "ConfIC-RCA: Statistically Grounded Efficient Estimation of Segmentation Quality",
+    "abstract": "",
+    "summary": "IEEE Transactions on Medical Imaging Early Access article.",
+    "authors": [
+      "Matias Cosarinsky",
+      "Ramiro Billot",
+      "Lucas Mansilla",
+      "Gabriel Jimenez",
+      "Nicolás Gaggion"
+    ],
+    "journal": "IEEE Transactions on Medical Imaging",
+    "source": "tmi",
+    "url": "https://doi.org/10.1109/tmi.2026.3679618",
+    "doi": "10.1109/tmi.2026.3679618",
+    "published": "2026-01-01",
+    "release_stage": "Early Access",
+    "source_status": "crossref_early_access"
+  },
+  {
     "title": "From contrast-driven segmentation to central lumbar spinal stenosis grading: a comprehensive multi-view spinal MRI image analysis",
     "abstract": "",
     "summary": "IEEE Transactions on Medical Imaging Early Access article.",
@@ -633,20 +652,20 @@
     "source_status": "crossref_early_access"
   },
   {
-    "title": "ConfIC-RCA: Statistically Grounded Efficient Estimation of Segmentation Quality",
+    "title": "Progressive Orthodontic Motion Planning based on Hierarchical Diffusion Transformer",
     "abstract": "",
     "summary": "IEEE Transactions on Medical Imaging Early Access article.",
     "authors": [
-      "Matias Cosarinsky",
-      "Ramiro Billot",
-      "Lucas Mansilla",
-      "Gabriel Jimenez",
-      "Nicolás Gaggion"
+      "Yeying Fan",
+      "Yuanfeng Zhou",
+      "Weijie Liu",
+      "Guangshun Wei",
+      "Zhiming Cui"
     ],
     "journal": "IEEE Transactions on Medical Imaging",
     "source": "tmi",
-    "url": "https://doi.org/10.1109/tmi.2026.3679618",
-    "doi": "10.1109/tmi.2026.3679618",
+    "url": "https://doi.org/10.1109/tmi.2026.3676039",
+    "doi": "10.1109/tmi.2026.3676039",
     "published": "2026-01-01",
     "release_stage": "Early Access",
     "source_status": "crossref_early_access"
@@ -671,20 +690,20 @@
     "source_status": "crossref_early_access"
   },
   {
-    "title": "Progressive Orthodontic Motion Planning based on Hierarchical Diffusion Transformer",
+    "title": "Few-Shot Contrastive Learning for Cross-Task Stroke Prognosis Prediction with Multimodal Data",
     "abstract": "",
     "summary": "IEEE Transactions on Medical Imaging Early Access article.",
     "authors": [
-      "Yeying Fan",
-      "Yuanfeng Zhou",
-      "Weijie Liu",
-      "Guangshun Wei",
-      "Zhiming Cui"
+      "Haoran Peng",
+      "Yuxiang Dai",
+      "Rencheng Zheng",
+      "Mingming Wang",
+      "Chengyan Wang"
     ],
     "journal": "IEEE Transactions on Medical Imaging",
     "source": "tmi",
-    "url": "https://doi.org/10.1109/tmi.2026.3676039",
-    "doi": "10.1109/tmi.2026.3676039",
+    "url": "https://doi.org/10.1109/tmi.2026.3661971",
+    "doi": "10.1109/tmi.2026.3661971",
     "published": "2026-01-01",
     "release_stage": "Early Access",
     "source_status": "crossref_early_access"
@@ -722,25 +741,6 @@
     "source": "tmi",
     "url": "https://doi.org/10.1109/tmi.2026.3678953",
     "doi": "10.1109/tmi.2026.3678953",
-    "published": "2026-01-01",
-    "release_stage": "Early Access",
-    "source_status": "crossref_early_access"
-  },
-  {
-    "title": "Few-Shot Contrastive Learning for Cross-Task Stroke Prognosis Prediction with Multimodal Data",
-    "abstract": "",
-    "summary": "IEEE Transactions on Medical Imaging Early Access article.",
-    "authors": [
-      "Haoran Peng",
-      "Yuxiang Dai",
-      "Rencheng Zheng",
-      "Mingming Wang",
-      "Chengyan Wang"
-    ],
-    "journal": "IEEE Transactions on Medical Imaging",
-    "source": "tmi",
-    "url": "https://doi.org/10.1109/tmi.2026.3661971",
-    "doi": "10.1109/tmi.2026.3661971",
     "published": "2026-01-01",
     "release_stage": "Early Access",
     "source_status": "crossref_early_access"
@@ -860,25 +860,6 @@
     "source_status": "crossref_early_access"
   },
   {
-    "title": "Scan-invariant Mamba with Differentiated Sequence Contrastive Learning in Computational Pathology",
-    "abstract": "",
-    "summary": "IEEE Transactions on Medical Imaging Early Access article.",
-    "authors": [
-      "Sheng Huang",
-      "Xin Zhang",
-      "Xiang Zhu",
-      "Bo Liu",
-      "Fengtao Zhou"
-    ],
-    "journal": "IEEE Transactions on Medical Imaging",
-    "source": "tmi",
-    "url": "https://doi.org/10.1109/tmi.2026.3668909",
-    "doi": "10.1109/tmi.2026.3668909",
-    "published": "2026-01-01",
-    "release_stage": "Early Access",
-    "source_status": "crossref_early_access"
-  },
-  {
     "title": "OphFusionNet: Uncertainty-driven multi-scale multimodal feature fusion network for ophthalmic diseases classification",
     "abstract": "",
     "summary": "IEEE Transactions on Medical Imaging Early Access article.",
@@ -893,6 +874,25 @@
     "source": "tmi",
     "url": "https://doi.org/10.1109/tmi.2026.3685304",
     "doi": "10.1109/tmi.2026.3685304",
+    "published": "2026-01-01",
+    "release_stage": "Early Access",
+    "source_status": "crossref_early_access"
+  },
+  {
+    "title": "Scan-invariant Mamba with Differentiated Sequence Contrastive Learning in Computational Pathology",
+    "abstract": "",
+    "summary": "IEEE Transactions on Medical Imaging Early Access article.",
+    "authors": [
+      "Sheng Huang",
+      "Xin Zhang",
+      "Xiang Zhu",
+      "Bo Liu",
+      "Fengtao Zhou"
+    ],
+    "journal": "IEEE Transactions on Medical Imaging",
+    "source": "tmi",
+    "url": "https://doi.org/10.1109/tmi.2026.3668909",
+    "doi": "10.1109/tmi.2026.3668909",
     "published": "2026-01-01",
     "release_stage": "Early Access",
     "source_status": "crossref_early_access"

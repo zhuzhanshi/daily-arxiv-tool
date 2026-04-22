@@ -307,7 +307,13 @@ def _score_journal_articles(articles: list[dict], cfg: Config) -> dict:
         }
         scored.append({**paper, "score": score_paper(paper, domain, cfg)})
 
-    scored.sort(key=lambda x: -x["score"])
+    scored.sort(
+        key=lambda x: (
+            -x["score"],
+            x.get("published", ""),
+            x.get("doi", "") or x.get("title", ""),
+        )
+    )
     top_a = cfg.filter.top_a
     top_b = cfg.filter.top_b
     tier_a = scored[:top_a]
