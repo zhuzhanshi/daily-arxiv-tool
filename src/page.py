@@ -18,13 +18,19 @@ def _slugify(title: str) -> str:
     return s[:60]
 
 
-def gen_daily_page(date: str, papers: list[dict], cfg: Config) -> str:
+def gen_daily_page(
+    date: str,
+    tier_a: list[dict],
+    cfg: Config,
+    tier_b: list[dict] | None = None,
+) -> str:
     """生成某天的 daily page markdown。"""
-    for p in papers:
+    tier_b = tier_b or []
+    all_papers = tier_a + tier_b
+
+    for p in all_papers:
         if "domain" not in p:
             p["domain"] = classify_paper(p["title"], p["abstract"], cfg)
-
-    total = len(papers)
 
     # 扫描已有笔记文件，提取 arXiv ID + 中文摘要
     notes_dir = cfg.docs_path / date
@@ -49,25 +55,22 @@ def gen_daily_page(date: str, papers: list[dict], cfg: Config) -> str:
             except Exception:
                 pass
 
-    # 匹配已有笔记；如果没有笔记，也展示到 daily 页面里。
-    display_papers = []
-    for p in papers:
-        arxiv_id = p["arxiv_id"]
-        note_link = note_by_arxiv.get(arxiv_id)
-        if not note_link:
-            title_slug = _slugify(p["title"])
-            for stem, fname in note_by_stem.items():
-                if stem in title_slug or title_slug[:20] in stem:
-                    note_link = fname
-                    break
-        display_papers.append((p, note_link))
+    def _attach_note_link(papers: list[dict]) -> list[tuple[dict, str | None]]:
+        """匹配已有笔记；如果没有笔记，也展示到 daily 页面里。"""
+        display_papers = []
+        for p in papers:
+            arxiv_id = p["arxiv_id"]
+            note_link = note_by_arxiv.get(arxiv_id)
+            if not note_link:
+                title_slug = _slugify(p["title"])
+                for stem, fname in note_by_stem.items():
+                    if stem in title_slug or title_slug[:20] in stem:
+                        note_link = fname
+                        break
+            display_papers.append((p, note_link))
+        return display_papers
 
-    lines = []
-    lines.append(f"# 📅 {date} 研究看板\n")
-    lines.append(f"> A档候选 **{len(display_papers)}** 篇\n")
-    lines.append("---\n")
-
-    for p, note_link in display_papers:
+    def _render_paper(p: dict, note_link: str | None, default_status: str) -> list[str]:
         title = p["title"]
         domain = p["domain"]
         emoji = get_domain_emoji(domain, cfg)
@@ -79,18 +82,42 @@ def gen_daily_page(date: str, papers: list[dict], cfg: Config) -> str:
         if len(summary) > 220:
             summary = summary[:217] + "..."
 
+        rendered = []
         if note_link:
-            lines.append(f"### [{title}]({note_link})\n")
-            lines.append(f"{emoji} {name} | 已有笔记")
+            rendered.append(f"### [{title}]({note_link})\n")
+            rendered.append(f"{emoji} {name} | 已有笔记")
         else:
-            lines.append(f"### [{title}](https://arxiv.org/abs/{p['arxiv_id']})\n")
-            lines.append(f"{emoji} {name} | 待精读")
+            rendered.append(f"### [{title}](https://arxiv.org/abs/{p['arxiv_id']})\n")
+            rendered.append(f"{emoji} {name} | {default_status}")
 
         if score is not None:
-            lines.append(f"| 分数 | {score:.0f} | arXiv | `{p['arxiv_id']}` |\n")
+            rendered.append(f"| 分数 | {score:.0f} | arXiv | `{p['arxiv_id']}` |\n")
 
-        lines.append(f"{summary}\n")
-        lines.append("---\n")
+        rendered.append(f"{summary}\n")
+        rendered.append("---\n")
+        return rendered
+
+    display_a = _attach_note_link(tier_a)
+    display_b = _attach_note_link(tier_b)
+
+    lines = []
+    lines.append(f"# 📅 {date} 研究看板\n")
+    lines.append(f"> A档精读 **{len(display_a)}** 篇 | B档浏览 **{len(display_b)}** 篇\n")
+    lines.append("---\n")
+
+    lines.append("## A档：建议精读\n")
+    if display_a:
+        for p, note_link in display_a:
+            lines.extend(_render_paper(p, note_link, "待精读"))
+    else:
+        lines.append("今天没有 A 档候选。\n")
+
+    lines.append("## B档：快速浏览 / 备选\n")
+    if display_b:
+        for p, note_link in display_b:
+            lines.extend(_render_paper(p, note_link, "待浏览"))
+    else:
+        lines.append("今天没有 B 档候选。\n")
 
     return "\n".join(lines)
 
@@ -148,21 +175,23 @@ def generate_pages(cfg: Config, specific_date: str | None = None):
             continue
         date = m.group(1)
 
-        # 优先使用 filtered (A档)
+        # 优先使用 filtered (A/B档)
         filtered_path = logs_dir / f"filtered_{date}.json"
         if filtered_path.exists():
             with open(filtered_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
-            papers = data.get("tier_a", [])
-            print(f"  📄 {date}: filtered A档 {len(papers)} 篇")
+            tier_a = data.get("tier_a", [])
+            tier_b = data.get("tier_b", [])
+            print(f"  📄 {date}: filtered A档 {len(tier_a)} 篇, B档 {len(tier_b)} 篇")
         else:
             with open(jf, "r", encoding="utf-8") as f:
-                papers = json.load(f)
-            print(f"  📄 {date}: 全量 {len(papers)} 篇")
+                tier_a = json.load(f)
+            tier_b = []
+            print(f"  📄 {date}: 全量 {len(tier_a)} 篇")
 
         out_dir = docs_dir / date
         out_dir.mkdir(parents=True, exist_ok=True)
-        page = gen_daily_page(date, papers, cfg)
+        page = gen_daily_page(date, tier_a, cfg, tier_b)
         (out_dir / "index.md").write_text(page, encoding="utf-8")
 
     # 首页
