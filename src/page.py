@@ -9,6 +9,12 @@ from classify import (
 )
 from config import Config
 
+SOURCE_LABELS = {
+    "arxiv": "arXiv",
+    "media": "MedIA",
+    "tmi": "TMI",
+}
+
 
 def _slugify(title: str) -> str:
     """从论文标题生成 slug（用于匹配已有笔记文件）。"""
@@ -23,6 +29,7 @@ def gen_daily_page(
     tier_a: list[dict],
     cfg: Config,
     tier_b: list[dict] | None = None,
+    source_label: str = "arXiv",
 ) -> str:
     """生成某天的 daily page markdown。"""
     tier_b = tier_b or []
@@ -87,11 +94,13 @@ def gen_daily_page(
             rendered.append(f"### [{title}]({note_link})\n")
             rendered.append(f"{emoji} {name} | 已有笔记")
         else:
-            rendered.append(f"### [{title}](https://arxiv.org/abs/{p['arxiv_id']})\n")
+            link = p.get("url") or f"https://arxiv.org/abs/{p['arxiv_id']}"
+            rendered.append(f"### [{title}]({link})\n")
             rendered.append(f"{emoji} {name} | {default_status}")
 
         if score is not None:
-            rendered.append(f"| 分数 | {score:.0f} | arXiv | `{p['arxiv_id']}` |\n")
+            identifier = p.get("doi") or p.get("arxiv_id", "")
+            rendered.append(f"| 分数 | {score:.0f} | 来源 | {source_label} | ID | `{identifier}` |\n")
 
         rendered.append(f"{summary}\n")
         rendered.append("---\n")
@@ -101,7 +110,7 @@ def gen_daily_page(
     display_b = _attach_note_link(tier_b)
 
     lines = []
-    lines.append(f"# 📅 {date} 研究看板\n")
+    lines.append(f"# 📅 {date} {source_label} 研究看板\n")
     lines.append(f"> A档精读 **{len(display_a)}** 篇 | B档浏览 **{len(display_b)}** 篇\n")
     lines.append("---\n")
 
@@ -125,20 +134,14 @@ def gen_daily_page(
 def gen_main_index(cfg: Config) -> str:
     """生成首页。"""
     cats = " ".join(f"`{c}`" for c in cfg.categories)
-    date_dirs = []
-    if cfg.docs_path.exists():
-        date_dirs = sorted(
-            [p.name for p in cfg.docs_path.iterdir() if p.is_dir() and re.match(r"\d{4}-\d{2}-\d{2}", p.name)],
-            reverse=True,
-        )
 
     lines = []
     lines.append(f"# {cfg.output.site_name}\n")
     lines.append("这里不是通用论文首页，而是我的研究看板。\n")
-    if date_dirs:
-        lines.append("## 最新更新\n")
-        for date in date_dirs[:7]:
-            lines.append(f"- [{date} 研究看板]({date}/index.md)\n")
+    lines.append("## 来源入口\n")
+    lines.append("- [arXiv](arxiv/index.md)：每日预印本候选\n")
+    lines.append("- [MedIA](media/index.md)：Medical Image Analysis articles in press\n")
+    lines.append("- [TMI](tmi/index.md)：IEEE Transactions on Medical Imaging 目录更新\n")
     lines.append("## 当前关注\n")
     lines.append("- 医学影像\n- 眼科 AI\n- Agent 系统\n- 计算机视觉\n- 持续学习\n")
     lines.append("## 我希望每天回答的问题\n")
@@ -152,6 +155,35 @@ def gen_main_index(cfg: Config) -> str:
     lines.append("---\n")
 
     return "\n".join(lines)
+
+
+def gen_source_index(cfg: Config, source: str) -> str:
+    label = SOURCE_LABELS[source]
+    source_dir = cfg.docs_path / source
+    date_dirs = []
+    if source_dir.exists():
+        date_dirs = sorted(
+            [p.name for p in source_dir.iterdir() if p.is_dir() and re.match(r"\d{4}-\d{2}-\d{2}", p.name)],
+            reverse=True,
+        )
+
+    lines = [f"# {label}\n"]
+    if not date_dirs:
+        lines.append("暂无更新。\n")
+        return "\n".join(lines)
+    lines.append("## 每日更新\n")
+    for date in date_dirs[:30]:
+        lines.append(f"- [{date} 研究看板]({date}/index.md)\n")
+    return "\n".join(lines)
+
+
+def _write_source_page(cfg: Config, source: str, date: str, tier_a: list[dict], tier_b: list[dict]):
+    out_dir = cfg.docs_path / source / date
+    out_dir.mkdir(parents=True, exist_ok=True)
+    page = gen_daily_page(date, tier_a, cfg, tier_b, SOURCE_LABELS[source])
+    (out_dir / "index.md").write_text(page, encoding="utf-8")
+    (cfg.docs_path / source).mkdir(parents=True, exist_ok=True)
+    (cfg.docs_path / source / "index.md").write_text(gen_source_index(cfg, source), encoding="utf-8")
 
 
 def generate_pages(cfg: Config, specific_date: str | None = None):
@@ -193,8 +225,38 @@ def generate_pages(cfg: Config, specific_date: str | None = None):
         out_dir.mkdir(parents=True, exist_ok=True)
         page = gen_daily_page(date, tier_a, cfg, tier_b)
         (out_dir / "index.md").write_text(page, encoding="utf-8")
+        _write_source_page(cfg, "arxiv", date, tier_a, tier_b)
 
     # 首页
     index = gen_main_index(cfg)
     (docs_dir / "index.md").write_text(index, encoding="utf-8")
+    for source in SOURCE_LABELS:
+        source_dir = docs_dir / source
+        source_dir.mkdir(parents=True, exist_ok=True)
+        (source_dir / "index.md").write_text(gen_source_index(cfg, source), encoding="utf-8")
     print(f"  🏠 首页已更新")
+
+
+def generate_journal_pages(cfg: Config, source: str, specific_date: str | None = None):
+    logs_dir = cfg.logs_path
+    if specific_date:
+        json_files = [logs_dir / f"{source}_filtered_{specific_date}.json"]
+    else:
+        json_files = sorted(logs_dir.glob(f"{source}_filtered_*.json"))
+
+    for jf in json_files:
+        if not jf.exists():
+            print(f"⚠️  {jf} 不存在，跳过")
+            continue
+        m = re.search(rf"{source}_filtered_(\d{{4}}-\d{{2}}-\d{{2}})\.json", jf.name)
+        if not m:
+            continue
+        date = m.group(1)
+        data = json.loads(jf.read_text(encoding="utf-8"))
+        tier_a = data.get("tier_a", [])
+        tier_b = data.get("tier_b", [])
+        print(f"  📄 {SOURCE_LABELS[source]} {date}: A档 {len(tier_a)} 篇, B档 {len(tier_b)} 篇")
+        _write_source_page(cfg, source, date, tier_a, tier_b)
+
+    index = gen_main_index(cfg)
+    (cfg.docs_path / "index.md").write_text(index, encoding="utf-8")

@@ -2,17 +2,13 @@
 
 这里不是通用论文首页，而是我的研究看板。
 
-## 最新更新
+## 来源入口
 
-- [2026-04-22 研究看板](2026-04-22/index.md)
+- [arXiv](arxiv/index.md)：每日预印本候选
 
-- [2026-04-21 研究看板](2026-04-21/index.md)
+- [MedIA](media/index.md)：Medical Image Analysis articles in press
 
-- [2026-04-20 研究看板](2026-04-20/index.md)
-
-- [2026-04-19 研究看板](2026-04-19/index.md)
-
-- [2026-04-17 研究看板](2026-04-17/index.md)
+- [TMI](tmi/index.md)：IEEE Transactions on Medical Imaging 目录更新
 
 ## 当前关注
 

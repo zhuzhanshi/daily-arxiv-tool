@@ -29,6 +29,9 @@ theme:
   - content.code.copy
 nav:
 - Home: index.md
+- arXiv: arxiv/index.md
+- MedIA: media/index.md
+- TMI: tmi/index.md
 plugins:
 - search
 markdown_extensions:

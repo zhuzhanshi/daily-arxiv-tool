@@ -1,0 +1,835 @@
+[
+  {
+    "title": "Geo-Mamba: Geometry-informed state-space learning of functional brain organization",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Yuwei Cao",
+      "Tingting Dan",
+      "Yang Yang",
+      "Guorong Wu"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104081",
+    "doi": "10.1016/j.media.2026.104081",
+    "published": "2026-07-01"
+  },
+  {
+    "title": "A hierarchical prompt and prototype learning framework for brain disorder classification",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Yuxiao Liu",
+      "Kaicong Sun",
+      "Yaping Wu",
+      "Xin Lin",
+      "Yan Bai"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104063",
+    "doi": "10.1016/j.media.2026.104063",
+    "published": "2026-07-01"
+  },
+  {
+    "title": "Advancing radiograph representation learning via cascading graph alignment for vision-language clinical concepts",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Xilin Dang",
+      "Kang Li",
+      "Pheng Ann Heng"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104064",
+    "doi": "10.1016/j.media.2026.104064",
+    "published": "2026-07-01"
+  },
+  {
+    "title": "UniSurf: Universal lifespan cortical surface reconstruction",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Zifeng Lian",
+      "Jiameng Liu",
+      "Jiawei Huang",
+      "Shijie Huang",
+      "Xiaoye Li"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104090",
+    "doi": "10.1016/j.media.2026.104090",
+    "published": "2026-07-01"
+  },
+  {
+    "title": "SPACT: A clustering-driven multi-modal framework for survival prediction using genomic and histopathology data",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Fatma Ezgi Öğülmüş",
+      "Shahaddin Gafarov",
+      "Yasin Almalıoğlu",
+      "B. Handan Özdemir",
+      "Alev Ok Atılgan"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104078",
+    "doi": "10.1016/j.media.2026.104078",
+    "published": "2026-07-01"
+  },
+  {
+    "title": "M2OTCA: Multiple-magnification optimal transport-based cross-attention learning for whole slide image classification",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Zhonghang Zhu",
+      "Erik Meijering",
+      "Liansheng Wang"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104082",
+    "doi": "10.1016/j.media.2026.104082",
+    "published": "2026-07-01"
+  },
+  {
+    "title": "Multimodal structure-guided diffusion model for Magnetic Particle Imaging reconstruction",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Gen Shi",
+      "Wenxuan Zou",
+      "Jie He",
+      "Siao Lei",
+      "Zining Liu"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104086",
+    "doi": "10.1016/j.media.2026.104086",
+    "published": "2026-07-01"
+  },
+  {
+    "title": "A review of deep learning-based Unsupervised Anomaly Detection in brain MRI",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Finn Behrendt",
+      "Debayan Bhattacharya",
+      "Lennart Maack",
+      "Julia Krüger",
+      "Roland Opfer"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104076",
+    "doi": "10.1016/j.media.2026.104076",
+    "published": "2026-07-01"
+  },
+  {
+    "title": "MG-3D: Multi-grained knowledge-enhanced vision-language pre-training for 3D medical image analysis",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Xuefeng Ni",
+      "Linshan Wu",
+      "Jiaxin Zhuang",
+      "Qiong Wang",
+      "Mingxiang Wu"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104027",
+    "doi": "10.1016/j.media.2026.104027",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Multimodal medical endoscopic image analysis via progressive disentangle-aware contrastive learning",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Junhao Wu",
+      "Yun Li",
+      "Junhao Li",
+      "Jingliang Bian",
+      "Xiaomao Fan"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104012",
+    "doi": "10.1016/j.media.2026.104012",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Prediction of post-stroke brain swelling using biomechanical modelling and deep neural networks",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Xi Chen",
+      "Wahbi El-Bouri",
+      "Stephen Payne",
+      "Lei Lu"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104067",
+    "doi": "10.1016/j.media.2026.104067",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Eliminating domain-related confounding factors in cross-domain one-shot medical image segmentation via causal inference",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Mingyang Hou",
+      "Zhiyong Huang",
+      "Daidi Zhong",
+      "Zhi Yu",
+      "Xiaoyu Li"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104037",
+    "doi": "10.1016/j.media.2026.104037",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "PTCMIL: multiple instance learning via prompt token clustering for whole slide image analysis",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Beidi Zhao",
+      "Sangmook Kim",
+      "Hao Chen",
+      "Chen Zhou",
+      "Zu-hua Gao"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104013",
+    "doi": "10.1016/j.media.2026.104013",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Fine-grained and multi-pattern anti-nuclear antibody recognition: A new dataset and framework",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Chunfang Ma",
+      "Yichen Yan",
+      "Zhe Ma",
+      "Kangming Liang",
+      "Kaiying Fan"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104075",
+    "doi": "10.1016/j.media.2026.104075",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Translating MRI to PET through conditional diffusion models with enhanced pathology awareness",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Yitong Li",
+      "Igor Yakushev",
+      "Dennis M. Hedderich",
+      "Christian Wachinger"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104035",
+    "doi": "10.1016/j.media.2026.104035",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "SEQUAL: Self-refining and effective querying active learning with pseudo label divergence score for carotid intima-media segmentation in ultrasound",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Yucheng Tang",
+      "Yipeng Hu",
+      "Jing Li",
+      "Hu Lin",
+      "Chao Rong"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104048",
+    "doi": "10.1016/j.media.2026.104048",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "ViFIT-assisted histopathology: From H&amp;E style standardization to virtual fiber image transformation",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Shu Wang",
+      "Xiao Zhang",
+      "Xingfu Wang",
+      "Chenyong Lv",
+      "Xiahui Han"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104051",
+    "doi": "10.1016/j.media.2026.104051",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Incorporating modality-specific intensity prior as text prompt for multimodal myocardial pathology segmentation",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Donggen Fang",
+      "Yuliang Gu",
+      "Lingyi Yu",
+      "Bo Du",
+      "Yongchao Xu"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104072",
+    "doi": "10.1016/j.media.2026.104072",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Harmonization in magnetic resonance imaging: A survey of acquisition, image-level, and feature-level methods",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Qinqin Yang",
+      "Firoozeh Shomal-Zadeh",
+      "Ali Gholipour"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104066",
+    "doi": "10.1016/j.media.2026.104066",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "PRIME: Phase reversed interleaved multi-Echo acquisition enables highly accelerated distortion-corrected diffusion MRI",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Yohan Jun",
+      "Qiang Liu",
+      "Ting Gong",
+      "Jaejin Cho",
+      "Shohei Fujita"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104058",
+    "doi": "10.1016/j.media.2026.104058",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Efficient self-supervised Barlow Twins from limited tissue slide cohorts for colonic pathology diagnostics",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Cassandre Notton",
+      "Vasudev Sharma",
+      "Vincent Quoc-Huy Trinh",
+      "Lina Chen",
+      "Minqi Xu"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104004",
+    "doi": "10.1016/j.media.2026.104004",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "OOD-SEG: Exploiting out-of-distribution detection techniques for learning image segmentation from sparse multi-class positive-only annotations",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Junwen Wang",
+      "Zhonghao Wang",
+      "Oscar MacCormac",
+      "Jonathan Shapey",
+      "Tom Vercauteren"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104046",
+    "doi": "10.1016/j.media.2026.104046",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Explicable intensity-aware 3D cerebrovascular segmentation with planar representation",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Cheng Chen",
+      "Yunqing Chen",
+      "Huansheng Ning",
+      "Heng Li",
+      "Jiang Liu"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104032",
+    "doi": "10.1016/j.media.2026.104032",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Clinical priors-inspired privileged knowledge distillation for reliable pancreatic lesion classification",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Qiaoyu Han",
+      "Gang Yang",
+      "Lei Zhang",
+      "Xiangpeng Hu",
+      "Huizhong Gan"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104041",
+    "doi": "10.1016/j.media.2026.104041",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "OphMatcher: Uncertainty-aware self-training on ophthalmic surgical videos for anatomy-constrained matching and intraoprative navigation",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Puxun Tu",
+      "Ce Zheng",
+      "Li Luo",
+      "Zheng Chen",
+      "Wei Mi"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104057",
+    "doi": "10.1016/j.media.2026.104057",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "PCa-Mamba: Spatiotemporal state space models for prostate cancer detection in multi-parametric MRI",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Kai Zhao",
+      "Alex Ling Yu Hung",
+      "Kaifeng Pang",
+      "Parsa Hajipour",
+      "Holden Wu"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104033",
+    "doi": "10.1016/j.media.2026.104033",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Towards generalizable pathology reports via a multimodal LLM with the multicenter in-context learning",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Yi Li",
+      "Zhihao Lin",
+      "Qixiang Zhang",
+      "Xinpeng Ding",
+      "Honglong Yang"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104060",
+    "doi": "10.1016/j.media.2026.104060",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "NeuroGT: Biophysically grounded graph transformers for self-supervised representation learning of neuronal morphology",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Pengpeng Sheng",
+      "Tingting Han",
+      "Gangming Zhao",
+      "Jun Wu",
+      "Lei Qu"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104065",
+    "doi": "10.1016/j.media.2026.104065",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "FADFNet: A fine-tunable and adaptive decomposition-fusion network for cross-dataset low-dose CT and low-dose PET image reconstruction",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Fangji Qian",
+      "Weitao Wang",
+      "Yanyan Huang",
+      "Meng Niu",
+      "Yuanxue Gao"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104016",
+    "doi": "10.1016/j.media.2026.104016",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "SparseXMIL: Leveraging sparse convolutions for context-aware and memory-efficient classification of whole slide images in digital pathology",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Loïc Le Bescond",
+      "Marvin Lerousseau",
+      "Fabrice André",
+      "Hugues Talbot"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104047",
+    "doi": "10.1016/j.media.2026.104047",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Beyond benchmarks of IUGC: Rethinking requirements of deep learning method for intrapartum ultrasound biometry from fetal ultrasound videos",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Jieyun Bai",
+      "Zihao Zhou",
+      "Yitong Tang",
+      "Jie Gan",
+      "Zhuonan Liang"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104043",
+    "doi": "10.1016/j.media.2026.104043",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Artificial intelligence in microscopic hair imaging for scalp disorders: From image acquisition to clinical decisions",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Chenquan Gong",
+      "Yiping Su",
+      "Su Ruan",
+      "Haigen Hu"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104017",
+    "doi": "10.1016/j.media.2026.104017",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Ultrasound Localization Microscopy Learned from power doppler by uncertainty frequency density estimation and semantic consistency awareness",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Qinghua Lin",
+      "Xuan Ren",
+      "Boqian Zhou",
+      "Junyi Wang",
+      "Xin Liu"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104055",
+    "doi": "10.1016/j.media.2026.104055",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "PASS-Tr: PAtch-wise swin slice attention to leverage generalization of 2D large vision model to universal lesion detection",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Han Li",
+      "Jingsong Liu",
+      "Zhen Huang",
+      "Zhicheng Li",
+      "Xun Ma"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104036",
+    "doi": "10.1016/j.media.2026.104036",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Predicting neoadjuvant therapy response in breast cancer from preoperative biopsy via spatial–semantic–differential learning and interpretable clinicopathological-guided fusion",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Wen-Tai Hou",
+      "Zi-Fei Pu",
+      "Ze-Yan Xu",
+      "An-Hao Wu",
+      "Zhi-Hao Liu"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104069",
+    "doi": "10.1016/j.media.2026.104069",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "AMA-SAM: Adversarial multi-Domain alignment of segment anything model for high-Fidelity histology nuclei segmentation",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Jiahe Qian",
+      "Yaoyu Fang",
+      "Jinkui Hao",
+      "Bo Zhou"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104011",
+    "doi": "10.1016/j.media.2026.104011",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "SSMamba: A self-supervised hybrid state space model for pathological image classification",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Enhui Chai",
+      "Sicheng Chen",
+      "Tianyi Zhang",
+      "Xingyu Li",
+      "Tianxiang Cui"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104080",
+    "doi": "10.1016/j.media.2026.104080",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Read like a radiologist: Efficient vision-language model for 3D medical imaging interpretation",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Changsun Lee",
+      "Sangjoon Park",
+      "Cheong-Il Shin",
+      "Woo Hee Choi",
+      "Hyun Jeong Park"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104077",
+    "doi": "10.1016/j.media.2026.104077",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Memory like the human brain: A framework for decoding multimodal learning of brain-visual-linguistic features",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Longcheng Ji",
+      "Hong Wang",
+      "Wanji Yan"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104038",
+    "doi": "10.1016/j.media.2026.104038",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Point2SSM++: Self-supervised learning of anatomical shape models from point clouds",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Jadie Adams",
+      "Mokshagna Sai Teja Karanam",
+      "Shireen Elhabian"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104073",
+    "doi": "10.1016/j.media.2026.104073",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Establishing a relationship between iron-based blood measures and structural brain changes using neural networks in UK Biobank",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Joshua Sammet",
+      "Kholod Alhasani",
+      "Ejin Chung",
+      "Jedidiah Cheung",
+      "Qiang Liu"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104034",
+    "doi": "10.1016/j.media.2026.104034",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "VCC-DSA: A novel vascular consistency constrained DSA imaging model for motion artifact suppression",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Rongjun Ge",
+      "Weilong Mao",
+      "Jian Lu",
+      "Rong Yan",
+      "Yikun Zhang"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104070",
+    "doi": "10.1016/j.media.2026.104070",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "A speech-to-video synthesis approach using spatio-temporal diffusion for vocal tract MRI",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Paula Andrea Pérez-Toro",
+      "Tomás Arias-Vergara",
+      "Fangxu Xing",
+      "Xiaofeng Liu",
+      "Maureen Stone"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104053",
+    "doi": "10.1016/j.media.2026.104053",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "A content-aware variable-rate framework for pathology learned image compression (PathoLIC)",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Weiqi Li",
+      "Yonghao Li",
+      "Haoyuan Chen",
+      "Long Yang",
+      "Lin Wu"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104018",
+    "doi": "10.1016/j.media.2026.104018",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "DDS-UDA: Dual-domain synergy for unsupervised domain adaptation in joint segmentation of optic disc and optic cup",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Yusong Xiao",
+      "Yuxuan Wu",
+      "Li Xiao",
+      "Gang Qu",
+      "Haiye Huo"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104056",
+    "doi": "10.1016/j.media.2026.104056",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "GCN combined with snake convolution for enhanced topological perception in thrombotic hepatic portal vein segmentation",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Lijuan Ma",
+      "Weiguang Wang",
+      "Xingshun Qi",
+      "Yi Jing",
+      "Wei Cai"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104050",
+    "doi": "10.1016/j.media.2026.104050",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "UniPET: A universal network for high-quality PET image denoising across varied dose reduction factors",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Zhiwen Yang",
+      "Yang Zhou",
+      "Haowei Chen",
+      "Hui Zhang",
+      "Dan Zhao"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104059",
+    "doi": "10.1016/j.media.2026.104059",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "MOTDNet: Multi organ task decoupling network for cell segmentation",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Jinlin Yang",
+      "Xintao Pang",
+      "Chuan Lin",
+      "Tao Tan"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104045",
+    "doi": "10.1016/j.media.2026.104045",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Foundational model-based geometric consistency monocular depth estimation framework for colonoscopy",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Yeqi Liu",
+      "Deping Yu",
+      "Ling Liu",
+      "Tian He",
+      "Yana Wen"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104068",
+    "doi": "10.1016/j.media.2026.104068",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Learning with less supervision: A survey of label-efficient learning for medical image analysis",
+    "abstract": "",
+    "summary": "Medical Image Analysis recent article.",
+    "authors": [
+      "Cheng Jin",
+      "Zhengrui Guo",
+      "Yi Lin",
+      "Luyang Luo",
+      "Hao Chen"
+    ],
+    "journal": "Medical Image Analysis",
+    "source": "media",
+    "url": "https://doi.org/10.1016/j.media.2026.104062",
+    "doi": "10.1016/j.media.2026.104062",
+    "published": "2026-06-01"
+  }
+]

@@ -146,6 +146,50 @@ def run(ctx, date, days):
     click.echo("\n🎉 完成！运行 `daily-arxiv serve` 预览站点")
 
 
+@cli.command("run-all")
+@click.argument("date", required=False)
+@click.pass_context
+def run_all(ctx, date):
+    """一键运行: arXiv + MedIA + TMI。"""
+    cfg = _get_cfg(ctx)
+    dates = _resolve_dates(date, None)
+
+    from fetch import fetch_daily
+    from filter import filter_daily
+    from page import generate_pages, generate_journal_pages
+    from fetch_journals import fetch_journal_daily
+
+    click.echo("=" * 60)
+    click.echo("Step 1/4: arXiv 获取、筛选、生成页面")
+    click.echo("=" * 60)
+    fetch_daily(cfg, dates)
+    filter_daily(cfg, dates)
+    for d in dates:
+        generate_pages(cfg, d)
+
+    click.echo("\n" + "=" * 60)
+    click.echo("Step 2/4: MedIA")
+    click.echo("=" * 60)
+    for d in dates:
+        try:
+            fetch_journal_daily(cfg, "media", d)
+            generate_journal_pages(cfg, "media", d)
+        except Exception as exc:
+            click.echo(f"⚠️  MedIA 更新失败: {exc}")
+
+    click.echo("\n" + "=" * 60)
+    click.echo("Step 3/4: TMI")
+    click.echo("=" * 60)
+    for d in dates:
+        try:
+            fetch_journal_daily(cfg, "tmi", d)
+            generate_journal_pages(cfg, "tmi", d)
+        except Exception as exc:
+            click.echo(f"⚠️  TMI 更新失败: {exc}")
+
+    click.echo("\n🎉 全部来源更新完成")
+
+
 @cli.command()
 @click.option("--port", type=int, default=8200, help="端口号")
 @click.pass_context

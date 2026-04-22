@@ -1,0 +1,677 @@
+{
+  "tier_a": [
+    {
+      "title": "SD-RetinaNet: Topologically Constrained Semi-Supervised Retinal Lesion and Layer Segmentation in OCT",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Botond Fazekas",
+        "Guilherme Aresta",
+        "Philipp Seeböck",
+        "Julia Mai",
+        "Ursula Schmidt-Erfurth"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3615240",
+      "doi": "10.1109/tmi.2025.3615240",
+      "published": "2026-03-01",
+      "arxiv_id": "10.1109/tmi.2025.3615240",
+      "domain": "ophthalmic_clinical",
+      "score": 34.0
+    },
+    {
+      "title": "FairFedMed: Benchmarking Group Fairness in Federated Medical Imaging With FairLoRA",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Minghan Li",
+        "Congcong Wen",
+        "Yu Tian",
+        "Min Shi",
+        "Yan Luo"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3622522",
+      "doi": "10.1109/tmi.2025.3622522",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3622522",
+      "domain": "ophthalmic_clinical",
+      "score": 28.0
+    },
+    {
+      "title": "Source-Free Active Domain Adaptation via Influential-Points-Guided Progressive Teacher for Medical Image Segmentation",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Yong Chen",
+        "Xiangde Luo",
+        "Renyi Chen",
+        "Yiyue Li",
+        "Han Zhang"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3619837",
+      "doi": "10.1109/tmi.2025.3619837",
+      "published": "2026-03-01",
+      "arxiv_id": "10.1109/tmi.2025.3619837",
+      "domain": "computer_vision_core",
+      "score": 24.0
+    },
+    {
+      "title": "An Alignment and Imputation Network (AINet) for Breast Cancer Diagnosis With Multimodal Multi-View Ultrasound Images",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Haoyuan Chen",
+        "Yonghao Li",
+        "Jiadong Zhang",
+        "Long Yang",
+        "Yiqun Sun"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3625254",
+      "doi": "10.1109/tmi.2025.3625254",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3625254",
+      "domain": "medical_imaging",
+      "score": 23.0
+    },
+    {
+      "title": "Online Teaching: Distilling Decomposed Multimodal Knowledge for Breast Cancer Biomarker Prediction",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Qibin Zhang",
+        "Xinyu Hao",
+        "Tong Wang",
+        "Yanmei Zhu",
+        "Yaqi Du"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3628252",
+      "doi": "10.1109/tmi.2025.3628252",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3628252",
+      "domain": "ophthalmic_clinical",
+      "score": 22.0
+    },
+    {
+      "title": "FunOTTA: On-the-Fly Adaptation on Cross-Domain Fundus Image via Stable Test-Time Training",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Qian Zeng",
+        "Le Zhang",
+        "Yipeng Liu",
+        "Ce Zhu",
+        "Fan Zhang"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3631049",
+      "doi": "10.1109/tmi.2025.3631049",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3631049",
+      "domain": "ophthalmic_clinical",
+      "score": 22.0
+    },
+    {
+      "title": "BONBID-HIE 2023: Lesion Segmentation Challenge in BOston Neonatal Brain Injury Data for Hypoxic Ischemic Encephalopathy",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Rina Bao",
+        "Anna N. Foster",
+        "Ya’Nan Song",
+        "Rutvi Vyas",
+        "Ankush Kesri"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3638977",
+      "doi": "10.1109/tmi.2025.3638977",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3638977",
+      "domain": "ophthalmic_methods",
+      "score": 22.0
+    },
+    {
+      "title": "EviVLM: When Evidential Learning Meets Vision Language Model for Medical Image Segmentation",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Qingtao Pan",
+        "Zhengrong Li",
+        "Guang Yang",
+        "Qing Yang",
+        "Bing Ji"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3622492",
+      "doi": "10.1109/tmi.2025.3622492",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3622492",
+      "domain": "computer_vision_core",
+      "score": 21.0
+    },
+    {
+      "title": "CiSeg: Unsupervised Cross-Modality Adaptation for 3D Medical Image Segmentation via Causal Intervention",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Peiqing Lv",
+        "Yaonan Wang",
+        "Min Liu",
+        "Zhe Zhang",
+        "Yunfeng Ma"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3620585",
+      "doi": "10.1109/tmi.2025.3620585",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3620585",
+      "domain": "computer_vision_core",
+      "score": 21.0
+    },
+    {
+      "title": "Efficient Large-Deformation Medical Image Registration via Recurrent Dynamic Correlation",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Tianran Li",
+        "Marius Staring",
+        "Yuchuan Qiao"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3630584",
+      "doi": "10.1109/tmi.2025.3630584",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3630584",
+      "domain": "medical_imaging",
+      "score": 20.0
+    }
+  ],
+  "tier_b": [
+    {
+      "title": "Accelerating Volumetric Medical Image Annotation via Short-Long Memory SAM 2",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Yuwen Chen",
+        "Zafer Yildiz",
+        "Qihang Li",
+        "Yaqian Chen",
+        "Haoyu Dong"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3627954",
+      "doi": "10.1109/tmi.2025.3627954",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3627954",
+      "domain": "medical_imaging",
+      "score": 20.0
+    },
+    {
+      "title": "Pelvic Fracture Reduction Planning via Joint Shape-Intensity Reference",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Xirui Zhao",
+        "Deqiang Xiao",
+        "Teng Zhang",
+        "Long Shao",
+        "Danni Ai"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3621670",
+      "doi": "10.1109/tmi.2025.3621670",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3621670",
+      "domain": "medical_imaging",
+      "score": 20.0
+    },
+    {
+      "title": "MIRROR: Multi-Modal Pathological Self-Supervised Representation Learning via Modality Alignment and Retention",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Tianyi Wang",
+        "Jianan Fan",
+        "Dingxin Zhang",
+        "Dongnan Liu",
+        "Yong Xia"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3632555",
+      "doi": "10.1109/tmi.2025.3632555",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3632555",
+      "domain": "medical_imaging",
+      "score": 20.0
+    },
+    {
+      "title": "Feature Decomposition via Shared Low-Rank Matrix Recovery for CT Report Generation",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Yuanhe Tian",
+        "Yan Song"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3628159",
+      "doi": "10.1109/tmi.2025.3628159",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3628159",
+      "domain": "medical_imaging",
+      "score": 20.0
+    },
+    {
+      "title": "Privacy-Preserving Latent Diffusion-Based Synthetic Medical Image Generation",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Yongyi Shi",
+        "Wenjun Xia",
+        "Chuang Niu",
+        "Christopher Wiedeman",
+        "Ge Wang"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3618511",
+      "doi": "10.1109/tmi.2025.3618511",
+      "published": "2026-03-01",
+      "arxiv_id": "10.1109/tmi.2025.3618511",
+      "domain": "medical_imaging",
+      "score": 20.0
+    },
+    {
+      "title": "MoE-Morph: Lightweight Pyramid Model With Heterogeneous Mixture of Experts for Deformable Medical Image Registration",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Hao Lin",
+        "Yonghong Song",
+        "You Su",
+        "Yunfei Ma"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3620406",
+      "doi": "10.1109/tmi.2025.3620406",
+      "published": "2026-03-01",
+      "arxiv_id": "10.1109/tmi.2025.3620406",
+      "domain": "medical_imaging",
+      "score": 20.0
+    },
+    {
+      "title": "End-to-End Spatiotemporal Analysis of Color Doppler Echocardiograms: Application for Rheumatic Heart Disease Detection",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Pooneh Roshanitabrizi",
+        "Vishwesh Nath",
+        "Kelsey Brown",
+        "Taylor Gloria Broudy",
+        "Zhifan Jiang"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3615574",
+      "doi": "10.1109/tmi.2025.3615574",
+      "published": "2026-03-01",
+      "arxiv_id": "10.1109/tmi.2025.3615574",
+      "domain": "medical_imaging",
+      "score": 20.0
+    },
+    {
+      "title": "LeqMod: Adaptable Lesion-Quantification-Consistent Modulation for Deep Learning Low-Count PET Image Denoising",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Menghua Xia",
+        "Huidong Xie",
+        "Qiong Liu",
+        "Bo Zhou",
+        "Hanzhong Wang"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3618247",
+      "doi": "10.1109/tmi.2025.3618247",
+      "published": "2026-03-01",
+      "arxiv_id": "10.1109/tmi.2025.3618247",
+      "domain": "medical_imaging",
+      "score": 20.0
+    },
+    {
+      "title": "CT Diagnostic Mode-Oriented and Cross Difficulty-Aware Network for Pulmonary Embolism Segmentation",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Ruolin Xiao",
+        "Xinming Li",
+        "Congyue Guo",
+        "Shiteng Suo",
+        "Kaiyi Zheng"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3631047",
+      "doi": "10.1109/tmi.2025.3631047",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3631047",
+      "domain": "computer_vision_core",
+      "score": 18.0
+    },
+    {
+      "title": "Wave-Aware Weakly Supervised Histopathological Tissue Segmentation With Cross-Scale Logits Distillation",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Siyang Feng",
+        "Hualong Zhang",
+        "Xianjing Zhao",
+        "Liting Shi",
+        "Zhenbing Liu"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3637119",
+      "doi": "10.1109/tmi.2025.3637119",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3637119",
+      "domain": "computer_vision_core",
+      "score": 18.0
+    },
+    {
+      "title": "Cell Instance Segmentation: The Devil Is in the Boundaries",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Peixian Liang",
+        "Yifan Ding",
+        "Yizhe Zhang",
+        "Jianxu Chen",
+        "Hao Zheng"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3621093",
+      "doi": "10.1109/tmi.2025.3621093",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3621093",
+      "domain": "computer_vision_core",
+      "score": 18.0
+    },
+    {
+      "title": "MUSCLE: A New Perspective to Multi-Scale Fusion for Medical Image Classification Based on the Theory of Evidence",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Junlai Qiu",
+        "Junyue Cao",
+        "Yawen Huang",
+        "Ziwei Zhu",
+        "Fubo Wang"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3612188",
+      "doi": "10.1109/tmi.2025.3612188",
+      "published": "2026-03-01",
+      "arxiv_id": "10.1109/tmi.2025.3612188",
+      "domain": "computer_vision_core",
+      "score": 18.0
+    },
+    {
+      "title": "HNOSeg-XS: Extremely Small Hartley Neural Operator for Efficient and Resolution-Robust 3D Image Segmentation",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Ken C. L. Wong",
+        "Hongzhi Wang",
+        "Tanveer Syeda-Mahmood"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3588458",
+      "doi": "10.1109/tmi.2025.3588458",
+      "published": "2026-03-01",
+      "arxiv_id": "10.1109/tmi.2025.3588458",
+      "domain": "computer_vision_core",
+      "score": 18.0
+    },
+    {
+      "title": "Deep Mutual Learning Among Partially Labeled Datasets for Multi-Organ Segmentation",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Xiaoyu Liu",
+        "Linhao Qu",
+        "Ziyue Xie",
+        "Yonghong Shi",
+        "Zhijian Song"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3614853",
+      "doi": "10.1109/tmi.2025.3614853",
+      "published": "2026-03-01",
+      "arxiv_id": "10.1109/tmi.2025.3614853",
+      "domain": "computer_vision_core",
+      "score": 18.0
+    },
+    {
+      "title": "Derivation and Validation of Compartment Models: Implications for Dynamic Imaging",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Jérôme Kowalski",
+        "Lorenzo Sala",
+        "Dirk Drasdo",
+        "Irene Vignon-Clementel"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3630705",
+      "doi": "10.1109/tmi.2025.3630705",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3630705",
+      "domain": "medical_imaging",
+      "score": 17.0
+    },
+    {
+      "title": "Sub-0.5 mm Resolution PET Scanner With 3-Layer DOI Detectors for Rodent Neuroimaging",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Han Gyu Kang",
+        "Hideaki Tashima",
+        "Hidekatsu Wakizaka",
+        "Makoto Higuchi",
+        "Taiga Yamaya"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3627815",
+      "doi": "10.1109/tmi.2025.3627815",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3627815",
+      "domain": "medical_imaging",
+      "score": 17.0
+    },
+    {
+      "title": "Table of Contents",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2026.3675395",
+      "doi": "10.1109/tmi.2026.3675395",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2026.3675395",
+      "domain": "medical_imaging",
+      "score": 17.0
+    },
+    {
+      "title": "Neuron Counting for Macaque Mesoscopic Brain Connectivity Research",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Zhenwei Dong",
+        "Xinyi Liu",
+        "Weiyang Shi",
+        "Yuheng Lu",
+        "Yanyan Liu"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3628678",
+      "doi": "10.1109/tmi.2025.3628678",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3628678",
+      "domain": "medical_imaging",
+      "score": 17.0
+    },
+    {
+      "title": "Overlap-Aware Online-Adaptive Non-Rigid Registration of Intraoperative Tissue in Minimally Invasive Surgery",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Hangjie Mo",
+        "Weizhao Cheng",
+        "Ziming Shen",
+        "Ruofeng Wei",
+        "Ling Li"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3620746",
+      "doi": "10.1109/tmi.2025.3620746",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3620746",
+      "domain": "medical_imaging",
+      "score": 17.0
+    },
+    {
+      "title": "Extractive Radiology Reporting With Memory-Based Cross-Modal Representations",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Yuanhe Tian",
+        "Zexuan Yan",
+        "Nenan Lyu",
+        "Yan Song"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3636868",
+      "doi": "10.1109/tmi.2025.3636868",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3636868",
+      "domain": "medical_imaging",
+      "score": 17.0
+    },
+    {
+      "title": "Metadata-Driven Federated Learning of Connectional Brain Templates in Non-IID Multi-Domain Scenarios",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Geng Chen",
+        "Qingyue Wang",
+        "Yuan Feng",
+        "Islem Rekik"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3631235",
+      "doi": "10.1109/tmi.2025.3631235",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3631235",
+      "domain": "medical_imaging",
+      "score": 17.0
+    },
+    {
+      "title": "Multi-Contrast MRI Super-Resolution in Brain Tumors: Arbitrary-Scale Implicit Sampling and Unsupervised Fine-Tuning",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Wenxuan Chen",
+        "Yulin Wang",
+        "Zhongsen Li",
+        "Shuai Wang",
+        "Sirui Wu"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3628113",
+      "doi": "10.1109/tmi.2025.3628113",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3628113",
+      "domain": "medical_imaging",
+      "score": 17.0
+    },
+    {
+      "title": "OPTIKS: Optimized Gradient Properties Through Timing in\n                    <i>k</i>\n                    -Space",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Matthew A. McCready",
+        "Xiaozhi Cao",
+        "Kawin Setsompop",
+        "John M. Pauly",
+        "Adam B. Kerr"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3639398",
+      "doi": "10.1109/tmi.2025.3639398",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3639398",
+      "domain": "medical_imaging",
+      "score": 17.0
+    },
+    {
+      "title": "Self-Paced Learning for Images of Antinuclear Antibodies",
+      "abstract": "",
+      "summary": "IEEE Transactions on Medical Imaging recent article.",
+      "authors": [
+        "Yiyang Jiang",
+        "Guangwu Qian",
+        "Jiaxin Wu",
+        "Qi Huang",
+        "Qing Li"
+      ],
+      "journal": "IEEE Transactions on Medical Imaging",
+      "source": "tmi",
+      "url": "https://doi.org/10.1109/tmi.2025.3637237",
+      "doi": "10.1109/tmi.2025.3637237",
+      "published": "2026-04-01",
+      "arxiv_id": "10.1109/tmi.2025.3637237",
+      "domain": "medical_imaging",
+      "score": 17.0
+    }
+  ],
+  "stats": {
+    "total": 50,
+    "in_focus": 50,
+    "tier_a_count": 10,
+    "tier_b_count": 24,
+    "tier_a_min_score": 20.0,
+    "tier_b_min_score": 17.0
+  }
+}
