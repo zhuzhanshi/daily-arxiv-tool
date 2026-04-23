@@ -1,0 +1,791 @@
+{
+  "tier_a": [
+    {
+      "title": "MambaLiteUNet: Cross-Gated Adaptive Feature Fusion for Robust Skin Lesion Segmentation",
+      "arxiv_id": "2604.20286",
+      "abstract": "Recent segmentation models have demonstrated promising efficiency by aggressively reducing parameter counts and computational complexity. However, these models often struggle to accurately delineate fine lesion boundaries and texture patterns essential for early skin cancer diagnosis and treatment planning. In this paper, we propose MambaLiteUNet, a compact yet robust segmentation framework that integrates Mamba state space modeling into a U-Net architecture, along with three key modules: Adaptive Multi-Branch Mamba Feature Fusion (AMF), Local-Global Feature Mixing (LGFM), and Cross-Gated Attention (CGA). These modules are designed to enhance local-global feature interaction, preserve spatial details, and improve the quality of skip connections. MambaLiteUNet achieves an average IoU of 87.12% and average Dice score of 93.09% across ISIC2017, ISIC2018, HAM10000, and PH2 benchmarks, outperforming state-of-the-art models. Compared to U-Net, our model improves average IoU and Dice by 7.72 and 4.61 points, respectively, while reducing parameters by 93.6% and GFLOPs by 97.6%. Additionally, in domain generalization with six unseen lesion categories, MambaLiteUNet achieves 77.61% IoU and 87.23% Dice, performing best among all evaluated models. Our extensive experiments demonstrate that MambaLiteUNet achieves a strong balance between accuracy and efficiency, making it a competitive and practical solution for dermatological image segmentation. Our code is publicly available at: https://github.com/maklachur/MambaLiteUNet.",
+      "authors": [
+        "Md Maklachur Rahman",
+        "Soon Ki Jung",
+        "Tracy Hammond"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-04-22",
+      "comment": "Accepted at CVPR 2026 Main",
+      "summary": "Recent segmentation models have demonstrated promising efficiency by aggressively reducing parameter counts and computational complexity.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "ophthalmic_methods",
+      "score": 56.0
+    },
+    {
+      "title": "Dual Causal Inference: Integrating Backdoor Adjustment and Instrumental Variable Learning for Medical VQA",
+      "arxiv_id": "2604.20306",
+      "abstract": "Medical Visual Question Answering (MedVQA) aims to generate clinically reliable answers conditioned on complex medical images and questions. However, existing methods often overfit to superficial cross-modal correlations, neglecting the intrinsic biases embedded in multimodal medical data. Consequently, models become vulnerable to cross-modal confounding effects, severely hindering their ability to provide trustworthy diagnostic reasoning. To address this limitation, we propose a novel Dual Causal Inference (DCI) framework for MedVQA. To the best of our knowledge, DCI is the first unified architecture that integrates Backdoor Adjustment (BDA) and Instrumental Variable (IV) learning to jointly tackle both observable and unobserved confounders. Specifically, we formulate a Structural Causal Model (SCM) where observable cross-modal biases (e.g., frequent visual and textual co-occurrences) are mitigated via BDA, while unobserved confounders are compensated using an IV learned from a shared latent space. To guarantee the validity of the IV, we design mutual information constraints that maximize its dependence on the fused multimodal representations while minimizing its associations with the unobserved confounders and target answers. Through this dual mechanism, DCI extracts deconfounded representations that capture genuine causal relationships. Extensive experiments on four benchmark datasets, SLAKE, SLAKE-CP, VQA-RAD, and PathVQA, demonstrate that our method consistently outperforms existing approaches, particularly in out-of-distribution (OOD) generalization. Furthermore, qualitative analyses confirm that DCI significantly enhances the interpretability and robustness of cross-modal reasoning by explicitly disentangling true causal effects from spurious cross-modal shortcuts.",
+      "authors": [
+        "Zibo Xu",
+        "Qiang Li",
+        "Ke Lu",
+        "Jin Wang",
+        "Weizhi Nie"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "Medical Visual Question Answering (MedVQA) aims to generate clinically reliable answers conditioned on complex medical images and questions.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "medical_imaging",
+      "score": 49.0
+    },
+    {
+      "title": "WildFireVQA: A Large-Scale Radiometric Thermal VQA Benchmark for Aerial Wildfire Monitoring",
+      "arxiv_id": "2604.20190",
+      "abstract": "Wildfire monitoring requires timely, actionable situational awareness from airborne platforms, yet existing aerial visual question answering (VQA) benchmarks do not evaluate wildfire-specific multimodal reasoning grounded in thermal measurements. We introduce WildFireVQA, a large-scale VQA benchmark for aerial wildfire monitoring that integrates RGB imagery with radiometric thermal data. WildFireVQA contains 6,097 RGB-thermal samples, where each sample includes an RGB image, a color-mapped thermal visualization, and a radiometric thermal TIFF, and is paired with 34 questions, yielding a total of 207,298 multiple-choice questions spanning presence and detection, classification, distribution and segmentation, localization and direction, cross-modal reasoning, and flight planning for operational wildfire intelligence. To improve annotation reliability, we combine multimodal large language model (MLLM)-based answer generation with sensor-driven deterministic labeling, manual verification, and intra-frame and inter-frame consistency checks. We further establish a comprehensive evaluation protocol for representative MLLMs under RGB, Thermal, and retrieval-augmented settings using radiometric thermal statistics. Experiments show that across task categories, RGB remains the strongest modality for current models, while retrieved thermal context yields gains for stronger MLLMs, highlighting both the value of temperature-grounded reasoning and the limitations of existing MLLMs in safety-critical wildfire scenarios. The dataset and benchmark code are open-source at https://github.com/mobiiin/WildFire_VQA.",
+      "authors": [
+        "Mobin Habibpour",
+        "Niloufar Alipour Talemi",
+        "John Spodnik",
+        "Camren J. Khoury",
+        "Fatemeh Afghah"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "Wildfire monitoring requires timely, actionable situational awareness from airborne platforms, yet existing aerial visual question answering (VQA) benchmarks do not evaluate wildfire-specific multi...",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "computer_vision_core",
+      "score": 49.0
+    },
+    {
+      "title": "Weighted Knowledge Distillation for Semi-Supervised Segmentation of Maxillary Sinus in Panoramic X-ray Images",
+      "arxiv_id": "2604.20213",
+      "abstract": "Accurate segmentation of maxillary sinus in panoramic X-ray images is essential for dental diagnosis and surgical planning; however, this task remains relatively underexplored in dental imaging research. Structural overlap, ambiguous anatomical boundaries inherent to two-dimensional panoramic projections, and the limited availability of large scale clinical datasets with reliable pixel-level annotations make the development and evaluation of segmentation models challenging. To address these challenges, we propose a semi-supervised segmentation framework that effectively leverages both labeled and unlabeled panoramic radiographs, where knowledge distillation is utilized to train a student model with reliable structural information distilled from a teacher model. Specifically, we introduce a weighted knowledge distillation loss to suppress unreliable distillation signals caused by structural discrepancies between teacher and student predictions. To further enhance the quality of pseudo labels generated by the teacher network, we introduce SinusCycle-GAN which is a refinement network based on unpaired image-to-image translation. This refinement process improves the precision of boundaries and reduces noise propagation when learning from unlabeled data during semi-supervised training. To evaluate the proposed method, we collected clinical panoramic X-ray images from 2,511 patients, and experimental results demonstrate that the proposed method outperforms state-of-the-art segmentation models, achieving the Dice score of 96.35\\% while reducing boundary error. The results indicate that the proposed semi-supervised framework provides robust and anatomically consistent segmentation performance under limited labeled data conditions, highlighting its potential for broader dental image analysis applications.",
+      "authors": [
+        "Juha Park",
+        "Jiho Choi",
+        "Jong Pil Yun",
+        "Yong Chan Park",
+        "Han-Gyeol Yeom"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-22",
+      "comment": "14 pages, 6 figures. Under review",
+      "summary": "Accurate segmentation of maxillary sinus in panoramic X-ray images is essential for dental diagnosis and surgical planning; however, this task remains relatively underexplored in dental imaging res...",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "computer_vision_core",
+      "score": 47.0
+    },
+    {
+      "title": "SurgCoT: Advancing Spatiotemporal Reasoning in Surgical Videos through a Chain-of-Thought Benchmark",
+      "arxiv_id": "2604.20319",
+      "abstract": "Fine-grained spatiotemporal reasoning on surgical videos is critical, yet the capabilities of Multi-modal Large Language Models (MLLMs) in this domain remain largely unexplored. To bridge this gap, we introduce SurgCoT, a unified benchmark for evaluating chain-of-thought (CoT) reasoning in MLLMs across 7 surgical specialties and 35 diverse procedures. SurgCoT assesses five core reasoning dimensions: Causal Action Ordering, Cue-Action Alignment, Affordance Mapping, Micro-Transition Localization, and Anomaly Onset Tracking, through a structured CoT framework with an intensive annotation protocol (Question-Option-Knowledge-Clue-Answer), where the Knowledge field provides essential background context and Clue provides definitive spatiotemporal evidence. Evaluation of 10 leading MLLMs shows: 1) commercial models outperform open-source and medical-specialized variants; 2) significant gaps exist in surgical CoT reasoning; 3) SurgCoT enables effective evaluation and enhances progressive spatiotemporal reasoning. SurgCoT provides a reproducible testbed to narrow the gap between MLLM capabilities and clinical reasoning demands. Code: https://github.com/CVI-SZU/SurgCoT.",
+      "authors": [
+        "Gui Wang",
+        "YongSong Zhou",
+        "Kaijun Deng",
+        "Wooi Ping Cheah",
+        "Rong Qu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-22",
+      "comment": "Accept by CVPR2026",
+      "summary": "Fine-grained spatiotemporal reasoning on surgical videos is critical, yet the capabilities of Multi-modal Large Language Models (MLLMs) in this domain remain largely unexplored.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "medical_imaging",
+      "score": 46.0
+    },
+    {
+      "title": "Where are they looking in the operating room?",
+      "arxiv_id": "2604.20574",
+      "abstract": "Purpose: Gaze-following, the task of inferring where individuals are looking, has been widely studied in computer vision, advancing research in visual attention modeling, social scene understanding, and human-robot interaction. However, gaze-following has never been explored in the operating room (OR), a complex, high-stakes environment where visual attention plays an important role in surgical workflow analysis. In this work, we introduce the concept of gaze-following to the surgical domain, and demonstrate its great potential for understanding clinical roles, surgical phases, and team communications in the OR. Methods: We extend the 4D-OR dataset with gaze-following annotations, and extend the Team-OR dataset with gaze-following and a new team communication activity annotations. Then, we propose novel approaches to address clinical role prediction, surgical phase recognition, and team communication detection using a gaze-following model. For role and phase recognition, we propose a gaze heatmap-based approach that uses gaze predictions solely; for team communication detection, we train a spatial-temporal model in a self-supervised way that encodes gaze-based clip features, and then feed the features into a temporal activity detection model. Results: Experimental results on the 4D-OR and Team-OR datasets demonstrate that our approach achieves state-of-the-art performance on all downstream tasks. Quantitatively, our approach obtains F1 scores of 0.92 for clinical role prediction and 0.95 for surgical phase recognition. Furthermore, it significantly outperforms existing baselines in team communication detection, improving previous best performances by over 30%. Conclusion: We introduce gaze-following in the OR as a novel research direction in surgical data science, highlighting its great potential to advance surgical workflow analysis in computer-assisted interventions.",
+      "authors": [
+        "Keqi Chen",
+        "Séraphin Baributsa",
+        "Lilien Schewski",
+        "Vinkle Srivastav",
+        "Didier Mutter"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "Purpose: Gaze-following, the task of inferring where individuals are looking, has been widely studied in computer vision, advancing research in visual attention modeling, social scene understanding...",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "computer_vision_core",
+      "score": 43.0
+    },
+    {
+      "title": "Graph2Counsel: Clinically Grounded Synthetic Counseling Dialogue Generation from Client Psychological Graphs",
+      "arxiv_id": "2604.20382",
+      "abstract": "Rising demand for mental health support has increased interest in using Large Language Models (LLMs) for counseling. However, adapting LLMs to this high-risk safety-critical domain is hindered by the scarcity of real-world counseling data due to privacy constraints. Synthetic datasets provide a promising alternative, but existing approaches often rely on unstructured or semi-structured text inputs and overlook structural dependencies between a client's cognitive, emotional, and behavioral states, often producing psychologically inconsistent interactions and reducing data realism and quality. We introduce Graph2Counsel, a framework for generating synthetic counseling sessions grounded in Client Psychological Graphs (CPGs) that encode relationships among clients' thoughts, emotions, and behaviors. Graph2Counsel employs a structured prompting pipeline guided by counselor strategies and CPG, and explores prompting strategies including CoT (Wei et al., 2022) and Multi-Agent Feedback (Li et al., 2025a). Graph2Counsel produces 760 sessions from 76 CPGs across diverse client profiles. In expert evaluation, our dataset outperforms prior datasets on specificity, counselor competence, authenticity, conversational flow, and safety, with substantial inter-annotator agreement (Krippendorff's $α$ = 0.70). Fine-tuning an open-source model on this dataset improves performance on CounselingBench (Nguyen et al., 2025) and CounselBench (Li et al., 2025b), showing downstream utility. We also make our code and data public.",
+      "authors": [
+        "Aishik Mandal",
+        "Hiba Arnaout",
+        "Clarissa W. Ong",
+        "Juliet Bockhorst",
+        "Kate Sheehan"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-04-22",
+      "comment": "49 pages, 46 figures, 11 tables",
+      "summary": "Rising demand for mental health support has increased interest in using Large Language Models (LLMs) for counseling.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "medical_imaging",
+      "score": 42.0
+    },
+    {
+      "title": "X-PCR: A Benchmark for Cross-modality Progressive Clinical Reasoning in Ophthalmic Diagnosis",
+      "arxiv_id": "2604.20350",
+      "abstract": "Despite significant progress in Multi-modal Large Language Models (MLLMs), their clinical reasoning capacity for multi-modal diagnosis remains largely unexamined. Current benchmarks, mostly single-modality data, can't evaluate progressive reasoning and cross-modal integration essential for clinical practice. We introduce the Cross-Modality Progressive Clinical Reasoning (X-PCR) benchmark, the first comprehensive evaluation of MLLMs through a complete ophthalmology diagnostic workflow, with two reasoning tasks: 1) a six-stage progressive reasoning chain spanning image quality assessment to clinical decision-making, and 2) a cross-modality reasoning task integrating six imaging modalities. The benchmark comprises 26,415 images and 177,868 expert-verified VQA pairs curated from 51 public datasets, covering 52 ophthalmic diseases. Evaluation of 21 MLLMs reveals critical gaps in progressive reasoning and cross-modal integration. Dataset and code: https://github.com/CVI-SZU/X-PCR.",
+      "authors": [
+        "Gui Wang",
+        "Zehao Zhong",
+        "YongSong Zhou",
+        "Yudong Li",
+        "Ende Wu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-22",
+      "comment": "Accept by CVPR2026",
+      "summary": "Despite significant progress in Multi-modal Large Language Models (MLLMs), their clinical reasoning capacity for multi-modal diagnosis remains largely unexamined.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "ophthalmic_clinical",
+      "score": 42.0
+    },
+    {
+      "title": "Image Generators are Generalist Vision Learners",
+      "arxiv_id": "2604.20329",
+      "abstract": "Recent works show that image and video generators exhibit zero-shot visual understanding behaviors, in a way reminiscent of how LLMs develop emergent capabilities of language understanding and reasoning from generative pretraining. While it has long been conjectured that the ability to create visual content implies an ability to understand it, there has been limited evidence that generative vision models have developed strong understanding capabilities. In this work, we demonstrate that image generation training serves a role similar to LLM pretraining, and lets models learn powerful and general visual representations that enable SOTA performance on various vision tasks. We introduce Vision Banana, a generalist model built by instruction-tuning Nano Banana Pro (NBP) on a mixture of its original training data alongside a small amount of vision task data. By parameterizing the output space of vision tasks as RGB images, we seamlessly reframe perception as image generation. Our generalist model, Vision Banana, achieves SOTA results on a variety of vision tasks involving both 2D and 3D understanding, beating or rivaling zero-shot domain-specialists, including Segment Anything Model 3 on segmentation tasks, and the Depth Anything series on metric depth estimation. We show that these results can be achieved with lightweight instruction-tuning without sacrificing the base model's image generation capabilities. The superior results suggest that image generation pretraining is a generalist vision learner. It also shows that image generation serves as a unified and universal interface for vision tasks, similar to text generation's role in language understanding and reasoning. We could be witnessing a major paradigm shift for computer vision, where generative vision pretraining takes a central role in building Foundational Vision Models for both generation and understanding.",
+      "authors": [
+        "Valentin Gabeur",
+        "Shangbang Long",
+        "Songyou Peng",
+        "Paul Voigtlaender",
+        "Shuyang Sun"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-04-22",
+      "comment": "Project Page: http://vision-banana.github.io",
+      "summary": "Recent works show that image and video generators exhibit zero-shot visual understanding behaviors, in a way reminiscent of how LLMs develop emergent capabilities of language understanding and reas...",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "computer_vision_core",
+      "score": 40.0
+    },
+    {
+      "title": "AROMA: Augmented Reasoning Over a Multimodal Architecture for Virtual Cell Genetic Perturbation Modeling",
+      "arxiv_id": "2604.20263",
+      "abstract": "Virtual cell modeling predicts molecular state changes under genetic perturbations in silico, which is essential for biological mechanism studies. However, existing approaches suffer from unconstrained reasoning, uninterpretable predictions, and retrieval signals that are weakly aligned with regulatory topology. To address these limitations, we propose AROMA, an Augmented Reasoning Over a Multimodal Architecture for virtual cell genetic perturbation modeling. AROMA integrates textual evidence, graph-topology information, and protein sequence features to model perturbation-target dependencies, and is trained with a two-stage optimization strategy to yield predictions that are both accurate and interpretable. We also construct two knowledge graphs and a perturbation reasoning dataset, PerturbReason, containing more than 498k samples, as reusable resources for the virtual cell domain. Experiments show that AROMA outperforms existing methods across multiple cell lines, and remains robust under zero-shot evaluation on an unseen cell line, as well as in knowledge-sparse, long-tail scenarios. Overall, AROMA demonstrates that combining knowledge-driven multimodal modeling with evidence retrieval provides a promising pathway toward more reliable and interpretable virtual cell perturbation prediction. Model weights are available at https://huggingface.co/blazerye/AROMA. Code is available at https://github.com/blazerye/AROMA.",
+      "authors": [
+        "Zhenyu Wang",
+        "Geyan Ye",
+        "Wei Liu",
+        "Man Tat Alexander Ng"
+      ],
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-04-22",
+      "comment": "Accepted to ACL 2026 as a Findings paper. Zhenyu Wang and Geyan Ye are equal contributors; Geyan Ye is the corresponding author and project lead",
+      "summary": "Virtual cell modeling predicts molecular state changes under genetic perturbations in silico, which is essential for biological mechanism studies.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "medical_imaging",
+      "score": 39.0
+    }
+  ],
+  "tier_b": [
+    {
+      "title": "R-CoV: Region-Aware Chain-of-Verification for Alleviating Object Hallucinations in LVLMs",
+      "arxiv_id": "2604.20696",
+      "abstract": "Large vision-language models (LVLMs) have demonstrated impressive performance in various multimodal understanding and reasoning tasks. However, they still struggle with object hallucinations, i.e., the claim of nonexistent objects in the visual input. To address this challenge, we propose Region-aware Chain-of-Verification (R-CoV), a visual chain-of-verification method to alleviate object hallucinations in LVLMs in a post-hoc manner. Motivated by how humans comprehend intricate visual information -- often focusing on specific image regions or details within a given sample -- we elicit such region-level processing from LVLMs themselves and use it as a chaining cue to detect and alleviate their own object hallucinations. Specifically, our R-CoV consists of six steps: initial response generation, entity extraction, coordinate generation, region description, verification execution, and final response generation. As a simple yet effective method, R-CoV can be seamlessly integrated into various LVLMs in a training-free manner and without relying on external detection models. Extensive experiments on several widely used hallucination benchmarks across multiple LVLMs demonstrate that R-CoV can significantly alleviate object hallucinations in LVLMs. Project page: https://github.com/Jiahao000/R-CoV.",
+      "authors": [
+        "Jiahao Xie",
+        "Alessio Tonioni",
+        "Nathalie Rauschmayr",
+        "Federico Tombari",
+        "Bernt Schiele"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "Large vision-language models (LVLMs) have demonstrated impressive performance in various multimodal understanding and reasoning tasks.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "multimodal_vlm",
+      "score": 38.0
+    },
+    {
+      "title": "The Expense of Seeing: Attaining Trustworthy Multimodal Reasoning Within the Monolithic Paradigm",
+      "arxiv_id": "2604.20665",
+      "abstract": "The rapid proliferation of Vision-Language Models (VLMs) is widely celebrated as the dawn of unified multimodal knowledge discovery but its foundation operates on a dangerous, unquestioned axiom: that current VLMs faithfully synthesise multimodal data. We argue they do not. Instead, a profound crisis of trustworthiness underlies the dominant Vision Encoder-Projector-LLM paradigm. Rather than extracting grounded knowledge from visual inputs, state-of-the-art models frequently exhibit functional blindness, i.e., exploiting strong language priors to bypass severe visual representation bottlenecks. In this work, we challenge the conventional methodology of multimodal evaluation, which relies on data ablation or new dataset creation and therefore fatally conflates dataset biases with architectural incapacity. We propose a radical, information-theoretic departure: the Modality Translation Protocol, designed to quantifiably unmask the Expense of Seeing. By translating semantic payloads rather than ablating them, we formulate three novel metrics -- the Toll (ToS), Curse (CoS), and Fallacy (FoS) of Seeing -- culminating in the Semantic Sufficiency Criterion (SSC). Furthermore, we posit a provocative Divergence Law of Multimodal Scaling, hypothesising that as the underlying language engines scale to unprecedented reasoning capabilities, the mathematical penalty of the visual knowledge bottleneck paradoxically increases. We challenge the KDD community to abandon the illusory pursuit of \"multimodal gain\". By elevating the SSC from a passive diagnostic constraint to an active architectural blueprint, we provide the rigorous, trustworthy foundation required to force the next generation of AI systems to truly see the data, achieving true multimodal reasoning.",
+      "authors": [
+        "Karan Goyal",
+        "Dikshant Kukreja"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "The rapid proliferation of Vision-Language Models (VLMs) is widely celebrated as the dawn of unified multimodal knowledge discovery but its foundation operates on a dangerous, unquestioned axiom: t...",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "computer_vision_core",
+      "score": 38.0
+    },
+    {
+      "title": "Physics-Informed Conditional Diffusion for Motion-Robust Retinal Temporal Laser Speckle Contrast Imaging",
+      "arxiv_id": "2604.20594",
+      "abstract": "Retinal laser speckle contrast imaging (LSCI) is a noninvasive optical modality for monitoring retinal blood flow dynamics. However, conventional temporal LSCI (tLSCI) reconstruction relies on sufficiently long speckle sequences to obtain stable temporal statistics, which makes it vulnerable to acquisition disturbances and limits effective temporal resolution. A physically informed reconstruction framework, termed RetinaDiff (Retinal Diffusion Model), is proposed for retinal tLSCI that is robust to motion and requires only a few frames. In RetinaDiff, registration based on phase correlation is first applied to stabilize the raw speckle sequence before contrast computation, reducing interframe misalignment so that fluctuations at each pixel primarily reflect true flow dynamics. This step provides a physics prior corrected for motion and a high quality multiframe tLSCI reference. Next, guided by the physics prior, a conditional diffusion model performs inverse reconstruction by jointly conditioning on the registered speckle sequence and the corrected prior. Experiments on data acquired with a retinal LSCI system developed in house show improved structural continuity and statistical stability compared with direct reconstruction from few frames and representative baselines. The framework also remains effective in a small number of extremely challenging cases, where both the direct 5-frame input and the conventional multiframe reconstruction are severely degraded. Overall, this work provides a practical and physically grounded route for reliable retinal tLSCI reconstruction from extremely limited frames. The source code and model weights will be publicly available at https://github.com/QianChen113/RetinaDiff.",
+      "authors": [
+        "Qian Chen",
+        "Yuehao Chen",
+        "Qiang Wang",
+        "Lei Zhu",
+        "Yanye Lu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "Retinal laser speckle contrast imaging (LSCI) is a noninvasive optical modality for monitoring retinal blood flow dynamics.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "ophthalmic_clinical",
+      "score": 38.0
+    },
+    {
+      "title": "SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks",
+      "arxiv_id": "2604.20087",
+      "abstract": "Skills have become the de facto way to enable LLM agents to perform complex real-world tasks with customized instructions, workflows, and tools, but how to learn them automatically and effectively remains unclear. We introduce SkillLearnBench, the first benchmark for evaluating continual skill learning methods, comprising 20 verified, skill-dependent tasks across 15 sub-domains derived from a real-world skill taxonomy , evaluated at three levels: skill quality, execution trajectory, and task outcome. Using this benchmark, we evaluate recent continual learning techniques, those leveraging one-shot, self/teacher feedback, and skill creator to generate skills from agent experiences. We find that all continual learning methods improve over the no-skill baseline, yet consistent gains remain elusive: no method leads across all tasks and LLMs, and scaling to stronger LLMs does not reliably help. Continual learning improves tasks with clear, reusable workflows but struggles on open-ended tasks, and using stronger LLM backbones does not consistently produce better skills. Our analysis also revealed that multiple iterations in continual learning facilitate genuine improvement via external feedback, whereas self-feedback alone induces recursive drift. Our data and code are open-source at https://github.com/cxcscmu/SkillLearnBench to enable further studies of automatic skill generation and continual learning techniques.",
+      "authors": [
+        "Shanshan Zhong",
+        "Yi Lu",
+        "Jingjie Ning",
+        "Yibing Wan",
+        "Lihan Feng"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "Skills have become the de facto way to enable LLM agents to perform complex real-world tasks with customized instructions, workflows, and tools, but how to learn them automatically and effectively ...",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "continual_learning",
+      "score": 38.0
+    },
+    {
+      "title": "ConeSep: Cone-based Robust Noise-Unlearning Compositional Network for Composed Image Retrieval",
+      "arxiv_id": "2604.20358",
+      "abstract": "The Composed Image Retrieval (CIR) task provides a flexible retrieval paradigm via a reference image and modification text, but it heavily relies on expensive and error-prone triplet annotations. This paper systematically investigates the Noisy Triplet Correspondence (NTC) problem introduced by annotations. We find that NTC noise, particularly ``hard noise'' (i.e., the reference and target images are highly similar but the modification text is incorrect), poses a unique challenge to existing Noise Correspondence Learning (NCL) methods because it breaks the traditional ``small loss hypothesis''. We identify and elucidate three key, yet overlooked, challenges in the NTC task, namely (C1) Modality Suppression, (C2) Negative Anchor Deficiency, and (C3) Unlearning Backlash. To address these challenges, we propose a Cone-based robuSt noisE-unlearning comPositional network (ConeSep). Specifically, we first propose Geometric Fidelity Quantization, theoretically establishing and practically estimating a noise boundary to precisely locate noisy correspondence. Next, we introduce Negative Boundary Learning, which learns a ``diagonal negative combination'' for each query as its explicit semantic opposite-anchor in the embedding space. Finally, we design Boundary-based Targeted Unlearning, which models the noisy correction process as an optimal transport problem, elegantly avoiding Unlearning Backlash. Extensive experiments on benchmark datasets (FashionIQ and CIRR) demonstrate that ConeSep significantly outperforms current state-of-the-art methods, which fully demonstrates the effectiveness and robustness of our method.",
+      "authors": [
+        "Zixu Li",
+        "Yupeng Hu",
+        "Zhiwei Chen",
+        "Mingyu Zhang",
+        "Zhiheng Fu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-22",
+      "comment": "Accepted by CVPR 2026",
+      "summary": "The Composed Image Retrieval (CIR) task provides a flexible retrieval paradigm via a reference image and modification text, but it heavily relies on expensive and error-prone triplet annotations.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "object_detection",
+      "score": 37.0
+    },
+    {
+      "title": "Semantic-Fast-SAM: Efficient Semantic Segmenter",
+      "arxiv_id": "2604.20169",
+      "abstract": "We propose Semantic-Fast-SAM (SFS), a semantic segmentation framework that combines the Fast Segment Anything model with a semantic labeling pipeline to achieve real-time performance without sacrificing accuracy. FastSAM is an efficient CNN-based re-implementation of the Segment Anything Model (SAM) that runs much faster than the original transformer-based SAM. Building upon FastSAM's rapid mask generation, we integrate a Semantic-Segment-Anything (SSA) labeling strategy to assign meaningful categories to each mask. The resulting SFS model produces high-quality semantic segmentation maps at a fraction of the computational cost and memory footprint of the original SAM-based approach. Experiments on Cityscapes and ADE20K benchmarks demonstrate that SFS matches the accuracy of prior SAM-based methods (mIoU ~ 70.33 on Cityscapes and 48.01 on ADE20K) while achieving approximately 20x faster inference than SSA in the closed-set setting. We also show that SFS effectively handles open-vocabulary segmentation by leveraging CLIP-based semantic heads, outperforming recent open-vocabulary models on broad class labeling. This work enables practical real-time semantic segmentation with the \"segment-anything\" capability, broadening the applicability of foundation segmentation models in robotics scenarios. The implementation is available at https://github.com/KBH00/Semantic-Fast-SAM.",
+      "authors": [
+        "Byunghyun Kim"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-22",
+      "comment": "APSIPA ASC 2025",
+      "summary": "We propose Semantic-Fast-SAM (SFS), a semantic segmentation framework that combines the Fast Segment Anything model with a semantic labeling pipeline to achieve real-time performance without sacrif...",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "computer_vision_core",
+      "score": 37.0
+    },
+    {
+      "title": "Can \"AI\" Be a Doctor? A Study of Empathy, Readability, and Alignment in Clinical LLMs",
+      "arxiv_id": "2604.20791",
+      "abstract": "Large Language Models (LLMs) are increasingly deployed in healthcare, yet their communicative alignment with clinical standards remains insufficiently quantified. We conduct a multidimensional evaluation of general-purpose and domain-specialized LLMs across structured medical explanations and real-world physician-patient interactions, analyzing semantic fidelity, readability, and affective resonance. Baseline models amplify affective polarity relative to physicians (Very Negative: 43.14-45.10% vs. 37.25%) and, in larger architectures such as GPT-5 and Claude, produce substantially higher linguistic complexity (FKGL up to 16.91-17.60 vs. 11.47-12.50 in physician-authored responses). Empathy-oriented prompting reduces extreme negativity and lowers grade-level complexity (up to -6.87 FKGL points for GPT-5) but does not significantly increase semantic fidelity. Collaborative rewriting yields the strongest overall alignment. Rephrase configurations achieve the highest semantic similarity to physician answers (up to mean = 0.93) while consistently improving readability and reducing affective extremity. Dual stakeholder evaluation shows that no model surpasses physicians on epistemic criteria, whereas patients consistently prefer rewritten variants for clarity and emotional tone. These findings suggest that LLMs function most effectively as collaborative communication enhancers rather than replacements for clinical expertise.",
+      "authors": [
+        "Mariano Barone",
+        "Francesco Di Serio",
+        "Roberto Moio",
+        "Marco Postiglione",
+        "Giuseppe Riccio"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "Large Language Models (LLMs) are increasingly deployed in healthcare, yet their communicative alignment with clinical standards remains insufficiently quantified.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "ophthalmic_clinical",
+      "score": 36.0
+    },
+    {
+      "title": "COMPASS: COntinual Multilingual PEFT with Adaptive Semantic Sampling",
+      "arxiv_id": "2604.20720",
+      "abstract": "Large language models (LLMs) often exhibit performance disparities across languages, with naive multilingual fine-tuning frequently degrading performance due to negative cross-lingual interference. To address this, we introduce COMPASS (COntinual Multilingual PEFT with Adaptive Semantic Sampling), a novel data-centric framework for adapting LLMs to target languages. COMPASS leverages parameter-efficient fine-tuning (PEFT) by training lightweight, language-specific adapters on a judiciously selected subset of auxiliary multilingual data. The core of our method is a distribution-aware sampling strategy that uses multilingual embeddings and clustering to identify semantic gaps between existing training data and a target usage distribution. By prioritizing auxiliary data from under-represented semantic clusters, COMPASS maximizes positive cross-lingual transfer while minimizing interference. We extend this into a continual learning framework, COMPASS-ECDA, which monitors for data distribution shifts in production and dynamically updates adapters to prevent model staleness, balancing adaptation to new data with the preservation of existing knowledge. Across three different model architectures (Phi-4-Mini, Llama-3.1-8B, and Qwen2.5-7B) and multiple challenging multilingual benchmarks (Global-MMLU, MMLU-ProX), including unseen long-context tasks (OneRuler), we demonstrate that COMPASS consistently outperforms baseline methods guided by linguistic similarity, providing an effective, efficient, and sustainable solution for developing and maintaining high-performing multilingual models in dynamic environments.",
+      "authors": [
+        "Noah Flynn"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "Large language models (LLMs) often exhibit performance disparities across languages, with naive multilingual fine-tuning frequently degrading performance due to negative cross-lingual interference.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "continual_learning",
+      "score": 36.0
+    },
+    {
+      "title": "UniCVR: From Alignment to Reranking for Unified Zero-Shot Composed Visual Retrieval",
+      "arxiv_id": "2604.20318",
+      "abstract": "Composed image retrieval, multi-turn composed image retrieval, and composed video retrieval all share a common paradigm: composing the reference visual with modification text to retrieve the desired target. Despite this shared structure, the three tasks have been studied in isolation, with no prior work proposing a unified framework, let alone a zero-shot solution. In this paper, we propose UniCVR, the first unified zero-shot composed visual retrieval framework that jointly addresses all three tasks without any task-specific human-annotated data. UniCVR strategically combines two complementary strengths: Multimodal Large Language Models (MLLMs) for compositional query understanding and Vision-Language Pre-trained (VLP) models for structured visual retrieval. Concretely, UniCVR operates in two stages. In Stage I, we train the MLLM as a compositional query embedder via contrastive learning on a curated multi-source dataset of approximately 3.5M samples, bridging the heterogeneous embedding spaces between the MLLM and the frozen VLP gallery encoder. A cluster-based hard negative sampling strategy is proposed to strengthen contrastive supervision. In Stage II, we introduce an MLLM-guided dual-level reranking mechanism that applies adaptive budgeted subset scoring to a small number of top-ranked candidates, and then exploits the resulting relevance signals through a dual-level re-scoring scheme, producing more accurate final rankings with minimal computational overhead. Extensive experiments across five benchmarks covering all three tasks demonstrate that UniCVR achieves cutting-edge performance, validating its effectiveness and generalizability. Our data and code will be released upon acceptance.",
+      "authors": [
+        "Haokun Wen",
+        "Xuemeng Song",
+        "Haoyu Zhang",
+        "Xiangyu Zhao",
+        "Weili Guan"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.MM"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "Composed image retrieval, multi-turn composed image retrieval, and composed video retrieval all share a common paradigm: composing the reference visual with modification text to retrieve the desire...",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "multimodal_vlm",
+      "score": 36.0
+    },
+    {
+      "title": "Amodal SAM: A Unified Amodal Segmentation Framework with Generalization",
+      "arxiv_id": "2604.20748",
+      "abstract": "Amodal segmentation is a challenging task that aims to predict the complete geometric shape of objects, including their occluded regions. Although existing methods primarily focus on amodal segmentation within the training domain, these approaches often lack the generalization capacity to extend effectively to novel object categories and unseen contexts. This paper introduces Amodal SAM, a unified framework that leverages SAM (Segment Anything Model) for both amodal image and amodal video segmentation. Amodal SAM preserves the powerful generalization ability of SAM while extending its inherent capabilities to the amodal segmentation task. The improvements lie in three aspects: (1) a lightweight Spatial Completion Adapter that enables occluded region reconstruction, (2) a Target-Aware Occlusion Synthesis (TAOS) pipeline that addresses the scarcity of amodal annotations by generating diverse synthetic training data, and (3) novel learning objectives that enforce regional consistency and topological regularization. Extensive experiments demonstrate that Amodal SAM achieves state-of-the-art performance on standard benchmarks, while simultaneously exhibiting robust generalization to novel scenarios. We anticipate that this research will advance the field toward practical amodal segmentation systems capable of operating effectively in unconstrained real-world environments.",
+      "authors": [
+        "Bo Zhang",
+        "Zhuotao Tian",
+        "Xin Tao",
+        "Songlin Tang",
+        "Jun Yu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "Amodal segmentation is a challenging task that aims to predict the complete geometric shape of objects, including their occluded regions.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "computer_vision_core",
+      "score": 35.0
+    },
+    {
+      "title": "RSRCC: A Remote Sensing Regional Change Comprehension Benchmark Constructed via Retrieval-Augmented Best-of-N Ranking",
+      "arxiv_id": "2604.20623",
+      "abstract": "Traditional change detection identifies where changes occur, but does not explain what changed in natural language. Existing remote sensing change captioning datasets typically describe overall image-level differences, leaving fine-grained localized semantic reasoning largely unexplored. To close this gap, we present RSRCC, a new benchmark for remote sensing change question-answering containing 126k questions, split into 87k training, 17.1k validation, and 22k test instances. Unlike prior datasets, RSRCC is built around localized, change-specific questions that require reasoning about a particular semantic change. To the best of our knowledge, this is the first remote sensing change question-answering benchmark designed explicitly for such fine-grained reasoning-based supervision. To construct RSRCC, we introduce a hierarchical semi-supervised curation pipeline that uses Best-of-N ranking as a critical final ambiguity-resolution stage. First, candidate change regions are extracted from semantic segmentation masks, then initially screened using an image-text embedding model, and finally validated through retrieval-augmented vision-language curation with Best-of-N ranking. This process enables scalable filtering of noisy and ambiguous candidates while preserving semantically meaningful changes. The dataset is available at https://huggingface.co/datasets/google/RSRCC.",
+      "authors": [
+        "Roie Kazoom",
+        "Yotam Gigi",
+        "George Leifman",
+        "Tomer Shekel",
+        "Genady Beryozkin"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "Traditional change detection identifies where changes occur, but does not explain what changed in natural language.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "computer_vision_core",
+      "score": 35.0
+    },
+    {
+      "title": "Object Referring-Guided Scanpath Prediction with Perception-Enhanced Vision-Language Models",
+      "arxiv_id": "2604.20361",
+      "abstract": "Object Referring-guided Scanpath Prediction (ORSP) aims to predict the human attention scanpath when they search for a specific target object in a visual scene according to a linguistic description describing the object. Multimodal information fusion is a key point of ORSP. Therefore, we propose a novel model, ScanVLA, to first exploit a Vision-Language Model (VLM) to extract and fuse inherently aligned visual and linguistic feature representations from the input image and referring expression. Next, to enhance the ScanVLA's perception of fine-grained positional information, we not only propose a novel History Enhanced Scanpath Decoder (HESD) that directly takes historical fixations' position information as input to help predict a more reasonable position for the current fixation, but also adopt a frozen Segmentation LoRA as an auxiliary component to help localize the referred object more precisely, which improves the scanpath prediction task without incurring additional large computational and time costs. Extensive experimental results demonstrate that ScanVLA can significantly outperform existing scanpath prediction methods under object referring.",
+      "authors": [
+        "Rong Quan",
+        "Yantao Lai",
+        "Dong Liang",
+        "Jie Qin"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-22",
+      "comment": "ICMR 2026",
+      "summary": "Object Referring-guided Scanpath Prediction (ORSP) aims to predict the human attention scanpath when they search for a specific target object in a visual scene according to a linguistic description...",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "computer_vision_core",
+      "score": 35.0
+    },
+    {
+      "title": "Closing the Domain Gap in Biomedical Imaging by In-Context Control Samples",
+      "arxiv_id": "2604.20824",
+      "abstract": "The central problem in biomedical imaging are batch effects: systematic technical variations unrelated to the biological signal of interest. These batch effects critically undermine experimental reproducibility and are the primary cause of failure of deep learning systems on new experimental batches, preventing their practical use in the real world. Despite years of research, no method has succeeded in closing this performance gap for deep learning models. We propose Control-Stabilized Adaptive Risk Minimization via Batch Normalization (CS-ARM-BN), a meta-learning adaptation method that exploits negative control samples. Such unperturbed reference images are present in every experimental batch by design and serve as stable context for adaptation. We validate our novel method on Mechanism-of-Action (MoA) classification, a crucial task for drug discovery, on the large-scale JUMP-CP dataset. The accuracy of standard ResNets drops from 0.939 $\\pm$ 0.005, on the training domain, to 0.862 $\\pm$ 0.060 on data from new experimental batches. Foundation models, even after Typical Variation Normalization, fail to close this gap. We are the first to show that meta-learning approaches close the domain gap by achieving 0.935 $\\pm$ 0.018. If the new experimental batches exhibit strong domain shifts, such as being generated in a different lab, meta-learning approaches can be stabilized with control samples, which are always available in biomedical experiments. Our work shows that batch effects in bioimaging data can be effectively neutralized through principled in-context adaptation, which also makes them practically usable and efficient.",
+      "authors": [
+        "Ana Sanchez-Fernandez",
+        "Thomas Pinetz",
+        "Werner Zellinger",
+        "Günter Klambauer"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "The central problem in biomedical imaging are batch effects: systematic technical variations unrelated to the biological signal of interest.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "medical_imaging",
+      "score": 34.0
+    },
+    {
+      "title": "A Vision-Language-Action Model for Adaptive Ultrasound-Guided Needle Insertion and Needle Tracking",
+      "arxiv_id": "2604.20347",
+      "abstract": "Ultrasound (US)-guided needle insertion is a critical yet challenging procedure due to dynamic imaging conditions and difficulties in needle visualization. Many methods have been proposed for automated needle insertion, but they often rely on hand-crafted pipelines with modular controllers, whose performance degrades in challenging cases. In this paper, a Vision-Language-Action (VLA) model is proposed for adaptive and automated US-guided needle insertion and tracking on a robotic ultrasound (RUS) system. This framework provides a unified approach to needle tracking and needle insertion control, enabling real-time, dynamically adaptive adjustment of insertion based on the obtained needle position and environment awareness. To achieve real-time and end-to-end tracking, a Cross-Depth Fusion (CDF) tracking head is proposed, integrating shallow positional and deep semantic features from the large-scale vision backbone. To adapt the pretrained vision backbone for tracking tasks, a Tracking-Conditioning (TraCon) register is introduced for parameter-efficient feature conditioning. After needle tracking, an uncertainty-aware control policy and an asynchronous VLA pipeline are presented for adaptive needle insertion control, ensuring timely decision-making for improved safety and outcomes. Extensive experiments on both needle tracking and insertion show that our method consistently outperforms state-of-the-art trackers and manual operation, achieving higher tracking accuracy, improved insertion success rates, and reduced procedure time, highlighting promising directions for RUS-based intelligent intervention.",
+      "authors": [
+        "Yuelin Zhang",
+        "Qingpeng Ding",
+        "Longxiang Tang",
+        "Chengyu Fang",
+        "Shing Shin Cheng"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "published": "2026-04-22",
+      "comment": "Accepted by ICRA 2026",
+      "summary": "Ultrasound (US)-guided needle insertion is a critical yet challenging procedure due to dynamic imaging conditions and difficulties in needle visualization.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "medical_imaging",
+      "score": 34.0
+    },
+    {
+      "title": "Fourier Series Coder: A Novel Perspective on Angle Boundary Discontinuity Problem for Oriented Object Detection",
+      "arxiv_id": "2604.20281",
+      "abstract": "With the rapid advancement of intelligent driving and remote sensing, oriented object detection has gained widespread attention. However, achieving high-precision performance is fundamentally constrained by the Angle Boundary Discontinuity (ABD) and Cyclic Ambiguity (CA) problems, which typically cause significant angle fluctuations near periodic boundaries. Although recent studies propose continuous angle coders to alleviate these issues, our theoretical and empirical analyses reveal that state-of-the-art methods still suffer from substantial cyclic errors. We attribute this instability to the structural noise amplification within their non-orthogonal decoding mechanisms. This mathematical vulnerability significantly exacerbates angular deviations, particularly for square-like objects. To resolve this fundamentally, we propose the Fourier Series Coder (FSC), a lightweight plug-and-play component that establishes a continuous, reversible, and mathematically robust angle encoding-decoding paradigm. By rigorously mapping angles onto a minimal orthogonal Fourier basis and explicitly enforcing a geometric manifold constraint, FSC effectively prevents feature modulus collapse. This structurally stabilized representation ensures highly robust phase unwrapping, intrinsically eliminating the need for heuristic truncations while achieving strict boundary continuity and superior noise immunity. Extensive experiments across three large-scale datasets demonstrate that FSC achieves highly competitive overall performance, yielding substantial improvements in high-precision detection. The code will be available at https://github.com/weiminghong/FSC.",
+      "authors": [
+        "Minghong Wei",
+        "Pu Cao",
+        "Zhihao Chen",
+        "Zhiyuan Zang",
+        "Lu Yang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "With the rapid advancement of intelligent driving and remote sensing, oriented object detection has gained widespread attention.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "computer_vision_core",
+      "score": 34.0
+    },
+    {
+      "title": "Opportunistic Bone-Loss Screening from Routine Knee Radiographs Using a Multi-Task Deep Learning Framework with Sensitivity-Constrained Threshold Optimization",
+      "arxiv_id": "2604.20268",
+      "abstract": "Background: Osteoporosis and osteopenia are often undiagnosed until fragility fractures occur. Dual-energy X-ray absorptiometry (DXA) is the reference standard for bone mineral density (BMD) assessment, but access remains limited. Knee radiographs are obtained at high volume for osteoarthritis evaluation and may offer an opportunity for opportunistic bone-loss screening. Objective: To develop and evaluate a multi-task deep learning system for opportunistic bone-loss screening from routine knee radiographs without additional imaging or patient visits. Methods: We developed STR-Net, a multi-task framework for single-channel grayscale knee radiographs. The model includes a shared backbone, global average pooling feature aggregation, a shared neck, and a task-aware representation routing module connected to three task-specific heads: binary screening (Normal vs. Bone Loss), severity sub-classification (Osteopenia vs. Osteoporosis), and weakly coupled T-score regression with optional clinical variables. A sensitivity-constrained threshold optimization strategy (minimum sensitivity >= 0.86) was applied. The dataset included 1,570 knee radiographs, split at the patient level into training (n=1,120), validation (n=226), and test (n=224) sets. Results: On the held-out test set, STR-Net achieved an AUROC of 0.933, sensitivity of 0.904, specificity of 0.773, and AUPRC of 0.956 for binary screening. Severity sub-classification achieved an AUROC of 0.898. The T-score regression branch showed a Pearson correlation of 0.801 with DXA-measured T-scores in a pilot subset (n=31), with MAE of 0.279 and RMSE of 0.347. Conclusions: STR-Net enables single-pass bone-loss screening, severity stratification, and quantitative T-score estimation from routine knee radiographs. Prospective clinical validation is needed before deployment.",
+      "authors": [
+        "Zhaochen Li",
+        "Xinghao Yan",
+        "Runni Zhou",
+        "Xiaoyang Li",
+        "Chenjie Zhu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "Background: Osteoporosis and osteopenia are often undiagnosed until fragility fractures occur.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "medical_imaging",
+      "score": 34.0
+    },
+    {
+      "title": "Causal-Transformer with Adaptive Mutation-Locking for Early Prediction of Acute Kidney Injury",
+      "arxiv_id": "2604.20259",
+      "abstract": "Accurate early prediction of Acute Kidney Injury (AKI) is critical for timely clinical intervention. However, existing deep learning models struggle with irregularly sampled data and suffer from the opaque \"black-box\" nature of sequential architectures, strictly limiting clinical trust. To address these challenges, we propose CT-Former, integrating continuous-time modeling with a Causal-Transformer. To handle data irregularity without biased artificial imputation, our framework utilizes a continuous-time state evolution mechanism to naturally track patient temporal trajectories. To resolve the black-box problem, our Causal-Attention module abandons uninterpretable hidden state aggregation. Instead, it generates a directed structural causal matrix to identify and trace the exact historical onset of severe physiological shocks. By establishing clear causal pathways between historical anomalies and current risk predictions, CT-Former provides native clinical interpretability. Training follows a decoupled two-stage protocol to optimize the causal-fusion process independently. Extensive experiments on the MIMIC-IV cohort (N=18,419) demonstrate that CT-Former significantly outperforms state-of-the-art baselines. The results confirm that our explicitly transparent architecture offers an accurate and trustworthy tool for clinical decision-making.",
+      "authors": [
+        "Weizhi Nie",
+        "Haolin Chen"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "Accurate early prediction of Acute Kidney Injury (AKI) is critical for timely clinical intervention.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "medical_imaging",
+      "score": 34.0
+    },
+    {
+      "title": "Learning to Solve the Quadratic Assignment Problem with Warm-Started MCMC Finetuning",
+      "arxiv_id": "2604.20109",
+      "abstract": "The quadratic assignment problem (QAP) is a fundamental NP-hard task that poses significant challenges for both traditional heuristics and modern learning-based solvers. Existing QAP solvers still struggle to achieve consistently competitive performance across structurally diverse real-world instances. To bridge this performance gap, we propose PLMA, an innovative permutation learning framework. PLMA features an efficient warm-started MCMC finetuning procedure to enhance deployment-time performance, leveraging short Markov chains to anchor the adaptation to the promising regions previously explored. For rapid exploration via MCMC over the permutation space, we design an additive energy-based model (EBM) that enables an $O(1)$-time 2-swap Metropolis-Hastings sampling step. Moreover, the neural network used to parameterize the EBM incorporates a scalable and flexible cross-graph attention mechanism to model interactions between facilities and locations in the QAP. Extensive experiments demonstrate that PLMA consistently outperforms state-of-the-art baselines across various benchmarks. In particular, PLMA achieves a near-zero average optimality gap on QAPLIB, exhibits remarkably superior robustness on the notoriously difficult Taixxeyy instances, and also serves as an effective QAP solver in bandwidth minimization.",
+      "authors": [
+        "Yicheng Pan",
+        "Ruisong Zhou",
+        "Haijun Zou",
+        "Tianyou Li",
+        "Zaiwen Wen"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "math.OC"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "The quadratic assignment problem (QAP) is a fundamental NP-hard task that poses significant challenges for both traditional heuristics and modern learning-based solvers.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "object_detection",
+      "score": 34.0
+    },
+    {
+      "title": "Render-in-the-Loop: Vector Graphics Generation via Visual Self-Feedback",
+      "arxiv_id": "2604.20730",
+      "abstract": "Multimodal Large Language Models (MLLMs) have shown promising capabilities in generating Scalable Vector Graphics (SVG) via direct code synthesis. However, existing paradigms typically adopt an open-loop \"blind drawing\" approach, where models generate symbolic code sequences without perceiving intermediate visual outcomes. This methodology severely underutilizes the powerful visual priors embedded in MLLMs vision encoders, treating SVG generation as a disjointed textual sequence modeling task rather than an integrated visuo-spatial one. Consequently, models struggle to reason about partial canvas states and implicit occlusion relationships, which are visually explicit but textually ambiguous. To bridge this gap, we propose Render-in-the-Loop, a novel generation paradigm that reformulates SVG synthesis as a step-wise, visual-context-aware process. By rendering intermediate code states into a cumulative canvas, the model explicitly observes the evolving visual context at each step, leveraging on-the-fly feedback to guide subsequent generation. However, we demonstrate that applying this visual loop naively to off-the-shelf models is suboptimal due to their inability to leverage incremental visual-code mappings. To address this, we first utilize fine-grained path decomposition to construct dense multi-step visual trajectories, and then introduce a Visual Self-Feedback (VSF) training strategy to condition the next primitive generation on intermediate visual states. Furthermore, a Render-and-Verify (RaV) inference mechanism is proposed to effectively filter degenerate and redundant primitives. Our framework, instantiated on a multimodal foundation model, outperforms strong open-weight baselines on the standard MMSVGBench. This result highlights the remarkable data efficiency and generalization capability of our Render-in-the-Loop paradigm for both Text-to-SVG and Image-to-SVG tasks.",
+      "authors": [
+        "Guotao Liang",
+        "Zhangcheng Wang",
+        "Juncheng Hu",
+        "Haitao Zhou",
+        "Ziteng Xue"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "Multimodal Large Language Models (MLLMs) have shown promising capabilities in generating Scalable Vector Graphics (SVG) via direct code synthesis.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "multimodal_vlm",
+      "score": 33.0
+    },
+    {
+      "title": "Evian: Towards Explainable Visual Instruction-tuning Data Auditing",
+      "arxiv_id": "2604.20544",
+      "abstract": "The efficacy of Large Vision-Language Models (LVLMs) is critically dependent on the quality of their training data, requiring a precise balance between visual fidelity and instruction-following capability. Existing datasets, however, are plagued by inconsistent quality, and current data filtering methods rely on coarse-grained scores that lack the granularity to identify nuanced semantic flaws like logical fallacies or factual errors. This creates a fundamental bottleneck in developing more reliable models. To address this, we make three core contributions. First, we construct a large-scale, 300K-sample benchmark by systematically injecting diverse, subtle defects to provide a challenging testbed for data auditing. Second, we introduce a novel \"Decomposition-then-Evaluation\" paradigm that breaks model responses into constituent cognitive components: visual description, subjective inference, and factual claim, enabling targeted analysis. Third, we instantiate this paradigm via EVIAN (Explainable Visual Instruction-tuning Data AuditiNg), an automated framework that evaluates these components along the orthogonal axes of Image-Text Consistency, Logical Coherence, and Factual Accuracy. Our empirical findings challenge the prevailing scale-centric paradigm: a model fine-tuned on a compact, high-quality subset curated by EVIAN consistently surpassed models trained on orders-of-magnitude larger datasets. We also reveal that dividing complex auditing into verifiable subtasks enables robust curation, and that Logical Coherence is the most critical factor in data quality evaluation.",
+      "authors": [
+        "Zimu Jia",
+        "Mingjie Xu",
+        "Andrew Estornell",
+        "Jiaheng Wei"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-04-22",
+      "comment": "Accepted at ACL 2026",
+      "summary": "The efficacy of Large Vision-Language Models (LVLMs) is critically dependent on the quality of their training data, requiring a precise balance between visual fidelity and instruction-following cap...",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "multimodal_vlm",
+      "score": 33.0
+    },
+    {
+      "title": "Global Offshore Wind Infrastructure: Deployment and Operational Dynamics from Dense Sentinel-1 Time Series",
+      "arxiv_id": "2604.20822",
+      "abstract": "The offshore wind energy sector is expanding rapidly, increasing the need for independent, high-temporal-resolution monitoring of infrastructure deployment and operation at global scale. While Earth Observation based offshore wind infrastructure mapping has matured for spatial localization, existing open datasets lack temporally dense and semantically fine-grained information on construction and operational dynamics. We introduce a global Sentinel-1 synthetic aperture radar (SAR) time series data corpus that resolves deployment and operational phases of offshore wind infrastructure from 2016Q1 to 2025Q1. Building on an updated object detection workflow, we compile 15,606 time series at detected infrastructure locations, with overall 14,840,637 events as analysis-ready 1D SAR backscatter profiles, one profile per Sentinel-1 acquisition and location. To enable direct use and benchmarking, we release (i) the analysis ready 1D SAR profiles, (ii) event-level baseline semantic labels generated by a rule-based classifier, and (iii) an expert-annotated benchmark dataset of 553 time series with 328,657 event labels. The baseline classifier achieves a macro F1 score of 0.84 in event-wise evaluation and an area under the collapsed edit similarity-quality threshold curve (AUC) of 0.785, indicating temporal coherence. We demonstrate that the resulting corpus supports global-scale analyses of deployment dynamics, the identification of differences in regional deployment patterns, vessel interactions, and operational events, and provides a reference for developing and comparing time series classification methods for offshore wind infrastructure monitoring.",
+      "authors": [
+        "Thorsten Hoeser",
+        "Felix Bachofer",
+        "Claudia Kuenzer"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "published": "2026-04-22",
+      "comment": "25 pages, 16 figures",
+      "summary": "The offshore wind energy sector is expanding rapidly, increasing the need for independent, high-temporal-resolution monitoring of infrastructure deployment and operation at global scale.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "computer_vision_core",
+      "score": 32.0
+    },
+    {
+      "title": "Beyond ZOH: Advanced Discretization Strategies for Vision Mamba",
+      "arxiv_id": "2604.20606",
+      "abstract": "Vision Mamba, as a state space model (SSM), employs a zero-order hold (ZOH) discretization, which assumes that input signals remain constant between sampling instants. This assumption degrades temporal fidelity in dynamic visual environments and constrains the attainable accuracy of modern SSM-based vision models. In this paper, we present a systematic and controlled comparison of six discretization schemes instantiated within the Vision Mamba framework: ZOH, first-order hold (FOH), bilinear/Tustin transform (BIL), polynomial interpolation (POL), higher-order hold (HOH), and the fourth-order Runge-Kutta method (RK4). We evaluate each method on standard visual benchmarks to quantify its influence in image classification, semantic segmentation, and object detection. Our results demonstrate that POL and HOH yield the largest gains in accuracy at the cost of higher training-time computation. In contrast, the BIL provides consistent improvements over ZOH with modest additional overhead, offering the most favorable trade-off between precision and efficiency. These findings elucidate the pivotal role of discretization in SSM-based vision architectures and furnish empirically grounded justification for adopting BIL as the default discretization baseline for state-of-the-art SSM models.",
+      "authors": [
+        "Fady Ibrahim",
+        "Guangjun Liu",
+        "Guanghui Wang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "Vision Mamba, as a state space model (SSM), employs a zero-order hold (ZOH) discretization, which assumes that input signals remain constant between sampling instants.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "computer_vision_core",
+      "score": 32.0
+    },
+    {
+      "title": "SMART: A Spectral Transfer Approach to Multi-Task Learning",
+      "arxiv_id": "2604.20161",
+      "abstract": "Multi-task learning is effective for related applications, but its performance can deteriorate when the target sample size is small. Transfer learning can borrow strength from related studies; yet, many existing methods rely on restrictive bounded-difference assumptions between the source and target models. We propose SMART, a spectral transfer method for multi-task linear regression that instead assumes spectral similarity: the target left and right singular subspaces lie within the corresponding source subspaces and are sparsely aligned with the source singular bases. Such an assumption is natural when studies share latent structures and enables transfer beyond the bounded-difference settings. SMART estimates the target coefficient matrix through structured regularization that incorporates spectral information from a source study. Importantly, it requires only a fitted source model rather than the raw source data, making it useful when data sharing is limited. Although the optimization problem is nonconvex, we develop a practical ADMM-based algorithm. We establish general, non-asymptotic error bounds and a minimax lower bound in the noiseless-source regime. Under additional regularity conditions, these results yield near-minimax Frobenius error rates up to logarithmic factors. Simulations confirm improved estimation accuracy and robustness to negative transfer, and analysis of multi-modal single-cell data demonstrates better predictive performance. The Python implementation of SMART, along with the code to reproduce all experiments in this paper, is publicly available at https://github.com/boxinz17/smart.",
+      "authors": [
+        "Boxin Zhao",
+        "Mladen Kolar",
+        "Jinchi Lv"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "stat.ME",
+        "stat.ML"
+      ],
+      "published": "2026-04-22",
+      "comment": "53 pages, 4 figures, 1 table",
+      "summary": "Multi-task learning is effective for related applications, but its performance can deteriorate when the target sample size is small.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "multimodal_vlm",
+      "score": 32.0
+    },
+    {
+      "title": "Relative Entropy Estimation in Function Space: Theory and Applications to Trajectory Inference",
+      "arxiv_id": "2604.20775",
+      "abstract": "Trajectory Inference (TI) seeks to recover latent dynamical processes from snapshot data, where only independent samples from time-indexed marginals are observed. In applications such as single-cell genomics, destructive measurements make path-space laws non-identifiable from finitely many marginals, leaving held-out marginal prediction as the dominant but limited evaluation protocol. We introduce a general framework for estimating the Kullback-Leibler divergence (KL) divergence between probability measures on function space, yielding a tractable, data-driven estimator that is scalable to realistic snapshot datasets. We validate the accuracy of our estimator on a benchmark suite, where the estimated functional KL closely matches the analytic KL. Applying this framework to synthetic and real scRNA-seq datasets, we show that current evaluation metrics often give inconsistent assessments, whereas path-space KL enables a coherent comparison of trajectory inference methods and exposes discrepancies in inferred dynamics, especially in regions with sparse or missing data. These results support functional KL as a principled criterion for evaluating trajectory inference under partial observability.",
+      "authors": [
+        "Chao Wang",
+        "Luca Nepote",
+        "Giulio Franzese",
+        "Pietro Michiardi"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-04-22",
+      "comment": "",
+      "summary": "Trajectory Inference (TI) seeks to recover latent dynamical processes from snapshot data, where only independent samples from time-indexed marginals are observed.",
+      "target_date": "2026-04-23",
+      "source_published_date": "2026-04-22",
+      "domain": "medical_imaging",
+      "score": 31.0
+    }
+  ],
+  "stats": {
+    "total": 270,
+    "in_focus": 71,
+    "tier_a_count": 10,
+    "tier_b_count": 24,
+    "tier_a_min_score": 39.0,
+    "tier_b_min_score": 31.0
+  }
+}
