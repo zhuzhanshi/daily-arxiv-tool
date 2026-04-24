@@ -6,310 +6,310 @@
 
 ## A档：建议精读
 
-### [MambaLiteUNet: Cross-Gated Adaptive Feature Fusion for Robust Skin Lesion Segmentation](https://arxiv.org/abs/2604.20286)
-
-🧪 眼科AI-方法任务 | 待精读
-| 分数 | 56 | 来源 | arXiv | ID | `2604.20286` |
-
-Recent segmentation models have demonstrated promising efficiency by aggressively reducing parameter counts and computational complexity.
-
----
-
-### [Dual Causal Inference: Integrating Backdoor Adjustment and Instrumental Variable Learning for Medical VQA](https://arxiv.org/abs/2604.20306)
-
-🏥 医学影像 | 待精读
-| 分数 | 49 | 来源 | arXiv | ID | `2604.20306` |
-
-Medical Visual Question Answering (MedVQA) aims to generate clinically reliable answers conditioned on complex medical images and questions.
-
----
-
-### [WildFireVQA: A Large-Scale Radiometric Thermal VQA Benchmark for Aerial Wildfire Monitoring](https://arxiv.org/abs/2604.20190)
-
-🖼️ 计算机视觉 | 待精读
-| 分数 | 49 | 来源 | arXiv | ID | `2604.20190` |
-
-Wildfire monitoring requires timely, actionable situational awareness from airborne platforms, yet existing aerial visual question answering (VQA) benchmarks do not evaluate wildfire-specific multi...
-
----
-
-### [Weighted Knowledge Distillation for Semi-Supervised Segmentation of Maxillary Sinus in Panoramic X-ray Images](https://arxiv.org/abs/2604.20213)
-
-🖼️ 计算机视觉 | 待精读
-| 分数 | 47 | 来源 | arXiv | ID | `2604.20213` |
-
-Accurate segmentation of maxillary sinus in panoramic X-ray images is essential for dental diagnosis and surgical planning; however, this task remains relatively underexplored in dental imaging res...
-
----
-
-### [SurgCoT: Advancing Spatiotemporal Reasoning in Surgical Videos through a Chain-of-Thought Benchmark](https://arxiv.org/abs/2604.20319)
-
-🏥 医学影像 | 待精读
-| 分数 | 46 | 来源 | arXiv | ID | `2604.20319` |
-
-Fine-grained spatiotemporal reasoning on surgical videos is critical, yet the capabilities of Multi-modal Large Language Models (MLLMs) in this domain remain largely unexplored.
-
----
-
-### [Where are they looking in the operating room?](https://arxiv.org/abs/2604.20574)
-
-🖼️ 计算机视觉 | 待精读
-| 分数 | 43 | 来源 | arXiv | ID | `2604.20574` |
-
-Purpose: Gaze-following, the task of inferring where individuals are looking, has been widely studied in computer vision, advancing research in visual attention modeling, social scene understanding...
-
----
-
-### [Graph2Counsel: Clinically Grounded Synthetic Counseling Dialogue Generation from Client Psychological Graphs](https://arxiv.org/abs/2604.20382)
-
-🏥 医学影像 | 待精读
-| 分数 | 42 | 来源 | arXiv | ID | `2604.20382` |
-
-Rising demand for mental health support has increased interest in using Large Language Models (LLMs) for counseling.
-
----
-
-### [X-PCR: A Benchmark for Cross-modality Progressive Clinical Reasoning in Ophthalmic Diagnosis](https://arxiv.org/abs/2604.20350)
+### [Back to Source: Open-Set Continual Test-Time Adaptation via Domain Compensation](https://arxiv.org/abs/2604.21772)
 
 👁️ 眼科AI-临床任务 | 待精读
-| 分数 | 42 | 来源 | arXiv | ID | `2604.20350` |
+| 分数 | 48 | 来源 | arXiv | ID | `2604.21772` |
 
-Despite significant progress in Multi-modal Large Language Models (MLLMs), their clinical reasoning capacity for multi-modal diagnosis remains largely unexamined.
-
----
-
-### [Image Generators are Generalist Vision Learners](https://arxiv.org/abs/2604.20329)
-
-🖼️ 计算机视觉 | 待精读
-| 分数 | 40 | 来源 | arXiv | ID | `2604.20329` |
-
-Recent works show that image and video generators exhibit zero-shot visual understanding behaviors, in a way reminiscent of how LLMs develop emergent capabilities of language understanding and reas...
+Test-Time Adaptation (TTA) aims to mitigate distributional shifts between training and test domains during inference time.
 
 ---
 
-### [AROMA: Augmented Reasoning Over a Multimodal Architecture for Virtual Cell Genetic Perturbation Modeling](https://arxiv.org/abs/2604.20263)
+### [Divide-then-Diagnose: Weaving Clinician-Inspired Contexts for Ultra-Long Capsule Endoscopy Videos](https://arxiv.org/abs/2604.21814)
 
 🏥 医学影像 | 待精读
-| 分数 | 39 | 来源 | arXiv | ID | `2604.20263` |
+| 分数 | 46 | 来源 | arXiv | ID | `2604.21814` |
 
-Virtual cell modeling predicts molecular state changes under genetic perturbations in silico, which is essential for biological mechanism studies.
+Capsule endoscopy (CE) enables non-invasive gastrointestinal screening, but current CE research remains largely limited to frame-level classification and detection, leaving video-level analysis und...
+
+---
+
+### [VFM$^{4}$SDG: Unveiling the Power of VFMs for Single-Domain Generalized Object Detection](https://arxiv.org/abs/2604.21502)
+
+🖼️ 计算机视觉 | 待精读
+| 分数 | 44 | 来源 | arXiv | ID | `2604.21502` |
+
+In real-world scenarios, continual changes in weather, illumination, and imaging conditions cause significant domain shifts, leading detectors trained on a single source domain to degrade severely ...
+
+---
+
+### [Trustworthy Clinical Decision Support Using Meta-Predicates and Domain-Specific Languages](https://arxiv.org/abs/2604.21263)
+
+🏥 医学影像 | 待精读
+| 分数 | 44 | 来源 | arXiv | ID | `2604.21263` |
+
+\textbf{Background:} Regulatory frameworks for AI in healthcare, including the EU AI Act and FDA guidance on AI/ML-based medical devices, require clinical decision support to demonstrate not only a...
+
+---
+
+### [SyMTRS: Benchmark Multi-Task Synthetic Dataset for Depth, Domain Adaptation and Super-Resolution in Aerial Imagery](https://arxiv.org/abs/2604.21801)
+
+👁️ 眼科AI-临床任务 | 待精读
+| 分数 | 41 | 来源 | arXiv | ID | `2604.21801` |
+
+Recent advances in deep learning for remote sensing rely heavily on large annotated datasets, yet acquiring high-quality ground truth for geometric, radiometric, and multi-domain tasks remains cost...
+
+---
+
+### [PAPERMIND: Benchmarking Agentic Reasoning and Critique over Scientific Papers in Multimodal LLMs](https://arxiv.org/abs/2604.21304)
+
+🧩 多模态/VLM | 待精读
+| 分数 | 41 | 来源 | arXiv | ID | `2604.21304` |
+
+Understanding scientific papers requires more than answering isolated questions or summarizing content.
+
+---
+
+### [From Codebooks to VLMs: Evaluating Automated Visual Discourse Analysis for Climate Change on Social Media](https://arxiv.org/abs/2604.21786)
+
+🖼️ 计算机视觉 | 待精读
+| 分数 | 40 | 来源 | arXiv | ID | `2604.21786` |
+
+Social media platforms have become primary arenas for climate communication, generating millions of images and posts that - if systematically analysed - can reveal which communication strategies mo...
+
+---
+
+### [Sapiens2](https://arxiv.org/abs/2604.21681)
+
+🖼️ 计算机视觉 | 待精读
+| 分数 | 40 | 来源 | arXiv | ID | `2604.21681` |
+
+We present Sapiens2, a model family of high-resolution transformers for human-centric vision focused on generalization, versatility, and high-fidelity outputs.
+
+---
+
+### [Transient Turn Injection: Exposing Stateless Multi-Turn Vulnerabilities in Large Language Models](https://arxiv.org/abs/2604.21860)
+
+🏥 医学影像 | 待精读
+| 分数 | 39 | 来源 | arXiv | ID | `2604.21860` |
+
+Large language models (LLMs) are increasingly integrated into sensitive workflows, raising the stakes for adversarial robustness and safety.
+
+---
+
+### [SpatiO: Adaptive Test-Time Orchestration of Vision-Language Agents for Spatial Reasoning](https://arxiv.org/abs/2604.21190)
+
+🧩 多模态/VLM | 待精读
+| 分数 | 38 | 来源 | arXiv | ID | `2604.21190` |
+
+Understanding visual scenes requires not only recognizing objects but also reasoning about their spatial relationships.
 
 ---
 
 ## B档：快速浏览 / 备选
 
-### [R-CoV: Region-Aware Chain-of-Verification for Alleviating Object Hallucinations in LVLMs](https://arxiv.org/abs/2604.20696)
-
-🧩 多模态/VLM | 待浏览
-| 分数 | 38 | 来源 | arXiv | ID | `2604.20696` |
-
-Large vision-language models (LVLMs) have demonstrated impressive performance in various multimodal understanding and reasoning tasks.
-
----
-
-### [The Expense of Seeing: Attaining Trustworthy Multimodal Reasoning Within the Monolithic Paradigm](https://arxiv.org/abs/2604.20665)
+### [Latent Denoising Improves Visual Alignment in Large Multimodal Models](https://arxiv.org/abs/2604.21343)
 
 🖼️ 计算机视觉 | 待浏览
-| 分数 | 38 | 来源 | arXiv | ID | `2604.20665` |
+| 分数 | 37 | 来源 | arXiv | ID | `2604.21343` |
 
-The rapid proliferation of Vision-Language Models (VLMs) is widely celebrated as the dawn of unified multimodal knowledge discovery but its foundation operates on a dangerous, unquestioned axiom: t...
-
----
-
-### [Physics-Informed Conditional Diffusion for Motion-Robust Retinal Temporal Laser Speckle Contrast Imaging](https://arxiv.org/abs/2604.20594)
-
-👁️ 眼科AI-临床任务 | 待浏览
-| 分数 | 38 | 来源 | arXiv | ID | `2604.20594` |
-
-Retinal laser speckle contrast imaging (LSCI) is a noninvasive optical modality for monitoring retinal blood flow dynamics.
+Large Multimodal Models (LMMs) such as LLaVA are typically trained with an autoregressive language modeling objective, providing only indirect supervision to visual tokens.
 
 ---
 
-### [SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks](https://arxiv.org/abs/2604.20087)
+### [SparseGF: A Height-Aware Sparse Segmentation Framework with Context Compression for Robust Ground Filtering Across Urban to Natural Scenes](https://arxiv.org/abs/2604.21356)
+
+🖼️ 计算机视觉 | 待浏览
+| 分数 | 35 | 来源 | arXiv | ID | `2604.21356` |
+
+High-quality digital terrain models derived from airborne laser scanning (ALS) data are essential for a wide range of geospatial analyses, and their generation typically relies on robust ground fil...
+
+---
+
+### [A Probabilistic Framework for Improving Dense Object Detection in Underwater Image Data via Annealing-Based Data Augmentation](https://arxiv.org/abs/2604.21198)
+
+🖼️ 计算机视觉 | 待浏览
+| 分数 | 35 | 来源 | arXiv | ID | `2604.21198` |
+
+Object detection models typically perform well on images captured in controlled environments with stable lighting, water clarity, and viewpoint, but their performance degrades substantially in real...
+
+---
+
+### [Causal Disentanglement for Full-Reference Image Quality Assessment](https://arxiv.org/abs/2604.21654)
+
+🏥 医学影像 | 待浏览
+| 分数 | 34 | 来源 | arXiv | ID | `2604.21654` |
+
+Existing deep network-based full-reference image quality assessment (FR-IQA) models typically work by performing pairwise comparisons of deep features from the reference and distorted images.
+
+---
+
+### [CHRep: Cross-modal Histology Representation and Post-hoc Calibration for Spatial Gene Expression Prediction](https://arxiv.org/abs/2604.21573)
+
+🏥 医学影像 | 待浏览
+| 分数 | 34 | 来源 | arXiv | ID | `2604.21573` |
+
+Spatial transcriptomics (ST) enables spatially resolved gene profiling but remains expensive and low-throughput, limiting large-cohort studies and routine clinical use.
+
+---
+
+### [Drug Synergy Prediction via Residual Graph Isomorphism Networks and Attention Mechanisms](https://arxiv.org/abs/2604.21473)
+
+🏥 医学影像 | 待浏览
+| 分数 | 34 | 来源 | arXiv | ID | `2604.21473` |
+
+In the treatment of complex diseases, treatment regimens using a single drug often yield limited efficacy and can lead to drug resistance.
+
+---
+
+### [UHR-DETR: Efficient End-to-End Small Object Detection for Ultra-High-Resolution Remote Sensing Imagery](https://arxiv.org/abs/2604.21435)
+
+🖼️ 计算机视觉 | 待浏览
+| 分数 | 34 | 来源 | arXiv | ID | `2604.21435` |
+
+Ultra-High-Resolution (UHR) imagery has become essential for modern remote sensing, offering unprecedented spatial coverage.
+
+---
+
+### [Temporal Taskification in Streaming Continual Learning: A Source of Evaluation Instability](https://arxiv.org/abs/2604.21930)
 
 ♾️ 持续学习 | 待浏览
-| 分数 | 38 | 来源 | arXiv | ID | `2604.20087` |
+| 分数 | 33 | 来源 | arXiv | ID | `2604.21930` |
 
-Skills have become the de facto way to enable LLM agents to perform complex real-world tasks with customized instructions, workflows, and tools, but how to learn them automatically and effectively ...
+Streaming Continual Learning (CL) typically converts a continuous stream into a sequence of discrete tasks through temporal partitioning.
 
 ---
 
-### [ConeSep: Cone-based Robust Noise-Unlearning Compositional Network for Composed Image Retrieval](https://arxiv.org/abs/2604.20358)
+### [A Multimodal Text- and Graph-Based Approach for Open-Domain Event Extraction from Documents](https://arxiv.org/abs/2604.21885)
+
+🧩 多模态/VLM | 待浏览
+| 分数 | 33 | 来源 | arXiv | ID | `2604.21885` |
+
+Event extraction is essential for event understanding and analysis.
+
+---
+
+### [TEMA: Anchor the Image, Follow the Text for Multi-Modification Composed Image Retrieval](https://arxiv.org/abs/2604.21806)
 
 🔍 目标检测 | 待浏览
-| 分数 | 37 | 来源 | arXiv | ID | `2604.20358` |
+| 分数 | 33 | 来源 | arXiv | ID | `2604.21806` |
 
-The Composed Image Retrieval (CIR) task provides a flexible retrieval paradigm via a reference image and modification text, but it heavily relies on expensive and error-prone triplet annotations.
+Composed Image Retrieval (CIR) is an important image retrieval paradigm that enables users to retrieve a target image using a multimodal query that consists of a reference image and modification text.
 
 ---
 
-### [Semantic-Fast-SAM: Efficient Semantic Segmenter](https://arxiv.org/abs/2604.20169)
+### [GeoMind: An Agentic Workflow for Lithology Classification with Reasoned Tool Invocation](https://arxiv.org/abs/2604.21501)
+
+🦾 LLM Agent | 待浏览
+| 分数 | 33 | 来源 | arXiv | ID | `2604.21501` |
+
+Lithology classification in well logs is a fundamental geoscience data mining task that aims to infer rock types from multi dimensional geophysical sequences.
+
+---
+
+### [CorridorVLA: Explicit Spatial Constraints for Generative Action Heads via Sparse Anchors](https://arxiv.org/abs/2604.21241)
+
+🔍 目标检测 | 待浏览
+| 分数 | 33 | 来源 | arXiv | ID | `2604.21241` |
+
+Vision--Language--Action (VLA) models often use intermediate representations to connect multimodal inputs with continuous control, yet spatial guidance is often injected implicitly through latent f...
+
+---
+
+### [Ramen: Robust Test-Time Adaptation of Vision-Language Models with Active Sample Selection](https://arxiv.org/abs/2604.21728)
+
+🧩 多模态/VLM | 待浏览
+| 分数 | 32 | 来源 | arXiv | ID | `2604.21728` |
+
+Pretrained vision-language models such as CLIP exhibit strong zero-shot generalization but remain sensitive to distribution shifts.
+
+---
+
+### [AEL: Agent Evolving Learning for Open-Ended Environments](https://arxiv.org/abs/2604.21725)
+
+🦾 LLM Agent | 待浏览
+| 分数 | 32 | 来源 | arXiv | ID | `2604.21725` |
+
+LLM agents increasingly operate in open-ended environments spanning hundreds of sequential episodes, yet they remain largely stateless: each task is solved from scratch without converting past expe...
+
+---
+
+### [Deep kernel video approximation for unsupervised action segmentation](https://arxiv.org/abs/2604.21572)
 
 🖼️ 计算机视觉 | 待浏览
-| 分数 | 37 | 来源 | arXiv | ID | `2604.20169` |
+| 分数 | 32 | 来源 | arXiv | ID | `2604.21572` |
 
-We propose Semantic-Fast-SAM (SFS), a semantic segmentation framework that combines the Fast Segment Anything model with a semantic labeling pipeline to achieve real-time performance without sacrif...
+This work focuses on per-video unsupervised action segmentation, which is of interest to applications where storing large datasets is either not possible, or nor permitted.
 
 ---
 
-### [Can "AI" Be a Doctor? A Study of Empathy, Readability, and Alignment in Clinical LLMs](https://arxiv.org/abs/2604.20791)
+### [FryNet: Dual-Stream Adversarial Fusion for Non-Destructive Frying Oil Oxidation Assessment](https://arxiv.org/abs/2604.21321)
+
+🖼️ 计算机视觉 | 待浏览
+| 分数 | 32 | 来源 | arXiv | ID | `2604.21321` |
+
+Monitoring frying oil degradation is critical for food safety, yet current practice relies on destructive wet-chemistry assays that provide no spatial information and are unsuitable for real-time use.
+
+---
+
+### [an interpretable vision transformer framework for automated brain tumor classification](https://arxiv.org/abs/2604.21311)
+
+🖼️ 计算机视觉 | 待浏览
+| 分数 | 32 | 来源 | arXiv | ID | `2604.21311` |
+
+Brain tumors represent one of the most critical neurological conditions, where early and accurate diagnosis is directly correlated with patient survival rates.
+
+---
+
+### [Attention-based multiple instance learning for predominant growth pattern prediction in lung adenocarcinoma wsi using foundation models](https://arxiv.org/abs/2604.21530)
 
 👁️ 眼科AI-临床任务 | 待浏览
-| 分数 | 36 | 来源 | arXiv | ID | `2604.20791` |
+| 分数 | 31 | 来源 | arXiv | ID | `2604.21530` |
 
-Large Language Models (LLMs) are increasingly deployed in healthcare, yet their communicative alignment with clinical standards remains insufficiently quantified.
+Lung adenocarcinoma (LUAD) grading depends on accurately identifying growth patterns, which are indicators of prognosis and can influence treatment decisions.
 
 ---
 
-### [COMPASS: COntinual Multilingual PEFT with Adaptive Semantic Sampling](https://arxiv.org/abs/2604.20720)
+### [Pre-process for segmentation task with nonlinear diffusion filters](https://arxiv.org/abs/2604.21422)
+
+🖼️ 计算机视觉 | 待浏览
+| 分数 | 31 | 来源 | arXiv | ID | `2604.21422` |
+
+This paper deals with the case of using nonlinear diffusion filters to obtain piecewise constant images as a previous process for segmentation techniques.
+
+---
+
+### [Learning Dynamic Representations and Policies from Multimodal Clinical Time-Series with Informative Missingness](https://arxiv.org/abs/2604.21235)
+
+🏥 医学影像 | 待浏览
+| 分数 | 31 | 来源 | arXiv | ID | `2604.21235` |
+
+Multimodal clinical records contain structured measurements and clinical notes recorded over time, offering rich temporal information about the evolution of patient health.
+
+---
+
+### [Fine-Tuning Regimes Define Distinct Continual Learning Problems](https://arxiv.org/abs/2604.21927)
 
 ♾️ 持续学习 | 待浏览
-| 分数 | 36 | 来源 | arXiv | ID | `2604.20720` |
+| 分数 | 30 | 来源 | arXiv | ID | `2604.21927` |
 
-Large language models (LLMs) often exhibit performance disparities across languages, with naive multilingual fine-tuning frequently degrading performance due to negative cross-lingual interference.
+Continual learning (CL) studies how models acquire tasks sequentially while retaining previously learned knowledge.
 
 ---
 
-### [UniCVR: From Alignment to Reranking for Unified Zero-Shot Composed Visual Retrieval](https://arxiv.org/abs/2604.20318)
+### [When Prompts Override Vision: Prompt-Induced Hallucinations in LVLMs](https://arxiv.org/abs/2604.21911)
 
 🧩 多模态/VLM | 待浏览
-| 分数 | 36 | 来源 | arXiv | ID | `2604.20318` |
+| 分数 | 30 | 来源 | arXiv | ID | `2604.21911` |
 
-Composed image retrieval, multi-turn composed image retrieval, and composed video retrieval all share a common paradigm: composing the reference visual with modification text to retrieve the desire...
-
----
-
-### [Amodal SAM: A Unified Amodal Segmentation Framework with Generalization](https://arxiv.org/abs/2604.20748)
-
-🖼️ 计算机视觉 | 待浏览
-| 分数 | 35 | 来源 | arXiv | ID | `2604.20748` |
-
-Amodal segmentation is a challenging task that aims to predict the complete geometric shape of objects, including their occluded regions.
+Despite impressive progress in capabilities of large vision-language models (LVLMs), these systems remain vulnerable to hallucinations, i.e., outputs that are not grounded in the visual input.
 
 ---
 
-### [RSRCC: A Remote Sensing Regional Change Comprehension Benchmark Constructed via Retrieval-Augmented Best-of-N Ranking](https://arxiv.org/abs/2604.20623)
+### [2L-LSH: A Locality-Sensitive Hash Function-Based Method For Rapid Point Cloud Indexing](https://arxiv.org/abs/2604.21442)
 
-🖼️ 计算机视觉 | 待浏览
-| 分数 | 35 | 来源 | arXiv | ID | `2604.20623` |
+👁️ 眼科AI-临床任务 | 待浏览
+| 分数 | 30 | 来源 | arXiv | ID | `2604.21442` |
 
-Traditional change detection identifies where changes occur, but does not explain what changed in natural language.
-
----
-
-### [Object Referring-Guided Scanpath Prediction with Perception-Enhanced Vision-Language Models](https://arxiv.org/abs/2604.20361)
-
-🖼️ 计算机视觉 | 待浏览
-| 分数 | 35 | 来源 | arXiv | ID | `2604.20361` |
-
-Object Referring-guided Scanpath Prediction (ORSP) aims to predict the human attention scanpath when they search for a specific target object in a visual scene according to a linguistic description...
+The development of 3D scanning technology has enabled the acquisition of massive point cloud models with diverse structures and large scales, thereby presenting significant challenges in point clou...
 
 ---
 
-### [Closing the Domain Gap in Biomedical Imaging by In-Context Control Samples](https://arxiv.org/abs/2604.20824)
+### [ImageHD: Energy-Efficient On-Device Continual Learning of Visual Representations via Hyperdimensional Computing](https://arxiv.org/abs/2604.21280)
 
-🏥 医学影像 | 待浏览
-| 分数 | 34 | 来源 | arXiv | ID | `2604.20824` |
+♾️ 持续学习 | 待浏览
+| 分数 | 30 | 来源 | arXiv | ID | `2604.21280` |
 
-The central problem in biomedical imaging are batch effects: systematic technical variations unrelated to the biological signal of interest.
-
----
-
-### [A Vision-Language-Action Model for Adaptive Ultrasound-Guided Needle Insertion and Needle Tracking](https://arxiv.org/abs/2604.20347)
-
-🏥 医学影像 | 待浏览
-| 分数 | 34 | 来源 | arXiv | ID | `2604.20347` |
-
-Ultrasound (US)-guided needle insertion is a critical yet challenging procedure due to dynamic imaging conditions and difficulties in needle visualization.
-
----
-
-### [Fourier Series Coder: A Novel Perspective on Angle Boundary Discontinuity Problem for Oriented Object Detection](https://arxiv.org/abs/2604.20281)
-
-🖼️ 计算机视觉 | 待浏览
-| 分数 | 34 | 来源 | arXiv | ID | `2604.20281` |
-
-With the rapid advancement of intelligent driving and remote sensing, oriented object detection has gained widespread attention.
-
----
-
-### [Opportunistic Bone-Loss Screening from Routine Knee Radiographs Using a Multi-Task Deep Learning Framework with Sensitivity-Constrained Threshold Optimization](https://arxiv.org/abs/2604.20268)
-
-🏥 医学影像 | 待浏览
-| 分数 | 34 | 来源 | arXiv | ID | `2604.20268` |
-
-Background: Osteoporosis and osteopenia are often undiagnosed until fragility fractures occur.
-
----
-
-### [Causal-Transformer with Adaptive Mutation-Locking for Early Prediction of Acute Kidney Injury](https://arxiv.org/abs/2604.20259)
-
-🏥 医学影像 | 待浏览
-| 分数 | 34 | 来源 | arXiv | ID | `2604.20259` |
-
-Accurate early prediction of Acute Kidney Injury (AKI) is critical for timely clinical intervention.
-
----
-
-### [Learning to Solve the Quadratic Assignment Problem with Warm-Started MCMC Finetuning](https://arxiv.org/abs/2604.20109)
-
-🔍 目标检测 | 待浏览
-| 分数 | 34 | 来源 | arXiv | ID | `2604.20109` |
-
-The quadratic assignment problem (QAP) is a fundamental NP-hard task that poses significant challenges for both traditional heuristics and modern learning-based solvers.
-
----
-
-### [Render-in-the-Loop: Vector Graphics Generation via Visual Self-Feedback](https://arxiv.org/abs/2604.20730)
-
-🧩 多模态/VLM | 待浏览
-| 分数 | 33 | 来源 | arXiv | ID | `2604.20730` |
-
-Multimodal Large Language Models (MLLMs) have shown promising capabilities in generating Scalable Vector Graphics (SVG) via direct code synthesis.
-
----
-
-### [Evian: Towards Explainable Visual Instruction-tuning Data Auditing](https://arxiv.org/abs/2604.20544)
-
-🧩 多模态/VLM | 待浏览
-| 分数 | 33 | 来源 | arXiv | ID | `2604.20544` |
-
-The efficacy of Large Vision-Language Models (LVLMs) is critically dependent on the quality of their training data, requiring a precise balance between visual fidelity and instruction-following cap...
-
----
-
-### [Global Offshore Wind Infrastructure: Deployment and Operational Dynamics from Dense Sentinel-1 Time Series](https://arxiv.org/abs/2604.20822)
-
-🖼️ 计算机视觉 | 待浏览
-| 分数 | 32 | 来源 | arXiv | ID | `2604.20822` |
-
-The offshore wind energy sector is expanding rapidly, increasing the need for independent, high-temporal-resolution monitoring of infrastructure deployment and operation at global scale.
-
----
-
-### [Beyond ZOH: Advanced Discretization Strategies for Vision Mamba](https://arxiv.org/abs/2604.20606)
-
-🖼️ 计算机视觉 | 待浏览
-| 分数 | 32 | 来源 | arXiv | ID | `2604.20606` |
-
-Vision Mamba, as a state space model (SSM), employs a zero-order hold (ZOH) discretization, which assumes that input signals remain constant between sampling instants.
-
----
-
-### [SMART: A Spectral Transfer Approach to Multi-Task Learning](https://arxiv.org/abs/2604.20161)
-
-🧩 多模态/VLM | 待浏览
-| 分数 | 32 | 来源 | arXiv | ID | `2604.20161` |
-
-Multi-task learning is effective for related applications, but its performance can deteriorate when the target sample size is small.
-
----
-
-### [Relative Entropy Estimation in Function Space: Theory and Applications to Trajectory Inference](https://arxiv.org/abs/2604.20775)
-
-🏥 医学影像 | 待浏览
-| 分数 | 31 | 来源 | arXiv | ID | `2604.20775` |
-
-Trajectory Inference (TI) seeks to recover latent dynamical processes from snapshot data, where only independent samples from time-indexed marginals are observed.
+On-device continual learning (CL) is critical for edge AI systems operating on non-stationary data streams, but most existing methods rely on backpropagation or exemplar-heavy classifiers, incurrin...
 
 ---
