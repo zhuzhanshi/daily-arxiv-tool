@@ -1,0 +1,792 @@
+{
+  "tier_a": [
+    {
+      "title": "Toward Multimodal Conversational AI for Age-Related Macular Degeneration",
+      "arxiv_id": "2604.25720",
+      "abstract": "Despite strong performance of deep learning models in retinal disease detection, most systems produce static predictions without clinical reasoning or interactive explanation. Recent advances in multimodal large language models (MLLMs) integrate diagnostic predictions with clinically meaningful dialogue to support clinical decision-making and patient counseling. In this study, OcularChat, an MLLM, was fine-tuned from Qwen2.5-VL using simulated patient-physician dialogues to diagnose age-related macular degeneration (AMD) through visual question answering on color fundus photographs (CFPs). A total of 705,850 simulated dialogues paired with 46,167 CFPs were generated to train OcularChat to identify key AMD features and produce reasoned predictions. OcularChat demonstrated strong classification performance in AREDS, achieving accuracies of 0.954, 0.849, and 0.678 for the three diagnostic tasks: advanced AMD, pigmentary abnormalities, and drusen size, significantly outperforming existing MLLMs. On AREDS2, OcularChat remained the top-performing method on all tasks. Across three independent ophthalmologist graders, OcularChat achieved higher mean scores than a strong baseline model for advanced AMD (3.503 vs. 2.833), pigmentary abnormalities (3.272 vs. 2.828), drusen size (3.064 vs. 2.433), and overall impression (2.978 vs. 2.464) on a 5-point clinical grading rubric. Beyond strong objective performance in AMD severity classification, OcularChat demonstrated the ability to provide diagnostic reasoning, clinically relevant explanations, and interactive dialogue, with high performance in subjective ophthalmologist evaluation. These findings suggest that MLLMs may enable accurate, interpretable, and clinically useful image-based diagnosis and classification of AMD.",
+      "authors": [
+        "Ran Gu",
+        "Benjamin Hou",
+        "Mélanie Hébert",
+        "Asmita Indurkar",
+        "Yifan Yang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "published": "2026-04-28",
+      "comment": "38 pages, 4 figures",
+      "summary": "Despite strong performance of deep learning models in retinal disease detection, most systems produce static predictions without clinical reasoning or interactive explanation.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "ophthalmic_clinical",
+      "score": 59.0
+    },
+    {
+      "title": "CoRE: Concept-Reasoning Expansion for Continual Brain Lesion Segmentation",
+      "arxiv_id": "2604.25376",
+      "abstract": "Accurate brain lesion segmentation in MRI is vital for effective clinical diagnosis and treatment planning. Due to high annotation costs and strict data privacy regulations, universal models require employing Continual Learning (CL) to adapt to evolving clinical tasks without losing previously acquired knowledge. However, existing CL paradigms often suffer from capacity limits or redundant parameter growth, and even advanced dynamic methods rely mostly on image-perception strategies that struggle to handle the substantial pathological and multimodal heterogeneity inherent in brain imaging. To address this issue, we propose Concept-Reasoning Expansion (CoRE) framework, which establishes a joint decision-making mechanism by integrating visual features with structured concepts. Through the alignment of image tokens with a hierarchical concept library, CoRE simulates clinical reasoning to guide both interpretable expert routing and demand-based model growth. This collaborative process ensures model evolution is grounded in clinical priors, preventing redundant parameter expansion while maximizing knowledge reuse. Extensive evaluations across 12 sequential brain lesion MRI tasks demonstrate that CoRE achieves state-of-the-art performance and provides a high knowledge starting point for efficient future adaptation. Its superior few-shot transferability and clinical interpretability further validate its effectiveness in managing non-stationary clinical data streams. Our code will be released soon.",
+      "authors": [
+        "Qianqian Chen",
+        "Anglin Liu",
+        "Jingyang Zhang",
+        "Yudong Zhang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-04-28",
+      "comment": "",
+      "summary": "Accurate brain lesion segmentation in MRI is vital for effective clinical diagnosis and treatment planning.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "ophthalmic_clinical",
+      "score": 54.0
+    },
+    {
+      "title": "SARU: A Shadow-Aware and Removal Unified Framework for Remote Sensing Images with New Benchmarks",
+      "arxiv_id": "2604.25432",
+      "abstract": "Shadows are a prevalent problem in remote sensing imagery (RSI), degrading visual quality and severely limiting the performance of downstream tasks like object detection and semantic segmentation. Most prior works treat shadow detection and removal as separate, cascaded tasks, which can lead to cumbersome process and error accumulation. Furthermore, many deep learning methods rely on paired shadow and non-shadow images for training, which are often unavailable in practice. To address these challenges, we propose Shadow-Aware and Removal Unified (SARU) Framework , a cohesive two-stage framework. First, its dual-branch detection module (DBCSF-Net) fuses multi-color space and semantic features to generate high-fidelity shadow masks, effectively distinguishing shadows from dark objects. Then, leveraging these masks, a novel, training-free physical algorithm (N$^2$SGSR) restores illumination by transferring properties from adjacent non-shadow regions within the single input image. To facilitate rigorous evaluation and foster future work, we also introduce two new benchmark datasets: the RSI Shadow Detection (RSISD) dataset and the Single-image Shadow Removal Benchmark (SiSRB). Extensive experiments demonstrate that SARU achieves state-of-the-art performance on both the public AISD dataset and our newly introduced benchmarks. By holistically integrating shadow detection and removal to mitigate error propagation and eliminating the dependency on paired training data, SARU establishes a robust, practical framework for real-world RSI analysis. The source code and datasets are publicly available at: https://github.com/AeroVILab-AHU/SARU-Framework.",
+      "authors": [
+        "Zi-Yang Bo",
+        "Wei Lu",
+        "Hongruixuan Chen",
+        "Si-Bao Chen",
+        "Bin Luo"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-28",
+      "comment": "17 pages, 14 figures",
+      "summary": "Shadows are a prevalent problem in remote sensing imagery (RSI), degrading visual quality and severely limiting the performance of downstream tasks like object detection and semantic segmentation.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "computer_vision_core",
+      "score": 52.0
+    },
+    {
+      "title": "Learning from Medical Entity Trees: An Entity-Centric Medical Data Engineering Framework for MLLMs",
+      "arxiv_id": "2604.25296",
+      "abstract": "Multimodal Large Language Models (MLLMs) have shown transformative potential in medical applications, yet their performance is hindered by conventional data curation strategies that rely on coarse-grained partitioning by modality or department. Such fragmented approaches fail to capture the hierarchical and interconnected nature of clinical medical knowledge, limiting the models' ability to perform fine-grained recognition and complex reasoning. In this paper, we propose a novel Entity-Centric Medical Data Engineering framework. We automatically extract entities from authoritative medical literature to construct a Medical Entity Tree (MET), a hierarchical structure that systematically encodes diseases, anatomical structures, modalities, and symptoms into a unified knowledge repository. Building upon the MET, we propose an advanced data engine that includes: (1) node-guided retrieval to anchor raw data to specific medical concepts, (2) a two-stage hybrid filtering and alignment pipeline to ensure precise visual-semantic correspondence, and (3) knowledge-aware data synthesis to generate enriched captions and targeted reasoning VQA pairs, leveraging structural constraints. Extensive evaluations across six medical benchmarks demonstrate that our approach significantly enhances the medical capabilities of general-purpose MLLMs, improving their ability to handle complex clinical queries and achieve state-of-the-art performance in diverse medical contexts.",
+      "authors": [
+        "Jianghang Lin",
+        "Haihua Yang",
+        "Deli Yu",
+        "Kai Wu",
+        "Kai Ye"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-04-28",
+      "comment": "",
+      "summary": "Multimodal Large Language Models (MLLMs) have shown transformative potential in medical applications, yet their performance is hindered by conventional data curation strategies that rely on coarse-...",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "medical_imaging",
+      "score": 43.0
+    },
+    {
+      "title": "Robustness Evaluation of a Foundation Segmentation Model Under Simulated Domain Shifts in Abdominal CT: Implications for Health Digital Twin Deployment",
+      "arxiv_id": "2604.25685",
+      "abstract": "Foundation segmentation models such as the Segment Anything Model (SAM) have demonstrated strong generalization across natural images; however, their robustness under clinically realistic medical imaging domain shifts remains insufficiently quantified. We present a systematic slice-level robustness audit of SAM (ViT-B) for spleen segmentation in abdominal CT using 1,051 nonempty slices from 41 volumes in the Medical Segmentation Decathlon. A standardized ground-truth-derived bounding-box protocol was used to isolate encoder robustness from prompt uncertainty. Controlled perturbations simulating inter-scanner variability, including Gaussian noise, blur, contrast scaling, gamma correction, and resolution mismatch, were applied across ten conditions. The clean baseline achieved a mean Dice score of 0.9145 (95% CI: [0.909, 0.919]) with a failure rate of 0.67%. Across all perturbations, the absolute mean ΔDice remained below 0.01. Paired Wilcoxon signed-rank tests with Benjamini-Hochberg false discovery rate correction identified statistically significant but small-magnitude changes under selected conditions, while McNemar analysis showed no significant increase in failure probability. These findings indicate that SAM exhibits stable segmentation behavior under moderate CT domain shifts, supporting its role as a robust foundation baseline for medical image segmentation research. As health digital twins increasingly incorporate foundation segmentation models for anatomical modeling and organ-level monitoring, formal characterization of robustness under real-world imaging variability is a necessary step toward trustworthy deployment.",
+      "authors": [
+        "Sanghati Basu"
+      ],
+      "primary_category": "eess.IV",
+      "categories": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "published": "2026-04-28",
+      "comment": "8 Pages, 5 Tables, 2 Figures",
+      "summary": "Foundation segmentation models such as the Segment Anything Model (SAM) have demonstrated strong generalization across natural images; however, their robustness under clinically realistic medical i...",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "computer_vision_core",
+      "score": 41.0
+    },
+    {
+      "title": "One-shot emergency psychiatric triage across 15 frontier AI chatbots",
+      "arxiv_id": "2604.25415",
+      "abstract": "AI chatbots are increasingly used for health advice, but their performance in psychiatric triage remains undercharacterized. Psychiatric triage is particularly challenging because urgency must often be inferred from thoughts, behavior, and context rather than from objective findings. We evaluated the performance of 15 frontier AI chatbots on psychiatric triage from realistic single-message disclosures using 112 clinical vignettes, each paired with 1 of 4 original benchmark triage labels: A, routine; B, assessment within 1 week; C, assessment within 24 to 48 hours; and D, emergency care now. Vignettes covered 9 psychiatric presentation clusters and 9 focal risk dimensions, organized into 28 presentation-by-risk groups. Each group contributed 4 distinct vignettes, with 1 vignette at each triage level. Each vignette was rendered as a realistic human-authored conversational query, and the AI chatbots were tasked with assigning a triage label from that disclosure. Emergency under-triage occurred in 23 of 410 level D trials (5.6%), and all under-triaged emergencies were reassigned to level C urgency. Across target models, average accuracy ranged from 42.0% to 71.8%. Accuracy was highest for level D vignettes (94.3%) and lowest for level B vignettes (19.7%). Mean signed ordinal error was positive (+0.47 triage levels), indicating net over-triage. Dispersion was highest around the middle triage levels. All results were confirmed relative to clinician consensus labels from 50 medical doctors. When presented with user messages containing sufficient clinical information, frontier AI chatbots thus recognized psychiatric emergencies as requiring urgent medical assessment with near-zero error rates, yet showed marked over-triage for low and intermediate risk presentations.",
+      "authors": [
+        "Veith Weilnhammer",
+        "Lennart Luettgau",
+        "Christopher Summerfield",
+        "Viknesh Sounderajah",
+        "Elise Wilkinson"
+      ],
+      "primary_category": "q-bio.NC",
+      "categories": [
+        "q-bio.NC",
+        "cs.AI",
+        "cs.HC"
+      ],
+      "published": "2026-04-28",
+      "comment": "",
+      "summary": "AI chatbots are increasingly used for health advice, but their performance in psychiatric triage remains undercharacterized.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "ophthalmic_clinical",
+      "score": 41.0
+    },
+    {
+      "title": "When the Forger Is the Judge: GPT-Image-2 Cannot Recognize Its Own Faked Documents",
+      "arxiv_id": "2604.25213",
+      "abstract": "OpenAI's GPT-Image-2 has effectively erased the visual boundary between authentic and AI-edited document images: a single number on a receipt can be replaced in under a second for a few cents. We release AIForge-Doc v2, a paired dataset of 3,066 GPT-Image-2 document forgeries with pixel-precise masks in DocTamper-compatible format, and benchmark four lines of defence: human inspectors (N=120, n=365 pair-votes via the public 2AFC site CanUSpotAI.com), TruFor (generic forensic), DocTamper (qcf-568, document-specific), and the same GPT-Image-2 model as a zero-shot self-judge -- asked, to avoid the trivial \"image is mostly real\" reading, whether any region was generated or edited by an AI image model. Human 2AFC accuracy is 0.501, indistinguishable from chance: even side-by-side, inspectors cannot tell GPT-Image-2 receipt forgeries from authentic counterparts. The three computational judges sit only modestly above (TruFor 0.599, DocTamper 0.585, self-judge 0.532). The self-judge fails consistently, not by chance: across five prompt strategies and four policies for handling ambiguous responses, AUC never rises above 0.59. To rule out the possibility that the two forensic detectors are broken on our source domain rather than blind to AI inpainting, we calibrate each on a same-domain traditional-tampering set built for its training distribution: TruFor reaches AUC 0.962 on cross-camera splicing of our dataset, DocTamper reaches 0.852 on cross-document OCR-token splicing with two-pass JPEG re-encoding. Both retain near-published performance on traditional tampering; switching to GPT-Image-2 inpainting drops AUC by 0.27-0.36 (0.962->0.599 TruFor; 0.852->0.585 DocTamper), isolating a detection gap specific to GPT-Image-2 inpainting. We release the dataset, pipeline, four-judge protocol, and calibration sets.",
+      "authors": [
+        "Jiaqi Wu",
+        "Yuchen Zhou",
+        "Dennis Tsang Ng",
+        "Xingyu Shen",
+        "Kidus Zewde"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-28",
+      "comment": "",
+      "summary": "OpenAI's GPT-Image-2 has effectively erased the visual boundary between authentic and AI-edited document images: a single number on a receipt can be replaced in under a second for a few cents.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "ophthalmic_clinical",
+      "score": 41.0
+    },
+    {
+      "title": "DualGeo: A Dual-View Framework for Worldwide Image Geo-localization",
+      "arxiv_id": "2604.25533",
+      "abstract": "Worldwide image geo-localization aims to infer the geographic location of an image captured anywhere on Earth, spanning street, city, regional, national, and continental scales. Existing methods rely on visual features that are sensitive to environmental variations (e.g., lighting, season, and weather) and lack effective post-processing to filter outlier candidates, limiting localization accuracy. To address these limitations, we propose DualGeo, a two-stage framework for worldwide image geo-localization. First, it establishes a geo-representational foundation by fusing image and semantic segmentation features via bidirectional cross-attention. The fused features are then aligned with GPS coordinates through dual-view contrastive learning to build a global retrieval database. Second, it performs geo-cognitive refinement by re-ranking retrieved candidates using geographic clustering. It then feeds them into large multimodal models (LMMs) for final coordinate prediction. Experiments on IM2GPS, IM2GPS3k, and YFCC4k show that DualGeo outperforms state-of-the-art methods, improving street-level (<1 km) and city-level (<25 km) localization accuracy by 3.6%-16.58% and 1.29%-8.77%, respectively. Our code and datasets are available : https://github.com/CJ310177/DualGeo.",
+      "authors": [
+        "Junchao Cui",
+        "Wenqi Shi",
+        "Shaoyong Du",
+        "Hang He",
+        "Xuanzi Ma"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-28",
+      "comment": "ICME2026 Accept",
+      "summary": "Worldwide image geo-localization aims to infer the geographic location of an image captured anywhere on Earth, spanning street, city, regional, national, and continental scales.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "computer_vision_core",
+      "score": 40.0
+    },
+    {
+      "title": "VLM Judges Can Rank but Cannot Score: Task-Dependent Uncertainty in Multimodal Evaluation",
+      "arxiv_id": "2604.25235",
+      "abstract": "Vision-language models (VLMs) are increasingly used as automated judges for multimodal systems, yet their scores provide no indication of reliability. We study this problem through conformal prediction, a distribution-free framework that converts a judge's point score into a calibrated prediction interval using only score-token log-probabilities, with no retraining. We present the first systematic analysis of conformal prediction for VLM-as-a-Judge across 3 judges and 14 visual task categories. Our results show that evaluation uncertainty is strongly task-dependent: intervals cover ~40% of the score range for aesthetics and natural images but expand to ~70% for chart and mathematical reasoning, yielding a quantitative reliability map for multimodal evaluation. We further identify a failure mode not captured by standard evaluation metrics, ranking-scoring decoupling, where judges achieve high ranking correlation while producing wide, uninformative intervals, correctly ordering responses but failing to assign reliable absolute scores. Finally, we show that interval width is driven primarily by task difficulty and annotation quality, i.e., the same judge and method yield 4.5x narrower intervals on a clean, multi-annotator captioning benchmark. Code: https://github.com/divake/VLM-Judge-Uncertainty",
+      "authors": [
+        "Divake Kumar",
+        "Sina Tayebati",
+        "Devashri Naik",
+        "Ranganath Krishnan",
+        "Amit Ranjan Trivedi"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CV",
+        "stat.ML"
+      ],
+      "published": "2026-04-28",
+      "comment": "",
+      "summary": "Vision-language models (VLMs) are increasingly used as automated judges for multimodal systems, yet their scores provide no indication of reliability.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "multimodal_vlm",
+      "score": 40.0
+    },
+    {
+      "title": "Diagnosis, Bad Planning & Reasoning. Treatment, SCOPE -- Planning for Hybrid Querying over Clinical Trial Data",
+      "arxiv_id": "2604.25120",
+      "abstract": "We study clinical trial table reasoning, where answers are not directly stored in visible cells but must be reasoned from semantic understanding through normalization, classification, extraction, or lightweight domain reasoning. Motivated by the observation that current LLM approaches often suffer from \"bad reasoning\" under implicit planning assumptions, we focus on settings in which the model must recover implicit attributes such as therapy type, added agents, endpoint roles, or follow-up status from partially observed clinical-trial tables. We propose SCOPE (Structured Clinical hybrid Planning for Evidence retrieval in clinical trials), a multi-LLM planner-based framework that decomposes the task into row selection, structured planning, and execution. The planner makes the source field, reasoning rules, and output constraints explicit before answer generation, reducing ambiguity relative to direct prompting. We evaluate SCOPE on 1,500 hybrid reasoning questions over oncology clinical-trial tables against zero-shot, few-shot, chain-of-thought, TableGPT2, Blend-SQL, and EHRAgent. Results show that explicit multi-LLM planning improves accuracy for reasoning-based questions while offering a stronger accuracy-efficiency tradeoff than heavier agentic baselines. Our findings position clinical trial reasoning as a distinct table understanding problem and highlight hybrid planner-based decomposition as an effective solution",
+      "authors": [
+        "Suparno Roy Chowdhury",
+        "Manan Roy Choudhury",
+        "Tejas Anvekar",
+        "Muhammad Ali Khan",
+        "Kaneez Zahra Rubab Khakwani"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-04-28",
+      "comment": "",
+      "summary": "We study clinical trial table reasoning, where answers are not directly stored in visible cells but must be reasoned from semantic understanding through normalization, classification, extraction, o...",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "medical_imaging",
+      "score": 40.0
+    }
+  ],
+  "tier_b": [
+    {
+      "title": "Combating Visual Neglect and Semantic Drift in Large Multimodal Models for Enhanced Cross-Modal Retrieval",
+      "arxiv_id": "2604.25273",
+      "abstract": "Despite significant progress in Unified Multimodal Retrieval (UMR) powered by Large Multimodal Models (LMMs), existing embedding methods primarily focus on sample-level objectives via contrastive learning while overlooking the crucial subject-level semantics. This limitation hinders the model's ability to group semantically coherent subjects in complex multimodal queries, manifesting as semantic alignment deviation--where models fail to accurately localize salient text-referred regions in visual content. Moreover, without explicit guidance to model salient visual subjects, LMMs tend to over-rely on textual cues, resulting in visual modality neglect and suboptimal utilization of visual knowledge. To this end, we propose Salient Subject-Aware Multimodal Embedding (SSA-ME), a novel framework designed to enhance fine-grained representation learning through saliency-aware modeling. SSA-ME leverages LMMs and visual experts to identify and emphasize salient visual concepts in image-text pairs, and introduces a saliency-guided objective to better align cross-modal attention with semantically meaningful regions. Additionally, a feature regeneration module recalibrates visual features based on the derived saliency maps, ensuring a balanced and semantically coherent integration across modalities. Extensive experiments show that our method achieves state-of-the-art performance on the MMEB benchmark, demonstrating that incorporating subject-level modeling substantially improves multimodal retrieval. Comprehensive qualitative analyses further illustrate the interpretability and effectiveness of our approach.",
+      "authors": [
+        "Guosheng Zhang",
+        "Linkai Liu",
+        "Keyao Wang",
+        "Haixiao Yue",
+        "Zhiwen Tan"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-28",
+      "comment": "",
+      "summary": "Despite significant progress in Unified Multimodal Retrieval (UMR) powered by Large Multimodal Models (LMMs), existing embedding methods primarily focus on sample-level objectives via contrastive l...",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "multimodal_vlm",
+      "score": 39.0
+    },
+    {
+      "title": "TSN-Affinity: Similarity-Driven Parameter Reuse for Continual Offline Reinforcement Learning",
+      "arxiv_id": "2604.25898",
+      "abstract": "Continual offline reinforcement learning (CORL) aims to learn a sequence of tasks from datasets collected over time while preserving performance on previously learned tasks. This setting corresponds to domains where new tasks arise over time, but adapting the model in live environment interactions is expensive, risky, or impossible. However, CORL inherits the dual difficulty of offline reinforcement learning and adapting while preventing catastrophic forgetting. Replay-based continual learning approaches remain a strong baseline but incur memory overhead and suffer from a distribution mismatch between replayed samples and newly learned policies. At the same time, architectural continual learning methods have shown strong potential in supervised learning but remain underexplored in CORL. In this work, we propose TSN-Affinity, a novel CORL method based on TinySubNetworks and Decision Transformer. The method enables task-specific parameterization and controlled knowledge sharing through a RL-aware reuse strategy that routes tasks according to action compatibility and latent similarity. We evaluate the approach on benchmarks based on Atari games and simulations of manipulation tasks with the Franka Emika Panda robotic arm, covering both discrete and continuous control. Results show strong retention from sparse SubNetworks, with routing further improving multi-task performance. Our findings suggest that similarity-guided architectural reuse is a strong and viable alternative to replay-based strategies in a CORL setting. Our code is available at: https://github.com/anonymized-for-submission123/tsn-affinity.",
+      "authors": [
+        "Dominik Żurek",
+        "Kamil Faber",
+        "Marcin Pietron",
+        "Paweł Gajewski",
+        "Roberto Corizzo"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-04-28",
+      "comment": "",
+      "summary": "Continual offline reinforcement learning (CORL) aims to learn a sequence of tasks from datasets collected over time while preserving performance on previously learned tasks.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "continual_learning",
+      "score": 38.0
+    },
+    {
+      "title": "FAMA: Failure-Aware Meta-Agentic Framework for Open-Source LLMs in Interactive Tool Use Environments",
+      "arxiv_id": "2604.25135",
+      "abstract": "Large Language Models are being increasingly deployed as the decision-making core of autonomous agents capable of effecting change in external environments. Yet, in conversational benchmarks, which simulate real-world customer-centric issue resolution scenarios, these agents frequently fail due to the cascading effects of incorrect decision-making. These challenges are particularly pronounced for open-source LLMs with smaller parameter sizes, limited context windows, and constrained inference budgets, which contribute to increased error accumulation in agentic settings. To tackle these challenges, we present the Failure-Aware Meta-Agentic (FAMA) framework. FAMA operates in two stages: first, it analyzes failure trajectories from baseline agents to identify the most prevalent errors; second, it employs an orchestration mechanism that activates a minimal subset of specialized agents tailored to address these failures by injecting a targeted context for the tool-use agent before the decision-making step. Experiments across open-source LLMs demonstrate performance gains up to 27% across evaluation modes over standard baselines. These results highlight that targeted curation of context through specialized agents to address common failures is a valuable design principle for building reliable, multi-turn tool-use LLM agents that simulate real-world conversational scenarios.",
+      "authors": [
+        "Amir Saeidi",
+        "Venkatesh Mishra",
+        "Souradeep Mukhopadhyay",
+        "Gaowen Liu",
+        "Ali Payani"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-04-28",
+      "comment": "Accepted to ACL 2026 Findings",
+      "summary": "Large Language Models are being increasingly deployed as the decision-making core of autonomous agents capable of effecting change in external environments.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "llm_agent",
+      "score": 38.0
+    },
+    {
+      "title": "M$^3$-VQA: A Benchmark for Multimodal, Multi-Entity, Multi-Hop Visual Question Answering",
+      "arxiv_id": "2604.25122",
+      "abstract": "We present M$^3$-VQA, a novel knowledge-based Visual Question Answering (VQA) benchmark, to enhance the evaluation of multimodal large language models (MLLMs) in fine-grained multimodal entity understanding and complex multi-hop reasoning. Unlike existing VQA datasets that focus on coarse-grained categories and simple reasoning over single entities, M$^3$-VQA introduces diverse multi-entity questions involving multiple distinct entities from both visual and textual sources. It requires models to perform both sequential and parallel multi-hop reasoning across multiple documents, supported by traceable, detailed evidence and a curated multimodal knowledge base. We evaluate 16 leading MLLMs under three settings: without external knowledge, with gold evidence, and with retrieval-augmented input. The poor results reveal significant challenges for MLLMs in knowledge acquisition and reasoning. Models perform poorly without external information but improve markedly when provided with precise evidence. Furthermore, reasoning-aware agentic retrieval surpasses heuristic methods, highlighting the importance of structured reasoning for complex multimodal understanding. M$^3$-VQA presents a more challenging evaluation for advancing the multimodal reasoning capabilities of MLLMs. Our code and dataset are available at https://github.com/CASIA-IVA-Lab/M3VQA.",
+      "authors": [
+        "Jiatong Ma",
+        "Longteng Guo",
+        "Yuchen Liu",
+        "Zijia Zhao",
+        "Dongze Hao"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-04-28",
+      "comment": "",
+      "summary": "We present M$^3$-VQA, a novel knowledge-based Visual Question Answering (VQA) benchmark, to enhance the evaluation of multimodal large language models (MLLMs) in fine-grained multimodal entity unde...",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "multimodal_vlm",
+      "score": 38.0
+    },
+    {
+      "title": "Robust Deepfake Detection: Mitigating Spatial Attention Drift via Calibrated Complementary Ensembles",
+      "arxiv_id": "2604.25889",
+      "abstract": "Current deepfake detection models achieve state-of-the-art performance on pristine academic datasets but suffer severe spatial attention drift under real-world compound degradations, such as blurring and severe lossy compression. To address this vulnerability, we propose a foundation-driven forensic framework that integrates an extreme compound degradation engine with a structurally constrained, multi-stream architecture. During training, our degradation pipeline systematically destroys high-frequency artifacts, optimizing the DINOv2-Giant backbone to extract invariant geometric and semantic priors. We then process images through three specialized pathways: a Global Texture stream, a Localized Facial stream, and a Hybrid Semantic Fusion stream incorporating CLIP. Through analyzing spatial attribution via Score-CAM and feature stability using Cosine Similarity, we quantitatively demonstrate that these streams extract non-redundant, complementary feature representations and stabilize attention entropy. By aggregating these predictions via a calibrated, discretized voting mechanism, our ensemble successfully suppresses background attention drift while acting as a robust geometric anchor. Our approach yields highly stable zero-shot generalization, achieving Fourth Place in the NTIRE 2026 Robust Deepfake Detection Challenge at CVPR. Code is available at https://github.com/khoalephanminh/ntire26-deepfake-challenge.",
+      "authors": [
+        "Minh-Khoa Le-Phan",
+        "Minh-Hoang Le",
+        "Trong-Le Do",
+        "Minh-Triet Tran"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-28",
+      "comment": "4th place (out of 94 teams) in the NTIRE 2026 Robust Deepfake Detection Challenge",
+      "summary": "Current deepfake detection models achieve state-of-the-art performance on pristine academic datasets but suffer severe spatial attention drift under real-world compound degradations, such as blurri...",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "object_detection",
+      "score": 36.0
+    },
+    {
+      "title": "SnapGuard: Lightweight Prompt Injection Detection for Screenshot-Based Web Agents",
+      "arxiv_id": "2604.25562",
+      "abstract": "Web agents have emerged as an effective paradigm for automating interactions with complex web environments, yet remain vulnerable to prompt injection attacks that embed malicious instructions into webpage content to induce unintended actions. This threat is further amplified for screenshot-based web agents, which operate on rendered visual webpages rather than structured textual representations, making predominant text-centric defenses ineffective. Although multimodal detection methods have been explored, they often rely on large vision-language models (VLMs), incurring significant computational overhead. The bottleneck lies in the complexity of modern webpages: VLMs must comprehend the global semantics of an entire page, resulting in substantial inference time and GPU memory usage. This raises a critical question: can we detect prompt injection attacks from screenshots in a lightweight manner? In this paper, we observe that injected webpages exhibit distinct characteristics compared to benign ones from both visual and textual perspectives. Building on this insight, we propose SnapGuard, a lightweight yet accurate method that reformulates prompt injection detection as multimodal representation analysis over webpage screenshots. SnapGuard leverages two complementary signals: a visual stability indicator that identifies abnormally smooth gradient distributions induced by malicious content, and action-oriented textual signals recovered via contrast-polarity reversal. Extensive evaluations across eight attacks and two benign settings demonstrate that SnapGuard achieves an F1 score of 0.75, outperforming GPT-4o-prompt while being 8x faster (1.81s vs. 14.50s) and introducing no additional memory overhead.",
+      "authors": [
+        "Mengyao Du",
+        "Han Fang",
+        "Haokai Ma",
+        "Jiahao Chen",
+        "Kai Xu"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "published": "2026-04-28",
+      "comment": "10 pages, 7 figures",
+      "summary": "Web agents have emerged as an effective paradigm for automating interactions with complex web environments, yet remain vulnerable to prompt injection attacks that embed malicious instructions into ...",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "multimodal_vlm",
+      "score": 36.0
+    },
+    {
+      "title": "From Soliloquy to Agora: Memory-Enhanced LLM Agents with Decentralized Debate for Optimization Modeling",
+      "arxiv_id": "2604.25847",
+      "abstract": "Optimization modeling underpins real-world decision-making in logistics, manufacturing, energy, and public services, but reliably solving such problems from natural-language requirements remains challenging for current large language models (LLMs). In this paper, we propose \\emph{Agora-Opt}, a modular agentic framework for optimization modeling that combines decentralized debate with a read-write memory bank. Agora-Opt allows multiple agent teams to independently produce end-to-end solutions and reconcile them through an outcome-grounded debate protocol, while memory stores solver-verified artifacts and past disagreement resolutions to support training-free improvement over time. This design is flexible across both backbones and methods: it reduces base-model lock-in, transfers across different LLM families, and can be layered onto existing pipelines with minimal coupling. Across public benchmarks, Agora-Opt achieves the strongest overall performance among all compared methods, outperforming strong zero-shot LLMs, training-centric approaches, and prior agentic baselines. Further analyses show robust gains across backbone choices and component variants, and demonstrate that decentralized debate offers a structural advantage over centralized selection by enabling agents to refine candidate solutions through interaction and even recover correct formulations when all initial candidates are flawed. These results suggest that reliable optimization modeling benefits from combining collaborative cross-checking with reusable experience, and position Agora-Opt as a practical and extensible foundation for trustworthy optimization modeling assistance. Our code and data are available at https://github.com/CHIANGEL/Agora-Opt.",
+      "authors": [
+        "Jianghao Lin",
+        "Zi Ling",
+        "Chenyu Zhou",
+        "Tianyi Xu",
+        "Ruoqing Jiang"
+      ],
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-04-28",
+      "comment": "Working Paper",
+      "summary": "Optimization modeling underpins real-world decision-making in logistics, manufacturing, energy, and public services, but reliably solving such problems from natural-language requirements remains ch...",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "llm_agent",
+      "score": 35.0
+    },
+    {
+      "title": "The Surprising Universality of LLM Outputs: A Real-Time Verification Primitive",
+      "arxiv_id": "2604.25634",
+      "abstract": "We report a striking statistical regularity in frontier LLM outputs that enables a CPU-only scoring primitive running at 2.6 microseconds per token, with estimated latency up to 100,000$\\times$ (five orders of magnitude) below existing sampling-based detectors. Across six contemporary models from five independent vendors, two generation sizes, and five held-out domains, token rank-frequency distributions converge to the same two-parameter Mandelbrot ranking distribution, with 34 of 36 model-by-domain fits exceeding $R^{2} = 0.94$ and 35 of 36 favoring Mandelbrot over Zipf by AIC. The shared family does not collapse the models into statistical duplicates. Fitted Mandelbrot parameters remain cleanly separable between models: the cross-model spread in $q$ (1.63 to 3.69) exceeds its per-model bootstrap standard deviation (0.03 to 0.10) by more than an order of magnitude, yielding tens of standard deviations of separation per few thousand output tokens. Two capabilities follow. First, statistical model fingerprinting: text from a vendor-delivered LLM can be tested against its claimed model family without cryptographic watermarks or access to model internals, supporting provenance verification and silent-substitution audits. Second, a model-agnostic reference distribution for black-box output assessment, from which we derive a single-pass scoring primitive that composes with model log probabilities when available and degrades to a rank-only mode usable on closed APIs. Pilot results on FRANK, TruthfulQA, and HaluEval map where the primitive helps (lexical anomalies, unsupported entities) and where it structurally cannot (reasoning errors in domain-appropriate vocabulary). We position the primitive as a first-pass triage layer in compound evaluation stacks, not as a replacement for sampling-based or source-conditioned verifiers.",
+      "authors": [
+        "Alex Bogdan",
+        "Adrian de Valois-Franklin"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "published": "2026-04-28",
+      "comment": "25 pages, 6 figures, 6 tables, 37 references. Code and data: https://github.com/Evolutionairy-AI/Ranking-Inference",
+      "summary": "We report a striking statistical regularity in frontier LLM outputs that enables a CPU-only scoring primitive running at 2.6 microseconds per token, with estimated latency up to 100,000$\\times$ (fi...",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "ophthalmic_clinical",
+      "score": 35.0
+    },
+    {
+      "title": "Image Classification via Random Dilated Convolution with Multi-Branch Feature Extraction and Context Excitation",
+      "arxiv_id": "2604.25188",
+      "abstract": "Image classification remains a fundamental yet challenging task in computer vision, particularly when fine-grained feature extraction and background noise suppression are required simultaneously. Conventional convolutional neural networks, despite their remarkable success in hierarchical feature learning, often struggle with capturing multi-scale contextual information and are susceptible to overfitting when confronted with noisy or irrelevant image regions. In this paper, we propose RDCNet (Image Classification Network with Random Dilated Convolution), a novel architecture built upon ResNet-34 that integrates three synergistic innovations to address these limitations: (1) a Multi-Branch Random Dilated Convolution (MRDC) module that employs parallel branches with varying dilation rates combined with a stochastic masking mechanism to capture fine-grained features across multiple scales while enhancing robustness against noise and overfitting; (2) a Fine-Grained Feature Enhancement (FGFE) module embedded within MRDC that bridges global contextual information with local feature representations through adaptive pooling and bilinear interpolation, thereby amplifying sensitivity to subtle visual patterns; and (3) a Context Excitation (CE) module that leverages softmax-based spatial attention and channel recalibration to dynamically emphasize task-relevant features while suppressing background interference. Extensive experiments conducted on five benchmark datasets -- CIFAR-10, CIFAR-100, SVHN, Imagenette, and Imagewoof -- demonstrate that RDCNet consistently achieves state-of-the-art classification accuracy, outperforming the second-best competing methods by margins of 0.02\\%, 1.12\\%, 0.18\\%, 4.73\\%, and 3.56\\%, respectively, thereby validating the effectiveness and generalizability of the proposed approach across diverse visual recognition scenarios.",
+      "authors": [
+        "Wentao Jiang",
+        "Yuanchan Xu",
+        "Heng Yuan"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-28",
+      "comment": "",
+      "summary": "Image classification remains a fundamental yet challenging task in computer vision, particularly when fine-grained feature extraction and background noise suppression are required simultaneously.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "computer_vision_core",
+      "score": 35.0
+    },
+    {
+      "title": "PSI-Bench: Towards Clinically Grounded and Interpretable Evaluation of Depression Patient Simulators",
+      "arxiv_id": "2604.25840",
+      "abstract": "Patient simulators are gaining traction in mental health training by providing scalable exposure to complex and sensitive patient interactions. Simulating depressed patients is particularly challenging, as safety constraints and high patient variability complicate simulations and underscore the need for simulators that capture diverse and realistic patient behaviors. However, existing evaluations heavily rely on LLM-judges with poorly specified prompts and do not assess behavioral diversity. We introduce PSI-Bench, an automatic evaluation framework that provides interpretable, clinically grounded diagnostics of depression patient simulator behavior across turn-, dialogue-, and population-level dimensions. Using PSI-Bench, we benchmark seven LLMs across two simulator frameworks and find that simulators produce overly long, lexically diverse responses, show reduced variability, resolve emotions too quickly, and follow a uniform negative-to-positive trajectory. We also show that the simulation framework has a larger impact on fidelity than the model scale. Results from a human study demonstrate that our benchmark is strongly aligned with expert judgments. Our work reveals key limitations of current depression patient simulators and provides an interpretable, extensible benchmark to guide future simulator design and evaluation.",
+      "authors": [
+        "Nguyen Khoi Hoang",
+        "Shuhaib Mehri",
+        "Tse-An Hsu",
+        "Yi-Jyun Sun",
+        "Quynh Xuan Nguyen Truong"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-04-28",
+      "comment": "",
+      "summary": "Patient simulators are gaining traction in mental health training by providing scalable exposure to complex and sensitive patient interactions.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "medical_imaging",
+      "score": 34.0
+    },
+    {
+      "title": "Below-Chance Blindness: Prompted Underperformance in Small LLMs Produces Positional Bias Rather than Answer Avoidance",
+      "arxiv_id": "2604.25249",
+      "abstract": "Detecting sandbagging--the deliberate underperformance on capability evaluations--is an open problem in AI safety. We tested whether symptom validity testing (SVT) logic from clinical malingering detection could identify sandbagging through below-chance performance (BCB) on forced-choice items. In a pre-registered pilot at the 7-9 billion parameter instruction-tuned scale (3 models, 4 MMLU-Pro domains, 4 conditions, 500 items per cell, 24,000 total trials), the plausibility gate failed. Zero of 12 model-domain cells showed significant below-chance performance under sandbagging instruction. Exploratory analyses revealed three qualitatively distinct failure modes. Qwen-2.5-7B and Phi-3.5-mini largely ignored the sandbagging instruction, with 62-88% response identity with the honest baseline. Llama-3-8B complied substantially but implemented underperformance as a positional heuristic, collapsing its response distribution onto middle-alphabet options (E at 31.8%, F at 26.1%) regardless of where the correct answer fell. This produced accuracy boosts of up to 33 percentage points when the correct answer coincidentally occupied the model's preferred position. An explicit anti-task instruction (\"pick the least likely answer\") drove two of three models below chance, with accuracy as low as 0.024. The capability for answer-aware avoidance therefore exists but is not activated by \"deliberately underperform.\" BCB did not fail as a logical marker of answer-aware avoidance. It was not observed in this regime because the model showing the largest behavioural shift exhibited behaviour consistent with a position-dominant response policy rather than content-aware answer avoidance. We propose that positional-distribution shift may be a more effective behavioural signature than below-chance accuracy for detecting prompted underperformance at this model scale.",
+      "authors": [
+        "Jon-Paul Cacioli"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-04-28",
+      "comment": "10 pages, 2 figures, 2 tables. Pre-registered: https://osf.io/6zftv/",
+      "summary": "Detecting sandbagging--the deliberate underperformance on capability evaluations--is an open problem in AI safety.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "medical_imaging",
+      "score": 34.0
+    },
+    {
+      "title": "MarkIt: Training-Free Visual Markers for Precise Video Temporal Grounding",
+      "arxiv_id": "2604.25886",
+      "abstract": "Video temporal grounding (VTG) aims to localize the start and end timestamps of the event described by a given query within an untrimmed video. Despite the strong open-world video understanding and recognition ability of video language large models (Vid-LLMs), outputting precise temporal grounding information remains challenging, since explicit temporal cues are scarce in untrimmed videos, and query-relevant entities are hard to track consistently across the video timeline. In this paper, we present \\MarkIt{}, a training-free framework that transforms an input video into a query-conditioned marked video, which empowers Vid-LLMs to generate more reliable temporal localization predictions. The core component of \\MarkIt{} is an annotation-free query-to-mask grounding bridge (Q2M-Bridge). Given a natural-language query, it automatically derives a compact set of canonical subject tags through linguistic parsing and normalization, then maps these tags to query-conditioned instance masks using text-conditioned open-vocabulary segmentation. The bridge also embeds lightweight semantic instance markers and a persistent frame index into each frame, effectively transforming long-range temporal reasoning into explicit visual cues for Vid-LLMs. \\MarkIt{} adopts an inference-time plug-and-play design, needs no modifications to Vid-LLM weights, and is fully compatible with supervised fine-tuning. Experiments conducted on multiple mainstream moment retrieval and highlight detection benchmarks demonstrate that \\MarkIt {} achieves state-of-the-art results, delivering consistent temporal grounding improvements across a wide range of existing models.",
+      "authors": [
+        "Pengcheng Fang",
+        "Yuxia Chen",
+        "Xiaohao Cai"
+      ],
+      "primary_category": "cs.MM",
+      "categories": [
+        "cs.MM"
+      ],
+      "published": "2026-04-28",
+      "comment": "",
+      "summary": "Video temporal grounding (VTG) aims to localize the start and end timestamps of the event described by a given query within an untrimmed video.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "computer_vision_core",
+      "score": 32.0
+    },
+    {
+      "title": "Prefill-Time Intervention for Mitigating Hallucination in Large Vision-Language Models",
+      "arxiv_id": "2604.25642",
+      "abstract": "Large Vision-Language Models (LVLMs) have achieved remarkable progress in visual-textual understanding, yet their reliability is critically undermined by hallucinations, i.e., the generation of factually incorrect or inconsistent responses. While recent studies using steering vectors demonstrated promise in reducing hallucinations, a notable challenge remains: they inadvertently amplify the severity of residual hallucinations. We attribute this to their exclusive focus on the decoding stage, where errors accumulate autoregressively and progressively worsen subsequent hallucinatory outputs. To address this, we propose Prefill-Time Intervention (PTI), a novel steering paradigm that intervenes only once during the prefill stage, enhancing the initial Key-Value (KV) cache before error accumulation occurs. Specifically, PTI is modality-aware, deriving distinct directions for visual and textual representations. This intervention is decoupled to steer keys toward visually-grounded objects and values to filter background noise, correcting hallucination-prone representations at their source. Extensive experiments demonstrate PTI's significant performance in mitigating hallucinations and its generalizability across diverse decoding strategies, LVLMs, and benchmarks. Moreover, PTI is orthogonal to existing decoding-stage methods, enabling plug-and-play integration and further boosting performance. Code is available at: https://github.com/huaiyi66/PTI.",
+      "authors": [
+        "Chengsheng Zhang",
+        "Chenghao Sun",
+        "Xinyan Jiang",
+        "Wei Li",
+        "Xinmei Tian"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-04-28",
+      "comment": "Accepted by CVPR 2026",
+      "summary": "Large Vision-Language Models (LVLMs) have achieved remarkable progress in visual-textual understanding, yet their reliability is critically undermined by hallucinations, i.e., the generation of fac...",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "multimodal_vlm",
+      "score": 32.0
+    },
+    {
+      "title": "TopoMamba: Topology-Aware Scanning and Fusion for Segmenting Heterogeneous Medical Visual Media",
+      "arxiv_id": "2604.25545",
+      "abstract": "Visual state-space models (SSMs) have shown strong potential for medical image segmentation, yet their effectiveness is often limited by two practical issues: axis-biased scan ordering weakens the modeling of oblique and curved structures, and naive multi-branch fusion tends to amplify redundant responses. We present TopoMamba, a topology-aware scan-and-fuse framework for segmenting heterogeneous medical visual media. The method combines a diagonal/anti-diagonal TopoA-Scan branch with the standard Cross-Scan branch to provide complementary structural priors, and introduces ScanCache, a device-aware caching mechanism that amortizes explicit scan-index construction across recurring resolutions. To fuse heterogeneous scan features efficiently, we further propose a lightweight HSIC Gate that regulates branch interaction using a dependence-aware scalar gating rule. We also instantiate a volumetric TopoMamba-3D for practical 3D clinical segmentation. Experiments on Synapse CT, ISIC 2017 dermoscopy, and CVC-ClinicDB endoscopy show that TopoMamba consistently improves segmentation quality over strong CNN, Transformer, and SSM baselines, with particularly clear gains on thin or curved targets such as the pancreas and gallbladder, while maintaining favorable deployment efficiency under dynamic input resolutions. These results suggest that topology-aware scan ordering and lightweight dependence-aware fusion form an effective and practical design for medical multimedia segmentation. The code will be made publicly available.",
+      "authors": [
+        "Fuchen Zheng",
+        "Chengpei Xu",
+        "Long Ma",
+        "Weixuan Li",
+        "Junhua Zhou"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-28",
+      "comment": "15 pages, 9 figures",
+      "summary": "Visual state-space models (SSMs) have shown strong potential for medical image segmentation, yet their effectiveness is often limited by two practical issues: axis-biased scan ordering weakens the ...",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "computer_vision_core",
+      "score": 32.0
+    },
+    {
+      "title": "DRAGON: A Benchmark for Evidence-Grounded Visual Reasoning over Diagrams",
+      "arxiv_id": "2604.25231",
+      "abstract": "Diagram question answering (DQA) requires models to interpret structured visual representations such as charts, maps, infographics, circuit schematics, and scientific diagrams. Recent vision-language models (VLMs) often achieve high answer accuracy on these tasks, yet correct answers do not guarantee that models ground their reasoning in the diagram regions that support the prediction. Models may instead rely on textual correlations or dataset artifacts without identifying the visual evidence required to verify the answer. This limitation prevents reliable evaluation of diagram reasoning and reduces interpretability. We introduce DRAGON, a benchmark for evaluating evidence-grounded visual reasoning in diagrams. Given a diagram, a question, and the correct answer, a model must predict bounding boxes that correspond to the visual elements required to justify the answer. These evidence regions may include answer-bearing components, textual labels, legends, axes, connectors, and other supporting structures involved in the reasoning process. The DRAGON dataset contains 11,664 annotated question instances collected from six diagram QA datasets: ChartQA, Circuit-VQA, InfographicsVQA, MapIQ, MapWise, and AI2D. We release a 2,445-instance benchmark test set with human-verified reasoning evidence annotations and a standardized evaluation framework. We evaluate eight recent VLMs and analyze their ability to localize reasoning evidence across diverse diagram domains. DRAGON enables systematic evaluation of diagram reasoning and supports future research on models that ground their predictions in visual evidence.",
+      "authors": [
+        "Anirudh Iyengar Kaniyar Narayana Iyengar",
+        "Tampu Ravi Kumar",
+        "Gaurav Najpande",
+        "Manan Suri",
+        "Dinesh Manocha"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-04-28",
+      "comment": "22 Pages, 14 Figures",
+      "summary": "Diagram question answering (DQA) requires models to interpret structured visual representations such as charts, maps, infographics, circuit schematics, and scientific diagrams.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "computer_vision_core",
+      "score": 32.0
+    },
+    {
+      "title": "K-CARE: Knowledge-driven Symmetrical Contextual Anchoring and Analogical Prototype Reasoning for E-commerce Relevance",
+      "arxiv_id": "2604.25683",
+      "abstract": "This paper targets e-commerce search relevance. While Large Language Models (LLMs) have demonstrated significant potential in this field, they often encounter performance bottlenecks in persistent 'corner cases' within complex industrial scenarios. Existing research primarily focuses on optimizing reasoning trajectories via Reinforcement Learning. However, real-world observations suggest that the primary bottleneck stems from knowledge boundaries, where the absence of domain-specific intelligence in the model's parametric memory creates a contextual void. This void persists when interpreting idiosyncratic queries or niche products and cannot be resolved solely through reasoning-path optimization. To bridge this gap, we propose K-CARE, a framework that extends the model's cognitive reach by grounding reasoning in external knowledge. K-CARE comprises two synergistic components: (1) Symmetrical Contextual Anchoring (SCA), which fills the contextual void by anchoring queries and products with behavior-derived implicit knowledge; and (2) Analogical Prototype Reasoning (APR), which leverages expert-curated prototypical knowledge to calibrate decision boundaries through in-context analogy. Extensive offline evaluations and online A/B tests on a leading e-commerce platform demonstrate that K-CARE significantly outperforms state-of-the-art baselines, delivering substantial commercial impact by resolving knowledge-intensive relevance challenges.",
+      "authors": [
+        "Chen Yifei",
+        "Tian Zhixing",
+        "Wang Chenyang",
+        "Cheng Ziguang"
+      ],
+      "primary_category": "cs.IR",
+      "categories": [
+        "cs.IR"
+      ],
+      "published": "2026-04-28",
+      "comment": "",
+      "summary": "This paper targets e-commerce search relevance.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "object_detection",
+      "score": 31.0
+    },
+    {
+      "title": "SAMe: A Semantic Anatomy Mapping Engine for Robotic Ultrasound",
+      "arxiv_id": "2604.25646",
+      "abstract": "Robotic ultrasound has advanced local image-driven control, contact regulation, and view optimization, yet current systems lack the anatomical understanding needed to determine what to scan, where to begin, and how to adapt to individual patient anatomy. These gaps make systems still reliant on expert intervention to initiate scanning. Here we present SAMe, a semantic anatomy mapping engine that provides robotic ultrasound with an explicit anatomical prior layer. SAMe addresses scan initiation as a target-to-anatomy-to-action process: it grounds under-specified clinical complaints into structured target organs, instantiates a patient-specific anatomical representation for the grounded targets from a single external body image, and translates this representation into control-facing 6-DoF probe initialization states without any additional registration using preoperative CT or MRI. The anatomical representation maintained by SAMe is explicit, lightweight (single-organ inference in 0.08s), and compatible with downstream control by design. Across semantic grounding, anatomical instantiation, and real-robot evaluation, SAMe shows strong performance across the full initialization pipeline. In real-robot experiments, SAMe achieved overall organ-hit rates of 97.3% for liver initialization and 81.7% for kidney initialization across the evaluated target sets. Even when restricted to the centroid target, SAMe outperformed the surface-heuristic baseline for both liver and kidney initialization. These results establish an explicit anatomical prior layer that addresses scan initialization and is designed to support broader downstream autonomous scanning pipelines, providing the anatomical foundation for complaint-driven, anatomically informed robotic ultrasonography.",
+      "authors": [
+        "Jing Zhang",
+        "Duojie Chen",
+        "Wentao Jiang",
+        "Zihan Lou",
+        "Jianxin Liu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "published": "2026-04-28",
+      "comment": "Supplementary information included. Code will be released at https://github.com/MiliLab/Echo-SAMe",
+      "summary": "Robotic ultrasound has advanced local image-driven control, contact regulation, and view optimization, yet current systems lack the anatomical understanding needed to determine what to scan, where ...",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "medical_imaging",
+      "score": 31.0
+    },
+    {
+      "title": "GeoSearch: Augmenting Worldwide Geolocalization with Web-Scale Reverse Image Search and Image Matching",
+      "arxiv_id": "2604.25390",
+      "abstract": "Worldwide image geolocalization, which aims to predict the GPS coordinates of any image on Earth, remains challenging due to global visual diversity. Recent generative approaches based on Retrieval-Augmented Generation (RAG) and Large Multimodal Models (LMMs) leverage candidates retrieved from fixed databases for reasoning, but often struggle with scenes that are absent from the reference set. In this work, we propose GeoSearch, an open-world geolocation framework that integrates web-scale reverse image search into the RAG pipeline. GeoSearch augments LMM prompts with database-retrieved coordinates and textual evidence extracted from web pages. To mitigate noise from irrelevant content, we introduce a two-layer filtering mechanism consisting of image matching, followed by confidence-based gating. Experiments on standard benchmarks Im2GPS3k and YFCC4k demonstrate the superiority of GeoSearch under leakage-aware evaluation. Our code and data are publicly available to support reproducibility.",
+      "authors": [
+        "Tung-Duong Le-Duc",
+        "Hoang-Quoc Nguyen-Son",
+        "Minh-Son Dao"
+      ],
+      "primary_category": "cs.IR",
+      "categories": [
+        "cs.IR",
+        "cs.CV"
+      ],
+      "published": "2026-04-28",
+      "comment": "Accepted to SIGIR 2026 Main Conference",
+      "summary": "Worldwide image geolocalization, which aims to predict the GPS coordinates of any image on Earth, remains challenging due to global visual diversity.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "multimodal_vlm",
+      "score": 31.0
+    },
+    {
+      "title": "The Structured Output Benchmark: A Multi-Source Benchmark for Evaluating Structured Output Quality in Large Language Models",
+      "arxiv_id": "2604.25359",
+      "abstract": "Large Language Models are increasingly being deployed to extract structured data from unstructured and semi-structured sources: parsing invoices, medical records, and converting PDF documents to database entries. Yet existing benchmarks for structured output generation either focus on schema compliance alone, or evaluate value correctness within a single source domain. We introduce SOB (The Structured Output Benchmark), a multi-source benchmark spanning three source modalities: native text, images, and audio conversations. All models receive a text-normalized representation of their context regardless of source modality; this deliberate design isolates structured-output capability from raw vision or speech-processing quality, ensuring a fair, source-agnostic comparison. Our benchmark comprises 5,000 text evaluation records derived from multi-hop QA drawn from a 25,091-record full corpus, 209 image records from OCR-processed PDFs across seven document types including multi-column layouts, dense tables, scanned historical documents, small-print text, and mathematical typesetting, and 115 audio records from the AMI corpus. Each record pairs a natural-language question with a JSON schema that the model must follow and a ground-truth answer verified against the source context. We evaluate 21 frontier and open-weight models across three source domains and seven metrics. Our results reveal a consistent pattern: models achieve near-perfect schema compliance, yet the best Value Accuracy, measured by exact leaf-value match, reaches only 83.0% on text, 67.2% on images, and 23.7% on audio, where longer context makes extraction substantially harder. We release the dataset, evaluation pipeline, and all related code.",
+      "authors": [
+        "Abhinav Kumar Singh",
+        "Harsha Vardhan Khurdula",
+        "Yoeven D Khemlani",
+        "Vineet Agarwal"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-04-28",
+      "comment": "19 pages, 4 figures, 11 tables, submitted to NeurIPS 2026",
+      "summary": "Large Language Models are increasingly being deployed to extract structured data from unstructured and semi-structured sources: parsing invoices, medical records, and converting PDF documents to da...",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "medical_imaging",
+      "score": 31.0
+    },
+    {
+      "title": "Assessment of the quantitative impact of occlusal positioning splints on temporomandibular joint conditions",
+      "arxiv_id": "2604.25322",
+      "abstract": "A computational method for quantitative analysis of temporomandibular joint (TMJ) configuration using occlusal positioning splints is proposed and demonstrated. The method models a positioning splint as a physical realization of a predefined rigid transformation of the mandible, derived from multimodal data, including CBCT, facial motion acquisition, and dental scans integrated within a common coordinate system. Splints corresponding to selected mandibular positions are designed and fabricated, and their positioning accuracy is evaluated using repeated scans of plaster models. Discrepancies are represented as error transformations and analyzed statistically in the space of rigid motions. The estimated transformations are propagated to segmented TMJ structures, enabling simulation-based evaluation of joint space changes. Transformation-based error analysis and surface distance metrics are used to quantify differences between planned and achieved configurations. The method enables indirect assessment of TMJ configuration using a single anatomical model and transformation data, reducing the need for repeated imaging across multiple mandibular positions. This study is intended as a methodological demonstration, supported by a clear step-by-step graphical presentation, and does not aim to provide clinical validation.",
+      "authors": [
+        "Agnieszka Anna Tomaka",
+        "Krzysztof Domino",
+        "Dariusz Pojda",
+        "Michał Tarnawski"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-28",
+      "comment": "27 pages, 9 figures",
+      "summary": "A computational method for quantitative analysis of temporomandibular joint (TMJ) configuration using occlusal positioning splints is proposed and demonstrated.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "medical_imaging",
+      "score": 31.0
+    },
+    {
+      "title": "Instruction-Evidence Contrastive Dual-Stream Decoding for Grounded Vision-Language Reasoning",
+      "arxiv_id": "2604.25809",
+      "abstract": "Vision-Language Models (VLMs) exhibit strong performance in instruction following and open-ended vision-language reasoning, yet they frequently generate fluent outputs that are weakly grounded in visual evidence. Prior works have shown that instruction prompting further worsens this issue by amplifying language priors, especially when the visual signal is uncertain or ambiguous. To address this challenge, we propose a decoding framework that explicitly balances linguistic informativeness and visual faithfulness during generation. Our method, Instruction-Evidence Contrastive Dual-Stream Decoding (IECD2), maintains two parallel probability distributions of tokens at each decoding step: an instruction-driven stream that promotes expressive and informative responses, and an evidence-driven stream that enforces strict grounding in the image. These two streams are adaptively fused using a symmetric KL-based contrast-based gate, which suppresses tokens favored by language priors but unsupported by visual evidence, while preserving them when both distributions agree. We evaluate IECD2 on multiple datasets spanning various generative vision-language reasoning tasks such as captioning and visual question answering, including POPE, MME, VQAv2, AMBER, MS-COCO, and LLaVA-Bench. IECD2 demonstrates consistent improvements in task accuracy and reasoning performance, alongside a substantial reduction in hallucination across all evaluation metrics compared to state-of-the-art decoding approaches.",
+      "authors": [
+        "Yashwant Pravinrao Bangde",
+        "Debaditya Roy"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-28",
+      "comment": "",
+      "summary": "Vision-Language Models (VLMs) exhibit strong performance in instruction following and open-ended vision-language reasoning, yet they frequently generate fluent outputs that are weakly grounded in v...",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "multimodal_vlm",
+      "score": 30.0
+    },
+    {
+      "title": "Adaptable phase retrieval for coherent transition radiation spectroscopy based on differentiable physics information",
+      "arxiv_id": "2604.25489",
+      "abstract": "Coherent transition radiation (CTR) spectroscopy is a critical diagnostic for characterizing the longitudinal structure of relativistic electron bunches in laser-plasma and conventional accelerators. In practice, recovering the bunch profile from a measured CTR spectrum is an ill-posed phase-retrieval problem. Traditionally, this is addressed using Gerchberg-Saxton (GS)-type iterative algorithms. However, these implementations often rely on explicit inverse propagators, making them difficult to adapt to sophisticated experimental forward models. In this work, we introduce a flexible gradient-based framework for CTR phase retrieval. By leveraging a differentiable forward model, we propose a phase-only gradient descent (GD-Phase) approach that enforces the measured spectral amplitude as a hard constraint while optimizing the Fourier phase under physical real-space priors. Using synthetic CTR spectra spanning multi-peaked and strongly modulated profiles, we benchmark GD-Phase against traditional GS and a real-space amplitude-parametrized gradient descent (GD-Amp) algorithm. Unlike traditional methods, this formulation allows for the seamless inclusion of arbitrary differentiable experimental effects into the reconstruction loop. We demonstrate that this physics-informed approach not only reproduces the fidelity of GS methods but also establishes a robust baseline for incorporating multi-diagnostic constraints and uncertainty quantification. This enables the systematic extension to higher-dimensional, multimodal, and uncertainty-aware diagnostics, facilitating fast and scalable phase retrieval in realistic experimental settings.",
+      "authors": [
+        "Ritz Ann Aguilar",
+        "Maxwell LaBerge",
+        "Andreas Doepp",
+        "Alexander Debus",
+        "Zewu Bi"
+      ],
+      "primary_category": "physics.acc-ph",
+      "categories": [
+        "physics.acc-ph",
+        "cs.LG"
+      ],
+      "published": "2026-04-28",
+      "comment": "17 pages, 8 figures",
+      "summary": "Coherent transition radiation (CTR) spectroscopy is a critical diagnostic for characterizing the longitudinal structure of relativistic electron bunches in laser-plasma and conventional accelerators.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "multimodal_vlm",
+      "score": 30.0
+    },
+    {
+      "title": "PI-TTA: Physics-Informed Source-Free Test-Time Adaptation for Robust Human Activity Recognition on Mobile Devices",
+      "arxiv_id": "2604.25435",
+      "abstract": "Source-free test-time adaptation (TTA) is appealing for mobile and wearable sensing because it enables on-device personalization from unlabeled test streams without centralizing private data. However, sensor-based human activity recognition (HAR) poses challenges that are less pronounced in standard vision benchmarks: behavioral inertial streams are temporally correlated and often exhibit within-session shifts caused by sensor rotation, placement change, and sampling-rate drift. Under this streaming non-i.i.d. setting, widely used vision-style TTA objectives can become unstable, leading to overconfident errors, representation collapse, and catastrophic forgetting. We propose PI-TTA, a lightweight source-free adaptation framework that stabilizes online updates through three physics-consistent constraints: gravity consistency, short-horizon temporal continuity, and spectral stability. PI-TTA updates the same small parameter subset as strong source-free baselines and incurs only modest overhead, making it suitable for on-device deployment. Experiments on USCHAD, PAMAP2, and mHealth under long-sequence stress tests and factorized shift protocols show that PI-TTA mitigates the severe degradation observed in confidence-driven baselines and preserves stable adaptation under sustained streaming conditions. It improves long-sequence accuracy by up to 9.13% and reduces physical-violation rates by 27.5%, 24.1%, and 45.4% on USCHAD, PAMAP2, and mHealth, respectively. These results demonstrate that physics-informed adaptation can improve accuracy, stability, and deployment reliability for real-world mobile sensing systems.",
+      "authors": [
+        "Changyu Li",
+        "Lu Wang",
+        "Ming Lei",
+        "Jiashen Liu",
+        "Yichen Zhang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-04-28",
+      "comment": "16 pages, 11 figures",
+      "summary": "Source-free test-time adaptation (TTA) is appealing for mobile and wearable sensing because it enables on-device personalization from unlabeled test streams without centralizing private data.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "continual_learning",
+      "score": 30.0
+    },
+    {
+      "title": "Magnification-Invariant Image Classification via Domain Generalization and Stable Sparse Embedding Signatures",
+      "arxiv_id": "2604.25817",
+      "abstract": "Magnification shift is a major obstacle to robust histopathology classification, because models trained on one imaging scale often generalize poorly to another. Here, we evaluated this problem on the BreaKHis dataset using a strict patient-disjoint leave-one-magnification-out protocol, comparing supervised baseline, baseline augmented with DCGAN-generated patches, and a gradient-reversal domain-general model designed to preserve discriminative information while suppressing magnification-specific variation. Across held-out magnifications, the domain-general model achieved the strongest overall discrimination and its clearest gain was observed when 200X was held out. By contrast, GAN augmentation produced inconsistent effects, improving some folds but degrading others, particularly at 400X. The domain-general model also yielded the lowest Brier score at 0.063 vs 0.089 at baseline. Sparse embedding analysis further revealed that domain-general training reduced average signature size more than three-fold (306 versus 1,074 dimensions) while preserving equivalent predictive performance (AUC: 0.967 vs 0.965; F1: 0.930 vs 0.931). It also increased cross-fold signature reproducibility from near-zero Jaccard overlap in the baseline to 0.99 between the 100X and 200X folds. These findings show that calibrated, compact, and transferable representations can be learned without added architectural complexity, with clear implications for the reliable deployment of computational pathology models across heterogeneous acquisition settings.",
+      "authors": [
+        "Ifeanyi Ezuma",
+        "Olusiji Medaiyese"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "stat.ML"
+      ],
+      "published": "2026-04-28",
+      "comment": "12 pages, 7 figures, 3 tables. Preprint manuscript",
+      "summary": "Magnification shift is a major obstacle to robust histopathology classification, because models trained on one imaging scale often generalize poorly to another.",
+      "target_date": "2026-04-28",
+      "source_published_date": "2026-04-28",
+      "domain": "computer_vision_core",
+      "score": 29.0
+    }
+  ],
+  "stats": {
+    "total": 261,
+    "in_focus": 67,
+    "tier_a_count": 10,
+    "tier_b_count": 24,
+    "tier_a_min_score": 40.0,
+    "tier_b_min_score": 29.0
+  }
+}
