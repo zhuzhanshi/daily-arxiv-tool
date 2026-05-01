@@ -1,0 +1,791 @@
+{
+  "tier_a": [
+    {
+      "title": "UHR-Net: An Uncertainty-Aware Hypergraph Refinement Network for Medical Image Segmentation",
+      "arxiv_id": "2604.28095",
+      "abstract": "Accurate lesion segmentation is crucial for clinical diagnosis and treatment planning. However, lesions often resemble surrounding tissues and exhibit ill-defined boundaries, leading to unstable predictions in boundary/transition regions. Moreover, small-lesion cues can be diluted by multi-scale feature extraction, causing under- or over-segmentation. To address these challenges, we propose an Uncertainty-Aware Hypergraph Refinement Network (UHR-Net). First, we introduce an Uncertainty-Oriented Instance Contrastive (UO-IC) pretraining strategy that couples geometry-aware copy-paste augmentation with hard-negative mining of lesion-like background regions to improve instance-level discrimination for small and visually ambiguous lesions. Second, we design an Uncertainty-Guided Hypergraph Refinement (UGHR) block, which derives an entropy-based uncertainty map from a coarse probability map to guide hypergraph refinement. By splitting hyperedge prototypes into foreground and background groups, UGHR decouples higher-order interactions and improves refinement in ambiguous regions. Experiments on five public benchmarks demonstrate consistent gains over strong baselines. Code is available at: https://github.com/CUGfreshman/UHR-Net.",
+      "authors": [
+        "Shuokun Cheng",
+        "Jinghao Shi",
+        "Kun Sun"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-30",
+      "comment": "8 pages, 4 figures, 7 tables",
+      "summary": "Accurate lesion segmentation is crucial for clinical diagnosis and treatment planning.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "ophthalmic_clinical",
+      "score": 51.0
+    },
+    {
+      "title": "Echo-α: Large Agentic Multimodal Reasoning Model for Ultrasound Interpretation",
+      "arxiv_id": "2604.28011",
+      "abstract": "Ultrasound interpretation requires both precise lesion localization and holistic clinical reasoning, yet existing methods typically excel at only one of these capabilities: specialized detectors offer strong localization but limited reasoning, whereas multimodal large language models (MLLMs) provide flexible reasoning but weak grounding in specialized medical domains. We present Echo-α, an agentic multimodal reasoning model for ultrasound interpretation that unifies these strengths within an invoke-and-reason framework. Echo-α is trained to coordinate organ-specific detector outputs, integrate them with global visual context, and convert the resulting evidence into grounded diagnostic decisions beyond detector-only inference. This behavior is established through a nine-task supervised curriculum and then refined by sequential reinforcement learning under different reward trade-offs, yielding Echo-α-Grounding for lesion anchoring and Echo-α-Diagnosis for final diagnosis. On multi-center renal and breast ultrasound benchmarks, Echo-α outperforms competitive baselines on both grounding and diagnosis. In particular, on cross-center test sets, Echo-α-Grounding attains 56.73%/43.78% F1@0.5 and Echo- α-Diagnosis reaches 74.90%/49.20% overall accuracy on renal/breast ultrasound. These results suggest that agentic multimodal reasoning can turn specialized detectors into verifiable clinical evidence, offering a practical route toward ultrasound AI systems that are more accurate, interpretable, and transferable. The repository is at https://github.com/MiliLab/Echo-Alpha.",
+      "authors": [
+        "Jing Zhang",
+        "Wentao Jiang",
+        "Tao Huang",
+        "Zhiwei Wang",
+        "Jianxin Liu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-30",
+      "comment": "12 pages, 4 figures. Technical report",
+      "summary": "Ultrasound interpretation requires both precise lesion localization and holistic clinical reasoning, yet existing methods typically excel at only one of these capabilities: specialized detectors of...",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "medical_imaging",
+      "score": 51.0
+    },
+    {
+      "title": "JI-ADF: Joint-Individual Learning with Adaptive Decision Fusion for Multimodal Skin Lesion Classification",
+      "arxiv_id": "2604.27343",
+      "abstract": "Skin lesion classification is essential for early dermatological diagnosis, yet many existing computer-aided systems rely primarily on dermoscopic images and underutilize the multimodal evidence routinely available in clinical practice. To address this gap, we propose \\textbf{JI-ADF}, a trimodal deep learning framework that integrates dermoscopic images, clinical photographs, and structured patient metadata for clinically grounded skin lesion classification. The proposed architecture combines joint multimodal representation learning with modality-specific auxiliary supervision and an adaptive decision fusion mechanism that dynamically calibrates modality contributions on a per-sample basis. To enhance cross-modal reasoning while preserving modality-specific evidence, we further introduce a multimodal fusion attention (MMFA) module. We evaluate JI-ADF on the large-scale MILK10k benchmark, which reflects real-world clinical acquisition conditions and severe class imbalance. The proposed method demonstrates strong and well-balanced performance across lesion categories, improving sensitivity and Dice score while maintaining high specificity and good calibration. Extensive analyses, including modality ablation, calibration evaluation, and Grad-CAM visualization, further confirm the robustness and clinically meaningful behavior of the model. These results indicate that JI-ADF provides a reliable and practical foundation for multimodal skin lesion classification in real-world clinical settings.",
+      "authors": [
+        "Phan Nguyen",
+        "Dat Cao",
+        "Quang Hien Kha",
+        "Hien Chu",
+        "Minh H. N. Le"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-30",
+      "comment": "",
+      "summary": "Skin lesion classification is essential for early dermatological diagnosis, yet many existing computer-aided systems rely primarily on dermoscopic images and underutilize the multimodal evidence ro...",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "medical_imaging",
+      "score": 49.0
+    },
+    {
+      "title": "RIHA: Report-Image Hierarchical Alignment for Radiology Report Generation",
+      "arxiv_id": "2604.27559",
+      "abstract": "Radiology report generation (RRG) has emerged as a promising approach to alleviate radiologists' workload and reduce human errors by automatically generating diagnostic reports from medical images. A key challenge in RRG is achieving fine-grained alignment between complex visual features and the hierarchical structure of long-form radiology reports. Although recent methods have improved image-text representation learning, they often treat reports as flat sequences, overlooking their structured sections and semantic hierarchies. This simplification hinders precise cross-modal alignment and weakens RRG accuracy. To address this challenge, we propose RIHA (Report-Image Hierarchical Alignment Transformer), a novel end-to-end framework that performs multi-level alignment between radiological images and their corresponding reports across paragraph, sentence, and word levels. This hierarchical alignment enables more precise cross-modal mapping, essential for capturing the nuanced semantics embedded in clinical narratives. Specifically, RIHA introduces a Visual Feature Pyramid (VFP) to extract multi-scale visual features and a Text Feature Pyramid (TFP) to represent multi-granularity textual structures. These components are integrated through a Cross-modal Hierarchical Alignment (CHA) module, leveraging optimal transport to effectively align visual and textual features across various levels. Furthermore, we incorporate Relative Positional Encoding (RPE) into the decoder to model spatial and semantic relationships among tokens, enhancing the token-level alignment between visual features and generated text. Extensive experiments on two benchmark chest X-ray datasets, IU-Xray and MIMIC-CXR, demonstrate that RIHA outperforms existing state-of-the-art models in both natural language generation and clinical efficacy metrics.",
+      "authors": [
+        "Yucheng Chen",
+        "Yang Yu",
+        "Yufei Shi",
+        "Conghao Xiong",
+        "Xulei Yang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-04-30",
+      "comment": "Accepted by Journal of Biomedical and Health Informatics (JBHI)",
+      "summary": "Radiology report generation (RRG) has emerged as a promising approach to alleviate radiologists' workload and reduce human errors by automatically generating diagnostic reports from medical images.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "medical_imaging",
+      "score": 46.0
+    },
+    {
+      "title": "MiniCPM-o 4.5: Towards Real-Time Full-Duplex Omni-Modal Interaction",
+      "arxiv_id": "2604.27393",
+      "abstract": "Recent progress in multimodal large language models (MLLMs) has brought AI capabilities from static offline data processing to real-time streaming interaction, yet they still remain far from human-level multimodal interaction. The key bottlenecks are no longer modality coverage or latency alone, but the interaction paradigm itself. First, perception and response are still separated into alternating phases, preventing models from incorporating new inputs for timely adjustment during generation. Second, most current models remain reactive, responding only to explicit user requests instead of acting proactively in the evolving multimodal environment. We present MiniCPM-o 4.5, our latest effort towards human-like multimodal interaction, which mitigates these gaps by real-time full-duplex omni-modal interaction. It can see, listen, and speak simultaneously in real-time, while also exhibiting proactive behaviors such as issuing reminders or comments based on its continuous understanding of the live scene. The key technique behind MiniCPM-o 4.5 is Omni-Flow, a unified streaming framework that aligns omni-modal inputs and outputs along a shared temporal axis. This formulation converts conventional turn-based interaction into a full-duplex, time-aligned process, enabling simultaneous perception and response and allowing proactive behavior to arise within the same framework. With a total of 9B parameters, MiniCPM-o 4.5 approaches Gemini 2.5 Flash in vision-language capabilities, delivering state-of-the-art open-source performance at its scale. It also surpasses Qwen3-Omni-30B-A3B in omni-modal understanding and delivers better speech generation, with significantly higher computation efficiency. Driven by its efficient architecture design and inference optimization, the model can perform real-time full-duplex omni-modal interaction on edge devices with less than 12GB RAM cost.",
+      "authors": [
+        "Junbo Cui",
+        "Bokai Xu",
+        "Chongyi Wang",
+        "Tianyu Yu",
+        "Weiyue Sun"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-04-30",
+      "comment": "",
+      "summary": "Recent progress in multimodal large language models (MLLMs) has brought AI capabilities from static offline data processing to real-time streaming interaction, yet they still remain far from human-...",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "multimodal_vlm",
+      "score": 46.0
+    },
+    {
+      "title": "A Real-time Scale-robust Network for Glottis Segmentation in Nasal Transnasal Intubation",
+      "arxiv_id": "2604.27383",
+      "abstract": "Nasotracheal intubation (NTI) is a critical clinical procedure for establishing and maintaining patient airway patency. Machine-assisted NTI has emerged as a pivotal approach for optimizing procedural efficiency and minimizing manual intervention. However, visual detection algorithms employed for NTI navigation encounter significant challenges, including complex anatomical environments and suboptimal illumination conditions surrounding the glottis. Additionally, the glottis presents considerable scale variability throughout the procedure, initially appearing as a small, difficult-to-capture structure before expanding to occupy nearly the entire field of view. Moreover, traditional visual detection methods often have high computational costs, making real-time, high-precision detection on portable devices challenging. To enhance NTI efficacy and address these challenges, this paper proposes a novel glottis segmentation framework optimized for vision-assisted NTI applications. First, we designed a lightweight, multi-receptive field feature extraction module to reduce intra-class differences, achieving robustness to scale variations of the glottis. This module was then stacked to form the backbone and neck of our network. Subsequently, we developed an advanced label assignment method and redefined the number of samples to further reduce intra-class differences and enhance accuracy in the complex NTI environment. Experiments on three distinct datasets demonstrate that our network surpasses state-of-the-art algorithms, achieving a segmentation mDice of 92.9\\% with a compact model size of 19 MB and an inference speed exceeding 170 frames per second. % Our code and datasets will be open-sourced on GitHub after the manuscript is accepted. Our code and datasets are available at https://github.com/HBUT-CV/GlottisNet.",
+      "authors": [
+        "Yang Zhou",
+        "Chaoyong Zhang",
+        "Ruoyi Hao",
+        "Huilin Pan",
+        "Yang Zhang"
+      ],
+      "primary_category": "eess.IV",
+      "categories": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "published": "2026-04-30",
+      "comment": "14 pages, 9 figures",
+      "summary": "Nasotracheal intubation (NTI) is a critical clinical procedure for establishing and maintaining patient airway patency.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "computer_vision_core",
+      "score": 46.0
+    },
+    {
+      "title": "AG-TAL: Anatomically-Guided Topology-Aware Loss for Multiclass Segmentation of the Circle of Willis Using Large-Scale Multi-Center Datasets",
+      "arxiv_id": "2604.27357",
+      "abstract": "Accurate multiclass segmentation of the Circle of Willis (CoW) is essential for neurovascular disease management but remains challenging due to complex vascular topology and variable morphology. Existing deep learning methods often suffer from vascular discontinuities and inter-class misclassification, while current topological loss functions incur prohibitive computational costs in 3D multiclass settings. To address these limitations, we propose an Anatomically-Guided Topology-Aware Loss (AG-TAL) and introduce a large-scale, multi-center CoW dataset with unified annotations to facilitate robust model training. AG-TAL specifically integrates a radius-aware Dice loss to address class imbalance in small vessels, a breakage-aware clDice loss that utilizes group convolutions to efficiently preserve local connectivity, and an adjacency-aware co-occurrence loss that leverages anatomical priors to enforce distinct boundaries between neighboring arteries. Evaluated using 5-fold cross-validation, AG-TAL achieved an average Dice score of 80.85% for all CoW arteries, with small arteries notably higher by 1.05-3.09% compared to state-of-the-art methods. Across six independent datasets, the performance of AG-TAL achieved Dice scores ranging from 74.46% to 81.17% for all CoW arteries, with improvements of 2.20% to 9.98% for small arteries compared to other methods. This study demonstrates the superiority of AG-TAL in identifying multiclass CoW arteries and its ability to generalize well to multiple independent datasets. Furthermore, reliability analyses and clinical applications in an Alzheimer's disease cohort validate the AG-TAL's robustness and its potential for discovering imaging-based morphological biomarkers.",
+      "authors": [
+        "Jialu Liu",
+        "Yue Cui",
+        "Shan Yu"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "published": "2026-04-30",
+      "comment": "11 pages, 5 figures, submitted to IEEE JBHI",
+      "summary": "Accurate multiclass segmentation of the Circle of Willis (CoW) is essential for neurovascular disease management but remains challenging due to complex vascular topology and variable morphology.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "ophthalmic_clinical",
+      "score": 45.0
+    },
+    {
+      "title": "Assessing Pancreatic Ductal Adenocarcinoma Vascular Invasion: the PDACVI Benchmark",
+      "arxiv_id": "2604.27582",
+      "abstract": "Surgical resection remains the only potentially curative treatment for pancreatic ductal adenocarcinoma (PDAC), and eligibility depends on accurate assessment of vascular invasion (VI), i.e., tumor extension into adjacent critical vessels. Despite its importance for preoperative staging and surgical planning, computational VI assessment remains underexplored. Two major challenges are the lack of public datasets and the diagnostic ambiguity at the tumor-vessel interface, which leads to substantial inter-rater variability even among expert radiologists. To address these limitations, we introduce the CURVAS-PDACVI Dataset and Challenge, an open benchmark for uncertainty-aware AI in PDAC staging based on a densely annotated dataset with five independent expert annotations per scan. We also propose a multi-metric evaluation framework that extends beyond spatial overlap to include probabilistic calibration and VI assessment. Evaluation of six state-of-the-art methods shows that strong global volumetric overlap does not necessarily translate into reliable performance at clinically critical tumor-vessel interfaces. In particular, methods optimized for binary segmentation perform competitively on average overlap metrics, but often degrade in high-complexity cases with low expert consensus, either collapsing in volume or overextending at uncertain boundaries. In contrast, methods that model inter-rater disagreement produce better calibrated probabilistic maps and show greater robustness in these ambiguous cases. The benchmark highlights the limitations of volumetric accuracy as a proxy for localized surgical utility, motivating uncertainty-aware probabilistic models for preoperative decision-making.",
+      "authors": [
+        "M. Riera-Marín",
+        "O. K. Sikha",
+        "J. Rodríguez-Comas",
+        "M. S. May",
+        "T. Kirscher"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-30",
+      "comment": "",
+      "summary": "Surgical resection remains the only potentially curative treatment for pancreatic ductal adenocarcinoma (PDAC), and eligibility depends on accurate assessment of vascular invasion (VI), i.e., tumor...",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "computer_vision_core",
+      "score": 44.0
+    },
+    {
+      "title": "Stop Holding Your Breath: CT-Informed Gaussian Splatting for Dynamic Bronchoscopy",
+      "arxiv_id": "2604.28179",
+      "abstract": "Bronchoscopic navigation relies on registering endoscopic video to a preoperative CT scan, but respiratory motion deforms the airway by 5-20 mm, creating CT-to-body divergence that limits localization accuracy. In practice, this is mitigated through breath-hold protocols, which attempt to match the intraoperative anatomy to a static CT, but are difficult to reproduce and disrupt clinical workflow. We propose to eliminate the need for breath-hold protocols by leveraging patient-specific respiratory modeling. Paired inhale-exhale CT scans, already acquired for planning, implicitly define the patient-specific deformation space of the breathing airway. By registering these scans, we reduce respiratory motion to a single scalar breathing phase per frame, constraining all reconstructions to anatomically observed configurations. We embed this representation within a mesh-anchored Gaussian splatting framework, where a lightweight estimator infers breathing phase directly from endoscopic RGB, enabling continuous, deformation-aware reconstruction throughout the respiratory cycle without breath-holds or external sensing. To enable quantitative evaluation, we introduce RESPIRE, a physically grounded bronchoscopy simulation pipeline with per-frame ground truth for geometry, pose, breathing phase, and deformation. Experiments on RESPIRE show that our approach achieves geometrically faithful reconstruction, over 20x faster training, and 1.22 mm target localization accuracy (within the 3mm clinically relevant tolerances) outperforming unconstrained single-CT baselines. Please check out our website for additional visuals: https://asdunnbe.github.io/RESPIRE/",
+      "authors": [
+        "Andrea Dunn Beltran",
+        "Daniel Rho",
+        "Aarav Mehta",
+        "Xinqi Xiong",
+        "Raúl San José Estépar"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-30",
+      "comment": "",
+      "summary": "Bronchoscopic navigation relies on registering endoscopic video to a preoperative CT scan, but respiratory motion deforms the airway by 5-20 mm, creating CT-to-body divergence that limits localizat...",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "medical_imaging",
+      "score": 43.0
+    },
+    {
+      "title": "FUN: A Focal U-Net Combining Reconstruction and Object Detection for Snapshot Spectral Imaging",
+      "arxiv_id": "2604.27653",
+      "abstract": "Conventional push-broom hyperspectral imaging suffers from slow acquisition speeds, precluding real-time object detection; in contrast, snapshot spectral imaging enables instantaneous hyperspectral images (HSIs) capture, making real-time object detection feasible, yet its potential is often compromised by time-consuming post-capture reconstruction. To address this issue, we propose the Focal U-shaped Network (FUN), a novel end-to-end framework that jointly performs HSI reconstruction and object detection via multi-task learning. FUN employs a shared U-shaped backbone, where reconstruction provides underlying spectral information while detection guides semantic-aware priors learning, facilitating mutually beneficial task interaction. Crucially, we introduce focal modulation, an efficient alternative to self-attention that modulates spatial and spectral features while reducing quadratic computational complexity, enabling a self-attention-free architecture for joint reconstruction and detection. Furthermore, we contribute a new HSI object detection dataset with 8712 annotated objects across 363 HSIs to facilitate evaluation of the proposed method. Experiments demonstrate that FUN achieves state-of-the-art performance on both tasks, using 40% fewer parameters and 30% less computation than recent alternatives, making it promising for future real-time edge deployment. The code and datasets are available: https://github.com/ShawnDong98/FUN.",
+      "authors": [
+        "Dahua Gao",
+        "Yubo Dong",
+        "Anqi Li",
+        "Zhenyuan Lin",
+        "Ang Gao"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-30",
+      "comment": "First work on exploring high-level computer vision tasks in compressive spectral imaging",
+      "summary": "Conventional push-broom hyperspectral imaging suffers from slow acquisition speeds, precluding real-time object detection; in contrast, snapshot spectral imaging enables instantaneous hyperspectral...",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "computer_vision_core",
+      "score": 40.0
+    }
+  ],
+  "tier_b": [
+    {
+      "title": "Noise2Map: End-to-End Diffusion Model for Semantic Segmentation and Change Detection",
+      "arxiv_id": "2604.27889",
+      "abstract": "Semantic segmentation and change detection are two fundamental challenges in remote sensing, requiring models to capture either spatial semantics or temporal differences from satellite imagery. Existing deep learning models often struggle with temporal inconsistencies or in capturing fine-grained spatial structures, require extensive pretraining, and offer limited interpretability - especially in real-world remote sensing scenarios. Recent advances in diffusion models show that Gaussian noise can be systematically leveraged to learn expressive data representations through denoising. Motivated by this, we investigate whether the noise process in diffusion models can be effectively utilized for discriminative tasks. We propose Noise2Map, a unified diffusion-based framework that repurposes the denoising process for fast, end-to-end discriminative learning. Unlike prior work that uses diffusion only for generation or feature extraction, Noise2Map directly predicts semantic or change maps using task-specific noise schedules and timestep conditioning, avoiding the costly sampling procedures of traditional diffusion models. The model is pretrained via self-supervised denoising and fine-tuned with supervision, enabling both interpretability and robustness. Our architecture supports both tasks (SS and CD) through a shared backbone and task-specific noise schedulers. Extensive evaluations on the SpaceNet7, WHU, and xView2 buildings damaged by wildfires datasets demonstrate that Noise2Map ranks on average 1st among seven models on semantic segmentation and 1st on change detection by a cross-dataset rank metric (average F1 primary, IoU tie-break). Ablation studies highlight the robustness of our model against different training noise schedulers and timestep control in the diffusion process, as well as the ability of the model to perform multi-task learning.",
+      "authors": [
+        "Ali Shibli",
+        "Andrea Nascetti",
+        "Yifang Ban"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-30",
+      "comment": "",
+      "summary": "Semantic segmentation and change detection are two fundamental challenges in remote sensing, requiring models to capture either spatial semantics or temporal differences from satellite imagery.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "computer_vision_core",
+      "score": 38.0
+    },
+    {
+      "title": "AppTek Call-Center Dialogues: A Multi-Accent Long-Form Benchmark for English ASR",
+      "arxiv_id": "2604.27543",
+      "abstract": "Evaluating English ASR systems for conversational AI applications remains difficult, as many publicly available corpora are either pre-segmented into short segments, consist of read or prepared speech, or lack explicit dialect annotations to evaluate robustness for a diverse user base. This work presents the AppTek Call-Center Dialogues corpus, a collection of spontaneous, role-played agent-customer conversations spanning fourteen English accents covering sixteen service-oriented scenarios. The dataset was commissioned specifically for evaluation and none of the audio or text was publicly available prior to release, reducing the risk of overlap with existing large-scale pretraining corpora. We benchmark a set of open-source ASR systems under different segmentation approaches. Results show substantial variation across accents and segmentation methods, indicating that good performance on general American English benchmarks does not necessarily generalize to other accents.",
+      "authors": [
+        "Eugen Beck",
+        "Sarah Beranek",
+        "Uma Moothiringote",
+        "Daniel Mann",
+        "Wilfried Michel"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-04-30",
+      "comment": "Submitted to INTERSPEECH 2026",
+      "summary": "Evaluating English ASR systems for conversational AI applications remains difficult, as many publicly available corpora are either pre-segmented into short segments, consist of read or prepared spe...",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "computer_vision_core",
+      "score": 38.0
+    },
+    {
+      "title": "LLM as Clinical Graph Structure Refiner: Enhancing Representation Learning in EEG Seizure Diagnosis",
+      "arxiv_id": "2604.28178",
+      "abstract": "Electroencephalogram (EEG) signals are vital for automated seizure detection, but their inherent noise makes robust representation learning challenging. Existing graph construction methods, whether correlation-based or learning-based, often generate redundant or irrelevant edges due to the noisy nature of EEG data. This significantly impairs the quality of graph representation and limits downstream task performance. Motivated by the remarkable reasoning and contextual understanding capabilities of large language models (LLMs), we explore the idea of using LLMs as graph edge refiners. Specifically, we propose a two-stage framework: we first verify that LLM-based edge refinement can effectively identify and remove redundant connections, leading to significant improvements in seizure detection accuracy and more meaningful graph structures. Building on this insight, we further develop a robust solution where the initial graph is constructed using a Transformer-based edge predictor and multilayer perceptron, assigning probability scores to potential edges and applying a threshold to determine their existence. The LLM then acts as an edge set refiner, making informed decisions based on both textual and statistical features of node pairs to validate the remaining connections. Extensive experiments on TUSZ dataset demonstrate that our LLM-refined graph learning framework not only enhances task performance but also yields cleaner and more interpretable graph representations.",
+      "authors": [
+        "Lincan Li",
+        "Zheng Chen",
+        "Yushun Dong"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-04-30",
+      "comment": "This paper is accepted by the 35th International Joint Conference on Artificial Intelligence (IJCAI-ECAI 2026)",
+      "summary": "Electroencephalogram (EEG) signals are vital for automated seizure detection, but their inherent noise makes robust representation learning challenging.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "medical_imaging",
+      "score": 37.0
+    },
+    {
+      "title": "Continuous-tone Simple Points: An $\\ell_0$-Norm of Cyclic Gradient for Topology-Preserving Data-Driven Image Segmentation",
+      "arxiv_id": "2604.28159",
+      "abstract": "Topological features play an essential role in ensuring geometric plausibility and structural consistency in image analysis tasks such as segmentation and skeletonization. However, integrating topology-preserving learning based on simple points into deep learning tasks remains challenging, as existing simple point detection methods are confined to binary images and are non-differentiable, rendering them incompatible with gradient-based optimization in modern deep learning. Moreover, morphological and purely data-driven approaches often fail to guaranty topological consistency. To address these limitations, we propose a novel method that directly computes simple points on continuous-valued images, enabling differentiable topological inference. Building on this theory, we develop an efficient skeleton extraction algorithm that preserves topological structures in binary and continuous-valued images. Furthermore, we design a variational model that enforces topological constraints by preserving topologically non-removable (i.e., non-simple) points, which can be seamlessly integrated into any deep neural network segmentation with softmax or sigmoid outputs. Experimental results demonstrate that the proposed approach effectively improves topological integrity and structural accuracy across multiple benchmarks. The codes are available in https://github.com/levnsio/CSP.",
+      "authors": [
+        "Wenxiao Li",
+        "Faqiang Wang",
+        "Yuping Duan",
+        "Li Cui",
+        "Liqiang Zhang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-30",
+      "comment": "",
+      "summary": "Topological features play an essential role in ensuring geometric plausibility and structural consistency in image analysis tasks such as segmentation and skeletonization.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "computer_vision_core",
+      "score": 37.0
+    },
+    {
+      "title": "HealthBench Professional: Evaluating Large Language Models on Real Clinician Chats",
+      "arxiv_id": "2604.27470",
+      "abstract": "Millions of clinicians use ChatGPT to support clinical care, but evaluations of the most common use cases in model-clinician conversations are limited. We introduce HealthBench Professional, an open benchmark for evaluating large language models on real tasks that clinicians bring to ChatGPT in the course of their work. The benchmark is organized around three common use cases central to clinical practice: care consult, writing and documentation, and medical research. Each example includes a physician-authored conversation with ChatGPT for Clinicians and is scored via rubrics written and iteratively adjudicated by three or more physicians across three phases. HealthBench Professional examples were carefully selected for quality, representativeness, and difficulty for OpenAI's current frontier models, to enable continued measurement of progress. Difficult examples for recent OpenAI models were enriched by roughly 3.5 times relative to the candidate pool of 15,079 examples. Additionally, about one-third of examples involve physicians conducting deliberate adversarial testing of models. As a strong baseline, we also collected human physician responses for all tasks (unbounded time, specialist-matched, web access). The best scoring system, GPT-5.4 in ChatGPT for Clinicians, outperforms base GPT-5.4, all other models, and human physicians. We hope HealthBench Professional provides the healthcare AI community a measure to track frontier model progress in real-world clinical tasks and build systems that clinicians can trust to improve care.",
+      "authors": [
+        "Rebecca Soskin Hicks",
+        "Mikhail Trofimov",
+        "Dominick Lim",
+        "Rahul K. Arora",
+        "Foivos Tsimpourlas"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-04-30",
+      "comment": "Data link in paper; Blog: https://openai.com/index/making-chatgpt-better-for-clinicians/",
+      "summary": "Millions of clinicians use ChatGPT to support clinical care, but evaluations of the most common use cases in model-clinician conversations are limited.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "medical_imaging",
+      "score": 37.0
+    },
+    {
+      "title": "Hyperspectral Image Classification via Efficient Global Spectral Supertoken Clustering",
+      "arxiv_id": "2604.27364",
+      "abstract": "Hyperspectral image classification demands spatially coherent predictions and precise boundary delineation. Yet prevailing superpixel-based methods face an inherent contradiction: clustering aggregates similar pixels into regions, but the subsequent classifier operates pixel-wise, undermining regional consistency. Consequently, existing approaches do not guarantee region-level, boundary-aligned classification. To address this limitation, we propose the Dual-stage Spectrum-Constrained Clustering-based Classifier (DSCC), an end-to-end framework that explicitly decouples clustering from classification by first grouping spectral similar and spatially proximate pixels into spectral supertokens and then performing token-level prediction. At its core, DSCC computes an image-level multi-criteria feature distance between pixels and centers, followed by a locality-aware assignment regularization, enabling the generation of boundary-preserving spectral supertokens. A density-isolation based center selection further yields representative, well-separated centers, reducing redundancy and improving robustness to scale variation. To accommodate mixed land-cover compositions within each token, we introduce a soft-label scheme that encodes class proportions and improves robustness for mixed-class tokens. DSCC attains a CF1 of 0.728 at 197.75 FPS on the WHU-OHS dataset, offering a superior accuracy-efficiency trade-off compared with state-of-the-art methods. Extensive experiments further validate the effectiveness and generality of the proposed dual-stage paradigm for hyperspectral image classification. The source code is available at https://github.com/laprf/DSCC.",
+      "authors": [
+        "Peifu Liu",
+        "Tingfa Xu",
+        "Jie Wang",
+        "Huan Chen",
+        "Huiyan Bai"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-30",
+      "comment": "Accepted by ISPRS JPRS 2026. This manuscript version is made available under the CC-BY-NC-ND 4.0 license",
+      "summary": "Hyperspectral image classification demands spatially coherent predictions and precise boundary delineation.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "computer_vision_core",
+      "score": 37.0
+    },
+    {
+      "title": "Representative Spectral Correlation Network for Multi-source Remote Sensing Image Classification",
+      "arxiv_id": "2604.27323",
+      "abstract": "Hyperspectral image (HSI) and SAR/LiDAR data offer complementary spectral and structural information for land-cover classification. However, their effective fusion remains challenging due to two major limitations: The spectral redundancy in high-dimensional HSI and the heterogeneous characteristics between multi-source data. To this end, we propose Representative Spectral Correlation Network (RSCNet), a novel multi-source image classification framework specifically designed to address the above challenges through spectral selection and adaptive interaction. The network incorporates two key components: (1) Key Band Selection Module (KBSM) that adaptively selects task-relevant spectral bands from the original HSI under cross-source guidance, thereby alleviating redundancy and mitigating information loss from conventional PCA-based spectral reduction. Moreover, the learned band subset exhibits highly discriminative spectral structures that align with discriminative semantic cues, promoting compact yet expressive representations. (2) Cross-source Adaptive Fusion Module (CAFM) that performs cross-source attention weighting and local-global contextual refinement to enhance cross-source feature interaction. Experiments on three public benchmark datasets demonstrate that our RSCNet achieves superior performance compared with state-of-the-art methods, while maintaining substantially lower computational complexity. Our codes are publicly available at https://github.com/oucailab/RSCNet.",
+      "authors": [
+        "Chuanzheng Gong",
+        "Feng Gao",
+        "Junyan Lin",
+        "Junyu Dong",
+        "Qian Du"
+      ],
+      "primary_category": "eess.IV",
+      "categories": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "published": "2026-04-30",
+      "comment": "Accepted for publication in IEEE TGRS 2026",
+      "summary": "Hyperspectral image (HSI) and SAR/LiDAR data offer complementary spectral and structural information for land-cover classification.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "computer_vision_core",
+      "score": 37.0
+    },
+    {
+      "title": "Purifying Multimodal Retrieval: Fragment-Level Evidence Selection for RAG",
+      "arxiv_id": "2604.27600",
+      "abstract": "Multimodal Retrieval-Augmented Generation (MRAG) is widely adopted for Multimodal Large Language Models (MLLMs) with external evidence to reduce hallucinations. Despite its success, most existing MRAG frameworks treat retrieved evidence as indivisible documents, implicitly assuming that all content within a document is equally informative. In practice, however, sometimes only a small fraction of a document is relevant to a given query, while the remaining content introduces substantial noise that may lead to performance degradation. We address this fundamental limitation by reframing MRAG as a fine-grained evidence selection problem. We propose Fragment-level Evidence Selection for RAG (FES-RAG), a framework that selects atomic multimodal fragments rather than entire documents as grounding evidence. FES-RAG decomposes retrieved multimodal documents into sentence-level textual fragments and region-level visual fragments, enabling precise identification of evidence that directly supports generation. To guide fragment selection, we introduce Fragment Information Gain (FIG), a principled metric that measures the marginal contribution of each fragment to the MLLM's generation confidence. Based on FIG, we distill fragment-level utility judgments from a high-capacity MLLM into a lightweight selector, achieving accurate evidence selection with low inference overhead. Experiments on the M2RAG benchmark show that FES-RAG consistently outperforms state-of-the-art document-level MRAG methods, achieving up to 27 percent relative improvement in CIDEr. By selecting fewer yet more informative fragments, our approach substantially reduces context length while improving factual accuracy and generation coherence.",
+      "authors": [
+        "Xihang Wang",
+        "Zihan Wang",
+        "Chengkai Huang",
+        "Cao Liu",
+        "Ke Zeng"
+      ],
+      "primary_category": "cs.IR",
+      "categories": [
+        "cs.IR"
+      ],
+      "published": "2026-04-30",
+      "comment": "",
+      "summary": "Multimodal Retrieval-Augmented Generation (MRAG) is widely adopted for Multimodal Large Language Models (MLLMs) with external evidence to reduce hallucinations.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "multimodal_vlm",
+      "score": 36.0
+    },
+    {
+      "title": "PRISM: Pre-alignment via Black-box On-policy Distillation for Multimodal Reinforcement Learning",
+      "arxiv_id": "2604.28123",
+      "abstract": "The standard post-training recipe for large multimodal models (LMMs) applies supervised fine-tuning (SFT) on curated demonstrations followed by reinforcement learning with verifiable rewards (RLVR). However, SFT introduces distributional drift that neither preserves the model's original capabilities nor faithfully matches the supervision distribution. This problem is further amplified in multimodal reasoning, where perception errors and reasoning failures follow distinct drift patterns that compound during subsequent RL. We introduce PRISM, a three-stage pipeline that mitigates this drift by inserting an explicit distribution-alignment stage between SFT and RLVR. Building on the principle of on-policy distillation (OPD), PRISM casts alignment as a black-box, response-level adversarial game between the policy and a Mixture-of-Experts (MoE) discriminator with dedicated perception and reasoning experts, providing disentangled corrective signals that steer the policy toward the supervision distribution without requiring access to teacher logits. While 1.26M public demonstrations suffice for broad SFT initialization, distribution alignment demands higher-fidelity supervision; we therefore curate 113K additional demonstrations from Gemini 3 Flash, featuring dense visual grounding and step-by-step reasoning on the hardest unsolved problems. Experiments on Qwen3-VL show that PRISM consistently improves downstream RLVR performance across multiple RL algorithms (GRPO, DAPO, GSPO) and diverse multimodal benchmarks, improving average accuracy by +4.4 and +6.0 points over the SFT-to-RLVR baseline on 4B and 8B, respectively. Our code, data, and model checkpoints are publicly available at https://github.com/XIAO4579/PRISM.",
+      "authors": [
+        "Sudong Wang",
+        "Weiquan Huang",
+        "Xiaomin Yu",
+        "Zuhao Yang",
+        "Hehai Lin"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-04-30",
+      "comment": "",
+      "summary": "The standard post-training recipe for large multimodal models (LMMs) applies supervised fine-tuning (SFT) on curated demonstrations followed by reinforcement learning with verifiable rewards (RLVR).",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "multimodal_vlm",
+      "score": 35.0
+    },
+    {
+      "title": "FineState-Bench: Benchmarking State-Conditioned Grounding for Fine-grained GUI State Setting",
+      "arxiv_id": "2604.27974",
+      "abstract": "Despite the rapid progress of large vision-language models (LVLMs), fine-grained, state-conditioned GUI interaction remains challenging. Current evaluations offer limited coverage, imprecise target-state definitions, and an overreliance on final-task success, obscuring where and why agents fail. To address this gap, we introduce \\textbf{FineState-Bench}, a benchmark that evaluates whether an agent can correctly ground an instruction to the intended UI control and reach the exact target state. FineState-Bench comprises 2,209 instances across desktop, web, and mobile platforms, spanning four interaction families and 23 UI component types, with each instance explicitly specifying an exact target state for fine-grained state setting. We further propose \\textit{FineState-Metrics}, a four-stage diagnostic pipeline with stage-wise success rates: Localization Success Rate (SR@Loc), Interaction Success Rate (SR@Int), Exact State Success Rate at Locate (ES-SR@Loc), and Exact State Success Rate at Interact (ES-SR@Int), and a plug-and-play \\textit{Visual Diagnostic Assistant} (VDA) that generates a Description and a bounding-box Localization Hint to diagnose visual grounding reason via controlled w/ vs.\\ w/o comparisons. On FineState-Bench, exact goal-state success remains low: ES-SR@Int peaks at 32.8\\% on Web and 22.8\\% on average across platforms. With VDA localization hints, Gemini-2.5-Flash gains +14.9 ES-SR@Int points, suggesting substantial headroom from improved visual grounding, yet overall accuracy is still insufficient for reliable fine-grained state-conditioned interaction \\href{https://github.com/FengxianJi/FineState-Bench}{Github.}",
+      "authors": [
+        "Fengxian Ji",
+        "Jingpu Yang",
+        "Zirui Song",
+        "Yuanxi Wang",
+        "Zhexuan Cui"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.DB"
+      ],
+      "published": "2026-04-30",
+      "comment": "",
+      "summary": "Despite the rapid progress of large vision-language models (LVLMs), fine-grained, state-conditioned GUI interaction remains challenging.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "multimodal_vlm",
+      "score": 35.0
+    },
+    {
+      "title": "BrainDINO: A Brain MRI Foundation Model for Generalizable Clinical Representation Learning",
+      "arxiv_id": "2604.27277",
+      "abstract": "Brain MRI underpins a wide range of neuroscientific and clinical applications, yet most learning-based methods remain task-specific and require substantial labeled data. Here we show that a single self-supervised representation can generalize across heterogeneous brain MRI endpoints. We trained BrainDINO, a self-distilled foundation model, on approximately 6.6 million unlabeled axial slices from 20 datasets encompassing broad variation in population, disease, and acquisition setting. Using a frozen encoder with lightweight task heads, BrainDINO supported transfer across tumor segmentation, neurodegenerative and neurodevelopmental conditions classification, brain age estimation, post-stroke temporal prediction, molecular status prediction, MRI sequence classification, and survival modeling. Across tasks and supervision regimes, BrainDINO consistently equaled or exceeded natural-image and MRI-specific self-supervised baselines, with particularly strong advantages under label scarcity. Representation analyses further showed anatomically organized and pathology-sensitive feature structure in the absence of task-specific supervision. Our findings indicate that large-scale slice-wise self-supervised learning can yield a unified brain MRI representation that supports diverse neuroimaging tasks without volumetric pretraining or full-network fine-tuning, establishing a scalable foundation for robust and data-efficient brain imaging analysis.",
+      "authors": [
+        "Yizhou Wu",
+        "Shansong Wang",
+        "Yuheng Li",
+        "Mojtaba Safari",
+        "Mingzhe Hu"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "published": "2026-04-30",
+      "comment": "22 pages, 5 figures",
+      "summary": "Brain MRI underpins a wide range of neuroscientific and clinical applications, yet most learning-based methods remain task-specific and require substantial labeled data.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "computer_vision_core",
+      "score": 35.0
+    },
+    {
+      "title": "ClimateVID -- Social Media Videos Analysis and Challenges Involved",
+      "arxiv_id": "2604.27968",
+      "abstract": "The pervasive growth of digital content, specifically short videos on social media platforms, has significantly altered how topics are discussed and understood in public discourse. In this work, we advance automated visual theme detection by assessing zero-shot and clustering capabilities on social media data. (1) We evaluated the capabilities of notable VLMs such as VideoChatGPT, PandaGPT, and VideoLLava using zero-shot image classification and compared their performance to the baseline provided by frame-wise CLIP image classification. (2) By treating clustering as a minimum cost multicut problem, we aim to uncover insightful patterns in an unsupervised manner. For both analysis strategies, we provide extensive evaluations and practical guidance to practitioners. While VLMs are currently not able to detect climate change specific classes, the clustering results are distinct visual frames. %Given that VLMs are not currently capable to grasp the climate change discourse, we focus the clustering evaluation of image embedding models. We find that both ConvNeXt V2 and DINOv2 produce meaningful clusters, with DINOv2 focusing more on style differences and abstract categories, while ConvNeXt V2 clusters differ in more fine-grained ways. Code available at https://github.com/KathPra/ClimateVID.git.",
+      "authors": [
+        "Shiqi Xu",
+        "Moritz Burmester",
+        "Katharina Prasse",
+        "Isaac Bravo",
+        "Stefanie Walter"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-30",
+      "comment": "Equal contributions by Shiqi Xu and Moritz Burmester",
+      "summary": "The pervasive growth of digital content, specifically short videos on social media platforms, has significantly altered how topics are discussed and understood in public discourse.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "computer_vision_core",
+      "score": 34.0
+    },
+    {
+      "title": "Differentiable latent structure discovery for interpretable forecasting in clinical time series",
+      "arxiv_id": "2604.27967",
+      "abstract": "Background: Timely, uncertainty-aware forecasting from irregular electronic health records (EHR) can support critical-care decisions, yet most approaches either impute to a grid or sacrifice interpretability. We introduce StructGP, a continuous-time multi-task Gaussian process that couples process convolutions with differentiable structure learning to uncover a sparse, ordered directed acyclic graph (DAG) of inter-variable dependencies while preserving principled uncertainty. We further propose LP-StructGP, which augments StructGP with latent pathways-shared, temporally shifted trajectories inferred via subject-specific coupling filters and a softmax gating mechanism-to capture cross-patient progression patterns. Both models are trained under sparsity and acyclicity constraints (augmented Lagrangian, Adam) using scalable low-rank updates. Results: In simulations, the approach reliably recovers ground-truth graphs (Structural Hamming Distance approaching 0 as cohorts grow) and pathway assignments (high Adjusted Rand Index). On a MIMIC-IV septic shock cohort (n=1,008; norepinephrine, creatinine, mean arterial pressure), StructGP improves short-horizon (6 h) forecasting over independent-task baselines (average RMSE 0.68 [95%CI: 0.63--0.74] vs. 0.88 [0.83-0.94]) and, with 15 additional inputs, markedly outperforms unstructured kernels (0.63 [0.58-0.69] vs. 3.02 [2.85-3.18]) with superior calibration (coverage 0.96 vs. 0.84). On the PhysioNet Challenge (12k patients, 41 variables), StructGP attains competitive accuracy (MAE 3.72e-2) relative to a state-of-the-art graph neural model while maintaining calibrated uncertainty. Conclusion: These results show that structured process convolutions with latent pathways deliver interpretable, scalable, and well-calibrated forecasting for irregular clinical time series.",
+      "authors": [
+        "Ivan Lerner",
+        "Jean Feydy",
+        "Alexandre Kalimouttou",
+        "Anita Burgun",
+        "Francis Bach"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-04-30",
+      "comment": "This manuscript is under review at BioData Mining",
+      "summary": "Background: Timely, uncertainty-aware forecasting from irregular electronic health records (EHR) can support critical-care decisions, yet most approaches either impute to a grid or sacrifice interp...",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "medical_imaging",
+      "score": 34.0
+    },
+    {
+      "title": "Multi-Level Narrative Evaluation Outperforms Lexical Features for Mental Health",
+      "arxiv_id": "2604.27846",
+      "abstract": "How people narrate their experiences offers a window into how the mind organizes them. Computational approaches to therapeutic writing have evolved from lexical counting to neural methods, yet remain fragmented: dictionary tools miss discourse structure, while embeddings conflate local coherence with global organization. No existing framework maps these techniques onto the hierarchical processes through which narratives are constructed. Here we introduce a three-level framework - micro-level lexical features, meso-level semantic embeddings, and macro-level LLM narrative evaluation - and show, across 830 Chinese therapeutic texts spanning depression, anxiety, and trauma, that macro-level evaluation substantially outperforms lexical and embedding features for mental health prediction. This challenges the field's emphasis on word-counting: formal structural features (Labov's story grammar, RST coherence, propositional composition) demonstrate that narrative organization per se carries predictive signal, while clinically-grounded narrative dimensions capture how psychological states are expressed through discourse. Semantic embeddings add minimal independent value but yield incremental gains in multi-level classification. By grounding computational levels in discourse processing theory, this framework identifies macro-structural organization as the primary locus of clinical signal and generates testable hypotheses for intervention design and longitudinal research.",
+      "authors": [
+        "Yuxi Ma",
+        "Jieming Cui",
+        "Muyang Li",
+        "Ye Zhao",
+        "Yu Li"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-04-30",
+      "comment": "",
+      "summary": "How people narrate their experiences offers a window into how the mind organizes them.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "medical_imaging",
+      "score": 34.0
+    },
+    {
+      "title": "Iterative Multimodal Retrieval-Augmented Generation for Medical Question Answering",
+      "arxiv_id": "2604.27724",
+      "abstract": "Medical retrieval-augmented generation (RAG) systems typically operate on text chunks extracted from biomedical literature, discarding the rich visual content (tables, figures, structured layouts) of original document pages. We propose MED-VRAG, an iterative multimodal RAG framework that retrieves and reasons over PMC document page images instead of OCR'd text. The system pairs ColQwen2.5 patch-level page embeddings with a sharded MapReduce LLM filter, scaling to ~350K pages while keeping Stage-1 retrieval under 30 ms via an offline coarse-to-fine index (C=8 centroids per page, ANN over centroids, exact two-way scoring on the top-R shortlist). A vision-language model (VLM) then iteratively refines its query and accumulates evidence in a memory bank across up to 3 reasoning rounds, with a single iteration costing ~15.9 s and the full three-round pipeline ~47.8 s on 4xA100. Across four medical QA benchmarks (MedQA, MedMCQA, PubMedQA, MMLU-Med), MEDVRAG reaches 78.6% average accuracy. Under controlled comparison with the same Qwen2.5-VL-32B backbone, retrieval contributes a +5.8 point gain over the no-retrieval baseline; we also note a +1.8 point edge over MedRAG + GPT-4 (76.8%), with the caveat that this is a cross-paper rather than head-to-head comparison. Ablations isolate +1.0 from page-image vs text-chunk retrieval, +1.5 from iteration, and +1.0 from the memory bank.",
+      "authors": [
+        "Xupeng Chen",
+        "Binbin Shi",
+        "Chenqian Le",
+        "Jiaqi Zhang",
+        "Kewen Wang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-04-30",
+      "comment": "",
+      "summary": "Medical retrieval-augmented generation (RAG) systems typically operate on text chunks extracted from biomedical literature, discarding the rich visual content (tables, figures, structured layouts) ...",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "medical_imaging",
+      "score": 34.0
+    },
+    {
+      "title": "ANCORA: Learning to Question via Manifold-Anchored Self-Play for Verifiable Reasoning",
+      "arxiv_id": "2604.27644",
+      "abstract": "We propose a paradigm shift from learning to answer to learning to question: can a language model generate verifiable problems, solve them, and turn the resulting feedback into self-improvement without human supervision? We introduce ANCORA, an anchored-curriculum framework in which a unified policy alternates between a Proposer that synthesizes novel specifications and a Solver that produces verified solutions. ANCORA rests on three load-bearing mechanisms: a two-level group-relative update that couples Proposer advantages across specifications with Solver advantages across solution attempts; iterative self-distilled SFT that projects the base model onto its valid-output manifold before RL; and a UCB-guided Curriculum DAG that grows only through strictly filtered, novel, Solver-verified specifications. These stabilizers are necessary because sparse verifier feedback otherwise drives Proposer collapse even under MLRL-aligned rewards. Instantiated in Verus, ANCORA lifts Dafny2Verus pass@1 from a 26.6% SFT baseline to 81.5% in the test-time-training setting under 0-shot evaluation, outperforming the PSV self-play baseline by 15.8 points despite PSV using 1-shot inference; in a separate transfer setting, training from Dafny2Verus seeds yields 36.2% and 17.2% pass@1 on held-out MBPP and HumanEval.",
+      "authors": [
+        "Chengcao Yang",
+        "Jun Chen"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.PL"
+      ],
+      "published": "2026-04-30",
+      "comment": "",
+      "summary": "We propose a paradigm shift from learning to answer to learning to question: can a language model generate verifiable problems, solve them, and turn the resulting feedback into self-improvement wit...",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "object_detection",
+      "score": 34.0
+    },
+    {
+      "title": "Beyond the Mean: Within-Model Reliable Change Detection for LLM Evaluation",
+      "arxiv_id": "2604.27405",
+      "abstract": "We adapted the Reliable Change Index (RCI; Jacobson and Truax, 1991) from clinical psychology to item-level LLM version comparison on 2,000 MMLU-Pro items (K=10 samples at T=0.7). Two within-family pairs were tested: Llama 3 to 3.1 (+1.6 points) and Qwen 2.5 to 3 (+2.8 points). On the full benchmark, most items showed no reliable change (79% and 72%). However, over half the items were floor/ceiling. Among analysable items, change was bidirectional with large effect sizes: 34% improved and 28% deteriorated for Llama; 47% improved and 39% deteriorated for Qwen (median |delta p| = 0.50 and 0.90). Churn was asymmetric by difficulty: low-accuracy items improved, high-accuracy items deteriorated. Domain-level decomposition revealed family-specific reversals: Llama lost physics while Qwen lost law. Greedy single-shot evaluation missed 42% of reliably changed items and falsely flagged 25% of unchanged items. The aggregate accuracy gain is the net residual of opposing item-level movements. We recommend reporting churn rate alongside aggregate accuracy.",
+      "authors": [
+        "Jon-Paul Cacioli"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-04-30",
+      "comment": "7 pages, 4 figures, 2 tables. Pre-registered study. Code and data available",
+      "summary": "We adapted the Reliable Change Index (RCI; Jacobson and Truax, 1991) from clinical psychology to item-level LLM version comparison on 2,000 MMLU-Pro items (K=10 samples at T=0.7).",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "medical_imaging",
+      "score": 34.0
+    },
+    {
+      "title": "FreeOcc: Training-Free Embodied Open-Vocabulary Occupancy Prediction",
+      "arxiv_id": "2604.28115",
+      "abstract": "Existing learning-based occupancy prediction methods rely on large-scale 3D annotations and generalize poorly across environments. We present FreeOcc, a training-free framework for open-vocabulary occupancy prediction from monocular or RGB-D sequences. Unlike prior approaches that require voxel-level supervision and ground-truth camera poses, FreeOcc operates without 3D annotations, pose ground truth, or any learning stage. FreeOcc incrementally builds a globally consistent occupancy map via a four-layer pipeline: a SLAM backbone estimates poses and sparse geometry; a geometrically consistent Gaussian update constructs dense 3D Gaussian maps; open-vocabulary semantics from off-the-shelf vision-language models are associated with Gaussian primitives; and a probabilistic Gaussian-to-occupancy projection produces dense voxel occupancy. Despite being entirely training-free and pose-agnostic, FreeOcc achieves over $2\\times$ improvements in IoU and mIoU on EmbodiedOcc-ScanNet compared to prior self-supervised methods. We further introduce ReplicaOcc, a benchmark for indoor open-vocabulary occupancy prediction, and show that FreeOcc transfers zero-shot to novel environments, substantially outperforming both supervised and self-supervised baselines. Project page: https://the-masses.github.io/freeocc-web/.",
+      "authors": [
+        "Zeyu Jiang",
+        "Changqing Zhou",
+        "Xingxing Zuo",
+        "Changhao Chen"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "published": "2026-04-30",
+      "comment": "RSS 2026",
+      "summary": "Existing learning-based occupancy prediction methods rely on large-scale 3D annotations and generalize poorly across environments.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "ophthalmic_clinical",
+      "score": 33.0
+    },
+    {
+      "title": "Toward Autonomous SOC Operations: End-to-End LLM Framework for Threat Detection, Query Generation, and Resolution in Security Operations",
+      "arxiv_id": "2604.27321",
+      "abstract": "Security Operations Centers (SOCs) face mounting operational challenges. These challenges come from increasing threat volumes, heterogeneous SIEM platforms, and time-consuming manual triage workflows. We present an end-to-end threat management framework that integrates ensemble-based detection, syntax-constrained query generation, and retrieval-augmented resolution support to automate critical security workflows. Our detection module evaluates both traditional machine learning classifiers and large language models (LLMs), then combines the three best-performing LLMs to create an ensemble model, achieving 82.8% accuracy while maintaining 0.120 false positive rate on SIEM logs. We introduce the SQM (Syntax Query Metadata) architecture for automated evidence collection. It uses platform-specific syntax constraints, metadata-based retrieval, and documentation-grounded prompting to generate executable queries for IBM QRadar and Google SecOps. SQM achieves a BLEU score of 0.384 and a ROUGE-L score of 0.731. These results are more than twice as good as the baseline LLM performance. For incident resolution and recommendation generation, we demonstrate that integrating SQM-derived evidence improves resolution code prediction accuracy from 78.3% to 90.0%, with an overall recommendation quality score of 8.70. In production SOC environments, our framework reduces average incident triage time from hours to under 10 minutes. This work demonstrates that domain-constrained LLM architectures with retrieval augmentation can meet the strict reliability and efficiency requirements of operational security environments at scale.",
+      "authors": [
+        "Md Hasan Saju",
+        "Akramul Azim"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "published": "2026-04-30",
+      "comment": "",
+      "summary": "Security Operations Centers (SOCs) face mounting operational challenges.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "ophthalmic_clinical",
+      "score": 33.0
+    },
+    {
+      "title": "Defending Quantum Classifiers against Adversarial Perturbations through Quantum Autoencoders",
+      "arxiv_id": "2604.28176",
+      "abstract": "Machine learning models can learn from data samples to carry out various tasks efficiently. When data samples are adversarially manipulated, such as by insertion of carefully crafted noise, it can cause the model to make mistakes. Quantum machine learning models are also vulnerable to such adversarial attacks, especially in image classification using variational quantum classifiers. While there are promising defenses against these adversarial perturbations, such as training with adversarial samples, they face practical limitations. For example, they are not applicable in scenarios where training with adversarial samples is either not possible or can overfit the models on one type of attack. In this paper, we propose an adversarial training-free defense framework that utilizes a quantum autoencoder to purify the adversarial samples through reconstruction. Moreover, our defense framework provides a confidence metric to identify potentially adversarial samples that cannot be purified the quantum autoencoder. Extensive evaluation demonstrates that our defense framework can significantly outperform state-of-the-art in prediction accuracy (up to 68%) under adversarial attacks.",
+      "authors": [
+        "Emma Andrews",
+        "Sahan Sanjaya",
+        "Prabhat Mishra"
+      ],
+      "primary_category": "quant-ph",
+      "categories": [
+        "quant-ph",
+        "cs.LG"
+      ],
+      "published": "2026-04-30",
+      "comment": "",
+      "summary": "Machine learning models can learn from data samples to carry out various tasks efficiently.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "computer_vision_core",
+      "score": 32.0
+    },
+    {
+      "title": "Action Motifs: Self-Supervised Hierarchical Representation of Human Body Movements",
+      "arxiv_id": "2604.28173",
+      "abstract": "Effective human behavior modeling requires a representation of the human body movement that capitalizes on its compositionality. We propose a hierarchical representation consisting of Action Atoms that capture the atomic joint movements and Action Motifs that are formed by their temporal compositions and encode similar body movements found across different overall human actions. We derive A4Mer, a nested latent Transformer to learn this hierarchical representation from human pose data in a fully self-supervised manner. A4Mer splits a 3D pose sequence into variable-length segments and represents each segment as a single latent token (Action Atoms). Through bottom-up representation learning, temporal patterns composed of these Action Atoms, which capture meaningful temporal spans of reusable, semantic segments of body movements, naturally emerge (Action Motifs). A4Mer achieves this with a unified pretext task of masked token prediction in their respective latent spaces. We also introduce Action Motif Dataset (AMD), a large-scale dataset of multi-view human behavior videos with full SMPL annotations. We introduce a novel use of cameras by mounting them on the feet to achieve their frame-wise annotations despite frequent and heavy body occlusions. Experimental results demonstrate the effectiveness of A4Mer for extracting meaningful Action Motifs, which significantly benefit human behavior modeling tasks including action recognition, motion prediction, and motion interpolation.",
+      "authors": [
+        "Genki Kinoshita",
+        "Shu Nakamura",
+        "Ryo Kawahara",
+        "Shohei Nobuhara",
+        "Yasutomo Kawanishi"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-30",
+      "comment": "to be published in CVPR 2026 (Highlight)",
+      "summary": "Effective human behavior modeling requires a representation of the human body movement that capitalizes on its compositionality.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "segmentation",
+      "score": 32.0
+    },
+    {
+      "title": "A generalised pre-training strategy for deep learning networks in semantic segmentation of remotely sensed images",
+      "arxiv_id": "2604.27704",
+      "abstract": "In the segmentation of remotely sensed images, deep learning models are typically pre-trained using large image databases like ImageNet before fine-tuned on domain-specific datasets. However, the performance of these fine-tuned models is often hindered by the large domain gaps (i.e., differences in scenes and modalities) between ImageNet's images and remotely sensed images being processed. Therefore, many researchers have undertaken efforts to establish large-scale domain-specific image datasets for pre-training, aiming to enhance model performance. However, establishing such datasets is often challenging, requiring significant effort, and these datasets often exhibit limited generaliza-bility to other application scenarios. To address these issues, this study introduces a novel yet simple pre-training strategy designed to guide a model away from learning domain-specific features in a pre-training dataset during pre-training, thereby improving the generalisation ability of the pre-trained model. To evaluate the strategy's effectiveness, deep learning models are pre-trained on ImageNet and subsequently fine-tuned on four semantic segmentation datasets with diverse scenes and modalities, including iSAID, MFNet, PST900 and Potsdam. Experimental results show that the proposed pre-training strategy led to state-of-the-art accuracies on all four datasets, namely 67.4% mIoU for iSAID, 56.9% mIoU for MFNet, 84.22% mIoU for PST900, 91.88% mF1 for Potsdam. This research lays the groundwork for developing a unified foundation model applicable to both computer vision and remote sensing applications.",
+      "authors": [
+        "Yuan Fang",
+        "Yuanzhi Cai",
+        "Jagannath Aryal",
+        "Qinfeng Zhu",
+        "Hong Huang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-30",
+      "comment": "",
+      "summary": "In the segmentation of remotely sensed images, deep learning models are typically pre-trained using large image databases like ImageNet before fine-tuned on domain-specific datasets.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "computer_vision_core",
+      "score": 32.0
+    },
+    {
+      "title": "Deep Learning-Based Segmentation of Peritoneal Cancer Index Regions from CT Imaging",
+      "arxiv_id": "2604.27697",
+      "abstract": "Peritoneal metastases are currently assessed using diagnostic laparoscopy to determine Sugarbaker's Peritoneal Cancer Index (sPCI), which works by dividing the abdomen into 13 regions and scoring each region based on tumor size. A recent consensus study defined 3D regions to facilitate a radiological PCI (rPCI), providing standardized anatomical regions for imaging-based assessment. Despite its clinical value, sPCI is invasive and lacks a standardized imaging counterpart. In this study, we propose a deep learning-based approach to automatically segment the rPCI regions on CT. We evaluate nnU-Net and Swin UNETR on 62 CT scans with rPCI regions manually annotated by three clinical researchers and validated by two expert radiologists. Performance was assessed using five-fold cross-validation with the Dice Similarity Coefficient (Dice), 95th percentile Hausdorff distance and Average Surface Distance. nnU-Net achieved an overall Dice of 0.82, approaching interobserver agreement (0.88) and outperforming Swin UNETR (0.76), with remaining challenges primarily in right flank and small-bowel regions. These results demonstrate feasibility of automated rPCI segmentation, laying the foundation for non-invasive, imaging-based assessment.",
+      "authors": [
+        "Pieter C. Gort",
+        "Lotte J. S. Ewals",
+        "Marion W. Tops-Welten",
+        "Cris H. B. Claessens",
+        "Joost Nederend"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-04-30",
+      "comment": "Accepted for presentation at Computer Assisted Radiology and Surgery (CARS) 2026",
+      "summary": "Peritoneal metastases are currently assessed using diagnostic laparoscopy to determine Sugarbaker's Peritoneal Cancer Index (sPCI), which works by dividing the abdomen into 13 regions and scoring e...",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "computer_vision_core",
+      "score": 32.0
+    },
+    {
+      "title": "REVIVE 3D: Refinement via Encoded Voluminous Inflated prior for Volume Enhancement",
+      "arxiv_id": "2604.27504",
+      "abstract": "Recent generative models have shown strong performance in generating diverse 3D assets from 2D images, a fundamental research topic in computer vision and graphics. However, these models still struggle to generate voluminous 3D assets when the input is a flat image that provides limited 3D cues. We introduce REVIVE 3D, a two-stage, plug-and-play pipeline for generating voluminous 3D assets from flat images. In Stage 1, we construct an Inflated Prior by inflating the foreground silhouette to recover global volume and superimposing part-aware details to capture local structure. In Stage 2, 3D Latent Refinement injects Gaussian noise into the Inflated Prior's latent and then denoises it, using the prior's geometric cues to leverage the backbone's pretrained 3D knowledge. Furthermore, our framework supports image-conditioned 3D editing. To quantify volume and surface flatness, we propose Compactness and Normal Anisotropy. We validate Compactness and Normal Anisotropy through a user study, showing that these metrics align with human perception of volume and quality. We show that REVIVE 3D achieves state-of-the-art performance on a challenging flat image dataset, based on extensive qualitative and quantitative evaluations.",
+      "authors": [
+        "Hankyeol Lee",
+        "Wooyeol Baek",
+        "Seongdo Kim",
+        "Jongyoo Kim"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-30",
+      "comment": "Accepted by CVPR 2026",
+      "summary": "Recent generative models have shown strong performance in generating diverse 3D assets from 2D images, a fundamental research topic in computer vision and graphics.",
+      "target_date": "2026-04-30",
+      "source_published_date": "2026-04-30",
+      "domain": "computer_vision_core",
+      "score": 32.0
+    }
+  ],
+  "stats": {
+    "total": 333,
+    "in_focus": 93,
+    "tier_a_count": 10,
+    "tier_b_count": 24,
+    "tier_a_min_score": 40.0,
+    "tier_b_min_score": 32.0
+  }
+}
